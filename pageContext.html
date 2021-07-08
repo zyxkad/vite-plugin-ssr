@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html>
-      <head><link rel="stylesheet" type="text/css" href="/assets/installSectionUrlHashs.00307db1.css"><link rel="preload" as="font" crossorigin type="font/ttf" href="/assets/Inter-Var.2bc54814.ttf"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/installSectionUrlHashs.241ea543.js">
+      <head><link rel="stylesheet" type="text/css" href="/assets/installSectionUrlHashs.55d9979b.css"><link rel="preload" as="font" crossorigin type="font/ttf" href="/assets/Inter-Var.2bc54814.ttf"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/installSectionUrlHashs.b133999f.js">
         <link rel="icon" href="/assets/vite-plugin-ssr.bebe2e90.svg" />
         <title>pageContext</title>
         
@@ -26,5 +26,5 @@ app.get(<span class="hljs-string">&#x27;*&#x27;</span>, <span class="hljs-keywor
   <span class="hljs-comment">/* ... */</span>
 })</code></pre></li></ul><p>By default only <code>pageContext.Page</code> and <code>pageContext.pageExports</code> are available in the browser;
 use <a href="#export--passtoclient-"><code>export const passToClient: string[]</code></a> to make more <code>pageContext</code> available in the browser.</p><p>The <code>pageContext</code> can be accessed at:</p><ul><li><em>[Node.js]</em> <code>export function addPageContext(pageContext)</code> (<code>*.page.server.js</code>)</li><li><em>[Node.js]</em> <code>export function render(pageContext)</code> (<code>*.page.server.js</code>)</li><li><em>[Node.js (&amp; Browser)]</em> <code>export default function routeFunction(pageContext)</code> (<code>*.page.route.js</code>)</li><li><em>[Browser]</em> <code>const pageContext = await getPage()</code> (<code>import { getPage } from &#x27;vite-plugin-ssr/client&#x27;</code>)</li><li><em>[Browser]</em> <code>useClientRouter({ render(pageContext) })</code> (<code>import { useClientRouter } from &#x27;vite-plugin-ssr/client/router&#x27;</code>)</li></ul><br/><br/></div></div></div></div>
-      <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002FpageContext",pageId:void 0}</script><script type="module" src="/assets/frame/_default.page.client.ts.7f1de4e1.js"></script></body>
+      <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002FpageContext",pageId:void 0}</script><script type="module" src="/assets/frame/_default.page.client.ts.e3fab88d.js"></script></body>
     </html>

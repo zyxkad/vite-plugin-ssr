@@ -1,27 +1,27 @@
 {
   "frame/_default.page.client.ts": {
-    "file": "assets/frame/_default.page.client.ts.7f1de4e1.js",
+    "file": "assets/frame/_default.page.client.ts.e3fab88d.js",
     "src": "frame/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.241ea543.js"
+      "_installSectionUrlHashs.b133999f.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.f04e3b8e.js",
+    "file": "assets/pages/index/index.page.client.ts.aa42ff44.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.241ea543.js"
+      "_installSectionUrlHashs.b133999f.js"
     ],
     "css": [
       "assets/pages/index/index.page.client.ts.643ef983.css"
     ]
   },
-  "_installSectionUrlHashs.241ea543.js": {
-    "file": "assets/installSectionUrlHashs.241ea543.js",
+  "_installSectionUrlHashs.b133999f.js": {
+    "file": "assets/installSectionUrlHashs.b133999f.js",
     "css": [
-      "assets/installSectionUrlHashs.00307db1.css"
+      "assets/installSectionUrlHashs.55d9979b.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
