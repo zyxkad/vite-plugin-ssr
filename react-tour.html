@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html>
-      <head><link rel="stylesheet" type="text/css" href="/assets/installSectionUrlHashs.495ec3e5.css"><link rel="stylesheet" type="text/css" href="/assets/ScaffoldCallToAction.client.16d5da60.css"><link rel="preload" as="font" crossorigin type="font/ttf" href="/assets/Inter-Var.2bc54814.ttf"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/installSectionUrlHashs.67dc4eae.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/ScaffoldCallToAction.client.ae800f0f.js">
+      <head><link rel="stylesheet" type="text/css" href="/assets/installSectionUrlHashs.2d441016.css"><link rel="stylesheet" type="text/css" href="/assets/ScaffoldCallToAction.client.16d5da60.css"><link rel="preload" as="font" crossorigin type="font/ttf" href="/assets/Inter-Var.2bc54814.ttf"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/installSectionUrlHashs.86f5c6ee.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/ScaffoldCallToAction.client.ae800f0f.js">
         <link rel="icon" href="/assets/vite-plugin-ssr.bebe2e90.svg" />
         <title>React Tour</title>
         
@@ -76,7 +76,7 @@ pages/about.page.jsx        /about
 hydrate();
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hydrate</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> pageContext = <span class="hljs-keyword">await</span> getPage(); <span class="hljs-comment">// (Page context is preloaded in production)</span>
+  <span class="hljs-keyword">const</span> pageContext = <span class="hljs-keyword">await</span> getPage(); <span class="hljs-comment">// (`pageContext` is preloaded in production)</span>
   <span class="hljs-keyword">const</span> { Page, pageProps } = pageContext
   ReactDOM.hydrate(
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Page</span> {<span class="hljs-attr">...pageProps</span>} /&gt;</span></span>,
@@ -85,7 +85,7 @@ hydrate();
 }</code></pre><p>The <code>render()</code> hook in <code>/pages/_default.page.server.jsx</code> gives us full control over how our pages are rendered to HTML,
 and <code>/pages/_default.page.client.jsx</code> gives us full control over the browser-side code.
 This control enables us to <em>easily</em> and <em>naturally</em> use any tool we want (Redux, GraphQL, Service Worker, Preact, ...).</p><p>There are four suffixes:</p><ul><li><code>.page.js</code>: exports the page&#x27;s root React component.</li><li><code>.page.client.js</code>: defines the page&#x27;s browser-side code.</li><li><code>.page.server.js</code>: exports the page&#x27;s hooks (always run in Node.js).</li><li><code>.page.route.js</code>: exports the page&#x27;s Route String or Route Function.</li></ul><p>Instead of creating a <code>.page.client.js</code> and <code>.page.server.js</code> file for each page,
-we can create <code>_default.page.client.js</code> and <code>_default.page.server.js</code> which apply as default for all pages.</p><p>We already defined our <code>_default</code> files,
+we can create <code>_default.page.client.js</code> and <code>_default.page.server.js</code> which apply as default for all pages.</p><p>The last two files we created are actually <code>_default.page.client.js</code> and <code>_default.page.server.js</code>,
 which means that we can now create a new page just by defining a new <code>.page.jsx</code> file (the <code>.page.route.js</code> file is optional).</p><p>The <code>_default</code> files can be overridden. For example, we can create a page with a different browser-side code than our other pages.</p><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/about.page.client.js</span>
 
 <span class="hljs-comment">// This file is empty which means that the `/about` page has zero browser-side JavaScript.</span></code></pre><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/about.page.jsx</span>
@@ -94,8 +94,8 @@ which means that we can now create a new page just by defining a new <code>.page
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Page</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;&gt;</span>This page is only rendered to HTML.<span class="hljs-tag">&lt;&gt;</span>;
-}</span></code></pre><p>By overriding the <code>render()</code> hook in <code>_default.page.server.js</code> we can
-even render a page with a different view framework, e.g. another React version (for progressive upgrade) or even Vue.</p><p>Let&#x27;s now have a look at how to fetch data.</p><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/star-wars/movie.page.jsx</span>
+}</span></code></pre><p>By also overriding the <code>render()</code> hook we can
+even render a page with a completly different view framework, e.g. Vue or another React version (for progressive React version upgrade).</p><p>Let&#x27;s now have a look at how to fetch data.</p><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/star-wars/movie.page.jsx</span>
 <span class="hljs-comment">// Environment: Browser, Node.js</span>
 
 <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
@@ -119,14 +119,14 @@ even render a page with a different view framework, e.g. another React version (
 <span class="hljs-keyword">import</span> fetch <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;node-fetch&quot;</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addPageContext</span>(<span class="hljs-params">pageContext</span>) </span>{
-  <span class="hljs-comment">// The route parameter of `/star-wars/:movieId` is available at pageContext.routeParams.movieId</span>
+  <span class="hljs-comment">// The route parameter of `/star-wars/:movieId` is available at `pageContext.routeParams`</span>
   <span class="hljs-keyword">const</span> { movieId } = pageContext.routeParams
 
   <span class="hljs-comment">// `.page.server.js` files always run in Node.js; we could use SQL/ORM queries here.</span>
   <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">`https://swapi.dev/api/films/<span class="hljs-subst">${movieId}</span>`</span>)
   <span class="hljs-keyword">let</span> movie = <span class="hljs-keyword">await</span> response.json();
 
-  <span class="hljs-comment">// The render/hydrate functions we defined earlier use `pageContext.pageProps`; this</span>
+  <span class="hljs-comment">// The render and hydrate functions we defined earlier use `pageContext.pageProps`; this</span>
   <span class="hljs-comment">// is where we define `pageProps`.</span>
   <span class="hljs-keyword">const</span> pageProps = { movie };
 
@@ -140,5 +140,5 @@ even render a page with a different view framework, e.g. another React version (
 <span class="hljs-comment">// available in the browser.</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> passToClient = [<span class="hljs-string">&quot;pageProps&quot;</span>];</code></pre><p>That&#x27;s it, and we have actually already seen most of the interface;
 <code>vite-plugin-ssr</code> is not only flexible but also simple &amp; easy to use.</p><div style="text-align:center;margin-top:40px"><div style="display:inline-block;align-items:center;flex-direction:column;text-align:left"><div style="font-size:1.2em"><div><code id="npm-init-code-snippet" aria-label="Click to copy" data-balloon-pos="left" style="font-size:1.55em;padding:10px 20px;white-space:nowrap;border-radius:5px;display:inline-block;color:black;cursor:pointer"><span style="color:#bbb">$</span> npm init vite-plugin-ssr</code></div></div><div style="font-size:0.83rem;margin-top:9px;display:flex"><div style="width:0;flex-grow:1;color:#888">Run <code style="font-size:0.92em;padding:1px 3px">$ npm init vite-plugin-ssr</code> to scaffold a new Vite/<code style="font-size:0.92em;padding:1px 3px">vite-plugin-ssr</code> app, or add <code style="font-size:0.92em;padding:1px 3px">vite-plugin-ssr</code> to your existing app by following the instructions<!-- --> <a href="/install">here</a>.</div></div></div></div></div></div></div></div>
-      <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002Freact-tour",pageId:void 0}</script><script type="module" src="/assets/pages/react-tour.page.client.ts.aff8d820.js"></script></body>
+      <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002Freact-tour",pageId:void 0}</script><script type="module" src="/assets/pages/react-tour.page.client.ts.1d8e29f3.js"></script></body>
     </html>

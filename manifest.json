@@ -1,46 +1,46 @@
 {
   "frame/_default.page.client.ts": {
-    "file": "assets/frame/_default.page.client.ts.93553179.js",
+    "file": "assets/frame/_default.page.client.ts.fc6aa149.js",
     "src": "frame/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.67dc4eae.js"
+      "_installSectionUrlHashs.86f5c6ee.js"
     ]
   },
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.aff8d820.js",
+    "file": "assets/pages/react-tour.page.client.ts.1d8e29f3.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.67dc4eae.js",
+      "_installSectionUrlHashs.86f5c6ee.js",
       "_ScaffoldCallToAction.client.ae800f0f.js"
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.bcb3667a.js",
+    "file": "assets/pages/vue-tour.page.client.ts.0a30035f.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.67dc4eae.js",
+      "_installSectionUrlHashs.86f5c6ee.js",
       "_ScaffoldCallToAction.client.ae800f0f.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.5c6e8d45.js",
+    "file": "assets/pages/index/index.page.client.ts.1bd56817.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.67dc4eae.js",
+      "_installSectionUrlHashs.86f5c6ee.js",
       "_ScaffoldCallToAction.client.ae800f0f.js"
     ],
     "css": [
-      "assets/pages/index/index.page.client.ts.643ef983.css"
+      "assets/pages/index/index.page.client.ts.c7495291.css"
     ]
   },
-  "_installSectionUrlHashs.67dc4eae.js": {
-    "file": "assets/installSectionUrlHashs.67dc4eae.js",
+  "_installSectionUrlHashs.86f5c6ee.js": {
+    "file": "assets/installSectionUrlHashs.86f5c6ee.js",
     "css": [
-      "assets/installSectionUrlHashs.495ec3e5.css"
+      "assets/installSectionUrlHashs.2d441016.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
