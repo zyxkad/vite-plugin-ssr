@@ -1,30 +1,55 @@
 {
   "frame/_default.page.client.ts": {
-    "file": "assets/frame/_default.page.client.ts.14f506fc.js",
+    "file": "assets/frame/_default.page.client.ts.93553179.js",
     "src": "frame/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.a04a0495.js"
+      "_installSectionUrlHashs.67dc4eae.js"
+    ]
+  },
+  "pages/react-tour.page.client.ts": {
+    "file": "assets/pages/react-tour.page.client.ts.aff8d820.js",
+    "src": "pages/react-tour.page.client.ts",
+    "isEntry": true,
+    "imports": [
+      "_installSectionUrlHashs.67dc4eae.js",
+      "_ScaffoldCallToAction.client.ae800f0f.js"
+    ]
+  },
+  "pages/vue-tour.page.client.ts": {
+    "file": "assets/pages/vue-tour.page.client.ts.bcb3667a.js",
+    "src": "pages/vue-tour.page.client.ts",
+    "isEntry": true,
+    "imports": [
+      "_installSectionUrlHashs.67dc4eae.js",
+      "_ScaffoldCallToAction.client.ae800f0f.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.fed8e6a8.js",
+    "file": "assets/pages/index/index.page.client.ts.5c6e8d45.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.a04a0495.js"
+      "_installSectionUrlHashs.67dc4eae.js",
+      "_ScaffoldCallToAction.client.ae800f0f.js"
     ],
     "css": [
       "assets/pages/index/index.page.client.ts.643ef983.css"
     ]
   },
-  "_installSectionUrlHashs.a04a0495.js": {
-    "file": "assets/installSectionUrlHashs.a04a0495.js",
+  "_installSectionUrlHashs.67dc4eae.js": {
+    "file": "assets/installSectionUrlHashs.67dc4eae.js",
     "css": [
-      "assets/installSectionUrlHashs.7ea427cc.css"
+      "assets/installSectionUrlHashs.495ec3e5.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
+    ]
+  },
+  "_ScaffoldCallToAction.client.ae800f0f.js": {
+    "file": "assets/ScaffoldCallToAction.client.ae800f0f.js",
+    "css": [
+      "assets/ScaffoldCallToAction.client.16d5da60.css"
     ]
   }
 }
