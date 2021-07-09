@@ -1,46 +1,46 @@
 {
   "frame/_default.page.client.ts": {
-    "file": "assets/frame/_default.page.client.ts.fc6aa149.js",
+    "file": "assets/frame/_default.page.client.ts.16dc3d08.js",
     "src": "frame/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.86f5c6ee.js"
+      "_installSectionUrlHashs.682c3c7f.js"
     ]
   },
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.1d8e29f3.js",
+    "file": "assets/pages/react-tour.page.client.ts.a678394c.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.86f5c6ee.js",
+      "_installSectionUrlHashs.682c3c7f.js",
       "_ScaffoldCallToAction.client.ae800f0f.js"
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.0a30035f.js",
+    "file": "assets/pages/vue-tour.page.client.ts.62453624.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.86f5c6ee.js",
+      "_installSectionUrlHashs.682c3c7f.js",
       "_ScaffoldCallToAction.client.ae800f0f.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.1bd56817.js",
+    "file": "assets/pages/index/index.page.client.ts.347baaeb.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_installSectionUrlHashs.86f5c6ee.js",
+      "_installSectionUrlHashs.682c3c7f.js",
       "_ScaffoldCallToAction.client.ae800f0f.js"
     ],
     "css": [
       "assets/pages/index/index.page.client.ts.c7495291.css"
     ]
   },
-  "_installSectionUrlHashs.86f5c6ee.js": {
-    "file": "assets/installSectionUrlHashs.86f5c6ee.js",
+  "_installSectionUrlHashs.682c3c7f.js": {
+    "file": "assets/installSectionUrlHashs.682c3c7f.js",
     "css": [
-      "assets/installSectionUrlHashs.2d441016.css"
+      "assets/installSectionUrlHashs.3a4d1e2d.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
