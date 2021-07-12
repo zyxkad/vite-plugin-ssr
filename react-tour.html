@@ -119,7 +119,7 @@ even render a page with a completely different view framework, e.g. Vue or anoth
   <span class="hljs-keyword">let</span> movie = <span class="hljs-keyword">await</span> response.json();
 
   <span class="hljs-comment">// Our render and hydrate functions we defined earlier pass `pageContext.pageProps` to</span>
-  <span class="hljs-comment">// the root Vue component `Page`; this is where we define `pageProps`.</span>
+  <span class="hljs-comment">// the root React component `Page`; this is where we define `pageProps`.</span>
   <span class="hljs-keyword">const</span> pageProps = { movie };
 
   <span class="hljs-comment">// We make `pageProps` available as `pageContext.pageProps`</span>
