@@ -24,7 +24,7 @@ we define a new page by creating a new <code>.page.jsx</code> file.</p><pre><cod
 pages/index.page.jsx        /
 pages/about.page.jsx        /about
 </code></pre><p>We can also define a page&#x27;s route with a <em>Route String</em> (for parameterized routes such as <code>/movies/:id</code>) or a <em>Route Function</em> (for full programmatic flexibility).</p><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/index.page.route.js</span>
-<span class="hljs-comment">// Environment: Node.js (and Browser if we opt-in for Client-side Routing)</span>
+<span class="hljs-comment">// Environment: Node.js (and Browser if we choose Client-side Routing)</span>
 
 <span class="hljs-comment">// Note how the two files share the same base `/pages/index.page.`; this is how `vite-plugin-ssr`</span>
 <span class="hljs-comment">// knows that `/pages/index.page.route.js` defines the route of `/pages/index.page.jsx`.</span>
@@ -76,7 +76,7 @@ hydrate();
   );
 }</code></pre><p>The <code>render()</code> hook in <code>/pages/_default.page.server.jsx</code> gives us full control over how our pages are rendered to HTML,
 and <code>/pages/_default.page.client.jsx</code> gives us full control over the browser-side code.
-This control enables us to <em>easily</em> and <em>naturally</em> use any tool we want (Redux, GraphQL, Service Worker, Preact, ...).</p><p>There are four suffixes:</p><ul><li><code>.page.js</code>: exports the page&#x27;s root React component.</li><li><code>.page.client.js</code>: defines the page&#x27;s browser-side code.</li><li><code>.page.server.js</code>: exports the page&#x27;s hooks (always run in Node.js).</li><li><code>.page.route.js</code>: exports the page&#x27;s Route String or Route Function.</li></ul><p>Instead of creating a <code>.page.client.js</code> and <code>.page.server.js</code> file for each page,
+This control enables us to <em>easily</em> and <em>naturally</em> integrate any tool we want (Redux, GraphQL, Service Worker, Preact, ...).</p><p>There are four suffixes:</p><ul><li><code>.page.js</code>: exports the page&#x27;s root React component.</li><li><code>.page.client.js</code>: defines the page&#x27;s browser-side code.</li><li><code>.page.server.js</code>: exports the page&#x27;s hooks (always run in Node.js).</li><li><code>.page.route.js</code>: exports the page&#x27;s Route String or Route Function.</li></ul><p>Instead of creating a <code>.page.client.js</code> and <code>.page.server.js</code> file for each page,
 we can create <code>_default.page.client.js</code> and <code>_default.page.server.js</code> which apply as default for all pages.</p><p>The last two files we created are actually <code>_default.page.client.js</code> and <code>_default.page.server.js</code>,
 which means that we can now create a new page just by defining a new <code>.page.jsx</code> file (the <code>.page.route.js</code> file is optional).</p><p>The <code>_default</code> files can be overridden. For example, we can create a page with a different browser-side code than our other pages.</p><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/about.page.client.js</span>
 
@@ -87,7 +87,7 @@ which means that we can now create a new page just by defining a new <code>.page
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Page</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;&gt;</span>This page is only rendered to HTML.<span class="hljs-tag">&lt;&gt;</span>;
 }</span></code></pre><p>By also overriding the <code>render()</code> hook we can
-even render a page with a completly different view framework, e.g. Vue or another React version (for progressive React version upgrade).</p><p>Let&#x27;s now have a look at how to fetch data.</p><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/star-wars/movie.page.jsx</span>
+even render a page with a completely different view framework, e.g. Vue or another React version (for progressive React version upgrade).</p><p>Let&#x27;s now have a look at how to fetch data.</p><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/star-wars/movie.page.jsx</span>
 <span class="hljs-comment">// Environment: Browser, Node.js</span>
 
 <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
@@ -130,7 +130,7 @@ even render a page with a completly different view framework, e.g. Vue or anothe
 <span class="hljs-comment">// we defined earlier runs in the browser and needs `pageContext.pageProps`; we use</span>
 <span class="hljs-comment">// `passToClient` to tell `vite-plugin-ssr` to serialize and make `pageContext.pageProps`</span>
 <span class="hljs-comment">// available in the browser.</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> passToClient = [<span class="hljs-string">&quot;pageProps&quot;</span>];</code></pre><p>That&#x27;s it, and we have actually already seen most of the interface;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> passToClient = [<span class="hljs-string">&quot;pageProps&quot;</span>];</code></pre><p>That&#x27;s it for the tour and we have actually already seen most of the interface;
 <code>vite-plugin-ssr</code> is not only flexible but also simple &amp; easy to use.</p><div id="tour-call-to-action" style="text-align:center;margin-top:40px"><div style="display:inline-block;align-items:center;flex-direction:column;text-align:left"><div style="font-size:1.2em"><div><code id="npm-init-code-snippet" aria-label="Click to copy" data-balloon-pos="left" style="font-size:1.55em;padding:10px 20px;white-space:nowrap;border-radius:5px;display:inline-block;color:black;cursor:pointer"><span style="color:#bbb">$</span> npm init vite-plugin-ssr</code></div></div><div style="font-size:0.83rem;margin-top:9px;display:flex"><div style="width:0;flex-grow:1;color:#888">Run <code style="font-size:0.92em;padding:1px 3px">$ npm init vite-plugin-ssr</code> to scaffold a new Vite/<code style="font-size:0.92em;padding:1px 3px">vite-plugin-ssr</code> app, or add<!-- --> <code style="font-size:0.92em;padding:1px 3px">vite-plugin-ssr</code> to your existing app by following the instructions <a href="/install">here</a>.</div></div></div></div></div></div></div></div>
       <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002Freact-tour",pageId:void 0}</script><script type="module" src="/assets/pages/react-tour.page.client.ts.b243aa68.js"></script></body>
     </html>
