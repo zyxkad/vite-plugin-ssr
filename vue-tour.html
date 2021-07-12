@@ -113,8 +113,8 @@ even render a page with a completely different view framework, e.g. React or ano
   <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">`https://swapi.dev/api/films/<span class="hljs-subst">${movieId}</span>`</span>)
   <span class="hljs-keyword">let</span> movie = <span class="hljs-keyword">await</span> response.json()
 
-  <span class="hljs-comment">// The render and hydrate functions passes `pageContext.pageProps` to the root Vue</span>
-  <span class="hljs-comment">// component `Page`; this is where we define `pageProps`.</span>
+  <span class="hljs-comment">// Our render and hydrate functions we defined earlier pass `pageContext.pageProps` to</span>
+  <span class="hljs-comment">// the root React component `Page`; this is where we define `pageProps`.</span>
   <span class="hljs-keyword">const</span> pageProps = { movie }
 
   <span class="hljs-comment">// We make `pageProps` available as `pageContext.pageProps`</span>
