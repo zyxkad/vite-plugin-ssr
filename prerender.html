@@ -27,7 +27,8 @@ it enables us to fetch data for multiple pages at once.</p><pre><code class="hlj
     movies
     .map(<span class="hljs-function"><span class="hljs-params">movie</span> =&gt;</span> {
       <span class="hljs-keyword">const</span> url = <span class="hljs-string">`/movie/<span class="hljs-subst">${movie.id}</span>`</span>
-      <span class="hljs-keyword">const</span> pageContext = { movie }
+      <span class="hljs-keyword">const</span> pageProps = { movie }
+      <span class="hljs-keyword">const</span> pageContext = { pageProps }
       <span class="hljs-keyword">return</span> {
         url,
         <span class="hljs-comment">// Beacuse we already provide the `pageContext`, vite-plugin-ssr will *not* call</span>
@@ -36,8 +37,8 @@ it enables us to fetch data for multiple pages at once.</p><pre><code class="hlj
       }
       <span class="hljs-comment">/* We could also only return `url` and not provide `pageContext`. In that case
          vite-plugin-ssr would call the `addPageContext()` hook. But that would be wasteful
-         since we already have all the data of all movies from our `await Movie.findAll()` call.
-         return { url } */</span>
+         since we already have all the data of all movies from our `await Movie.findAll()` call. */</span>
+      <span class="hljs-comment">// return { url }</span>
     })
   )
 
@@ -48,7 +49,9 @@ it enables us to fetch data for multiple pages at once.</p><pre><code class="hlj
   <span class="hljs-keyword">const</span> movieListPage = {
     <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;/movies&#x27;</span>, <span class="hljs-comment">// Note how the URL `/movies` isn&#x27;t part of the page&#x27;s route `/movie/:movieId`</span>
     <span class="hljs-attr">pageContext</span>: {
-      <span class="hljs-attr">movieList</span>: movies.map(<span class="hljs-function">(<span class="hljs-params">{id, title}</span>) =&gt;</span> ({id, title})
+      <span class="hljs-attr">pageProps</span>: {
+        <span class="hljs-attr">movieList</span>: movies.map(<span class="hljs-function">(<span class="hljs-params">{id, title}</span>) =&gt;</span> ({id, title})
+      }
     }
   }
 
