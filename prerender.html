@@ -36,8 +36,9 @@ it enables us to fetch data for multiple pages at once.</p><pre><code class="hlj
         pageContext
       }
       <span class="hljs-comment">/* We could also only return `url` and not provide `pageContext`. In that case
-         vite-plugin-ssr would call the `addPageContext()` hook. But that would be wasteful
-         since we already have all the data of all movies from our `await Movie.findAll()` call. */</span>
+       * vite-plugin-ssr would call the `addPageContext()` hook. But that would be wasteful
+       * since we already have all the data of all movies from our `await Movie.findAll()` call.
+       */</span>
       <span class="hljs-comment">// return { url }</span>
     })
   )
