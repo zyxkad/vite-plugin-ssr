@@ -112,10 +112,10 @@ even render a page with a completely different view framework, e.g. Vue or anoth
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addPageContext</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-comment">// The route parameter of `/star-wars/:movieId` is available at `pageContext.routeParams`</span>
-  <span class="hljs-keyword">const</span> { movieId } = pageContext.routeParams
+  <span class="hljs-keyword">const</span> { movieId } = pageContext.routeParams;
 
   <span class="hljs-comment">// `.page.server.js` files always run in Node.js; we could use SQL/ORM queries here.</span>
-  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">`https://swapi.dev/api/films/<span class="hljs-subst">${movieId}</span>`</span>)
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">`https://swapi.dev/api/films/<span class="hljs-subst">${movieId}</span>`</span>);
   <span class="hljs-keyword">let</span> movie = <span class="hljs-keyword">await</span> response.json();
 
   <span class="hljs-comment">// Our render and hydrate functions we defined earlier pass `pageContext.pageProps` to</span>
