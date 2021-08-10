@@ -1,62 +1,19 @@
 {
-  "frame/_default.page.client.ts": {
-    "file": "assets/frame/_default.page.client.ts.e8338dcf.js",
-    "src": "frame/_default.page.client.ts",
+  "_default.page.client.ts": {
+    "file": "assets/_default.page.client.ts.10b16f1a.js",
+    "src": "_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.7269f2d0.js",
       "_vendor.7f883c29.js"
-    ]
-  },
-  "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.badea713.js",
-    "src": "pages/react-tour.page.client.ts",
-    "isEntry": true,
-    "imports": [
-      "_Navigation.client.7269f2d0.js",
-      "_vendor.7f883c29.js",
-      "_ScaffoldCallToAction.client.53778b6e.js"
-    ]
-  },
-  "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.2d26bdd7.js",
-    "src": "pages/vue-tour.page.client.ts",
-    "isEntry": true,
-    "imports": [
-      "_Navigation.client.7269f2d0.js",
-      "_vendor.7f883c29.js",
-      "_ScaffoldCallToAction.client.53778b6e.js"
-    ]
-  },
-  "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.8a40aa19.js",
-    "src": "pages/index/index.page.client.ts",
-    "isEntry": true,
-    "imports": [
-      "_Navigation.client.7269f2d0.js",
-      "_vendor.7f883c29.js",
-      "_ScaffoldCallToAction.client.53778b6e.js"
     ],
     "css": [
-      "assets/pages/index/index.page.client.ts.ae2f8b91.css"
-    ]
-  },
-  "_vendor.7f883c29.js": {
-    "file": "assets/vendor.7f883c29.js"
-  },
-  "_Navigation.client.7269f2d0.js": {
-    "file": "assets/Navigation.client.7269f2d0.js",
-    "css": [
-      "assets/Navigation.client.8d90b909.css"
+      "assets/_default.page.client.ts.33029348.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
     ]
   },
-  "_ScaffoldCallToAction.client.53778b6e.js": {
-    "file": "assets/ScaffoldCallToAction.client.53778b6e.js",
-    "css": [
-      "assets/ScaffoldCallToAction.client.fb2c3a81.css"
-    ]
+  "_vendor.7f883c29.js": {
+    "file": "assets/vendor.7f883c29.js"
   }
 }
