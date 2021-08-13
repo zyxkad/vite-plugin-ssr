@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html>
-      <head><link rel="stylesheet" type="text/css" href="/assets/Navigation.client.8d90b909.css"><link rel="preload" as="font" crossorigin type="font/ttf" href="/assets/Inter-Var.2bc54814.ttf"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/Navigation.client.7269f2d0.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/vendor.7f883c29.js">
+      <head><link rel="stylesheet" type="text/css" href="/assets/Navigation.client.8d90b909.css"><link rel="preload" as="font" crossorigin type="font/ttf" href="/assets/Inter-Var.2bc54814.ttf"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/Navigation.client.3dd3e19b.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/vendor.7f883c29.js">
         <link rel="icon" href="/assets/vite-plugin-ssr.bebe2e90.svg" />
         <title>Active Links | vite-plugin-ssr</title>
         
@@ -11,5 +11,5 @@
 For example, we can see this page &quot;Routing&quot; highlighted in gray in the navigation sidebar on the left of this website; the navigation link pointing to this page is said to be &quot;active&quot;.</p></blockquote><p>To implement active links we:</p><ul><li>Implement a custom <code>&lt;Link&gt;</code> component.</li><li>Make <a href="/pageContext"><code>pageContext.urlPathname</code></a> available to the <code>&lt;Link&gt;</code> component. (See <a href="/pageContext-anywhere">Access <code>pageContext</code> anywhere</a>.)</li></ul><p>Our <code>&lt;Link&gt;</code> component can then check whether the link is active with <code>const isActive = a.href === pageContext.urlPathname</code>
 and add a CSS class <code>&lt;a class=&quot;is-active&quot;&gt;</code> accordingly.</p><p>React example:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/react-full/pages/_default/Link.tsx">/examples/react-full/pages/_default/Link.tsx</a></li></ul><p>Vue example:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/vue-full/pages/_default/Link.vue">/examples/vue-full/pages/_default/Link.vue</a></li></ul><blockquote><p>Unless we <a href="/SPA-vs-SSR-vs-HTML">render our pages as SPAs</a>
 we cannot use <code>window.location.pathname</code> as it&#x27;s not available while our pages render on the server-side.</p></blockquote></div></div></div></div>
-      <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002Factive-links",pageId:void 0}</script><script type="module" src="/assets/_default/_default.page.client.ts.6ccdb544.js"></script></body>
+      <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002Factive-links",pageId:void 0}</script><script type="module" src="/assets/_default/_default.page.client.ts.4baa88b9.js"></script></body>
     </html>
