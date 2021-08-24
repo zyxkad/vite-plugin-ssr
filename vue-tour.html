@@ -30,7 +30,7 @@ pages/about.page.vue        /about
 <span class="hljs-comment">// Route Function</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> pageContext =&gt; pageContext.url === <span class="hljs-string">&#x27;/&#x27;</span>
 
-<span class="hljs-comment">// If we don&#x27;t create a `.page.route.js` file then vite-plugin-ssr does Filesystem Routing</span></code></pre><p>Unlike Nuxt, we define how our pages are rendered.</p><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/_default.page.server.js</span>
+<span class="hljs-comment">// If we don&#x27;t create a `.page.route.js` file then vite-plugin-ssr does Filesystem Routing</span></code></pre><p>Unlike Nuxt, we define how our pages are rendered.</p><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.server.js</span>
 <span class="hljs-comment">// Environment: Node.js</span>
 
 <span class="hljs-keyword">import</span> { createSSRApp, h } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span>
@@ -58,7 +58,7 @@ pages/about.page.vue        /about
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span></span><span class="hljs-subst">${html.dangerouslySkipEscape(appHtml)}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
-}</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/_default.page.client.js</span>
+}</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.client.js</span>
 <span class="hljs-comment">// Environment: Browser</span>
 
 <span class="hljs-keyword">import</span> { createSSRApp, h } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span>
@@ -77,8 +77,8 @@ hydrate()
 but every SSR app actually uses <code>createSSRApp</code> and <code>h</code>.</p><p>Nuxt abstracts this away from us and gives us a slightly faster getting started. But this also means that we
 loose control over a central piece of our app architecture and
 we&#x27;ll eventually loose much more time circumventing Nuxt&#x27;s limiting black box as we scale.</p><p>The boilerplate <code>$ npm init vite-plugin-ssr@latest</code> provides a functioning setup
-that will require only small adaptations for most users.</p></blockquote><p>The <code>render()</code> hook in <code>/pages/_default.page.server.js</code> gives us full control over how our pages are rendered to HTML,
-and <code>/pages/_default.page.client.js</code> gives us full control over the browser-side code.
+that will require only small adaptations for most users.</p></blockquote><p>The <code>render()</code> hook in <code>_default.page.server.js</code> gives us full control over how our pages are rendered to HTML,
+and <code>_default.page.client.js</code> gives us full control over the browser-side code.
 This control enables us to <em>easily</em> and <em>naturally</em> integrate any tool we want (Vuex, GraphQL, Service Worker, ...).</p><p>There are four suffixes:</p><ul><li><code>.page.js</code>: exports the page&#x27;s root Vue component.</li><li><code>.page.client.js</code>: defines the page&#x27;s browser-side code.</li><li><code>.page.server.js</code>: exports the page&#x27;s hooks (always run in Node.js).</li><li><code>.page.route.js</code>: exports the page&#x27;s Route String or Route Function.</li></ul><p>Instead of creating a <code>.page.client.js</code> and <code>.page.server.js</code> file for each page,
 we can create <code>_default.page.client.js</code> and <code>_default.page.server.js</code> which apply as default for all pages.</p><p>The last two files we created are actually <code>_default.page.client.js</code> and <code>_default.page.server.js</code>,
 which means that we can now create a new page just by defining a new <code>.page.vue</code> file (the <code>.page.route.js</code> file is optional).</p><p>The <code>_default</code> files can be overridden. For example, we can create a page with a different browser-side code than our other pages.</p><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/about.page.client.js</span>

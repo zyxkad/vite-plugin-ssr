@@ -32,7 +32,7 @@ pages/about.page.jsx        /about
 <span class="hljs-comment">// Route Function</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> pageContext =&gt; pageContext.url === <span class="hljs-string">&#x27;/&#x27;</span>;
 
-<span class="hljs-comment">// If we don&#x27;t create a `.page.route.js` file then vite-plugin-ssr does Filesystem Routing</span></code></pre><p>Unlike Next.js, we define how our pages are rendered.</p><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/_default.page.server.jsx</span>
+<span class="hljs-comment">// If we don&#x27;t create a `.page.route.js` file then vite-plugin-ssr does Filesystem Routing</span></code></pre><p>Unlike Next.js, we define how our pages are rendered.</p><pre><code class="hljs language-jsx"><span class="hljs-comment">// _default.page.server.jsx</span>
 <span class="hljs-comment">// Environment: Node.js</span>
 
 <span class="hljs-keyword">import</span> ReactDOMServer <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-dom/server&quot;</span>;
@@ -58,7 +58,7 @@ pages/about.page.jsx        /about
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;page-view&quot;</span>&gt;</span></span><span class="hljs-subst">${html.dangerouslySkipEscape(viewHtml)}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>;
-}</code></pre><pre><code class="hljs language-jsx"><span class="hljs-comment">// /pages/_default.page.client.jsx</span>
+}</code></pre><pre><code class="hljs language-jsx"><span class="hljs-comment">// _default.page.client.jsx</span>
 <span class="hljs-comment">// Environment: Browser</span>
 
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-dom&quot;</span>;
@@ -74,8 +74,8 @@ hydrate();
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Page</span> {<span class="hljs-attr">...pageProps</span>} /&gt;</span></span>,
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;page-view&quot;</span>)
   );
-}</code></pre><p>The <code>render()</code> hook in <code>/pages/_default.page.server.jsx</code> gives us full control over how our pages are rendered to HTML,
-and <code>/pages/_default.page.client.jsx</code> gives us full control over the browser-side code.
+}</code></pre><p>The <code>render()</code> hook in <code>_default.page.server.jsx</code> gives us full control over how our pages are rendered to HTML,
+and <code>_default.page.client.jsx</code> gives us full control over the browser-side code.
 This control enables us to <em>easily</em> and <em>naturally</em> integrate any tool we want (Redux, GraphQL, Service Worker, Preact, ...).</p><p>There are four suffixes:</p><ul><li><code>.page.js</code>: exports the page&#x27;s root React component.</li><li><code>.page.client.js</code>: defines the page&#x27;s browser-side code.</li><li><code>.page.server.js</code>: exports the page&#x27;s hooks (always run in Node.js).</li><li><code>.page.route.js</code>: exports the page&#x27;s Route String or Route Function.</li></ul><p>Instead of creating a <code>.page.client.js</code> and <code>.page.server.js</code> file for each page,
 we can create <code>_default.page.client.js</code> and <code>_default.page.server.js</code> which apply as default for all pages.</p><p>The last two files we created are actually <code>_default.page.client.js</code> and <code>_default.page.server.js</code>,
 which means that we can now create a new page just by defining a new <code>.page.jsx</code> file (the <code>.page.route.js</code> file is optional).</p><p>The <code>_default</code> files can be overridden. For example, we can create a page with a different browser-side code than our other pages.</p><pre><code class="hljs language-js"><span class="hljs-comment">// /pages/about.page.client.js</span>
