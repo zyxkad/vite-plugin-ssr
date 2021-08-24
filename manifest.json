@@ -1,13 +1,4 @@
 {
-  "_default/_default.page.client.ts": {
-    "file": "assets/_default/_default.page.client.ts.77d80e40.js",
-    "src": "_default/_default.page.client.ts",
-    "isEntry": true,
-    "imports": [
-      "_Navigation.client.c857ab18.js",
-      "_vendor.7f883c29.js"
-    ]
-  },
   "pages/react-tour.page.client.ts": {
     "file": "assets/pages/react-tour.page.client.ts.02a4712c.js",
     "src": "pages/react-tour.page.client.ts",
@@ -26,6 +17,15 @@
       "_Navigation.client.c857ab18.js",
       "_vendor.7f883c29.js",
       "_ScaffoldCallToAction.client.53778b6e.js"
+    ]
+  },
+  "renderer/_default.page.client.ts": {
+    "file": "assets/renderer/_default.page.client.ts.d0b1ace8.js",
+    "src": "renderer/_default.page.client.ts",
+    "isEntry": true,
+    "imports": [
+      "_Navigation.client.c857ab18.js",
+      "_vendor.7f883c29.js"
     ]
   },
   "pages/index/index.page.client.ts": {
