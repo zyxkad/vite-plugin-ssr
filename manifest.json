@@ -1,48 +1,56 @@
 {
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.02a4712c.js",
+    "file": "assets/pages/react-tour.page.client.ts.ba475de2.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
       "_Navigation.client.c857ab18.js",
-      "_vendor.7f883c29.js",
+      "_vendor.cbfb5f78.js",
       "_ScaffoldCallToAction.client.53778b6e.js"
     ]
   },
+  "pages/spa-example.page.client.jsx": {
+    "file": "assets/pages/spa-example.page.client.jsx.600c5c7c.js",
+    "src": "pages/spa-example.page.client.jsx",
+    "isEntry": true,
+    "imports": [
+      "_vendor.cbfb5f78.js"
+    ]
+  },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.0eaec75a.js",
+    "file": "assets/pages/vue-tour.page.client.ts.5aca147e.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
       "_Navigation.client.c857ab18.js",
-      "_vendor.7f883c29.js",
+      "_vendor.cbfb5f78.js",
       "_ScaffoldCallToAction.client.53778b6e.js"
     ]
   },
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.d0b1ace8.js",
+    "file": "assets/renderer/_default.page.client.ts.d5fa9c20.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "imports": [
       "_Navigation.client.c857ab18.js",
-      "_vendor.7f883c29.js"
+      "_vendor.cbfb5f78.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.cec9533c.js",
+    "file": "assets/pages/index/index.page.client.ts.7abdba89.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
       "_Navigation.client.c857ab18.js",
-      "_vendor.7f883c29.js",
+      "_vendor.cbfb5f78.js",
       "_ScaffoldCallToAction.client.53778b6e.js"
     ],
     "css": [
       "assets/pages/index/index.page.client.ts.788e9ad2.css"
     ]
   },
-  "_vendor.7f883c29.js": {
-    "file": "assets/vendor.7f883c29.js"
+  "_vendor.cbfb5f78.js": {
+    "file": "assets/vendor.cbfb5f78.js"
   },
   "_Navigation.client.c857ab18.js": {
     "file": "assets/Navigation.client.c857ab18.js",
