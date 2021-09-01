@@ -44,7 +44,7 @@ app.get(<span class="hljs-string">&#x27;*&#x27;</span>, <span class="hljs-keywor
   <span class="hljs-keyword">return</span> { locale, urlWithoutLocale }
 }</code></pre><p>We can then make <code>pageContext.locale</code> available to all our components, see <a href="/pageContext-anywhere">Access <code>pageContext</code> anywhere</a>.</p><p>This technique also works with:</p><ul><li><code>Accept-Language: fr</code> headers</li><li><code>?lang=fr</code> query parameters</li><li><code>domain.fr</code> domain TLDs</li></ul><p>Example:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/i18n/">/examples/i18n/</a></li></ul><h2>With pre-rendering</h2><p>When using <a href="/pre-rendering">pre-rendering</a>,
 we can use the hooks <code>_onBeforeRoute()</code> and <code>_onBeforePrerender()</code>.
-These are beta features, but we expect them to remain fairly stable.</p><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.route.js</span>
+(These are beta hooks, but we expect them to remain fairly stable.)</p><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.route.js</span>
 
 <span class="hljs-keyword">export</span> { _onBeforeRoute }
 
