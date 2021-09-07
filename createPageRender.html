@@ -24,7 +24,7 @@ startServer()
 
   <span class="hljs-keyword">let</span> viteDevServer
   <span class="hljs-keyword">if</span> (isProduction) {
-    app.use(express.static(<span class="hljs-string">`<span class="hljs-subst">${root}</span>/dist/client`</span>, { <span class="hljs-attr">index</span>: <span class="hljs-literal">false</span> }))
+    app.use(express.static(<span class="hljs-string">`<span class="hljs-subst">${root}</span>/dist/client`</span>))
   } <span class="hljs-keyword">else</span> {
     <span class="hljs-keyword">const</span> vite = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;vite&#x27;</span>)
     viteDevServer = <span class="hljs-keyword">await</span> vite.createServer({
