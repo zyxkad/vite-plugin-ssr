@@ -37,7 +37,7 @@
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.7abdba89.js",
+    "file": "assets/pages/index/index.page.client.ts.35a8d5f6.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
@@ -46,7 +46,7 @@
       "_ScaffoldCallToAction.client.53778b6e.js"
     ],
     "css": [
-      "assets/pages/index/index.page.client.ts.788e9ad2.css"
+      "assets/pages/index/index.page.client.ts.f38683e3.css"
     ]
   },
   "_vendor.cbfb5f78.js": {
