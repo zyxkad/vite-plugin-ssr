@@ -50,11 +50,11 @@
   const pageHtml = await renderToHtml(&lt;Page {...pageProps} /&gt;)
   */</span>
 
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;div id=&#x27;view-root&#x27;&gt;
-      <span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span>
-    &lt;/div&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&#x27;view-root&#x27;</span>&gt;</span>
+      </span><span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.client.js</span>
 <span class="hljs-comment">// Environment: Browser</span>
 

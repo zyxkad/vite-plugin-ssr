@@ -25,13 +25,13 @@ This page is written <span class="hljs-keyword">in</span> _Markdown_.</code></pr
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-comment">// `pageContext.pageExports` holds the exports of the page&#x27;s `.page.js` file</span>
   <span class="hljs-keyword">const</span> { title, description } = pageContext.pageExports.documentProps
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;head&gt;
-      &lt;title&gt;<span class="hljs-subst">${title}</span>&lt;/title&gt;
-      &lt;meta name=&quot;description&quot; content=&quot;<span class="hljs-subst">${description}</span>&quot;&gt;
-    &lt;/head&gt;
-    &lt;!-- ... --&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span><span class="hljs-subst">${title}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-subst">${description}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><p>Examples:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/react-full/pages/markdown.page.md">/examples/react-full/pages/markdown.page.md</a></li><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/vue-full/pages/markdown.page.md">/examples/vue-full/pages/markdown.page.md</a></li></ul><p>We can also use a so-called <em>front matter</em> to define the page&#x27;s metadata.</p><pre><code class="hljs language-markdown">---
 title: A Markdown Page
 <span class="hljs-section">description: Example of setting `<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span>` and `<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span>&gt;</span></span>`

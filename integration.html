@@ -28,17 +28,17 @@ we can use whatever tool we want.</p><p>In fact, <code>vite-plugin-ssr</code> is
   <span class="hljs-keyword">const</span> pageHtml = <span class="hljs-keyword">await</span> renderToHtml(Page)
 
   <span class="hljs-comment">// We have control over the entire HTML</span>
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;body&gt;
-      &lt;head&gt;
-        &lt;!-- Some libraries recommend loading code from a CDN --&gt;
-        &lt;script src=&quot;https://cdn.example.com/some-library/3.3.7/lib.min.js&quot;&gt;&lt;/script&gt;
-      &lt;/head&gt;
-      &lt;div id=&quot;root&quot;&gt;
-        <span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span>
-      &lt;/div&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Some libraries recommend loading code from a CDN --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.example.com/some-library/3.3.7/lib.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;root&quot;</span>&gt;</span>
+        </span><span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.client.js</span>
 <span class="hljs-comment">// Environment: Browser</span>
 

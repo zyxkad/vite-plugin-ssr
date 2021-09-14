@@ -20,15 +20,15 @@ It is usually used in the <code>render()</code> hook defined in <code>.page.serv
   <span class="hljs-keyword">const</span> pageHtml = <span class="hljs-string">&quot;&lt;div&gt;I&#x27;m already &lt;b&gt;sanitized&lt;/b&gt;, e.g. by Vue/React&lt;/div&gt;&quot;</span>
 
   <span class="hljs-comment">// This HTML is safe thanks to the template tag `escapeInject` which sanitizes `title`</span>
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-      &lt;head&gt;
-        &lt;title&gt;<span class="hljs-subst">${title}</span>&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;div id=&quot;page-root&quot;&gt;<span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span>&lt;/div&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span><span class="hljs-subst">${title}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;page-root&quot;</span>&gt;</span></span><span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><p>All strings, e.g. <code>title</code> above, are automatically sanitized (technically speaking: HTML-escaped)
 so that we can safely include untrusted strings
 such as user-generated text.</p><p>The <code>dangerouslySkipEscape(str)</code> function injects the string <code>str</code> as-is <em>without</em> sanitizing.
@@ -51,21 +51,21 @@ For example, if we want some HTML parts to be included only for certain pages:</
   <span class="hljs-keyword">let</span> descriptionTag = <span class="hljs-string">&#x27;&#x27;</span>
   <span class="hljs-keyword">if</span>( description ) {
     <span class="hljs-comment">// Note how we use the `escapeInject` string template tag for an HTML fragment</span>
-    descriptionTag = escapeInject<span class="hljs-string">`&lt;meta name=&quot;description&quot; content=&quot;<span class="hljs-subst">${description}</span>&quot;&gt;`</span>
+    descriptionTag = escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-subst">${description}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>`</span>
   }
 
   <span class="hljs-comment">// We use the `escapeInject` template tag again for the overall HTML and we can use</span>
   <span class="hljs-comment">// our `descriptionTag` HTML fragment.</span>
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;head&gt;
-      <span class="hljs-subst">${descriptionTag}</span>
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;div id=&quot;root&quot;&gt;
-        <span class="hljs-subst">${dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))}</span>
-      &lt;/div&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      </span><span class="hljs-subst">${descriptionTag}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;root&quot;</span>&gt;</span>
+        </span><span class="hljs-subst">${dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><p>Example:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/html-fragments/">/examples/html-fragments/</a></li></ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/escapeInject.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002FescapeInject"}</script><script type="module" src="/assets/renderer/_default.page.client.ts.d5fa9c20.js"></script></body>
     </html>

@@ -30,15 +30,15 @@
   <span class="hljs-comment">// You control how you render `Page` to HTML</span>
   <span class="hljs-keyword">const</span> pageHtml = <span class="hljs-keyword">await</span> renderToHtml(Page)
   <span class="hljs-keyword">const</span> title = <span class="hljs-string">&#x27;My first vite-plugin-ssr app&#x27;</span>
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-      &lt;head&gt;
-        &lt;title&gt;{title}&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;div id=&quot;page-root&quot;&gt;<span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span>&lt;/div&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>{title}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;page-root&quot;</span>&gt;</span></span><span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.client.js</span>
 <span class="hljs-comment">// Environment: Browser</span>
 

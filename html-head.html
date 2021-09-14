@@ -16,17 +16,17 @@
 <span class="hljs-keyword">export</span> { render }
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;head&gt;
-      &lt;title&gt;SpaceX&lt;/title&gt;
-      &lt;meta name=&quot;description&quot; content=&quot;We deliver payload to space.&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;div id=&quot;root&quot;&gt;
-        <span class="hljs-subst">${dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))}</span>
-      &lt;/div&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>SpaceX<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;We deliver payload to space.&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;root&quot;</span>&gt;</span>
+        </span><span class="hljs-subst">${dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><h2>Page specific <code>&lt;head&gt;</code></h2><p>If we want to define <code>&lt;title&gt;</code> and <code>&lt;meta&gt;</code> tags on a page-by-page basis, we can use <code>pageContext</code>:</p><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.server.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
@@ -43,17 +43,17 @@
   title = title || <span class="hljs-string">&#x27;SpaceX&#x27;</span>
   description = description || <span class="hljs-string">&#x27;We deliver payload to space.&#x27;</span>
 
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;head&gt;
-      &lt;title&gt;<span class="hljs-subst">${title}</span>&lt;/title&gt;
-      &lt;meta name=&quot;description&quot; content=&quot;<span class="hljs-subst">${description}</span>&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;div id=&quot;root&quot;&gt;
-        <span class="hljs-subst">${dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))}</span>
-      &lt;/div&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span><span class="hljs-subst">${title}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-subst">${description}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;root&quot;</span>&gt;</span>
+        </span><span class="hljs-subst">${dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// about.page.server.js</span>
 
 <span class="hljs-keyword">export</span> { onBeforeRender }
@@ -88,17 +88,17 @@
   <span class="hljs-comment">// 1. Our view framework passed `documentProps` to all our components</span>
   <span class="hljs-comment">// 2. One of our (deeply nested) component modified `documentProps`</span>
   <span class="hljs-comment">// 3. We now render `documentProps` to HTML meta tags</span>
-  <span class="hljs-keyword">return</span> escapeInject<span class="hljs-string">`&lt;html&gt;
-    &lt;head&gt;
-      &lt;title&gt;<span class="hljs-subst">${pageContext.documentProps.title}</span>&lt;/title&gt;
-      &lt;meta name=&quot;description&quot; content=&quot;<span class="hljs-subst">${pageContext.documentProps.description}</span>&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;div id=&quot;app&quot;&gt;
-        <span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span>
-      &lt;/div&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;`</span>
+  <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span><span class="hljs-subst">${pageContext.documentProps.title}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-subst">${pageContext.documentProps.description}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+        </span><span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// Somewhere in a component deep inside our component tree</span>
 
 <span class="hljs-comment">// Thanks to our previous steps, `documentProps` is available here.</span>

@@ -19,15 +19,15 @@
   <span class="hljs-keyword">const</span> { Page, pageProps } = pageContext
   <span class="hljs-keyword">const</span> pageHtml = <span class="hljs-keyword">await</span> renderToHtml(createElement(Page, pageProps))
 
-  <span class="hljs-keyword">const</span> documentHtml = escapeInject<span class="hljs-string">`&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-      &lt;head&gt;
-        &lt;title&gt;My SSR App&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;div id=&quot;page-root&quot;&gt;<span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span>&lt;/div&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;`</span>
+  <span class="hljs-keyword">const</span> documentHtml = escapeInject`<span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My SSR App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;page-root&quot;</span>&gt;</span></span><span class="hljs-subst">${dangerouslySkipEscape(pageHtml)}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 
   <span class="hljs-keyword">return</span> {
     documentHtml,
