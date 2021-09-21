@@ -11,9 +11,9 @@
 pages/about.page.js               /about
 pages/index/index.page.js         /                (`index` is mapped to the empty string)
 pages/HELLO.page.js               /HELLO           (Mapping is case sensitive)
-</code></pre><p>Both <code>pages/</code> and <code>index/</code> directories are mapped to the empty string <code>&#x27;&#x27;</code>. For example:</p><pre><code>FILESYSTEM                              URL
-jobs/pages/index.page.js                /jobs
-pages/pages/index/pages/about.page.js   /about
+</code></pre><p>The directories <code>pages/</code>, <code>src/</code>, and <code>index/</code> are mapped to the empty string <code>&#x27;&#x27;</code>. For example:</p><pre><code>FILESYSTEM                                      URL
+src/pages/jobs/index.page.js                    /jobs
+pages/pages/src/src/index/pages/about.page.js   /about
 </code></pre><p>Which allows us to have a <a href="/file-structure#domain-driven">domain-driven file structure</a> such as:</p><pre><code>FILESYSTEM                        URL
 user/pages/list.page.js           /user/list
 user/pages/create.page.js         /user/create
