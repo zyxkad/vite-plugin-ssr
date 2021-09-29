@@ -15,23 +15,25 @@
   renderToWebStream,
   pipeToNodeWritable,
   pipeToWebWritable
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span> <span class="hljs-comment">// E.g. Vue or React</span>
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
+<span class="hljs-keyword">export</span> { render }
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-keyword">const</span> { Page } = pageContext
 
-  <span class="hljs-keyword">const</span> stream = renderToNodeStream(pageContext.Page)
+  <span class="hljs-keyword">const</span> stream = renderToNodeStream(Page)
 
   <span class="hljs-comment">// Or with a pipe:</span>
   <span class="hljs-keyword">const</span> stream = pipeNodeStream(<span class="hljs-function"><span class="hljs-params">writable</span> =&gt;</span> {
-    pipeToNodeWritable(pageContext.Page)
+    pipeToNodeWritable(Page, writable)
   })
 
   <span class="hljs-comment">// Or with a Web Stream:</span>
-  <span class="hljs-keyword">const</span> stream = renderToWebStream(pageContext.Page)
+  <span class="hljs-keyword">const</span> stream = renderToWebStream(Page)
   <span class="hljs-comment">// Or:</span>
   <span class="hljs-keyword">const</span> stream = pipeWebStream(<span class="hljs-function"><span class="hljs-params">writable</span> =&gt;</span> {
-    pipeToWebWritable(pageContext.Page)
+    pipeToWebWritable(Page, writable)
   })
 
   <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
@@ -39,24 +41,24 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;page-view&quot;</span>&gt;</span></span><span class="hljs-subst">${stream}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// server.js</span>
 
 app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keyword">async</span> (req, res, next) =&gt; {
-  <span class="hljs-keyword">const</span> pageContextInit = { <span class="hljs-attr">url</span>: req.url };
-  <span class="hljs-keyword">const</span> pageContext = <span class="hljs-keyword">await</span> renderPage(pageContextInit);
-  <span class="hljs-keyword">const</span> { httpResponse } = pageContext;
-  <span class="hljs-keyword">if</span> (!httpResponse) <span class="hljs-keyword">return</span> next();
+  <span class="hljs-keyword">const</span> pageContextInit = { <span class="hljs-attr">url</span>: req.url }
+  <span class="hljs-keyword">const</span> pageContext = <span class="hljs-keyword">await</span> renderPage(pageContextInit)
+  <span class="hljs-keyword">const</span> { httpResponse } = pageContext
+  <span class="hljs-keyword">if</span> (!httpResponse) <span class="hljs-keyword">return</span> next()
 
   httpResponse.bodyNodeStream.pipe(res)
 
   <span class="hljs-comment">// Or with a pipe:</span>
-  httpResponse.bodyPipeToNodeWritable(res);
+  httpResponse.bodyPipeToNodeWritable(res)
 
   <span class="hljs-comment">// Or with a Web Stream:</span>
   httpResponse.bodyWebStream.pipe(res)
   <span class="hljs-comment">// Or:</span>
-  httpResponse.bodyPipeToWebWritable(res);
+  httpResponse.bodyPipeToWebWritable(res)
 
   <span class="hljs-comment">// We can also convert the stream to a string by using `httpResponse.getBody()`</span>
   <span class="hljs-keyword">const</span> body = <span class="hljs-keyword">await</span> httpResponse.getBody()
@@ -65,6 +67,6 @@ app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keywor
   const { body } = httpResponse
   res.send(body)
   */</span>
-});</code></pre><p>Streams API Docs:</p><ul><li><a href="https://nodejs.org/api/stream.html">Node.js Streams</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">Web Streams</a></li></ul><p>Examples:</p><ul><li>With React&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/react-full/">/examples/react-full/</a></li><li>With Vue&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/vue-full/">/examples/vue-full/</a></li><li>With Cloudlare Workers and Vue&#x27;s <code>pipeToWebWritable()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/cloudflare-workers-vue-html-streaming/">/examples/cloudflare-workers-vue-html-streaming/</a></li></ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/html-streaming.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
+})</code></pre><p>Streams API Docs:</p><ul><li><a href="https://nodejs.org/api/stream.html">Node.js Streams</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">Web Streams</a></li></ul><p>Examples:</p><ul><li>With React&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/react-full/">/examples/react-full/</a></li><li>With Vue&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/vue-full/">/examples/vue-full/</a></li><li>With Cloudlare Workers and Vue&#x27;s <code>pipeToWebWritable()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/cloudflare-workers-vue-html-streaming/">/examples/cloudflare-workers-vue-html-streaming/</a></li></ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/html-streaming.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script type="module" src="/assets/renderer/_default.page.client.ts.d5fa9c20.js"></script><script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002Fhtml-streaming"}</script></body>
     </html>
