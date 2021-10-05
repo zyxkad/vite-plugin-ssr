@@ -1,1 +1,1 @@
-import{R as e,a as r}from"../vendor.cbfb5f78.js";const t=document.getElementById("react-root");e.render(r.createElement(r.Fragment,null,"Hello World"),t);
+import{R as t,a as e}from"../vendor.cbfb5f78.js";const o=document.getElementById("react-root");t.render(e.createElement(e.Fragment,null,"Hello World"),o);
