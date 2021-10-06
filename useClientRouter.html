@@ -28,8 +28,9 @@ We can do <a href="/SR-vs-CR#client-routing">Client Routing</a> instead by using
     }
   },
 
-  <span class="hljs-comment">// If we set `ensureHydration: true` then `vite-plugin-ssr` ensures that the first render is a</span>
-  <span class="hljs-comment">// hydration (i.e. the first `render()` call is never interrupted even if a user clicks on a link)</span>
+  <span class="hljs-comment">// If `ensureHydration: true` then `vite-plugin-ssr` ensures that the first render is</span>
+  <span class="hljs-comment">// a hydration. I.e., the first `render()` call is never interrupted — even if a user</span>
+  <span class="hljs-comment">// clicks on a link. Default value: `false`.</span>
   <span class="hljs-comment">// If we use Vue, we set `ensureHydration: true` to avoid &quot;Hydration Mismatch&quot; errors.</span>
   <span class="hljs-comment">// If we use React, we leave `ensureHydration: false` for a slight performance boost.</span>
   <span class="hljs-attr">ensureHydration</span>: <span class="hljs-literal">true</span>,
