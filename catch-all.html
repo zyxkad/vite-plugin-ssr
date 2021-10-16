@@ -14,12 +14,12 @@
 <span class="hljs-comment">//  `/product/42/reviews`</span>
 <span class="hljs-comment">//  `/product/1337/details`</span>
 <span class="hljs-comment">//  `/product/2048/some/deeply/nested/path`</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&#x27;/product/:param*`</span></code></pre><p>To route all URLs to a single page:</p><pre><code class="hljs language-js"><span class="hljs-comment">// catch-all.page.route.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&#x27;/product/*`</span></code></pre><p>The value of the catch-all parameter is available at <code>pageContext.routeParams[&#x27;*&#x27;]</code>.</p><p>To route all URLs to a single page:</p><pre><code class="hljs language-js"><span class="hljs-comment">// catch-all.page.route.js</span>
 
 <span class="hljs-comment">// We simply define a Route Function that always returns true</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; <span class="hljs-literal">true</span>
 <span class="hljs-comment">/* Or with a Route String:
-export default &#x27;/:params*&#x27;
+export default &#x27;/*&#x27;
 */</span></code></pre><p>Route Functions enable all kinds of catch-all behavior.</p><pre><code class="hljs language-js"><span class="hljs-comment">// user.page.route.js</span>
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">async</span> (pageContext) =&gt; {
