@@ -1,59 +1,59 @@
 {
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.d1986a1e.js",
+    "file": "assets/pages/react-tour.page.client.ts.0d2b2d70.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.287bedd5.js",
-      "_vendor.cbfb5f78.js",
+      "_Navigation.client.e046d7f2.js",
+      "_vendor.635916f0.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
   "pages/spa-example.page.client.jsx": {
-    "file": "assets/pages/spa-example.page.client.jsx.600c5c7c.js",
+    "file": "assets/pages/spa-example.page.client.jsx.914ca454.js",
     "src": "pages/spa-example.page.client.jsx",
     "isEntry": true,
     "imports": [
-      "_vendor.cbfb5f78.js"
+      "_vendor.635916f0.js"
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.9bf287fb.js",
+    "file": "assets/pages/vue-tour.page.client.ts.fbdfdef8.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.287bedd5.js",
-      "_vendor.cbfb5f78.js",
+      "_Navigation.client.e046d7f2.js",
+      "_vendor.635916f0.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.22c6c447.js",
+    "file": "assets/renderer/_default.page.client.ts.34e6b088.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.287bedd5.js",
-      "_vendor.cbfb5f78.js"
+      "_Navigation.client.e046d7f2.js",
+      "_vendor.635916f0.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.ca8083a8.js",
+    "file": "assets/pages/index/index.page.client.ts.29d5c669.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.287bedd5.js",
-      "_vendor.cbfb5f78.js",
+      "_Navigation.client.e046d7f2.js",
+      "_vendor.635916f0.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ],
     "css": [
       "assets/pages/index/index.page.client.ts.f38683e3.css"
     ]
   },
-  "_vendor.cbfb5f78.js": {
-    "file": "assets/vendor.cbfb5f78.js"
+  "_vendor.635916f0.js": {
+    "file": "assets/vendor.635916f0.js"
   },
-  "_Navigation.client.287bedd5.js": {
-    "file": "assets/Navigation.client.287bedd5.js",
+  "_Navigation.client.e046d7f2.js": {
+    "file": "assets/Navigation.client.e046d7f2.js",
     "css": [
       "assets/Navigation.client.d65b3120.css"
     ],
