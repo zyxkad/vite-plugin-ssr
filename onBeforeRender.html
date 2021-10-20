@@ -27,9 +27,8 @@
   }
 }</code></pre><p>We can also provide initial <code>pageContext</code> values at our server middlware (see <a href="/createPageRenderer"><code>createPageRenderer()</code></a>)
 which is where we usually pass information about the authenticated user
-(see <a href="/auth">Authentication</a> guide).</p><h2>Client Routing</h2><p>If we use <a href="/useClientRouter">Client Routing</a>,
-we can define the <code>onBeforeRender()</code> hook in <code>.page.js</code> instead of <code>.page.server.js</code>;
-the hook is then called not only in Node.js but also in the browser,
-see <a href="/onBeforeRender-isomorphic"><code>onBeforeRender()</code> hook (<code>.page.js</code>)</a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/onBeforeRender.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
+(see <a href="/auth">Authentication</a> guide).</p><p>Examples:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/react-full/pages/star-wars/index/index.page.server.ts">/examples/react-full/pages/star-wars/index/index.page.server.ts</a></li><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/vue-full/pages/star-wars/index/index.page.server.ts">/examples/vue-full/pages/star-wars/index/index.page.server.ts</a></li></ul><h2>Client Routing</h2><p>If we use <a href="/useClientRouter">Client Routing</a>,
+we also have the option to define the <a href="/onBeforeRender-isomorphic"><code>onBeforeRender()</code> hook in <code>.page.js</code></a> instead of <code>.page.server.js</code>;
+the hook is then called not only in Node.js but also in the browser.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/onBeforeRender.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script type="module" src="/assets/renderer/_default.page.client.ts.34e6b088.js"></script><script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002FonBeforeRender"}</script></body>
     </html>
