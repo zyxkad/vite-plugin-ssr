@@ -16,6 +16,7 @@
 <span class="hljs-keyword">const</span> isProduction = &quot;production&quot; === <span class="hljs-string">&#x27;production&#x27;</span>
 <span class="hljs-keyword">const</span> root = <span class="hljs-string">`<span class="hljs-subst">${__dirname}</span>/..`</span>
 <span class="hljs-keyword">const</span> base = <span class="hljs-string">&#x27;/&#x27;</span>
+<span class="hljs-keyword">const</span> outDir = <span class="hljs-string">`dist`</span>
 
 startServer()
 
@@ -24,7 +25,7 @@ startServer()
 
   <span class="hljs-keyword">let</span> viteDevServer
   <span class="hljs-keyword">if</span> (isProduction) {
-    app.use(express.static(<span class="hljs-string">`<span class="hljs-subst">${root}</span>/dist/client`</span>))
+    app.use(express.static(<span class="hljs-string">`<span class="hljs-subst">${root}</span>/<span class="hljs-subst">${outDir}</span>/client`</span>))
   } <span class="hljs-keyword">else</span> {
     <span class="hljs-keyword">const</span> vite = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;vite&#x27;</span>)
     viteDevServer = <span class="hljs-keyword">await</span> vite.createServer({
@@ -34,7 +35,7 @@ startServer()
     app.use(viteDevServer.middlewares)
   }
 
-  <span class="hljs-keyword">const</span> renderPage = createPageRenderer({ viteDevServer, isProduction, root, base })
+  <span class="hljs-keyword">const</span> renderPage = createPageRenderer({ viteDevServer, isProduction, root, outDir, base })
   app.get(<span class="hljs-string">&#x27;*&#x27;</span>, <span class="hljs-keyword">async</span> (req, res, next) =&gt; {
     <span class="hljs-keyword">const</span> url = req.originalUrl
     <span class="hljs-keyword">const</span> pageContextInit = { url }
@@ -46,6 +47,6 @@ startServer()
   <span class="hljs-keyword">const</span> port = <span class="hljs-number">3000</span>
   app.listen(port)
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Server running at http://localhost:<span class="hljs-subst">${port}</span>`</span>)
-}</code></pre><ul><li><code>viteDevServer</code> is the Vite dev server.</li><li><code>isProduction</code> is a boolean. When set to <code>true</code>, <code>vite-plugin-ssr</code> loads already-transpiled code from <code>dist/</code> instead of on-the-fly transpiling code.</li><li><code>root</code> is the absolute path of our app&#x27;s root directory. The <code>root</code> directory is usually the directory where <code>vite.config.js</code> lives. All our <code>.page.js</code> files need to be descendent of the <code>root</code> directory.</li><li><code>base</code> is the <a href="/base-url">Base URL</a>.</li><li><code>pageContext.httpResponse</code> is <code>null</code> when a) an error occurred while rendering <code>_error.page.js</code>, or b) we didn&#x27;t define the page <code>_error.page.js</code> and and an error occured.</li><li><code>pageContext.httpResponse.statusCode</code> is either <code>200</code>, <code>404</code>, or <code>500</code>.</li><li><code>pageContext.httpResponse.body</code> is the HTML-sanitized string returned by the <code>render()</code> hook with added assets that <code>vite-plugin-ssr</code> automatically injected.</li></ul><p>Since <code>createPageRenderer()</code> and <code>renderPage()</code> are agnostic to Express.js, we can use <code>vite-plugin-ssr</code> with any server framework (Koa, Hapi, Fastify, vanilla Node.js, ...) and any deploy environment such as Cloudflare Workers or Vercel.</p><p>Examples:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/boilerplates/boilerplate-vue/server/index.js">JavaScript</a></li><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/boilerplates/boilerplate-vue-ts/server/index.ts">TypeScript</a></li></ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/createPageRenderer.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
+}</code></pre><ul><li><code>viteDevServer</code> is the Vite dev server.</li><li><code>isProduction</code> is a boolean. When set to <code>true</code>, <code>vite-plugin-ssr</code> loads already-transpiled code from <code>dist/</code> instead of on-the-fly transpiling code.</li><li><code>root</code> is the absolute path of our app&#x27;s root directory. The <code>root</code> directory is usually the directory where <code>vite.config.js</code> lives. All our <code>.page.js</code> files need to be descendent of the <code>root</code> directory.</li><li><code>outDir</code> is the build directory of your project. Default: <code>dist</code>.</li><li><code>base</code> is the <a href="/base-url">Base URL</a>.</li><li><code>pageContext.httpResponse</code> is <code>null</code> when a) an error occurred while rendering <code>_error.page.js</code>, or b) we didn&#x27;t define the page <code>_error.page.js</code> and and an error occured.</li><li><code>pageContext.httpResponse.statusCode</code> is either <code>200</code>, <code>404</code>, or <code>500</code>.</li><li><code>pageContext.httpResponse.body</code> is the HTML-sanitized string returned by the <code>render()</code> hook with added assets that <code>vite-plugin-ssr</code> automatically injected.</li></ul><p>Since <code>createPageRenderer()</code> and <code>renderPage()</code> are agnostic to Express.js, we can use <code>vite-plugin-ssr</code> with any server framework (Koa, Hapi, Fastify, vanilla Node.js, ...) and any deploy environment such as Cloudflare Workers or Vercel.</p><p>Examples:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/boilerplates/boilerplate-vue/server/index.js">JavaScript</a></li><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/boilerplates/boilerplate-vue-ts/server/index.ts">TypeScript</a></li></ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/createPageRenderer.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script type="module" src="/assets/renderer/_default.page.client.ts.34e6b088.js"></script><script>window.__vite_plugin_ssr__pageContext = {_pageId:"\u002Fpages\u002FcreatePageRenderer"}</script></body>
     </html>
