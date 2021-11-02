@@ -32,7 +32,7 @@ app.get(<span class="hljs-string">&#x27;*&#x27;</span>, <span class="hljs-keywor
   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!pageContext.httpResponse) {
     <span class="hljs-keyword">return</span> next()
   } <span class="hljs-keyword">else</span> {
-    <span class="hljs-keyword">const</span> { body, statusCode, contentType } = httpResponse
+    <span class="hljs-keyword">const</span> { body, statusCode, contentType } = pageContext.httpResponse
     res.status(statusCode).type(contentType).send(body)
   }
 })</code></pre><p>We can also trigger a page redirection from a page:</p><pre><code class="hljs language-js"><span class="hljs-comment">// movie.page.route.js</span>

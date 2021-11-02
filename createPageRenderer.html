@@ -41,7 +41,7 @@ startServer()
     <span class="hljs-keyword">const</span> pageContextInit = { url }
     <span class="hljs-keyword">const</span> pageContext = <span class="hljs-keyword">await</span> renderPage(pageContextInit)
     <span class="hljs-keyword">if</span> (!pageContext.httpResponse) <span class="hljs-keyword">return</span> next()
-    <span class="hljs-keyword">const</span> { body, statusCode, contentType } = httpResponse
+    <span class="hljs-keyword">const</span> { body, statusCode, contentType } = pageContext.httpResponse
     res.status(statusCode).type(contentType).send(body)
   })
 
