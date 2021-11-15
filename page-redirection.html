@@ -24,7 +24,7 @@ if a user is not authenticated and goes to <code>/admin/panel</code> then we red
     <span class="hljs-comment">// (Route Strings have a `precedence` value of `0`.)</span>
     <span class="hljs-attr">precedence</span>: <span class="hljs-number">1</span>
   }
-}</code></pre><p>After the user has successfully completed the Login Form rendered at <code>/admin/panel</code>, we can do a <code>window.location.reload()</code> so that <code>/admin/panel</code> renders the Admin Panel. This means that the user always stayed on <code>/admin/panel</code> during the entire authentication flow.</p><p>That said, we can still perform a page redirection if we want. See sections below.</p><h2>Server-side</h2><p>We can perform a URL redirection by using <code>pageContext</code>:</p><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.server.js</span>
+}</code></pre><p>After the user has successfully completed the Login Form rendered at <code>/admin/panel</code>, we can do a <code>window.location.reload()</code> and <code>/admin/panel</code> will now render the Admin Panel. This means that the user always stays on <code>/admin/panel</code> during the entire authentication flow.</p><p>That said, we can still perform a page redirection if we want. See sections below.</p><h2>Server-side</h2><p>We can perform a URL redirection by using <code>pageContext</code>:</p><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.server.js</span>
 
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">if</span> (someCondition) {
