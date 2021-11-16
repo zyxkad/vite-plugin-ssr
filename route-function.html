@@ -25,7 +25,7 @@
   <span class="hljs-keyword">return</span> {
     <span class="hljs-comment">// We make `filmId` available as `pageContext.routeParams.filmId`</span>
     <span class="hljs-attr">routeParams</span>: { filmId },
-    <span class="hljs-comment">// To resolve routing conflicts, see &quot;Precedence&quot; section below.</span>
+    <span class="hljs-comment">// To resolve route conflicts, see &quot;Precedence&quot; section below.</span>
     <span class="hljs-attr">precedence</span>: <span class="hljs-number">10</span>,
   }
 }</code></pre><p>Route Functions enable us to use any string matching utility we want, such as <a href="https://github.com/brillout/part-regex">partRegex</a>.</p><h2>Always Run</h2><p>Upon each page request (i.e. upon each <a href="/createPageRenderer"><code>renderPage()</code></a> call),
@@ -43,8 +43,50 @@
     <span class="hljs-attr">precedence</span>: <span class="hljs-number">99</span>
   }
 }</code></pre><p>(FYI, this auth redirection trick is further explained at <a href="/page-redirection#auth-redirection">Guides &gt; Page Redirection &gt; Auth Redirection</a>.)</p><p><code>vite-plugin-ssr</code> cannot know whether a Route Function with a high precedence will override all other routes;
-that&#x27;s why <code>vite-plugin-ssr</code> alawys runs all Route Functions upon each page request.</p><h2>Precedence</h2><p>If the Route Function of two pages both return a truthy value for the same URL then we have a routing conflict:
-<code>vite-plugin-ssr</code> doesn&#x27;t know which of the two pages should be rendered for that URL.</p><p>To resolve route conflicts, Route Functions can return a <code>precedence</code> number:
-<code>vite-plugin-ssr</code> chooses the page with the Route Function that returned the highest <code>precedence</code> number.</p><p>The precedence between Route Functions, Route Strings, and Filesystem Routing is:</p><ol><li>Route Function + positive <code>precedence</code> number</li><li>Filesystem Routing</li><li>Route String Static (Route Strings without any <code>:parameter</code> segment)</li><li>Route Function + no <code>precedence</code> number</li><li>Route String Parameterized</li><li>Route Function + negative <code>precedence</code> number</li></ol><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/route-function.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
+that&#x27;s why <code>vite-plugin-ssr</code> always runs all Route Functions upon each page request.</p><h2>Precedence</h2><p>If the route of two pages both match the same URL then we have a route conflict:
+<code>vite-plugin-ssr</code> cannot know which of the two pages should be rendered for that URL.</p><p>Route conflicts are resolved by picking the first route in following order:</p><ol><li>Route Function, returned high positive <code>precedence</code> number</li><li>Route Function, returned low positive <code>precedence</code> number</li><li>Filesystem Routing</li><li>Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)</li><li>Route Function, returned no <code>precedence</code> number</li><li>Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/:productId</code> or <code>/product/*</code>)</li><li>Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)</li><li>Route Function, returned high negative <code>precedence</code> number (e.g. <code>-99</code>)</li></ol><p><strong>Example (4) + (6) + (7)</strong>:</p><pre><code class="hljs language-js"><span class="hljs-comment">// product/item.page.route.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&#x27;/product/:productId&#x27;</span></code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// product/list.page.route.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&#x27;/product&#x27;</span></code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// product/catch-all.page.route.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> pageContext =&gt; {
+  <span class="hljs-keyword">if</span> (!pageContext.url.startsWith(<span class="hljs-string">&#x27;/product/&#x27;</span>)) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">precedence</span>: -<span class="hljs-number">1</span>,
+    <span class="hljs-attr">pageContext</span>: {
+      <span class="hljs-comment">// E.g. redirect `/product/wrong/url` to `/product`</span>
+      <span class="hljs-attr">redirectTo</span>: <span class="hljs-string">&#x27;/product&#x27;</span>
+    }
+  }
+}</code></pre><pre><code>pageContext.url               MATCHES (ORDER)                            CHOSEN
+===============               ===============                            ======
+/product/42                   product/item.page.route.js      (6)        X
+                              product/catch-all.page.route.js (7)
+</code></pre><pre><code>pageContext.url               MATCHES (ORDER)                            CHOSEN
+===============               ===============                            ======
+/product                      product/list.page.route.js      (4)        X
+                              product/catch-all.page.route.js (7)
+</code></pre><pre><code>pageContext.url               MATCHES (ORDER)                            CHOSEN
+===============               ===============                            ======
+/product/wrong/url            product/catch-all.page.route.js (7)        X
+</code></pre><p>4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)<br/>
+<!-- -->6: Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/:productId</code> or <code>/product/*</code>)<br/>
+<!-- -->7: Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)  </p><p><strong>Example (1) + (4)</strong>:</p><pre><code class="hljs language-js"><span class="hljs-comment">// admin.page.route.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&#x27;/admin&#x27;</span></code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// login.page.route.js</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> pageContext =&gt; {
+  <span class="hljs-keyword">if</span>( pageContext.user === <span class="hljs-literal">null</span> ) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">precedence</span>: <span class="hljs-number">99</span>
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+}</code></pre><pre><code>pageContext.url       pageContext.user       MATCHES (ORDER)               CHOSEN
+===============       ================       ===============               ======
+/admin                null                   login.page.route.js (1)       X
+                                             admin.page.route.js (4)
+</code></pre><pre><code>pageContext.url       pageContext.user       MATCHES (ORDER)               CHOSEN
+===============       ================       ===============               ======
+/admin                &#x27;brillout&#x27;             admin.page.route.js (4)       X
+</code></pre><p>1: Route Function, returned high positive <code>precedence</code> number<br/>
+<!-- -->4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)  </p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/route-function.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script type="module" src="/assets/renderer/_default.page.client.ts.34e6b088.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/route-function"}}</script></body>
     </html>
