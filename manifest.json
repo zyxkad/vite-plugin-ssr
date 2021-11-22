@@ -1,11 +1,10 @@
 {
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.0d2b2d70.js",
+    "file": "assets/pages/react-tour.page.client.ts.59c97462.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.e046d7f2.js",
-      "_vendor.635916f0.js",
+      "_Navigation.client.91d2ffca.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
@@ -18,31 +17,28 @@
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.fbdfdef8.js",
+    "file": "assets/pages/vue-tour.page.client.ts.9e5b7da6.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.e046d7f2.js",
-      "_vendor.635916f0.js",
+      "_Navigation.client.91d2ffca.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.34e6b088.js",
+    "file": "assets/renderer/_default.page.client.ts.69cbf4a7.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.e046d7f2.js",
-      "_vendor.635916f0.js"
+      "_Navigation.client.91d2ffca.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.29d5c669.js",
+    "file": "assets/pages/index/index.page.client.ts.9fe5b15b.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_Navigation.client.e046d7f2.js",
-      "_vendor.635916f0.js",
+      "_Navigation.client.91d2ffca.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ],
     "css": [
@@ -52,8 +48,8 @@
   "_vendor.635916f0.js": {
     "file": "assets/vendor.635916f0.js"
   },
-  "_Navigation.client.e046d7f2.js": {
-    "file": "assets/Navigation.client.e046d7f2.js",
+  "_Navigation.client.91d2ffca.js": {
+    "file": "assets/Navigation.client.91d2ffca.js",
     "css": [
       "assets/Navigation.client.e9b99b79.css"
     ],
