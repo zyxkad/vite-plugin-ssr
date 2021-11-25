@@ -32,14 +32,14 @@ This page is written <span class="hljs-keyword">in</span> _Markdown_.</code></pr
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- ... --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>`</span>
-}</code></pre><p>Examples:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/react-full/pages/markdown.page.md">/examples/react-full/pages/markdown.page.md</a></li><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/vue-full/pages/markdown.page.md">/examples/vue-full/pages/markdown.page.md</a></li></ul><p>We can also use a so-called <em>front matter</em> to define the page&#x27;s metadata.</p><pre><code class="hljs language-markdown">---
+}</code></pre><p>Examples:</p><ul><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/react-full/pages/markdown.page.md">/examples/react-full/pages/markdown.page.md</a></li><li><a href="https://github.com/brillout/vite-plugin-ssr/blob/master/examples/vue-full/pages/markdown.page.md">/examples/vue-full/pages/markdown.page.md</a></li></ul><p>Some markdown processors also have support for a so-called <em>frontmatter</em> to define the page&#x27;s metadata.</p><pre><code class="hljs language-markdown">---
 title: A Markdown Page
 <span class="hljs-section">description: Example of setting `<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span></span>` and `<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span>&gt;</span></span>`
 ---</span>
 
 <span class="hljs-section"># Markdown</span>
 
-This page is written in <span class="hljs-emphasis">_Markdown_</span>.</code></pre><p>The front matter data is usually exported,
+This page is written in <span class="hljs-emphasis">_Markdown_</span>.</code></pre><blockquote><p>Make sure the markdown Vite plugin you use has support for frontmatter.</p></blockquote><p>Markdown processors usually expose the frontmatter as an export,
 which we can access at <a href="/pageContext"><code>pageContext.pageExports</code></a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/markdown.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script type="module" src="/assets/renderer/_default.page.client.ts.69cbf4a7.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/markdown"}}</script></body>
     </html>
