@@ -175,9 +175,7 @@ the aforementioned solutions are simpler and work for most use cases.</p><p>Head
 <span class="hljs-keyword">import</span> { dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
 <span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
 
-<span class="hljs-keyword">export</span> { render }
-
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-keyword">return</span> dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))
 }</code></pre><h2>Markdown</h2><p>For pages defined with markdown, see <a href="/markdown#head-pagecontext-pageexports">Integration &gt; Markdown &gt; <code>&lt;head&gt;</code> (<code>pageContext.pageExports</code>)</a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/head.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div>
       <script type="module" src="/assets/renderer/_default.page.client.ts.69cbf4a7.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/head"}}</script></body>
