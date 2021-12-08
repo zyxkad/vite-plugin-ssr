@@ -103,7 +103,7 @@ conveniently hold all props of the root component <code>Page</code>.</p><h2>Glob
     pageContext.url.startsWith(<span class="hljs-string">&#x27;/product&#x27;</span>) &amp;&amp; <span class="hljs-string">&#x27;product&#x27;</span>
   )
   <span class="hljs-keyword">return</span> fetchData(pageContext, page)
-}</code></pre><p><strong> <code>onBeforeRender()</code> in <code>.page.server.js</code> and <code>_default.page.server.js</code>.</strong></p><p>We can also define a <code>onBeforeRender()</code> hook in the page&#x27;s <code>.page.server.js</code> file,
+}</code></pre><p><strong>Multiple <code>renderer/</code></strong></p><p>If the logic differs substantially, we may want to create <a href="/multiple-renderer">Multiple <code>renderer/</code></a>.</p><p><strong> <code>onBeforeRender()</code> in <code>.page.server.js</code> and <code>_default.page.server.js</code>.</strong></p><p>We can also define a <code>onBeforeRender()</code> hook in the page&#x27;s <code>.page.server.js</code> file,
 while also defining a <code>onBeforeRender()</code> hook in <code>_default.page.server.js</code>.
 See <a href="/onBeforeRender-multiple">Multiple <code>onBeforeRender()</code> hooks</a>.</p><p><strong><code>onInit()</code></strong></p><p>There is work-in-progress to implement a new <code>onInit()</code> hook to initialize global data, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/164">#164</a>.</p><h2>Client Routing</h2><p>Since <code>.page.server.js</code> files are loaded only in Node.js,
 our data fetching code is always exectued in Node.js.
