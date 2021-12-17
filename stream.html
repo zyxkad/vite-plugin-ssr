@@ -39,7 +39,7 @@ app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keywor
   <span class="hljs-keyword">const</span> stream = <span class="hljs-keyword">await</span> httpResponse.getWebStream()
 
   stream.pipe(res)
-})</code></pre><h2>Examples &amp; docs</h2><p>Examples:</p><ul><li>With React&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/react-full/">/examples/react-full/</a></li><li>With Vue&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/vue-full/">/examples/vue-full/</a></li><li>With Cloudflare Workers and Vue&#x27;s <code>pipeToWebWritable()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/cloudflare-workers-vue-html-streaming/">/examples/cloudflare-workers-vue-html-streaming/</a></li></ul><p>Streams API Docs:</p><ul><li><a href="https://nodejs.org/api/stream.html">Node.js Streams</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">Web Streams</a></li></ul><h2>Stream to string</h2><p>We can convert the stream to a string:</p><pre><code class="hljs language-js">  <span class="hljs-comment">// If we provide a stream into our `render()` hook&#x27;s `escapeInject`, we can</span>
+})</code></pre><h2>Examples &amp; docs</h2><p>Examples:</p><ul><li>With React&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/react-full/">/examples/react-full/</a></li><li>With Vue&#x27;s <code>renderToNodeStream()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/vue-full/">/examples/vue-full/</a></li><li>With Cloudflare Workers and Vue&#x27;s <code>pipeToWebWritable()</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/master/examples/cloudflare-workers-vue-html-streaming/">/examples/cloudflare-workers-vue-html-streaming/</a></li></ul><p>Stream Docs &amp; API:</p><ul><li><a href="https://nodejs.org/api/stream.html">Node.js Streams</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">Web Streams</a></li></ul><h2>Stream to string</h2><p>We can convert the stream to a string:</p><pre><code class="hljs language-js">  <span class="hljs-comment">// If we provide a stream into our `render()` hook&#x27;s `escapeInject`, we can</span>
   <span class="hljs-comment">// still get a string.</span>
 
   <span class="hljs-comment">/* This won&#x27;t work: (a stream cannot be consumed synchronously)
@@ -53,10 +53,7 @@ app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keywor
   res.send(body)</code></pre><h2>Stream pipes</h2><p>We can also use Stream pipes.</p><pre><code class="hljs language-js"><span class="hljs-comment">// renderer/_deault.page.server.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, pipeNodeStream, pipeWebStream } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> {
-  pipeToNodeWritable,
-  pipeToWebWritable
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
+<span class="hljs-keyword">import</span> { pipeToWritable } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
 
 <span class="hljs-keyword">export</span> { render }
 
@@ -65,11 +62,13 @@ app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keywor
 
   <span class="hljs-comment">// Node.js Stream</span>
   <span class="hljs-keyword">const</span> streamPipe = pipeNodeStream(<span class="hljs-function"><span class="hljs-params">writable</span> =&gt;</span> {
-    pipeToNodeWritable(Page, writable)
+    <span class="hljs-comment">// `writable` is a Node.js writable</span>
+    pipeToWritable(Page, writable)
   })
   <span class="hljs-comment">// Web Stream</span>
   <span class="hljs-keyword">const</span> streamPipe = pipeWebStream(<span class="hljs-function"><span class="hljs-params">writable</span> =&gt;</span> {
-    pipeToWebWritable(Page, writable)
+    <span class="hljs-comment">// `writable` is a Web writable</span>
+    pipeToWritable(Page, writable)
   })
 
   <span class="hljs-keyword">return</span> escapeInject`<span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
