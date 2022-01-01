@@ -1,10 +1,10 @@
 {
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.b80a8b0d.js",
+    "file": "assets/pages/react-tour.page.client.ts.78e354a4.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_P.fc9133b0.js",
+      "_P.017ca8dd.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
@@ -17,28 +17,28 @@
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.a3b912ef.js",
+    "file": "assets/pages/vue-tour.page.client.ts.cb1d4af0.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_P.fc9133b0.js",
+      "_P.017ca8dd.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.5abc4a87.js",
+    "file": "assets/renderer/_default.page.client.ts.96692631.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_P.fc9133b0.js"
+      "_P.017ca8dd.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.7cdd6a28.js",
+    "file": "assets/pages/index/index.page.client.ts.9ca3ba48.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_P.fc9133b0.js",
+      "_P.017ca8dd.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ],
     "css": [
@@ -48,10 +48,10 @@
   "_vendor.a99422e1.js": {
     "file": "assets/vendor.a99422e1.js"
   },
-  "_P.fc9133b0.js": {
-    "file": "assets/P.fc9133b0.js",
+  "_P.017ca8dd.js": {
+    "file": "assets/P.017ca8dd.js",
     "css": [
-      "assets/P.fd0351a7.css"
+      "assets/P.ce568bc5.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
