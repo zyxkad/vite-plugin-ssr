@@ -1,28 +1,28 @@
 {
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.ts.d76699aa.js",
+    "file": "assets/pages/react-tour.page.client.ts.33f6e1b4.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_DocSearch.1ac2cc2c.js",
+      "_DocSearch.78acbe8a.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.ts.1e03301a.js",
+    "file": "assets/pages/vue-tour.page.client.ts.809b1bc3.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_DocSearch.1ac2cc2c.js",
+      "_DocSearch.78acbe8a.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ]
   },
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.5346e489.js",
+    "file": "assets/renderer/_default.page.client.ts.81d7c904.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_DocSearch.1ac2cc2c.js"
+      "_DocSearch.78acbe8a.js"
     ]
   },
   "pages/html-only-demo/index.page.client.jsx": {
@@ -31,15 +31,15 @@
     "isEntry": true
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.ts.f1eb84a5.js",
+    "file": "assets/pages/index/index.page.client.ts.ba1aca37.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "imports": [
-      "_DocSearch.1ac2cc2c.js",
+      "_DocSearch.78acbe8a.js",
       "_ScaffoldCallToAction.client.5fa87c98.js"
     ],
     "css": [
-      "assets/pages/index/index.page.client.ts.f7ccdf62.css"
+      "assets/pages/index/index.page.client.ts.0e3d6d26.css"
     ]
   },
   "pages/spa-demo/index.page.client.jsx": {
@@ -63,10 +63,10 @@
   "_vendor.fffd322d.js": {
     "file": "assets/vendor.fffd322d.js"
   },
-  "_DocSearch.1ac2cc2c.js": {
-    "file": "assets/DocSearch.1ac2cc2c.js",
+  "_DocSearch.78acbe8a.js": {
+    "file": "assets/DocSearch.78acbe8a.js",
     "css": [
-      "assets/DocSearch.1f4c60a7.css"
+      "assets/DocSearch.6c79ac49.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
