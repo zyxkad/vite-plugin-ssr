@@ -30,7 +30,7 @@ useClientRouter({
 <span class="hljs-comment">// Environment: Browser</span>
 
 <span class="hljs-keyword">import</span> { useClientRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr/client/router&#x27;</span>
-<span class="hljs-keyword">import</span> { render, hydrate } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { render, hydrate } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">const</span> { hydrationPromise } = useClientRouter({
   <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>)</span> {
@@ -86,7 +86,7 @@ if we want to preserve the scroll position instead. (Useful for <a href="/nested
 <span class="hljs-keyword">export</span> { passToClient }
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 <span class="hljs-keyword">import</span> { getInitialState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./getInitialState&#x27;</span>
 
 <span class="hljs-keyword">const</span> passToClient = [<span class="hljs-string">&#x27;initialState&#x27;</span>]

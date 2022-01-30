@@ -17,7 +17,7 @@ we can use whatever tool we want.</p><p>In fact, <code>vite-plugin-ssr</code> is
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
 <span class="hljs-comment">// This can be any UI framework (React, Vue, Svelte, ...)</span>
-<span class="hljs-keyword">import</span> renderToHtml <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> renderToHtml <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">export</span> { render }
 
@@ -46,7 +46,7 @@ we can use whatever tool we want.</p><p>In fact, <code>vite-plugin-ssr</code> is
 <span class="hljs-comment">// Environment: Browser</span>
 
 <span class="hljs-keyword">import</span> { getPage } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr/client&#x27;</span>
-<span class="hljs-keyword">import</span> { hydrateToDom } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { hydrateToDom } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-title">hydrate</span>(<span class="hljs-params"></span>)</span> {
   <span class="hljs-keyword">const</span> pageContext = <span class="hljs-keyword">await</span> getPage()
@@ -57,7 +57,7 @@ we can use whatever tool we want.</p><p>In fact, <code>vite-plugin-ssr</code> is
 <span class="hljs-comment">// Environment: Browser</span>
 
 <span class="hljs-keyword">import</span> { getPage } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr/client&#x27;</span>
-<span class="hljs-keyword">import</span> { hydrateToDom } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { hydrateToDom } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-comment">// This is the first browser-side line of code.</span>
 <span class="hljs-comment">// This is a good place to initialize error tracking such as Sentry or Bugsnag.</span>

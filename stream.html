@@ -15,7 +15,7 @@
 <span class="hljs-keyword">export</span> { render }
 
 <span class="hljs-keyword">import</span> { escapeInject } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToStream } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
+<span class="hljs-keyword">import</span> { renderToStream } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-keyword">const</span> { Page } = pageContext
@@ -58,7 +58,7 @@ app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keywor
 <span class="hljs-keyword">export</span> { render }
 
 <span class="hljs-keyword">import</span> { escapeInject, pipeNodeStream, pipeWebStream } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { pipeToWritable } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
+<span class="hljs-keyword">import</span> { pipeToWritable } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-keyword">const</span> { Page } = pageContext
@@ -98,7 +98,7 @@ app.get(<span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-keywor
 <span class="hljs-keyword">export</span> { passToClient }
 
 <span class="hljs-keyword">import</span> { escapeInject } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToStream } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
+<span class="hljs-keyword">import</span> { renderToStream } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span> <span class="hljs-comment">// React, Vue, ...</span>
 
 <span class="hljs-keyword">const</span> passToClient = [<span class="hljs-string">&#x27;initialData&#x27;</span>]
 

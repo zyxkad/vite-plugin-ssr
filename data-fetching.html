@@ -38,7 +38,7 @@ The tour explains what the <code>_default.page.*</code> files are about.</p></bl
 <span class="hljs-comment">// Environment: Node.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToHtml, createElement } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { renderToHtml, createElement } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-comment">// We tell `vite-plugin-ssr` to make `pageContext.pageProps` available in the browser.</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> passToClient = [<span class="hljs-string">&#x27;pageProps&#x27;</span>]
@@ -64,7 +64,7 @@ The tour explains what the <code>_default.page.*</code> files are about.</p></bl
 <span class="hljs-comment">// Environment: Browser</span>
 
 <span class="hljs-keyword">import</span> { getPage } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr/client&#x27;</span>
-<span class="hljs-keyword">import</span> { hydrateToDom, createElement } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { hydrateToDom, createElement } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 hydrate()
 

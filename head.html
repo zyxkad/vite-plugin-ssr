@@ -15,7 +15,7 @@ of our app in our <a href="/render"><code>render()</code> hook</a>.</p><pre><cod
 <span class="hljs-comment">// Environment: Node.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">export</span> { render }
 
@@ -43,7 +43,7 @@ we can use <a href="/pageContext"><code>pageContext.pageExports</code></a>.</p><
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.server.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">export</span> { render }
 
@@ -99,7 +99,7 @@ we can use the <a href="/onBeforeRender"><code>onBeforeRender()</code> hook</a>.
 }</code></pre><pre><code class="hljs language-js"><span class="hljs-comment">// _default.page.server.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">export</span> { render }
 
@@ -127,7 +127,7 @@ we can use the <a href="/onBeforeRender"><code>onBeforeRender()</code> hook</a>.
 <span class="hljs-comment">// Environment: Node.js</span>
 
 <span class="hljs-keyword">import</span> { escapeInject, dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> renderToHtml <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> renderToHtml <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-comment">// We use our UI framework to pass `pageContext.documentProps` to all components</span>
@@ -176,7 +176,7 @@ the aforementioned solutions are simpler and work for most use cases.</p><p>Head
 <span class="hljs-comment">// Environment: Node.js</span>
 
 <span class="hljs-keyword">import</span> { dangerouslySkipEscape } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vite-plugin-ssr&#x27;</span>
-<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-view-framework&#x27;</span>
+<span class="hljs-keyword">import</span> { renderToHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;some-ui-framework&#x27;</span>
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">pageContext</span>) </span>{
   <span class="hljs-keyword">return</span> dangerouslySkipEscape(<span class="hljs-keyword">await</span> renderToHtml(pageContext.Page))
