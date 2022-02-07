@@ -15,8 +15,7 @@
 <span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;./path/to/dist/server/importBuild.js&#x27;</span>
 <span class="hljs-comment">/* Or:
 require(&#x27;./path/to/dist/server/importBuild.js&#x27;)
-*/</span></code></pre><blockquote><p><code>dist/server/importBuild.js</code> works with any bundler;
-we can use use any bundler to bundle our server code.</p></blockquote><h2 id="how-it-works">How it works</h2><p>If you are curious, this is how <code>dist/server/importBuild.js</code> works:</p><pre><code class="hljs language-js"><span class="hljs-comment">// dist/server/importBuild.js</span>
+*/</span></code></pre><blockquote><p><code>dist/server/importBuild.js</code> works with any bundler, which means that we can use any bundler to bunlde the server-side code of our <code>vite-plugin-ssr</code> app.</p></blockquote><h2 id="how-it-works">How it works</h2><p>If you are curious, this is how <code>dist/server/importBuild.js</code> works:</p><pre><code class="hljs language-js"><span class="hljs-comment">// dist/server/importBuild.js</span>
 
 <span class="hljs-keyword">const</span> { pageFiles } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./pageFiles.js&quot;</span>);
 <span class="hljs-keyword">const</span> clientManifest = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;../client/manifest.json&quot;</span>);
