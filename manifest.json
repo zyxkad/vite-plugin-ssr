@@ -25,6 +25,14 @@
       "_DocSearch.78acbe8a.js"
     ]
   },
+  "../libframe/docs/_default.page.client.ts": {
+    "file": "assets/node_modules/libframe-docs/_default.page.client.ts.d1ab34d6.js",
+    "src": "../libframe/docs/_default.page.client.ts",
+    "isEntry": true,
+    "imports": [
+      "_DocSearch.78acbe8a.js"
+    ]
+  },
   "pages/html-only-demo/index.page.client.jsx": {
     "file": "assets/pages/html-only-demo/index.page.client.jsx.6c6a9950.js",
     "src": "pages/html-only-demo/index.page.client.jsx",
@@ -43,25 +51,25 @@
     ]
   },
   "pages/spa-demo/index.page.client.jsx": {
-    "file": "assets/pages/spa-demo/index.page.client.jsx.ba77fa87.js",
+    "file": "assets/pages/spa-demo/index.page.client.jsx.40e1b7af.js",
     "src": "pages/spa-demo/index.page.client.jsx",
     "isEntry": true,
     "imports": [
-      "_vendor.fffd322d.js",
-      "_jsx-runtime.703c0803.js"
+      "_vendor.3b56b7e5.js",
+      "_jsx-runtime.29fbd5f0.js"
     ]
   },
   "pages/ssr-demo/index.page.client.jsx": {
-    "file": "assets/pages/ssr-demo/index.page.client.jsx.5de7ef1a.js",
+    "file": "assets/pages/ssr-demo/index.page.client.jsx.ecba8c52.js",
     "src": "pages/ssr-demo/index.page.client.jsx",
     "isEntry": true,
     "imports": [
-      "_vendor.fffd322d.js",
-      "_jsx-runtime.703c0803.js"
+      "_vendor.3b56b7e5.js",
+      "_jsx-runtime.29fbd5f0.js"
     ]
   },
-  "_vendor.fffd322d.js": {
-    "file": "assets/vendor.fffd322d.js"
+  "_vendor.3b56b7e5.js": {
+    "file": "assets/vendor.3b56b7e5.js"
   },
   "_DocSearch.78acbe8a.js": {
     "file": "assets/DocSearch.78acbe8a.js",
@@ -78,10 +86,10 @@
       "assets/ScaffoldCallToAction.client.ff807686.css"
     ]
   },
-  "_jsx-runtime.703c0803.js": {
-    "file": "assets/jsx-runtime.703c0803.js",
+  "_jsx-runtime.29fbd5f0.js": {
+    "file": "assets/jsx-runtime.29fbd5f0.js",
     "imports": [
-      "_vendor.fffd322d.js"
+      "_vendor.3b56b7e5.js"
     ]
   }
 }
