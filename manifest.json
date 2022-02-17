@@ -51,21 +51,19 @@
     ]
   },
   "pages/spa-demo/index.page.client.jsx": {
-    "file": "assets/pages/spa-demo/index.page.client.jsx.40e1b7af.js",
+    "file": "assets/pages/spa-demo/index.page.client.jsx.f95246d4.js",
     "src": "pages/spa-demo/index.page.client.jsx",
     "isEntry": true,
     "imports": [
-      "_vendor.3b56b7e5.js",
-      "_jsx-runtime.29fbd5f0.js"
+      "_vendor.3b56b7e5.js"
     ]
   },
   "pages/ssr-demo/index.page.client.jsx": {
-    "file": "assets/pages/ssr-demo/index.page.client.jsx.ecba8c52.js",
+    "file": "assets/pages/ssr-demo/index.page.client.jsx.5b6fcb05.js",
     "src": "pages/ssr-demo/index.page.client.jsx",
     "isEntry": true,
     "imports": [
-      "_vendor.3b56b7e5.js",
-      "_jsx-runtime.29fbd5f0.js"
+      "_vendor.3b56b7e5.js"
     ]
   },
   "_vendor.3b56b7e5.js": {
@@ -74,7 +72,7 @@
   "_DocSearch.78acbe8a.js": {
     "file": "assets/DocSearch.78acbe8a.js",
     "css": [
-      "assets/DocSearch.750ca6e9.css"
+      "assets/DocSearch.0d2287ca.css"
     ],
     "assets": [
       "assets/Inter-Var.2bc54814.ttf"
@@ -84,12 +82,6 @@
     "file": "assets/ScaffoldCallToAction.client.5fa87c98.js",
     "css": [
       "assets/ScaffoldCallToAction.client.ff807686.css"
-    ]
-  },
-  "_jsx-runtime.29fbd5f0.js": {
-    "file": "assets/jsx-runtime.29fbd5f0.js",
-    "imports": [
-      "_vendor.3b56b7e5.js"
     ]
   }
 }
