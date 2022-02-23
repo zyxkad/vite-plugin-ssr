@@ -17,13 +17,12 @@
 <li>
 <p>Install:</p>
 <div data-rehype-pretty-code-fragment=""><pre><code data-language="shell" data-theme="default"><span class="line"><span style="color:#24292F">npm install vite-plugin-windicss windicss</span></span></code></pre></div>
-<p>Or:</p>
-<pre><code>yarn add vite-plugin-windicss windicss
-</code></pre>
 </li>
 <li>
 <p>Add <code>vite-plugin-windicss</code> to <code>vite.config.js</code>:</p>
-<div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> ssr </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;vite-plugin-ssr/plugin&quot;</span></span>
+<div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// vite.config.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> ssr </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;vite-plugin-ssr/plugin&quot;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> WindiCSS </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;vite-plugin-windicss&quot;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
@@ -44,14 +43,19 @@
 </blockquote>
 </li>
 <li>
-<p>Add WindiCSS to <code>_default.page.client.js</code>.</p>
-<div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;virtual:windi.css&#x27;</span></span></code></pre></div>
+<p>Import <code>virtual:windi.css</code> in <code>_default.page.client.js</code>.</p>
+<div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// renderer/_default.page.client.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;virtual:windi.css&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// ...</span></span></code></pre></div>
 </li>
 </ol>
-<p>That&#x27;s it.</p>
-<blockquote>
-<p>More at <a href="https://windicss.org/integrations/vite.html">WindiCSS Vite Guide</a>.</p>
-</blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/tailwind-css.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div></div>
+<p>See also:</p>
+<ul>
+<li>Example of using <code>vite-plugin-ssr</code> with Windi CSS: <a href="https://github.com/brillout/vite-plugin-ssr_windi-css">github.com/brillout/vite-plugin-ssr_windi-css</a>.</li>
+<li><a href="https://windicss.org/integrations/vite.html">WindiCSS Vite Guide</a>.</li>
+</ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/tailwind-css.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
