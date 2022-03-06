@@ -46,6 +46,7 @@ We can do that by using the <a href="/onBeforeRender"><code>onBeforeRender()</co
 <ul>
 <li><strong>Rendered content is actually different</strong>. Make sure that your components render the same content in Node.js as well as in the browser.</li>
 <li><strong>Browser cache</strong>: While developing, make sure to disable your browser&#x27;s cache to ensure that your browser doesn&#x27;t load cached &amp; outdated JavaScript.</li>
+<li><strong>Proxies</strong>: If you use a proxy, make sure it doesn&#x27;t apply problematic HTML transfomers. For example, if you use Cloudflare, you have to disable Cloudflare&#x27;s automatic HTML minifier.</li>
 </ul>
 <p>With React:</p>
 <ul>
