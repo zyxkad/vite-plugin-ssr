@@ -182,19 +182,19 @@
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<pre><code>URL                           MATCHES                                    CHOSEN
+<pre><code>URL                           MATCHES                                    WINNER
 ==================            ===================================        ======
-/product/42                   product/item.page.route.js      (6)        X
+/product/42                   product/item.page.route.js      (6)        ⬅️
                               product/catch-all.page.route.js (7)
 </code></pre>
-<pre><code>URL                           MATCHES                                    CHOSEN
+<pre><code>URL                           MATCHES                                    WINNER
 ==================            ===================================        ======
-/product                      product/list.page.route.js      (4)        X
+/product                      product/list.page.route.js      (4)        ⬅️
                               product/catch-all.page.route.js (7)
 </code></pre>
-<pre><code>URL                           MATCHES                                    CHOSEN
+<pre><code>URL                           MATCHES                                    WINNER
 ==================            ===================================        ======
-/product/wrong/url            product/catch-all.page.route.js (7)        X
+/product/wrong/url            product/catch-all.page.route.js (7)        ⬅️
 </code></pre>
 <p>4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)<br/>
 <!-- -->6: Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/:productId</code> or <code>/product/*</code>)<br/>
@@ -212,14 +212,14 @@
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<pre><code>URL                   pageContext.user       MATCHES                       CHOSEN
+<pre><code>URL                   pageContext.user       MATCHES                       WINNER
 ======                ================       =======================       ======
-/admin                null                   login.page.route.js (1)       X
+/admin                null                   login.page.route.js (1)       ⬅️
                                              admin.page.route.js (4)
 </code></pre>
-<pre><code>URL                   pageContext.user       MATCHES                       CHOSEN
+<pre><code>URL                   pageContext.user       MATCHES                       WINNER
 ======                ================       =======================       ======
-/admin                &#x27;brillout&#x27;             admin.page.route.js (4)       X
+/admin                &#x27;brillout&#x27;             admin.page.route.js (4)       ⬅️
 </code></pre>
 <p>1: Route Function, returned high positive <code>precedence</code> number<br/>
 <!-- -->4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/master/docs/pages/route-function.page.mdx">✍<!-- --> Edit this page</a></div></div></div></div></div></div>

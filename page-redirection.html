@@ -20,13 +20,14 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">isUserAuthenticated</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F">  pageContext.user </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> </span><span style="color:#0550AE">null</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">isUserAuthenticated) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We use a high precedence to override all other routes.</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// This means unauthenticated users will always see the Login Page `login.page.js`</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We use a high precedence to override all other routes. This means that unauthenticated</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// users always see the Login Page `login.page.js` (no matter the url). For example, if</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// the user is unauthenticated and goes to `/admin`, then he&#x27;ll see the Login Page.</span></span>
 <span class="line"><span style="color:#24292F">      precedence: </span><span style="color:#0550AE">999</span></span>
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// If the user is authenticated then do not show the Login Page.</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// E.g. if the user goes to `/admin`, then show the Admin Page.</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// If the user is authenticated then do not show the Login Page. For example, if the</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// user is authenticated and goes to `/admin`, then he&#x27;ll see the Admin Page.</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
@@ -34,12 +35,12 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <p>After the user successfully logs in, we can reload the page with <code>window.location.reload()</code> (<a href="/server-routing">Server Routing</a>) or <a href="/navigate"><code>navigte(window.location.pathname)</code></a> (<a href="/client-routing">Client Routing</a>).</p>
 <p>This approach preserves the URL during the entire login flow:</p>
 <ol>
-<li>Unauthenticated user goes to URL <code>/admin</code> and see the Login Page. (URL is <code>/admin</code>.)</li>
-<li>The users fills the sign in form and successfully logs in. (URL is still <code>/admin</code>.)</li>
-<li>The page is reloaded and the user now sees the Admin Page. (URL is still <code>/admin</code>.)</li>
+<li>Unauthenticated user goes to URL <code>/admin</code> and sees the Login Page. (URL is <code>/admin</code>.)</li>
+<li>User fills the sign-in form and successfully logs in. (URL is still <code>/admin</code>.)</li>
+<li>Page is reloaded and the user now sees the Admin Page. (URL is still <code>/admin</code>.)</li>
 </ol>
 <p>This works for all URLs: the original intention of the user is preserved and there is no need for a complex URL restoration mechanism.</p>
-<p>We can also perform a page redirection instead of using this approach. See sections below.</p>
+<p>Instead of using this approach, we can also use the more traditional approach of performing a page redirection. See sections below.</p>
 <h2 id="server-side">Server-side</h2>
 <p>We can perform a URL redirection by using <code>pageContext</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// _default.page.server.js</span></span>
