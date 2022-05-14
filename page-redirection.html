@@ -32,7 +32,7 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>See <a href="/route-function#precedence">Routing<!-- --> &gt; <!-- -->Route Function<!-- --> &gt; <!-- -->Precedence</a>.</p>
-<p>After the user successfully logs in, we can reload the page with <code>window.location.reload()</code> (<a href="/server-routing">Server Routing</a>) or <a href="/navigate"><code>navigte(window.location.pathname)</code></a> (<a href="/client-routing">Client Routing</a>).</p>
+<p>After the user successfully logs in, we reload the page with <code>window.location.reload()</code> (<a href="/server-routing">Server Routing</a>) or <a href="/navigate"><code>navigte(window.location.pathname)</code></a> (<a href="/client-routing">Client Routing</a>).</p>
 <p>This approach preserves the URL during the entire login flow:</p>
 <ol>
 <li>Unauthenticated user goes to URL <code>/admin</code> and sees the Login Page. (URL is <code>/admin</code>.)</li>
@@ -110,7 +110,7 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// ...</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <h2 id="client-side">Client-side</h2>
-<p>If we use Client Routing, then we can also redirect on the client-side.</p>
+<p>If we use <a href="/client-routing">Client Routing</a>, then we can also redirect on the client-side.</p>
 <div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// _default.page.server.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
