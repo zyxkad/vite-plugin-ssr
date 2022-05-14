@@ -157,12 +157,12 @@
 <p>If the route of two pages both match the same URL then we have a route conflict: <code>vite-plugin-ssr</code> has to decide which of the two pages should be rendered for that URL.</p>
 <p>Upon route conflicts, <code>vite-plugin-ssr</code> chooses the first route in following order:</p>
 <ol>
-<li>Route Function, returned high positive <code>precedence</code> number</li>
-<li>Route Function, returned low positive <code>precedence</code> number</li>
+<li>Route Function, returned high positive <code>precedence</code> number (e.g. <code>99</code>)</li>
+<li>Route Function, returned low positive <code>precedence</code> number (e.g. <code>1</code>)</li>
 <li>Filesystem Routing</li>
-<li>Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)</li>
-<li>Route Function, returned no <code>precedence</code> number</li>
-<li>Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/:productId</code> or <code>/product/*</code>)</li>
+<li>Route String, static (i.e. without <code>:param</code> segment, e.g. <code>/about/company</code>)</li>
+<li>Route Function, returned no <code>precedence</code> number (or <code>0</code>)</li>
+<li>Route String, parameterized (i.e. with <code>:param</code> segement, e.g. <code>/product/:productId</code> or <code>/product/*</code>)</li>
 <li>Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)</li>
 <li>Route Function, returned high negative <code>precedence</code> number (e.g. <code>-99</code>)</li>
 </ol>
