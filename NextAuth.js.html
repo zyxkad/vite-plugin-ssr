@@ -28,12 +28,12 @@ or
 <li><a href="https://vitejs.dev/config/#environment-variables">Vite &gt; Config &gt; Environment Variables</a></li>
 </ul>
 <blockquote>
-<p>You can use <code>process.env</code> as usual for server (e.g. Express.js) code. (Since server code is not processed by Vite.)</p>
+<p>We can use <code>process.env</code> as usual for server (e.g. Express.js) code. (Since server code is not processed by Vite.)</p>
 </blockquote>
 <h2 id="fetch-polyfill-for-getsession">Fetch polyfill for <code>getSession()</code></h2>
-<p>In order to use NextAuth.js&#x27;s <a href="https://next-auth.js.org/getting-started/client#getsession"><code>getSession()</code></a> on the server-side, you&#x27;ll need to globally install a fetch polyfill.</p>
+<p>In order to use NextAuth.js&#x27;s <a href="https://next-auth.js.org/getting-started/client#getsession"><code>getSession()</code></a> on the server-side, we need to globally install a fetch polyfill.</p>
 <blockquote>
-<p>If you use <code>getSession()</code> only on the client-side, then you don&#x27;t need this.</p>
+<p>If we use <code>getSession()</code> only on the client-side, then we don&#x27;t need this.</p>
 </blockquote>
 <blockquote>
 <p><a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">Node v18 has native <code>fetch()</code> support</a> and a polyfill may not be needed anymore. (To be tested.)</p>
