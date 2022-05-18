@@ -23,18 +23,22 @@ or
 <blockquote>
 <p>Do not add <code>NEXTAUTH_</code> to <code>envPrefix</code> as it would leak <code>NEXTAUTH_SECRET</code>.</p>
 </blockquote>
+<p>See also:</p>
+<ul>
+<li><a href="https://vitejs.dev/config/#environment-variables">Vite &gt; Config &gt; Environment Variables</a></li>
+</ul>
 <blockquote>
 <p>You can use <code>process.env</code> as usual for server (e.g. Express.js) code. (Since server code is not processed by Vite.)</p>
 </blockquote>
 <h2 id="fetch-polyfill-for-getsession">Fetch polyfill for <code>getSession()</code></h2>
-<p>In order to use NextAuth.js&#x27;s <a href="https://next-auth.js.org/getting-started/client#getsession"><code>getSession()</code></a> on the server-side, you&#x27;ll need to install a fetch polyfill globally.</p>
+<p>In order to use NextAuth.js&#x27;s <a href="https://next-auth.js.org/getting-started/client#getsession"><code>getSession()</code></a> on the server-side, you&#x27;ll need to globally install a fetch polyfill.</p>
 <blockquote>
 <p>If you use <code>getSession()</code> only on the client-side, then you don&#x27;t need this.</p>
 </blockquote>
 <blockquote>
 <p><a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">Node v18 has native <code>fetch()</code> support</a> and a polyfill may not be needed anymore. (To be tested.)</p>
 </blockquote>
-<p>We can for example use <a href="https://github.com/node-fetch/node-fetch#providing-global-access"><code>node-fetch</code> to patch the <code>global</code> object</a>:</p>
+<p>We can for example use <a href="https://github.com/node-fetch/node-fetch#providing-global-access"><code>node-fetch</code> to patch the global object</a>:</p>
 <div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Only install the polyfill on the server (e.g. Express.js). Browsers already implement</span></span>
@@ -51,7 +55,6 @@ or
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <h2 id="see-also">See Also</h2>
 <ul>
-<li><a href="https://vitejs.dev/config/#environment-variables">Vite &gt; Config &gt; Environment Variables</a></li>
 <li>
 <a href="/auth">Integration<!-- --> &gt; <!-- -->Authentication</a>
 </li>
