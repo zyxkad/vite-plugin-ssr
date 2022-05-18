@@ -36,7 +36,7 @@ or
 <p>If we use <code>getSession()</code> only on the client-side, then we don&#x27;t need this.</p>
 </blockquote>
 <blockquote>
-<p><a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">Node v18 has native <code>fetch()</code> support</a> and a polyfill may not be needed anymore. (To be tested.)</p>
+<p><a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">Node v18 has native <code>fetch()</code> support</a> and a polyfill not needed.</p>
 </blockquote>
 <p>We can for example use <a href="https://github.com/node-fetch/node-fetch#providing-global-access"><code>node-fetch</code> to patch the global object</a>:</p>
 <div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
@@ -44,6 +44,7 @@ or
 <span class="line"><span style="color:#6E7781">// Only install the polyfill on the server (e.g. Express.js). Browsers already implement</span></span>
 <span class="line"><span style="color:#6E7781">// `fetch()` natively and it would be wasteful to load the polyfill on the browser-side.</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Use node-fetch@2 instead of node-fetch@3 if your `package.json#type` is not `&quot;module&quot;`.</span></span>
 <span class="line"><span style="color:#6E7781">// Or some other `fetch()` polyfill, e.g. `cross-fetch`.</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> fetch, { Headers, Request, Response } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;node-fetch&#x27;</span></span>
 <span class="line"></span>
@@ -76,5 +77,5 @@ or
       })
     </script>
   
-      <script type="module" src="/assets/renderer/_default.page.client.ts.81d7c904.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/NextAuth-dot-s"}}</script></body>
+      <script type="module" src="/assets/renderer/_default.page.client.ts.81d7c904.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/pages/NextAuth"}}</script></body>
     </html>
