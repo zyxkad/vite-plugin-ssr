@@ -33,12 +33,9 @@ or
 <h2 id="fetch-polyfill-for-getsession">Fetch polyfill for <code>getSession()</code></h2>
 <p>In order to use NextAuth.js&#x27;s <a href="https://next-auth.js.org/getting-started/client#getsession"><code>getSession()</code></a> on the server-side, we need to globally install a fetch polyfill.</p>
 <blockquote>
-<p>If we use <code>getSession()</code> only on the client-side, then we don&#x27;t need this.</p>
+<p>A polyfill is not needed if we use <code>getSession()</code> only on the client-side, or if we use Node v18 which <a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">natively supports <code>fetch()</code></a>.</p>
 </blockquote>
-<blockquote>
-<p><a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">Node v18 has native <code>fetch()</code> support</a> and a polyfill not needed.</p>
-</blockquote>
-<p>We can for example use <a href="https://github.com/node-fetch/node-fetch#providing-global-access"><code>node-fetch</code> to patch the global object</a>:</p>
+<p>We can use <a href="https://github.com/node-fetch/node-fetch#providing-global-access"><code>node-fetch</code> to patch the global object</a>:</p>
 <div data-rehype-pretty-code-fragment=""><pre><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Only install the polyfill on the server (e.g. Express.js). Browsers already implement</span></span>
