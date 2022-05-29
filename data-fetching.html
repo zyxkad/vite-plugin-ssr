@@ -137,7 +137,7 @@ See <a href="/onBeforeRender-multiple">Multiple <code>onBeforeRender()</code> ho
 our data fetching code is always executed in Node.js.
 This is convenient as it makes writing data fetching code easier.</p>
 <p>That said, if we use <a href="/useClientRouter">Client Routing</a>,
-then we use the option to define <a href="/onBeforeRender-isomorphic"><code>onBeforeRender()</code> in <code>.page.js</code></a> instead of <code>.page.server.js</code>. In that case, <code>onBeforeRender()</code> is not only called in Node.js but also in the browser (upon page navigation).</p>
+then we have the option to define <a href="/onBeforeRender-isomorphic"><code>onBeforeRender()</code> in <code>.page.js</code></a> instead of <code>.page.server.js</code>. In that case, <code>onBeforeRender()</code> is not only called in Node.js but also in the browser (upon page navigation).</p>
 <p>In general, <a href="/onBeforeRender-isomorphic#recommendation">we recommend defining <code>onBeforeRender()</code> in <code>.page.server.js</code></a> (even when using Client Routing) but,
 if we want to minimize requests made to our Node.js server,
 then we may want to define <code>onBeforeRender()</code> in <code>.page.js</code> instead.</p>
