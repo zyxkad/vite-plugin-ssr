@@ -87,7 +87,7 @@ while for basic apps we recommend a single <code>pages/</code> directory.</p>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// We can use a Route String (or Route Function) to define parameterized routes</span></span>
 <span class="line"><span style="color:#6E7781">// and/or to override Filesystem Routing.</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/:productId&#x27;</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span></span></code></pre></div>
 <p>Resulting route table:</p>
 <pre><code>PROJECT FILES                                    URL
 /marketing/pages/index/index.page.js             /
@@ -96,7 +96,7 @@ while for basic apps we recommend a single <code>pages/</code> directory.</p>
 /auth/pages/signup/index.page.js                 /auth/signup
 /auth/pages/login/index.page.js                  /auth/login
 /products/pages/index/index.page.js              /products
-/products/pages/product/index.page.js            /product/:productId
+/products/pages/product/index.page.js            /product/@productId
 </code></pre>
 <p>Same as for basic apps, we recommend creating a directory for each page,
 e.g. <code>/products/pages/index/index.page.js</code> instead of <code>/products/pages/index.page.js</code>.</p>

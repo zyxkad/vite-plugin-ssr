@@ -15,7 +15,7 @@
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/film.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Match URLs `/film/1`, `/film/2`, ...</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/film/:filmId&#x27;</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/film/@filmId&#x27;</span></span></code></pre></div>
 <p>The value of <code>filmId</code> is available at <code>pageContext.routeParams.filmId</code>.</p>
 <h2 id="multiple-parameters">Multiple Parameters</h2>
 <p>We can define multiple parameters.</p>
@@ -24,14 +24,14 @@
 <span class="line"><span style="color:#6E7781">// Parameters available at:</span></span>
 <span class="line"><span style="color:#6E7781">//  - `pageContext.routeParams.year`</span></span>
 <span class="line"><span style="color:#6E7781">//  - `pageContext.routeParams.slug`</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/news/:year/:slug&#x27;</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/news/@year/@slug&#x27;</span></span></code></pre></div>
 <h2 id="catch-all">Catch-All</h2>
 <p>We can use Route Strings to implement <a href="/catch-all">catch-all routes</a>.</p>
 <h2 id="precedence">Precedence</h2>
 <p>Upon Route String conflicts, <code>vite-plugin-ssr</code> chooses the first route in following order:</p>
 <ol>
 <li>Most specific <code>/about/team</code> (matches only a single URL)</li>
-<li>Less specific <code>/about/:path</code> (also matches <code>/about/company</code>, <code>/about/vision</code>, ...)</li>
+<li>Less specific <code>/about/@path</code> (also matches <code>/about/company</code>, <code>/about/vision</code>, ...)</li>
 <li>Less specific <code>/about/*</code> (also matches <code>/about/also/nested/path</code>)</li>
 <li>Least specific <code>/*</code> (matches all URLs)</li>
 </ol>

@@ -19,7 +19,7 @@
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.route.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/:movieId</span><span style="color:#82071E;font-style:italic">`</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId</span><span style="color:#82071E;font-style:italic">`</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.server.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
@@ -44,7 +44,7 @@ then we can pre-render our app without defining any <code>prerender()</code> hoo
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.route.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/:movieId</span><span style="color:#82071E;font-style:italic">`</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId</span><span style="color:#82071E;font-style:italic">`</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.server.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
@@ -79,7 +79,7 @@ then we can pre-render our app without defining any <code>prerender()</code> hoo
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Here we provide the `pageContext` of the `/movies` page since</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// we already have the data.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">movieListPage</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    url: </span><span style="color:#0A3069">&#x27;/movies&#x27;</span><span style="color:#24292F">, </span><span style="color:#6E7781">// Note how the URL `/movies` isn&#x27;t part of the page&#x27;s route `/movie/:movieId`</span></span>
+<span class="line"><span style="color:#24292F">    url: </span><span style="color:#0A3069">&#x27;/movies&#x27;</span><span style="color:#24292F">, </span><span style="color:#6E7781">// Note how the URL `/movies` isn&#x27;t part of the page&#x27;s route `/movie/@movieId`</span></span>
 <span class="line"><span style="color:#24292F">    pageContext: {</span></span>
 <span class="line"><span style="color:#24292F">      pageProps: {</span></span>
 <span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// We filter out the data we don&#x27;t need in order to minimize what is sent to the browser.</span></span>

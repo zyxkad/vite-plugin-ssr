@@ -79,7 +79,7 @@ are defined by our <a href="/render">server-side <code>render()</code> hook</a>.
 <p>To define <code>&lt;head&gt;</code> tags that are dynamic (determined at run-time),
 we can also use a <a href="/exports">Custom Export</a>.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/rocket.page.route.js</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> &#x27;/</span><span style="color:#0550AE">rocket</span><span style="color:#24292F">/</span><span style="color:#CF222E">:</span><span style="color:#953800">rocketSlug</span><span style="color:#0A3069">&#x27;</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> &#x27;/</span><span style="color:#0550AE">rocket</span><span style="color:#24292F">/@rocketSlug</span><span style="color:#0A3069">&#x27;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/rocket.page.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Custom Export</span></span>

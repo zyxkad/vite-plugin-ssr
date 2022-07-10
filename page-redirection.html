@@ -76,7 +76,7 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
 <p>We can also trigger a page redirection from a page:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// movie.page.route.js</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&quot;/star-wars/:movieId&quot;</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&quot;/star-wars/@movieId&quot;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// movie.page.server.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforeRender }</span></span>

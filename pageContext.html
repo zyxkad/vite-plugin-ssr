@@ -20,7 +20,7 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <h2 id="built-in">Built-in</h2>
 <ul>
 <li><strong><code>pageContext.Page</code></strong>: the <code>export { Page }</code> or <code>export default</code> of the page&#x27;s <code>.page.js</code> file.</li>
-<li><strong><code>pageContext.routeParams</code></strong>: the route parameters. (E.g. <code>pageContext.routeParams.movieId</code> for a page with a Route String <code>/movie/:movieId</code>.)</li>
+<li><strong><code>pageContext.routeParams</code></strong>: the route parameters. (E.g. <code>pageContext.routeParams.movieId</code> for a page with a Route String <code>/movie/@movieId</code>.)</li>
 <li><strong><code>pageContext.isHydration</code></strong> [<em>Only when using <a href="/clientRouting">Client Routing</a> and only in the browser</em>]: boolean that is <code>true</code> if the current page is already rendered to HTML. (Usually: <code>true</code> for the first page the user navigates to and <code>false</code> when the user navigates to a new page.)</li>
 <li><strong><code>pageContext.url</code></strong>: The <code>url</code> we passed at the server middleware.<!-- -->
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Server middleware</span></span>

@@ -33,7 +33,7 @@ and we can deploy these static assets to a so-called &quot;static host&quot; suc
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
 <p>Pre-render configuration: <a href="/prerender-config">API<!-- --> &gt; <code>prerender</code> (config)</a>.</p>
 <p>Once enabled, our pages&#x27; HTML are rendered when we run <code>$ vite build</code> and the generated static assets are available at <code>dist/client/</code>.</p>
-<p>For a page with a parameterized route (e.g. <code>/movie/:movieId</code>), we have to use the <a href="/prerender"><code>prerender()</code> hook</a> in order to provide the list of URLs that are to be pre-rendered. The <code>prerender()</code> hook can also be used to accelerate the pre-rendering process.</p>
+<p>For a page with a parameterized route (e.g. <code>/movie/@movieId</code>), we have to use the <a href="/prerender"><code>prerender()</code> hook</a> in order to provide the list of URLs that are to be pre-rendered. The <code>prerender()</code> hook can also be used to accelerate the pre-rendering process.</p>
 <p>By default the command <code>$ vite-plugin-ssr prerender</code> pre-renders all our pages.
 To pre-render only some pages, we can use the <a href="/prerender-config#partial"><code>partial</code> option</a> with <a href="/doNotPrerender"><code>.page.server.js#doNotPrerender</code></a></p>
 <p>We can programmatically invoke the pre-rendering process, see <a href="/prerender-programmatic">API<!-- --> &gt; <code>prerender()</code> (programmatic run)</a>.</p>

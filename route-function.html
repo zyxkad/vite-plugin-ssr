@@ -92,7 +92,7 @@
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Parse the URL</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">urlParts</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> url.</span><span style="color:#8250DF">slice</span><span style="color:#24292F">(</span><span style="color:#0550AE">1</span><span style="color:#24292F">).</span><span style="color:#8250DF">split</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only URLs that start with `/user/:userId`</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only URLs that start with `/user/@userId`</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (urlParts[</span><span style="color:#0550AE">0</span><span style="color:#24292F">] </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;user&#x27;</span><span style="color:#24292F">) </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">userId</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> urlParts[</span><span style="color:#0550AE">1</span><span style="color:#24292F">]</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">userId) </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
@@ -163,13 +163,13 @@
 <li>Filesystem Routing</li>
 <li>Route String, static (i.e. without <code>:param</code> segment, e.g. <code>/about/company</code>)</li>
 <li>Route Function, returned no <code>precedence</code> number (or <code>0</code>)</li>
-<li>Route String, parameterized (i.e. with <code>:param</code> segement, e.g. <code>/product/:productId</code> or <code>/product/*</code>)</li>
+<li>Route String, parameterized (i.e. with <code>:param</code> segement, e.g. <code>/product/@productId</code> or <code>/product/*</code>)</li>
 <li>Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)</li>
 <li>Route Function, returned high negative <code>precedence</code> number (e.g. <code>-99</code>)</li>
 </ol>
 <p><strong>Example (4) + (6) + (7)</strong>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// product/item.page.route.js</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/:productId&#x27;</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// product/list.page.route.js</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product&#x27;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// product/catch-all.page.route.js</span></span>
@@ -198,7 +198,7 @@
 /product/wrong/url            product/catch-all.page.route.js (7)        ⬅️
 </code></pre>
 <p>4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)<br/>
-<!-- -->6: Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/:productId</code> or <code>/product/*</code>)<br/>
+<!-- -->6: Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/@productId</code> or <code>/product/*</code>)<br/>
 <!-- -->7: Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)</p>
 <p><strong>Example (1) + (4)</strong>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// admin.page.route.js</span></span>
