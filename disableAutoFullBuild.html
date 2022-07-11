@@ -23,11 +23,11 @@
 <span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  ]</span></span>
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
-<p>Running <code>$ vite build</code> executes the following three build steps:</p>
+<p>Running <code>$ vite build</code> executes three build steps:</p>
 <ol>
-<li>The client-side is build (<code>dist/client/</code>).</li>
-<li>The server-side is build (<code>dist/server/</code>).</li>
-<li>The pre-rendering of HTML files (if <a href="/pre-rendering">pre-rendering is enabled</a>).</li>
+<li>Client-side build (<code>dist/client/</code>).</li>
+<li>Server-side build (<code>dist/server/</code>).</li>
+<li>Pre-rendering (if <a href="/pre-rendering">pre-rendering is enabled</a>).</li>
 </ol>
 <p>When setting <code>disableAutoFullBuild</code> to <code>true</code> then only step <code>1</code> is executed. To run the full build, we then have to:</p>
 <ul>
