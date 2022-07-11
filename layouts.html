@@ -113,9 +113,11 @@ for example a landing page usually has a different layout than an admin panel.
 </code></pre>
 </blockquote>
 <blockquote>
-<p>For a DX similar to Next.js&#x27;s new Layout RFC or Remix, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/346">#346</a>.</p>
+<p>For a DX similar to Next.js&#x27;s new Layout RFC, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/346">#346</a>.
+Add a comment if you need this and this will be implemented. (ETA: within a week.)</p>
 </blockquote>
-<p>A simple way to implement a nested layout is to use a Route Function:</p>
+<p>Until <a href="https://github.com/brillout/vite-plugin-ssr/issues/346">#346</a> is implemented,
+a way to implement a nested layout is to use a Route Function:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/index.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> (pageContext) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
