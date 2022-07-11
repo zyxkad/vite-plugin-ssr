@@ -114,7 +114,10 @@ for example a landing page usually has a different layout than an admin panel.
 </blockquote>
 <blockquote>
 <p>For a DX similar to Next.js&#x27;s new Layout RFC, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/346">#346</a>.
-Add a comment if you need this and this will be implemented. (ETA: within a week.)</p>
+Add a comment if you need/want this and it will be implemented. (ETA: within a week.)</p>
+</blockquote>
+<blockquote>
+<p>If our nested layout doesn&#x27;t need to be persisted/assigned to a URL (e.g. the &quot;Product Pricing&quot; page and the &quot;Product Reviews&quot; page share the same URL <code>/product/42</code>), then we can simply use a stateful component.</p>
 </blockquote>
 <p>Until <a href="https://github.com/brillout/vite-plugin-ssr/issues/346">#346</a> is implemented,
 a way to implement a nested layout is to use a Route Function:</p>
@@ -154,9 +157,6 @@ a way to implement a nested layout is to use a Route Function:</p>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <blockquote>
 <p><code>usePageContext()</code> allows us to access <code>pageContext</code> in any component, see <a href="/pageContext-anywhere">Access <code>pageContext</code> anywhere</a>.</p>
-</blockquote>
-<blockquote>
-<p>If our nested layout doesn&#x27;t need to be persisted/assigned by a URL (e.g. the &quot;Product Pricing&quot; page and the &quot;Product Reviews&quot; page share the same URL <code>/product/42</code>), then we can simply use a stateful component instead of a Route Function.</p>
 </blockquote>
 <p>For smooth nested layout navigation, we recommend using <a href="/client-routing">Client Routing</a>.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// pages/product/index.page.client.js</span></span>
