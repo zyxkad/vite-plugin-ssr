@@ -1,4 +1,13 @@
 {
+  "pages/banner.page.client.ts": {
+    "file": "assets/pages/banner.page.client.d8aeec5f.js",
+    "src": "pages/banner.page.client.ts",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "css": [
+      "assets/index.85730f7b.css"
+    ]
+  },
   "pages/react-tour.page.client.ts": {
     "file": "assets/pages/react-tour.page.client.9ec2af1f.js",
     "src": "pages/react-tour.page.client.ts",
@@ -18,29 +27,29 @@
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.5a48dbe9.js",
+    "file": "assets/pages/index/index.page.client.1ae559c3.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-4d565caf.js",
+      "_chunk-ef1f80cd.js",
       "_chunk-2eb5984d.js"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.50cf3da9.js",
+    "file": "assets/entry-client-routing.0634559b.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-16b05e1c.js"
+      "_chunk-30965e69.js"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.94bad93e.js",
+    "file": "assets/entry-server-routing.fde9f578.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-16b05e1c.js"
+      "_chunk-30965e69.js"
     ]
   },
   "_chunk-2eb5984d.js": {
@@ -49,16 +58,17 @@
       "assets/ScaffoldCallToAction.client.ff807686.css"
     ]
   },
-  "_chunk-4d565caf.js": {
-    "file": "assets/chunk-4d565caf.js"
+  "_chunk-ef1f80cd.js": {
+    "file": "assets/chunk-ef1f80cd.js"
   },
-  "_chunk-16b05e1c.js": {
-    "file": "assets/chunk-16b05e1c.js",
+  "_chunk-30965e69.js": {
+    "file": "assets/chunk-30965e69.js",
     "dynamicImports": [
+      "pages/banner.page.client.ts",
       "pages/index/index.page.client.ts",
       "pages/react-tour.page.client.ts",
       "pages/vue-tour.page.client.ts",
-      "../node_modules/.pnpm/vikepress@0.0.27_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.29_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
       "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-client.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-server.page.server.mdx?extractStyles&lang.mdx",
@@ -71,6 +81,7 @@
       "pages/apollo-graphql.page.server.mdx?extractStyles&lang.mdx",
       "pages/auth.page.server.mdx?extractStyles&lang.mdx",
       "pages/aws-lambda.page.server.mdx?extractStyles&lang.mdx",
+      "pages/banner.page.server.tsx?extractStyles&lang.tsx",
       "pages/base-url.page.server.mdx?extractStyles&lang.mdx",
       "pages/bootstrap.page.server.mdx?extractStyles&lang.mdx",
       "pages/catch-all.page.server.mdx?extractStyles&lang.mdx",
@@ -181,22 +192,20 @@
       "pages/vuetify.page.server.mdx?extractStyles&lang.mdx",
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
-      "../node_modules/.pnpm/vikepress@0.0.27_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+      "../node_modules/.pnpm/vikepress@0.0.29_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
-  "../node_modules/.pnpm/vikepress@0.0.27_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
-    "file": "assets/chunk-b7a79a4c.js",
-    "src": "../node_modules/.pnpm/vikepress@0.0.27_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+  "../node_modules/.pnpm/vikepress@0.0.29_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
+    "file": "assets/chunk-6493d807.js",
+    "src": "../node_modules/.pnpm/vikepress@0.0.29_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-4d565caf.js"
+      "_chunk-ef1f80cd.js"
     ],
     "css": [
-      "assets/_default.page.client.ec987e6f.css",
+      "assets/_default.page.client.fbb7e3d8.css",
+      "assets/index.85730f7b.css",
       "assets/P.8c851859.css"
-    ],
-    "assets": [
-      "assets/Inter-Var.2bc54814.ttf"
     ]
   },
   "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx": {
@@ -286,6 +295,16 @@
     "file": "assets/chunk-87797ab95.js",
     "src": "pages/aws-lambda.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
+  },
+  "pages/banner.page.server.tsx?extractStyles&lang.tsx": {
+    "file": "assets/chunk-addb8dc6.js",
+    "src": "pages/banner.page.server.tsx?extractStyles&lang.tsx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/Header.7f6c9d90.css",
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
   },
   "pages/base-url.page.server.mdx?extractStyles&lang.mdx": {
     "file": "assets/chunk-29f250198.js",
@@ -652,11 +671,11 @@
     ]
   },
   "pages/index/index.page.server.tsx?extractStyles&lang.tsx": {
-    "file": "assets/chunk-1a4adc83.js",
+    "file": "assets/chunk-addb8dc62.js",
     "src": "pages/index/index.page.server.tsx?extractStyles&lang.tsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/index.page.server.116e0b30.css",
+      "assets/Header.7f6c9d90.css",
       "assets/P.8c851859.css",
       "assets/FeatureList.c62da281.css"
     ]
@@ -1126,9 +1145,9 @@
       "assets/FeatureList.c62da281.css"
     ]
   },
-  "../node_modules/.pnpm/vikepress@0.0.27_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
+  "../node_modules/.pnpm/vikepress@0.0.29_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
     "file": "assets/chunk-1ad2bff5.js",
-    "src": "../node_modules/.pnpm/vikepress@0.0.27_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
+    "src": "../node_modules/.pnpm/vikepress@0.0.29_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
     "isDynamicEntry": true,
     "css": [
       "assets/_default.page.server.c485b9fb.css"
