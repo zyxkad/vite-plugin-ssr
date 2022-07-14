@@ -41,7 +41,7 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <li>User fills the sign-in form and successfully logs in. (URL is still <code>/admin</code>.)</li>
 <li>Page is reloaded and the user now sees the Admin Page. (URL is still <code>/admin</code>.)</li>
 </ol>
-<p>This works for all URLs: the original intention of the user is preserved and there is no need for a complex URL restoration mechanism.</p>
+<p>The original intention of the user is preserved and there is no need for some complex URL restoration mechanism.</p>
 <p>Instead of using this approach, we can also use the more traditional approach of performing a page redirection. See sections below.</p>
 <h2 id="server-side">Server-side</h2>
 <p>We can perform a URL redirection by using <code>pageContext</code>:</p>
@@ -122,9 +122,9 @@ if a user is not authenticated and goes to <code>/admin</code> then we redirect 
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { render }</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { navigate } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;vite-plugin-ssr/client/router&quot;</span><span style="color:#24292F">;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">render</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">render</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">redirectTo</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (redirectTo) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">navigate</span><span style="color:#24292F">(redirectTo)</span></span>
