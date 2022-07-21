@@ -87,6 +87,10 @@ then SPA is an option.</p>
 <span class="line"><span style="color:#0A3069">    &lt;/body&gt;</span></span>
 <span class="line"><span style="color:#0A3069">  &lt;/html&gt;`</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<blockquote>
+<p>Note that the server-side <code>render()</code> hook is still called in order to generate the static HTML of our SPA page.
+For production, if we only have SPA pages, then we may want to <a href="/pre-rendering">pre-render</a> the static HTML of our SPA pages at build-time.</p>
+</blockquote>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
 <span class="line"></span>
@@ -178,7 +182,7 @@ then SPA is an option.</p>
 <p>Pre-rendering (aka SSG) means to render the page&#x27;s HTML at build-time instead of request-time.</p>
 <p>We should use pre-rendering whenever we can, as it allows us to deploy our app to a Static Host.</p>
 <p>For example, <code>https://vite-plugin-ssr.com</code> is pre-rendered and deployed to <a href="/github-pages">GitHub Pages</a>.</p>
-<p>See <a href="/pre-rendering">Guides &gt; Pre-rendering</a>.</p>
+<p>See <a href="/pre-rendering">Guides<!-- --> &gt; <!-- -->Pre-rendering (SSG)</a>.</p>
 <h2 id="html-only">HTML-only</h2>
 <p>We can choose HTML-only for pages with no/little interactivity. (Technically speaking: the page has no/few stateful components.)</p>
 <p>The page then has zero/little browser-side JavaScript.</p>
