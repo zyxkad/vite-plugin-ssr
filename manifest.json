@@ -37,11 +37,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.b48e9084.js",
+    "file": "assets/entry-client-routing.c0d165a8.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-42d8783c.js"
+      "_chunk-9f44049b.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -119,6 +119,7 @@
       "pages/migration-0.4.page.server.mdx?extractStyles&lang.mdx",
       "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx",
       "pages/navigate.page.server.mdx?extractStyles&lang.mdx",
+      "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
       "pages/netlify.page.server.mdx?extractStyles&lang.mdx",
       "pages/nextauth.page.server.mdx?extractStyles&lang.mdx",
       "pages/onBeforeRender-isomorphic.page.server.mdx?extractStyles&lang.mdx",
@@ -177,11 +178,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.8b9ad181.js",
+    "file": "assets/entry-server-routing.0987a324.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-42d8783c.js"
+      "_chunk-9f44049b.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -259,6 +260,7 @@
       "pages/migration-0.4.page.server.mdx?extractStyles&lang.mdx",
       "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx",
       "pages/navigate.page.server.mdx?extractStyles&lang.mdx",
+      "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
       "pages/netlify.page.server.mdx?extractStyles&lang.mdx",
       "pages/nextauth.page.server.mdx?extractStyles&lang.mdx",
       "pages/onBeforeRender-isomorphic.page.server.mdx?extractStyles&lang.mdx",
@@ -325,8 +327,8 @@
   "_chunk-2be014d0.js": {
     "file": "assets/chunk-2be014d0.js"
   },
-  "_chunk-42d8783c.js": {
-    "file": "assets/chunk-42d8783c.js"
+  "_chunk-9f44049b.js": {
+    "file": "assets/chunk-9f44049b.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.31_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-948c0016.js",
@@ -873,13 +875,18 @@
       "assets/FeatureList.c62da281.css"
     ]
   },
-  "pages/netlify.page.server.mdx?extractStyles&lang.mdx": {
+  "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx": {
     "file": "assets/chunk-87797ab926.js",
+    "src": "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
+  "pages/netlify.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab927.js",
     "src": "pages/netlify.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/nextauth.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab927.js",
+    "file": "assets/chunk-87797ab928.js",
     "src": "pages/nextauth.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -938,7 +945,7 @@
     ]
   },
   "pages/pageContext-manipulation.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab928.js",
+    "file": "assets/chunk-87797ab929.js",
     "src": "pages/pageContext-manipulation.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -952,7 +959,7 @@
     ]
   },
   "pages/passToClient.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab929.js",
+    "file": "assets/chunk-87797ab930.js",
     "src": "pages/passToClient.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1029,7 +1036,7 @@
     ]
   },
   "pages/react-tour.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab930.js",
+    "file": "assets/chunk-87797ab931.js",
     "src": "pages/react-tour.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1079,7 +1086,7 @@
     ]
   },
   "pages/render.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab931.js",
+    "file": "assets/chunk-87797ab932.js",
     "src": "pages/render.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1093,12 +1100,12 @@
     ]
   },
   "pages/route-function.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab932.js",
+    "file": "assets/chunk-87797ab933.js",
     "src": "pages/route-function.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/route-string.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab933.js",
+    "file": "assets/chunk-87797ab934.js",
     "src": "pages/route-string.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1112,12 +1119,12 @@
     ]
   },
   "pages/sass.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab934.js",
+    "file": "assets/chunk-87797ab935.js",
     "src": "pages/sass.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/scaffold.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab935.js",
+    "file": "assets/chunk-87797ab936.js",
     "src": "pages/scaffold.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1149,17 +1156,17 @@
     ]
   },
   "pages/ssr.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab936.js",
+    "file": "assets/chunk-87797ab937.js",
     "src": "pages/ssr.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/static-directory.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab937.js",
+    "file": "assets/chunk-87797ab938.js",
     "src": "pages/static-directory.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/static-hosts.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab938.js",
+    "file": "assets/chunk-87797ab939.js",
     "src": "pages/static-hosts.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1191,7 +1198,7 @@
     ]
   },
   "pages/svelte.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab939.js",
+    "file": "assets/chunk-87797ab940.js",
     "src": "pages/svelte.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1205,7 +1212,7 @@
     ]
   },
   "pages/typescript.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab940.js",
+    "file": "assets/chunk-87797ab941.js",
     "src": "pages/typescript.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1228,26 +1235,22 @@
     ]
   },
   "pages/vercel.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501975.js",
+    "file": "assets/chunk-87797ab942.js",
     "src": "pages/vercel.page.server.mdx?extractStyles&lang.mdx",
-    "isDynamicEntry": true,
-    "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
-    ]
+    "isDynamicEntry": true
   },
   "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab941.js",
+    "file": "assets/chunk-87797ab943.js",
     "src": "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vue-query.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab942.js",
+    "file": "assets/chunk-87797ab944.js",
     "src": "pages/vue-query.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501976.js",
+    "file": "assets/chunk-29f2501975.js",
     "src": "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1256,17 +1259,17 @@
     ]
   },
   "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab943.js",
+    "file": "assets/chunk-87797ab945.js",
     "src": "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vuetify.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab944.js",
+    "file": "assets/chunk-87797ab946.js",
     "src": "pages/vuetify.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vuex.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501977.js",
+    "file": "assets/chunk-29f2501976.js",
     "src": "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1275,7 +1278,7 @@
     ]
   },
   "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501978.js",
+    "file": "assets/chunk-29f2501977.js",
     "src": "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
