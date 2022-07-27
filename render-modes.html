@@ -138,17 +138,20 @@ For production, if we only have SPA pages, then we may want to <a href="/pre-ren
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">render</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">Page</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">rootDomElement</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> document.</span><span style="color:#8250DF">getElementById</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;root&#x27;</span><span style="color:#24292F">)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">root</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> document.</span><span style="color:#8250DF">getElementById</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;root&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// SPA pages don&#x27;t have any hydration steps</span></span>
-<span class="line"><span style="color:#24292F">    rootDomElement.innerHTML </span><span style="color:#CF222E">===</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;&#x27;</span><span style="color:#24292F"> </span><span style="color:#CF222E">||</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Page navigation of SSR pages also need to be fully rendered (if we use Client Routing)</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We detect SPAs by using the fact that `innerHTML === &#x27;&#x27;` for the first render of an SPA</span></span>
+<span class="line"><span style="color:#24292F">    root.innerHTML </span><span style="color:#CF222E">===</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;&#x27;</span><span style="color:#24292F"> </span><span style="color:#CF222E">||</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Upon Client Routing page navigation, vite-plugin-ssr sets `pageContext.isHydration`</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// to `false`.</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">!</span><span style="color:#24292F">pageContext.isHydration</span></span>
 <span class="line"><span style="color:#24292F">  ) {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderToDom</span><span style="color:#24292F">(rootDomElement, Page)</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// - SPA pages don&#x27;t have any hydration steps: they need to be fully rendered.</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// - Page navigation of SSR pages also need to be fully rendered (if we use Client Routing)</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderToDom</span><span style="color:#24292F">(root, Page)</span></span>
 <span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// The first render of SSR pages is a hydration</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderToDom</span><span style="color:#24292F">(Page)</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// The first render of SSR pages is merely a hydration (instead of a full render)</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">hydrateDom</span><span style="color:#24292F">(root, Page)</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>Example:</p>
