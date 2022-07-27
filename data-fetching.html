@@ -105,7 +105,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <p>Note that <code>vite-plugin-ssr</code> doesn&#x27;t know anything about <code>pageProps</code>: it&#x27;s just an object we create in order to conveniently pass all the page&#x27;s props at once.</p>
 </blockquote>
 <h2 id="custom-exports">Custom Exports</h2>
-<p>For more convenience, instead of creating a new <code>onBeforeRender()</code> hook for each page, we can define <code>onBeforeRender()</code> once in <code>/renderer/_default.page.server.js</code> while using a <a href="/exports">Custom Export</a>.</p>
+<p>For more convenience, instead of creating a new <code>onBeforeRender()</code> hook for each page, we can define <code>onBeforeRender()</code> once in <code>/renderer/_default.page.server.js</code> while using a <a href="/exports">Custom Export/Hook</a>.</p>
 <p>For example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/user.page.js</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">query</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { modelName: </span><span style="color:#0A3069">&#x27;User&#x27;</span><span style="color:#24292F">, select: [</span><span style="color:#0A3069">&#x27;firstName&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;lastName&#x27;</span><span style="color:#24292F">] }</span></span></code></pre></div>
@@ -182,5 +182,5 @@ then we can define <code>onBeforeRender()</code> in <code>.page.js</code> instea
       })
     </script>
   
-      <script type="module" src="/assets/chunk-a474bdf6.js" async></script></body>
+      <script type="module" src="/assets/chunk-7e32e50e.js" async></script></body>
     </html>
