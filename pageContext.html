@@ -60,6 +60,7 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 </li>
 <li><strong><code>pageContext.exports</code></strong>: See <a href="/exports">Guides<!-- --> &gt; <!-- -->Custom Exports/Hooks</a>.</li>
 <li><strong><code>pageContext.exportsAll</code></strong>: Same as <code>pageContext.exports</code> but cumulative.</li>
+<li><strong><code>pageContext.is404</code></strong>: If an error occurs, whether the error is a <code>404 Page Not Found</code> or a <code>500 Internal Server Error</code>, see <a href="/error-page">API<!-- --> &gt; <code>_error.page.js</code></a>.</li>
 </ul>
 <h2 id="custom">Custom</h2>
 <p>In addition to the built-in <code>pageContext</code> values set by <code>vite-plugin-ssr</code>, we can define custom <code>pageContext</code> values at:</p>
