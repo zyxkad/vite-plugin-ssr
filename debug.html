@@ -16,9 +16,9 @@
 <p>To use <code>vite-plugin-ssr</code>&#x27;s debug logs:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="shell" data-theme="default"><code data-language="shell" data-theme="default"><span class="line"><span style="color:#6E7781"># Inspect the routing</span></span>
 <span class="line"><span style="color:#24292F">DEBUG=vps:routing npm run dev</span></span>
-<span class="line"><span style="color:#6E7781"># Insepct what `.page.js` files are found and how they are treated</span></span>
+<span class="line"><span style="color:#6E7781"># Inspect what `.page.js` files are found and how they are treated</span></span>
 <span class="line"><span style="color:#24292F">DEBUG=vps:pageFiles npm run dev</span></span>
-<span class="line"><span style="color:#6E7781"># Insepct HTTP Streaming</span></span>
+<span class="line"><span style="color:#6E7781"># Inspect HTTP Streaming</span></span>
 <span class="line"><span style="color:#24292F">DEBUG=vps:stream npm run dev</span></span></code></pre></div>
 <blockquote>
 <p>These debug logs allow you to understand how <code>vite-plugin-ssr</code> thinks of your app. For example, to figure out why your app is <code>404</code>&#x27;ing, you can use <code>vps:routing</code> and <code>vps:pageFiles</code>.</p>
