@@ -84,7 +84,7 @@
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <h2 id="pagecontext-enableeagerstreaming"><code>pageContext.enableEagerStreaming</code></h2>
-<p>By default, the HTML template we provided in the <code>render()</code> hook isn&#x27;t immediately written to the stream: instead, <code>vite-plugin-ssr</code> awaits for your UI framework to start writing to the stream.</p>
+<p>By default, the HTML template, we provide in our <code>render()</code> hook, isn&#x27;t immediately written to the stream: instead, <code>vite-plugin-ssr</code> awaits for our UI framework to start writing to the stream.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderToStream } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-ui-framework&#x27;</span><span style="color:#24292F"> </span><span style="color:#6E7781">// React, Vue, ...</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">render</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
