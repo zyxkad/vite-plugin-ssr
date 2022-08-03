@@ -22,6 +22,10 @@
 <span class="line"><span style="color:#6E7781">//  ...</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/*&#x27;</span></span></code></pre></div>
 <p>The value of the catch-all is available at <code>pageContext.routeParams[&#x27;*&#x27;]</code>.</p>
+<blockquote>
+<p>The difference between <code>/product/*</code> and <code>/product/@productId</code> is that the former includes nested paths whereas the latter doesn&#x27;t.
+For example <code>/product/42/details</code> matches <code>/product/*</code> but doesn&#x27;t match <code>/product/@productId</code>.</p>
+</blockquote>
 <p>To route all URLs to a single page:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// catch-all.page.route.js</span></span>
 <span class="line"></span>
