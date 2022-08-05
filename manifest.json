@@ -37,11 +37,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.28ad8f52.js",
+    "file": "assets/entry-client-routing.d11f38f2.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-bfe64222.js"
+      "_chunk-d30f17d3.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -174,15 +174,16 @@
       "pages/vuetify.page.server.mdx?extractStyles&lang.mdx",
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
+      "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
       "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.ee600578.js",
+    "file": "assets/entry-server-routing.1a9d9444.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-bfe64222.js"
+      "_chunk-d30f17d3.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -315,6 +316,7 @@
       "pages/vuetify.page.server.mdx?extractStyles&lang.mdx",
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
+      "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
       "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
@@ -327,8 +329,8 @@
   "_chunk-fa95d9a3.js": {
     "file": "assets/chunk-fa95d9a3.js"
   },
-  "_chunk-bfe64222.js": {
-    "file": "assets/chunk-bfe64222.js"
+  "_chunk-d30f17d3.js": {
+    "file": "assets/chunk-d30f17d3.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-66727b0f.js",
@@ -1292,6 +1294,15 @@
   "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx": {
     "file": "assets/chunk-29f2501980.js",
     "src": "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/windi-css.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501981.js",
+    "src": "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
       "assets/P.8c851859.css",
