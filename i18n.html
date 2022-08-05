@@ -44,7 +44,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> { locale, urlWithoutLocale }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>Upon rendering a page, the <code>onBeforeRoute()</code> is the first hook that vite-plugin-ssr calls. This means that vite-plugin-ssr, and the rest of our app, doesn&#x27;t have to deal with localized URLs anymore, and our code can simply use <code>pageContext.locale</code> instead.</p>
+<p>Upon rendering a page, the <code>onBeforeRoute()</code> is the first hook that <code>vite-plugin-ssr</code> calls. This means that <code>vite-plugin-ssr</code>, and the rest of our app, doesn&#x27;t have to deal with localized URLs anymore, and our code can simply use <code>pageContext.locale</code> instead.</p>
 <blockquote>
 <p>See <a href="/pageContext-anywhere">Guides<!-- --> &gt; <!-- -->Access <code>pageContext</code> anywhere</a> for being able to access <code>pageContext.locale</code> in any React/Vue component.</p>
 </blockquote>
