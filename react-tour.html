@@ -100,19 +100,7 @@ we define a new page by creating a new <code>.page.jsx</code> file.</p>
 we can create <code>/renderer/_default.page.client.js</code> and <code>/renderer/_default.page.server.js</code> which apply as default for all pages.</p>
 <p>The last two files we created are actually <code>/renderer/_default.page.client.jsx</code> and <code>/renderer/_default.page.server.jsx</code>,
 which means that we can now create a new page just by defining a new <code>.page.jsx</code> file (the <code>.page.route.js</code> file is optional).</p>
-<p>The <code>_default</code> files can be overridden. For example, we can create a page with a different browser-side code than our other pages.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/about.page.client.js</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#6E7781">// This file is empty which means that the `/about` page has zero browser-side JavaScript.</span></span></code></pre></div>
-<div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/about.page.jsx</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { Page };</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Page</span><span style="color:#24292F">() {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;&gt;This page is only rendered to HTML.&lt;/&gt;;</span></span>
-<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>By also overriding the <code>render()</code> hook we can
-even render a page with a completely different UI framework, e.g. Vue or another React version (for progressive React version upgrade).</p>
+<p>The <code>_default</code> files can be overridden. For example, we can overriding the <code>render()</code> hook for rendering some of our pages with a completely different UI framework such as Vue.</p>
 <h2 id="data-fetching">Data Fetching</h2>
 <p>Let&#x27;s now have a look at how to fetch data.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/star-wars/movie.page.jsx</span></span>

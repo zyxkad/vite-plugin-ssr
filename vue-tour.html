@@ -105,17 +105,7 @@ we&#x27;ll eventually lose more time circumventing Nuxt&#x27;s limiting black bo
 we can create <code>/renderer/_default.page.client.js</code> and <code>/renderer/_default.page.server.js</code> which apply as default for all pages.</p>
 <p>The last two files we created are actually <code>/renderer/_default.page.client.js</code> and <code>/renderer/_default.page.server.js</code>,
 which means that we can now create a new page just by defining a new <code>.page.vue</code> file (the <code>.page.route.js</code> file is optional).</p>
-<p>The <code>_default</code> files can be overridden. For example, we can create a page with a different browser-side code than our other pages.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/about.page.client.js</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#6E7781">// This file is empty which means that the `/about` page has zero browser-side JavaScript.</span></span></code></pre></div>
-<div data-rehype-pretty-code-fragment=""><pre data-language="vue" data-theme="default"><code data-language="vue" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- /pages/about.page.vue --&gt;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#24292F">&lt;</span><span style="color:#116329">template</span><span style="color:#24292F">&gt;</span></span>
-<span class="line"><span style="color:#24292F">  This page is only rendered to HTML.</span></span>
-<span class="line"><span style="color:#24292F">&lt;/</span><span style="color:#116329">template</span><span style="color:#24292F">&gt;</span></span></code></pre></div>
-<p>By also overriding the <code>render()</code> hook we can
-even render a page with a completely different UI framework, e.g. React or another Vue version (for progressive Vue version upgrade).</p>
+<p>The <code>_default</code> files can be overridden. For example, we can overriding the <code>render()</code> hook for rendering some of our pages with a completely different UI framework such as React.</p>
 <h2 id="data-fetching">Data Fetching</h2>
 <p>Let&#x27;s now have a look at how to fetch data.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="vue" data-theme="default"><code data-language="vue" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- /pages/star-wars/movie.page.vue --&gt;</span></span>
