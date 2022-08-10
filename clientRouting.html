@@ -73,12 +73,15 @@
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onPageTransitionStart</span><span style="color:#24292F">() {</span></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onPageTransitionStart</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;Page transition start&#x27;</span><span style="color:#24292F">)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `pageContext.isBackwardNavigation` is also set at `render(pageContext)`</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// and `onPageTransitionEnd(pageContext)`.</span></span>
+<span class="line"><span style="color:#24292F">  console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;Is backwards navigation?&#x27;</span><span style="color:#24292F">, pageContext.isBackwardNavigation)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// For example:</span></span>
 <span class="line"><span style="color:#24292F">  document.body.classList.</span><span style="color:#8250DF">add</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;page-transition&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">}</span></span>
-<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onPageTransitionEnd</span><span style="color:#24292F">() {</span></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onPageTransitionEnd</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;Page transition end&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// For example:</span></span>
 <span class="line"><span style="color:#24292F">  document.body.classList.</span><span style="color:#8250DF">remove</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;page-transition&#x27;</span><span style="color:#24292F">)</span></span>

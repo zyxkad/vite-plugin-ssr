@@ -22,7 +22,6 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <ul>
 <li><strong><code>pageContext.Page</code></strong>: the <code>export { Page }</code> or <code>export default</code> of the page&#x27;s <code>.page.js</code> file.</li>
 <li><strong><code>pageContext.routeParams</code></strong>: the route parameters. (E.g. <code>pageContext.routeParams.movieId</code> for a page with a Route String <code>/movie/@movieId</code>.)</li>
-<li><strong><code>pageContext.isHydration</code></strong>: whether the current page is already rendered to HTML. (Usually <code>true</code> for the first page the user navigates to, and <code>false</code> if the user navigates to a new page when using Client Routing.)</li>
 <li><strong><code>pageContext.url</code></strong>: The <code>url</code> we passed at the server middleware.<!-- -->
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Server middleware</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">, </span><span style="color:#953800">next</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
@@ -60,6 +59,8 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 </li>
 <li><strong><code>pageContext.exports</code></strong>: See <a href="/exports">Guides<!-- --> &gt; <!-- -->Custom Exports/Hooks</a>.</li>
 <li><strong><code>pageContext.exportsAll</code></strong>: Same as <code>pageContext.exports</code> but cumulative.</li>
+<li><strong><code>pageContext.isHydration</code></strong>: Whether the current page is already rendered to HTML. (Usually <code>true</code> for the first page the user navigates to, and <code>false</code> if the user navigates to a new page when using Client Routing.)</li>
+<li><strong><code>pageContext.isBackwardNavigation</code></strong>: Whether the user is navigating back in history. The value is <code>true</code> when the user clicks on his browser&#x27;s backward navigation button, or when invoking <code>history.back()</code>. The <code>isBackwardNavigation</code> property only works with Client Routing. (The value is always <code>null</code> when using Server Routing.)</li>
 <li><strong><code>pageContext.is404</code></strong>: If an error occurs, whether the error is a <code>404 Page Not Found</code> or a <code>500 Internal Server Error</code>, see <a href="/error-page">API<!-- --> &gt; <code>_error.page.js</code></a>.</li>
 </ul>
 <h2 id="custom">Custom</h2>
@@ -105,6 +106,7 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <li><code>pageContext.Page</code></li>
 <li><code>pageContext.exports</code></li>
 <li><code>pageContext.isHydration</code></li>
+<li><code>pageContext.isBackwardNavigation</code></li>
 <li><code>pageContext.routeParams</code></li>
 <li><code>pageContext.url</code></li>
 <li><code>pageContext.urlPathname</code></li>
