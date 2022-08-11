@@ -54,10 +54,6 @@ We can do that by using the <a href="/onBeforeRender"><code>onBeforeRender()</co
 <ul>
 <li><strong>Old React versions</strong> are buggy around stiching text segments leading to <code>Warning: Text content did not match.</code>. Make sure to use the latest React version.</li>
 </ul>
-<p>With Vue:</p>
-<ul>
-<li>When using Client Routing, make sure to <strong>use the <a href="/clientRouting"><code>ensureHydration: true</code></a> option</strong> because Vue always needs the first render to be a hydration. (In other words, the first render should never be interrupted: a client-side routing trigged by the user clicking on a link should await hydration before proceeding instead of interrupting the hydration process.)</li>
-</ul>
 <h2 id="suppress-hydration-mismatch">Suppress Hydration Mismatch</h2>
 <p>There are situations when mismatches are inevitable. To suppress hydration mismatch warnings:</p>
 <ul>

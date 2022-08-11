@@ -152,9 +152,6 @@ if we want to preserve the scroll position instead. (Useful for <a href="/layout
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (pageContext.isHydration) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// `pageContext.initialState` is available here</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">initClientSide</span><span style="color:#24292F">(pageContext.initialState)</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// If we don&#x27;t set `ensureHydration: true`, then this if-block may never</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// be called. (The first page rendering and the hydration may otherwise</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// be interrupted as explained in the `Usage &amp; Options` section.)</span></span>
 <span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Note that `pageContext.initialState` is not available here,</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// since our `render()` hook is only called for the first page.</span></span>
