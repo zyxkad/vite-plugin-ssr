@@ -37,11 +37,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.f3ae0d85.js",
+    "file": "assets/entry-client-routing.d8d0a848.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-46c551d6.js"
+      "_chunk-6a6139ca.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -65,6 +65,7 @@
       "pages/banner.page.server.tsx?extractStyles&lang.tsx",
       "pages/base-url.page.server.mdx?extractStyles&lang.mdx",
       "pages/bootstrap.page.server.mdx?extractStyles&lang.mdx",
+      "pages/build-your-own-framework.page.server.mdx?extractStyles&lang.mdx",
       "pages/catch-all.page.server.mdx?extractStyles&lang.mdx",
       "pages/client-only-components.page.server.mdx?extractStyles&lang.mdx",
       "pages/client-routing.page.server.mdx?extractStyles&lang.mdx",
@@ -180,11 +181,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.4bfcdaa9.js",
+    "file": "assets/entry-server-routing.170d1ad3.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-46c551d6.js"
+      "_chunk-6a6139ca.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -208,6 +209,7 @@
       "pages/banner.page.server.tsx?extractStyles&lang.tsx",
       "pages/base-url.page.server.mdx?extractStyles&lang.mdx",
       "pages/bootstrap.page.server.mdx?extractStyles&lang.mdx",
+      "pages/build-your-own-framework.page.server.mdx?extractStyles&lang.mdx",
       "pages/catch-all.page.server.mdx?extractStyles&lang.mdx",
       "pages/client-only-components.page.server.mdx?extractStyles&lang.mdx",
       "pages/client-routing.page.server.mdx?extractStyles&lang.mdx",
@@ -331,8 +333,8 @@
   "_chunk-fa95d9a3.js": {
     "file": "assets/chunk-fa95d9a3.js"
   },
-  "_chunk-46c551d6.js": {
-    "file": "assets/chunk-46c551d6.js"
+  "_chunk-6a6139ca.js": {
+    "file": "assets/chunk-6a6139ca.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-66727b0f.js",
@@ -468,6 +470,11 @@
     "src": "pages/bootstrap.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
+  "pages/build-your-own-framework.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-87797ab97.js",
+    "src": "pages/build-your-own-framework.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true
+  },
   "pages/catch-all.page.server.mdx?extractStyles&lang.mdx": {
     "file": "assets/chunk-29f2501910.js",
     "src": "pages/catch-all.page.server.mdx?extractStyles&lang.mdx",
@@ -586,22 +593,22 @@
     ]
   },
   "pages/debug.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab97.js",
+    "file": "assets/chunk-87797ab98.js",
     "src": "pages/debug.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/default-page-route-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab98.js",
+    "file": "assets/chunk-87797ab99.js",
     "src": "pages/default-page-route-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/default-page.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab99.js",
+    "file": "assets/chunk-87797ab910.js",
     "src": "pages/default-page.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/deploy.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab910.js",
+    "file": "assets/chunk-87797ab911.js",
     "src": "pages/deploy.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -642,7 +649,7 @@
     ]
   },
   "pages/dot-page-dot-client-dot-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab911.js",
+    "file": "assets/chunk-87797ab912.js",
     "src": "pages/dot-page-dot-client-dot-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -674,7 +681,7 @@
     ]
   },
   "pages/dynamic-import.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab912.js",
+    "file": "assets/chunk-87797ab913.js",
     "src": "pages/dynamic-import.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -688,7 +695,7 @@
     ]
   },
   "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab913.js",
+    "file": "assets/chunk-87797ab914.js",
     "src": "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -702,7 +709,7 @@
     ]
   },
   "pages/exports.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab914.js",
+    "file": "assets/chunk-87797ab915.js",
     "src": "pages/exports.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -716,7 +723,7 @@
     ]
   },
   "pages/filesystem-routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab915.js",
+    "file": "assets/chunk-87797ab916.js",
     "src": "pages/filesystem-routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -730,7 +737,7 @@
     ]
   },
   "pages/firebase.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab916.js",
+    "file": "assets/chunk-87797ab917.js",
     "src": "pages/firebase.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -771,27 +778,27 @@
     ]
   },
   "pages/html-head.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab917.js",
+    "file": "assets/chunk-87797ab918.js",
     "src": "pages/html-head.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/html-streaming.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab918.js",
+    "file": "assets/chunk-87797ab919.js",
     "src": "pages/html-streaming.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/https.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab919.js",
+    "file": "assets/chunk-87797ab920.js",
     "src": "pages/https.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/hydration-mismatch.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab920.js",
+    "file": "assets/chunk-87797ab921.js",
     "src": "pages/hydration-mismatch.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/hydration.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab921.js",
+    "file": "assets/chunk-87797ab922.js",
     "src": "pages/hydration.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -805,7 +812,7 @@
     ]
   },
   "pages/importBuild-dot-cjs.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab922.js",
+    "file": "assets/chunk-87797ab923.js",
     "src": "pages/importBuild-dot-cjs.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -838,12 +845,12 @@
     ]
   },
   "pages/injectAssets.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab923.js",
+    "file": "assets/chunk-87797ab924.js",
     "src": "pages/injectAssets.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/integration.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab924.js",
+    "file": "assets/chunk-87797ab925.js",
     "src": "pages/integration.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -911,7 +918,7 @@
     ]
   },
   "pages/nextauth.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab925.js",
+    "file": "assets/chunk-87797ab926.js",
     "src": "pages/nextauth.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -970,7 +977,7 @@
     ]
   },
   "pages/pageContext-manipulation.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab926.js",
+    "file": "assets/chunk-87797ab927.js",
     "src": "pages/pageContext-manipulation.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -984,7 +991,7 @@
     ]
   },
   "pages/passToClient.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab927.js",
+    "file": "assets/chunk-87797ab928.js",
     "src": "pages/passToClient.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1061,7 +1068,7 @@
     ]
   },
   "pages/react-tour.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab928.js",
+    "file": "assets/chunk-87797ab929.js",
     "src": "pages/react-tour.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1111,7 +1118,7 @@
     ]
   },
   "pages/render.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab929.js",
+    "file": "assets/chunk-87797ab930.js",
     "src": "pages/render.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1125,12 +1132,12 @@
     ]
   },
   "pages/route-function.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab930.js",
+    "file": "assets/chunk-87797ab931.js",
     "src": "pages/route-function.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/route-string.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab931.js",
+    "file": "assets/chunk-87797ab932.js",
     "src": "pages/route-string.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1144,12 +1151,12 @@
     ]
   },
   "pages/sass.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab932.js",
+    "file": "assets/chunk-87797ab933.js",
     "src": "pages/sass.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/scaffold.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab933.js",
+    "file": "assets/chunk-87797ab934.js",
     "src": "pages/scaffold.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1181,17 +1188,17 @@
     ]
   },
   "pages/ssr.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab934.js",
+    "file": "assets/chunk-87797ab935.js",
     "src": "pages/ssr.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/static-directory.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab935.js",
+    "file": "assets/chunk-87797ab936.js",
     "src": "pages/static-directory.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/static-hosts.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab936.js",
+    "file": "assets/chunk-87797ab937.js",
     "src": "pages/static-hosts.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1223,7 +1230,7 @@
     ]
   },
   "pages/svelte.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab937.js",
+    "file": "assets/chunk-87797ab938.js",
     "src": "pages/svelte.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1237,7 +1244,7 @@
     ]
   },
   "pages/typescript.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab938.js",
+    "file": "assets/chunk-87797ab939.js",
     "src": "pages/typescript.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1260,17 +1267,17 @@
     ]
   },
   "pages/vercel.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab939.js",
+    "file": "assets/chunk-87797ab940.js",
     "src": "pages/vercel.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab940.js",
+    "file": "assets/chunk-87797ab941.js",
     "src": "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vue-query.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab941.js",
+    "file": "assets/chunk-87797ab942.js",
     "src": "pages/vue-query.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
@@ -1284,12 +1291,12 @@
     ]
   },
   "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab942.js",
+    "file": "assets/chunk-87797ab943.js",
     "src": "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vuetify.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab943.js",
+    "file": "assets/chunk-87797ab944.js",
     "src": "pages/vuetify.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
