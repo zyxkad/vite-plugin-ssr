@@ -37,9 +37,8 @@
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>Route Functions enable us to use any matching utility we want, such as <a href="https://github.com/brillout/part-regex">partRegex</a>.</p>
 <h2 id="always-run">Always Run</h2>
-<p>Upon each page request (i.e. upon each <a href="/renderPage"><code>renderPage()</code></a> call),
-<code>vite-plugin-ssr</code> runs <em>all</em> our Route Functions.</p>
-<p>That&#x27;s because we may have defined a Route Function with high precedence that overrides all other routes:</p>
+<p>Everytime a page is rendered (i.e. upon each <a href="/renderPage"><code>renderPage()</code></a> call), <code>vite-plugin-ssr</code> executes <em>all</em> Route Functions.</p>
+<p>That&#x27;s because <code>vite-plugin-ssr</code> cannot predict whether a Route Function will return a high precedence number overriding all other routes. For example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// login.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
@@ -55,9 +54,6 @@
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <blockquote>
 <p>This authentication redirection trick is further explained at <a href="/page-redirection#auth-redirection">Guides &gt; Page Redirection &gt; Auth Redirection</a>.</p>
-</blockquote>
-<blockquote>
-<p><code>vite-plugin-ssr</code> cannot know whether a Route Function with a high precedence will override all other routes; that&#x27;s why <code>vite-plugin-ssr</code> always runs all Route Functions upon each page request.</p>
 </blockquote>
 <h2 id="async">Async</h2>
 <p>Async route functions may significantly slow down our app: as we have seen in the previous section, every time a page is rendered the Route Functions of all our pages are called and awaited for.</p>
