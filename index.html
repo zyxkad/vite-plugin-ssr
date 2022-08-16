@@ -68,14 +68,15 @@
 <p>HMR stays fast as you scale thanks to Vite&#x27;s novel lazy-transpiling approach.</p>
 <h3>Routing</h3>
 <p>Pages are automatically routed:</p>
-<pre><code>FILESYSTEM                  URL
-pages/index.page.js         /
-pages/about.page.js         /about
-pages/faq/index.page.js     /faq
+<pre><code>FILESYSTEM                        URL
+pages/index.page.js               /
+pages/about.page.js               /about
+pages/faq/index.page.js           /faq
+pages/movie/@id/index.page.js     /movie/1, /movie/2, /movie/3, ...
 </code></pre>
 <p>You can also use so-called <em>Route Strings</em> and <em>Route Functions</em>.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Route String — for parameterized routes</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId&#x27;</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Route String</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@id&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Route Function — for full flexibility</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> ({ url, </span><span style="color:#CF222E">...</span><span style="color:#953800">pageContext }) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">url</span><span style="color:#CF222E">===</span><span style="color:#0A3069">&#x27;/admin&#x27;</span><span style="color:#953800"> </span><span style="color:#CF222E">&amp;&amp;</span><span style="color:#953800"> </span><span style="color:#24292F">pageContext</span><span style="color:#953800">.</span><span style="color:#24292F">isAdmin</span></span></code></pre></div>

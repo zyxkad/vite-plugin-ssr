@@ -25,19 +25,21 @@
 <p>That said, <code>vite-plugin-ssr</code> has support for both Vue Router and React Router, see <a href="/vue-router-and-react-router">Routing<!-- --> &gt; <!-- -->Vue Router &amp; React Router</a>.</p>
 <h2 id="filesystem-routing-vs-route-strings-vs-route-functions">Filesystem Routing VS Route Strings VS Route Functions</h2>
 <p>By default, <code>vite-plugin-ssr</code> does Filesystem Routing:</p>
-<pre><code>FILESYSTEM                  URL
-pages/index.page.js         /
-pages/about.page.js         /about
-pages/faq/index.page.js     /faq
+<pre><code>FILESYSTEM                        URL
+pages/index.page.js               /
+pages/about.page.js               /about
+pages/faq/index.page.js           /faq
+pages/movie/@id/index.page.js     /movie/1, /movie/2, /movie/3, ...
 </code></pre>
-<p>For advanced routes we define so-called &quot;Route Strings&quot; and &quot;Route Functions&quot; in <code>.page.route.js</code> files.</p>
+<p>We can also define so-called &quot;Route Strings&quot; and &quot;Route Functions&quot; in <code>.page.route.js</code> files.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// This file defines the route of `/pages/product.page.js`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// A Route String enables to easily define a parameterized route</span></span>
+<span class="line"><span style="color:#6E7781">// Route String</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span></span>
 <span class="line"><span style="color:#6E7781">// `productId` is available at `pageContext.routeParams.productId`</span></span></code></pre></div>
+<p>We can use a Route Function to implement all kinds of advanced routing.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product-edit.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// This file defines the route of `/pages/product-edit.page.js`</span></span>
