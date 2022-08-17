@@ -40,42 +40,23 @@ pages/movie/@id/index.page.js     /movie/1, /movie/2, /movie/3, ...
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span></span>
 <span class="line"><span style="color:#6E7781">// `productId` is available at `pageContext.routeParams.productId`</span></span></code></pre></div>
 <p>We can use a Route Function to implement all kinds of advanced routing.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product-edit.page.route.js</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// This file defines the route of `/pages/product-edit.page.js`</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> partRegex </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;part-regex&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { resolveRoute } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/routing&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// A Route Function enables full programmatic flexibility</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#CF222E">async</span><span style="color:#953800"> (pageContext) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">url</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only URLs like `/product/[0-9]+/edit`</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#8250DF">partRegex</span><span style="color:#0A3069">`/product/${/</span><span style="color:#0550AE">[0-9]</span><span style="color:#CF222E">+</span><span style="color:#0A3069">/}/edit`</span><span style="color:#24292F">.</span><span style="color:#8250DF">test</span><span style="color:#24292F">(url)) {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
-<span class="line"><span style="color:#24292F">  }</span></span>
-<span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Route Functions enable Route Guards.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `pageContext.user` is defined in the server middleware, see https://vite-plugin-ssr.com/auth</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">pageContext.user.isAdmin) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only if there is a product matching `productId`</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">productId</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> url.</span><span style="color:#8250DF">split</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/&#x27;</span><span style="color:#24292F">)[</span><span style="color:#0550AE">2</span><span style="color:#24292F">]</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">product</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> db.</span><span style="color:#8250DF">fetchProduct</span><span style="color:#24292F">(productId)</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">product) {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
-<span class="line"><span style="color:#24292F">  }</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We make `product` available as `pageContext.routeParams.product` so we can</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// access it anywhere, see https://vite-plugin-ssr.com/pageContext-anywhere</span></span>
-<span class="line"><span style="color:#24292F">    routeParams: {</span></span>
-<span class="line"><span style="color:#24292F">      product,</span></span>
-<span class="line"><span style="color:#24292F">    }</span></span>
-<span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">resolveRoute</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span><span style="color:#24292F">, pageContext.urlPathname)</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>Route Functions enable us to use any string matching utility we want, such as <a href="https://github.com/brillout/part-regex">partRegex</a>.</p>
 <p>See also:</p>
 <ul>
 <li>

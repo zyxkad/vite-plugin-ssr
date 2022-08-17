@@ -36,6 +36,20 @@
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>Route Functions enable us to use any matching utility we want, such as <a href="https://github.com/brillout/part-regex">partRegex</a>.</p>
+<p>We can also use <code>vite-plugin-ssr</code>&#x27;s built-in Route String resolver <code>resolveRoute()</code>:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/film/admin.page.route.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { resolveRoute } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/routing&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Functionally equivalent Route using `resolveRoute()`:</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F"> pageContext.user.isAdmin) {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">result</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">resolveRoute</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/film/@filmId&#x27;</span><span style="color:#24292F">, pageContext.urlPathname)</span></span>
+<span class="line"><span style="color:#24292F">  result.precedence </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">10</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> result</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <h2 id="always-run">Always Run</h2>
 <p>Everytime a page is rendered (i.e. upon each <a href="/renderPage"><code>renderPage()</code></a> call), <code>vite-plugin-ssr</code> executes <em>all</em> Route Functions.</p>
 <p>That&#x27;s because <code>vite-plugin-ssr</code> cannot predict whether a Route Function will return a high precedence number overriding all other routes. For example:</p>
