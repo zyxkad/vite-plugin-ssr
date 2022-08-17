@@ -17,9 +17,9 @@
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> partRegex </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;part-regex&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> (pageContext) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Route Functions allow us to implement advanced routing such as route guards.</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F"> pageContext.user.isAdmin) {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">pageContext.user.isAdmin) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">url</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext</span></span>
@@ -41,9 +41,9 @@
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { resolveRoute } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/routing&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// Functionally equivalent Route using `resolveRoute()`:</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F"> pageContext.user.isAdmin) {</span></span>
+<span class="line"><span style="color:#6E7781">// Same route than above but using `resolveRoute()`:</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> (pageContext) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">pageContext.user.isAdmin) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">result</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">resolveRoute</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/film/@filmId&#x27;</span><span style="color:#24292F">, pageContext.urlPathname)</span></span>
