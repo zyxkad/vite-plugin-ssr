@@ -16,22 +16,26 @@
 <p>URL redirections are often about protecting URLs from unauthenticated users:
 if a user is not authenticated and goes to <code>/admin</code> then we redirect the user to <code>/login</code>.</p>
 <p>With vite-plugin-ssr, instead of doing a URL redirection, we can use a Route Function:</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// pages/login.page.route.js</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/login.page.route.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Route Function to render the login page to non-authenticated users, regardless of the URL.</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">isUserAuthenticated</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F">  pageContext.user </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> </span><span style="color:#0550AE">null</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">isUserAuthenticated) {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We use a high precedence to override all other routes. This means that unauthenticated</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// users always see the Login Page `login.page.js` (no matter the url). For example, if</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// the user is unauthenticated and goes to `/admin`, then he&#x27;ll see the Login Page.</span></span>
-<span class="line"><span style="color:#24292F">      precedence: </span><span style="color:#0550AE">999</span></span>
-<span class="line"><span style="color:#24292F">    }</span></span>
-<span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// If the user is authenticated then do not show the Login Page. For example, if the</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// user is authenticated and goes to `/admin`, then he&#x27;ll see the Admin Page.</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only render the login page to non-authenticated users</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#8250DF">userIsLoggedIn</span><span style="color:#24292F">(pageContext)) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We use a high precedence number of `99` to override all other routes.</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// This means that non-authenticated users always see the login page,</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// regardless of the URL.</span></span>
+<span class="line"><span style="color:#24292F">    precedence: </span><span style="color:#0550AE">99</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"><span style="color:#24292F">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">userIsLoggedIn</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> pageContext.user </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> </span><span style="color:#0550AE">null</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>See <a href="/route-function#precedence">Routing<!-- --> &gt; <!-- -->Route Function<!-- --> &gt; <!-- -->Precedence</a>.</p>
 <p>After the user successfully logs in, we reload the page with <code>window.location.reload()</code> (<a href="/server-routing">Server Routing</a>) or <a href="/navigate"><code>navigate(window.location.pathname)</code></a> (<a href="/client-routing">Client Routing</a>).</p>

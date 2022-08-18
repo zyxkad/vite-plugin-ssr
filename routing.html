@@ -31,31 +31,31 @@ pages/about.page.js               /about
 pages/faq/index.page.js           /faq
 pages/movie/@id/index.page.js     /movie/1, /movie/2, /movie/3, ...
 </code></pre>
-<p>We can also define so-called &quot;Route Strings&quot; and &quot;Route Functions&quot; in <code>.page.route.js</code> files.</p>
+<p>We can also define so-called &quot;Route Strings&quot; and &quot;Route Functions&quot;.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// This file defines the route of `/pages/product.page.js`</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Route String</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span></span>
-<span class="line"><span style="color:#6E7781">// `productId` is available at `pageContext.routeParams.productId`</span></span></code></pre></div>
-<p>We can use a Route Function to implement all kinds of advanced routing.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.route.js</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span></span></code></pre></div>
+<blockquote>
+<p>The parameter <code>productId</code> is available at <code>pageContext.routeParams.productId</code>.</p>
+</blockquote>
+<p>Route Functions give us full programmatic flexibility to implement advanced routing logic, for example route guards:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/edit.page.route.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// This file defines the route of `/pages/product-edit.page.js`</span></span>
+<span class="line"><span style="color:#6E7781">// This file defines the route of `/pages/product/edit.page.js`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> partRegex </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;part-regex&#x27;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { resolveRoute } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/routing&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// A Route Function enables full programmatic flexibility</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#CF222E">async</span><span style="color:#953800"> (pageContext) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Route Functions enable Route Guards.</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `pageContext.user` is defined in the server middleware, see https://vite-plugin-ssr.com/auth</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Ensure that `/product/@id/edit` can be accessed only by admins</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">pageContext.user.isAdmin) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">resolveRoute</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/product/@productId&#x27;</span><span style="color:#24292F">, pageContext.urlPathname)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// We can use vite-plugin-ssr&#x27;s Route String resolver</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">resolveRoute</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/product/@id/edit&#x27;</span><span style="color:#24292F">, pageContext.urlPathname)</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>See also:</p>
 <ul>
