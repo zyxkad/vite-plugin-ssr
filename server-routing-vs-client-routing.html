@@ -28,9 +28,10 @@ the client preserves the current page and renders the new page by manipulating t
 <ul>
 <li>Faster page navigation.</li>
 <li>Client-side state preserved across navigation.</li>
+<li>Nested Layouts.</li>
 <li>Custom page transition animations.</li>
 </ul>
-<p>We further discuss these use cases at <a href="/server-routing-vs-client-routing#which-one-to-choose">Which one to Choose</a>.</p>
+<p>We further discuss these use cases below.</p>
 <h2 id="which-one-to-choose">Which one to choose?</h2>
 <p>By default, we recommend Server Routing because it leads to a simpler app architecture.</p>
 <blockquote>
@@ -40,7 +41,7 @@ it always comes with inherent complexity that makes developing Next.js/Nuxt apps
 <p>In general, there are two things to consider:</p>
 <ul>
 <li>There is a trade off between simplicity and performance.</li>
-<li>If we need to preserve client-side state across navigation, then we have no choice than to use Client-side Routing.</li>
+<li>If we need to preserve client-side state across navigation (e.g. Music Players and Nested Layouts), then we have no choice than to use Client-side Routing.</li>
 </ul>
 <p>That said, which one to use really depends on the use case.</p>
 <h4 id="simple-websites">Simple Websites</h4>
@@ -54,6 +55,9 @@ Client-side Routing can be worth it for having smooth page navigations giving su
 <p>Recommendation: Client-side Routing.</p>
 <h4 id="client-side-state-preserved-across-navigation">Client-side state preserved across navigation</h4>
 <p>For example, on music players such as Spotify, the currently listened song should not be interrupted when the user navigates to a new page. Server Routing cannot preserve client-side state; we need Client Routing.</p>
+<p>Requirement: Client-side Routing.</p>
+<h4 id="nested-layouts">Nested Layouts</h4>
+<p>Similarly to the previous section, when using <a href="/layouts#nested-layouts">Nested Layouts</a>, the state of the outer page is preserved, which means we cannot implement Nested Layouts using Server Routing.</p>
 <p>Requirement: Client-side Routing.</p>
 <h4 id="third-party-api">Third-party API</h4>
 <p>For example, if we use Shopify&#x27;s or Facebook&#x27;s GraphQL API,
