@@ -37,11 +37,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.b1b0f9a6.js",
+    "file": "assets/entry-client-routing.ced51601.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-db2279cb.js"
+      "_chunk-b8f865fd.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -119,6 +119,9 @@
       "pages/layouts.page.server.mdx?extractStyles&lang.mdx",
       "pages/markdown.page.server.mdx?extractStyles&lang.mdx",
       "pages/migration-0.4.page.server.mdx?extractStyles&lang.mdx",
+      "pages/migration.page.server.mdx?extractStyles&lang.mdx",
+      "pages/migration/0.4.23.page.server.mdx?extractStyles&lang.mdx",
+      "pages/migration/0.4.page.server.mdx?extractStyles&lang.mdx",
       "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx",
       "pages/navigate.page.server.mdx?extractStyles&lang.mdx",
       "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
@@ -182,11 +185,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.d5829e80.js",
+    "file": "assets/entry-server-routing.51469857.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-db2279cb.js"
+      "_chunk-b8f865fd.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -264,6 +267,9 @@
       "pages/layouts.page.server.mdx?extractStyles&lang.mdx",
       "pages/markdown.page.server.mdx?extractStyles&lang.mdx",
       "pages/migration-0.4.page.server.mdx?extractStyles&lang.mdx",
+      "pages/migration.page.server.mdx?extractStyles&lang.mdx",
+      "pages/migration/0.4.23.page.server.mdx?extractStyles&lang.mdx",
+      "pages/migration/0.4.page.server.mdx?extractStyles&lang.mdx",
       "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx",
       "pages/navigate.page.server.mdx?extractStyles&lang.mdx",
       "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
@@ -335,8 +341,8 @@
   "_chunk-fa95d9a3.js": {
     "file": "assets/chunk-fa95d9a3.js"
   },
-  "_chunk-db2279cb.js": {
-    "file": "assets/chunk-db2279cb.js"
+  "_chunk-b8f865fd.js": {
+    "file": "assets/chunk-b8f865fd.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-66727b0f.js",
@@ -883,8 +889,35 @@
       "assets/FeatureList.c62da281.css"
     ]
   },
-  "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx": {
+  "pages/migration.page.server.mdx?extractStyles&lang.mdx": {
     "file": "assets/chunk-29f2501944.js",
+    "src": "pages/migration.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/migration/0.4.23.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501945.js",
+    "src": "pages/migration/0.4.23.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/migration/0.4.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501946.js",
+    "src": "pages/migration/0.4.page.server.mdx?extractStyles&lang.mdx",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
+  },
+  "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx": {
+    "file": "assets/chunk-29f2501947.js",
     "src": "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -893,7 +926,7 @@
     ]
   },
   "pages/navigate.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501945.js",
+    "file": "assets/chunk-29f2501948.js",
     "src": "pages/navigate.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -902,7 +935,7 @@
     ]
   },
   "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501946.js",
+    "file": "assets/chunk-29f2501949.js",
     "src": "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -911,7 +944,7 @@
     ]
   },
   "pages/netlify.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501947.js",
+    "file": "assets/chunk-29f2501950.js",
     "src": "pages/netlify.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -925,7 +958,7 @@
     "isDynamicEntry": true
   },
   "pages/onBeforeRender-isomorphic.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501948.js",
+    "file": "assets/chunk-29f2501951.js",
     "src": "pages/onBeforeRender-isomorphic.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -934,7 +967,7 @@
     ]
   },
   "pages/onBeforeRender-multiple.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501949.js",
+    "file": "assets/chunk-29f2501952.js",
     "src": "pages/onBeforeRender-multiple.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -943,7 +976,7 @@
     ]
   },
   "pages/onBeforeRender.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501950.js",
+    "file": "assets/chunk-29f2501953.js",
     "src": "pages/onBeforeRender.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -952,7 +985,7 @@
     ]
   },
   "pages/onBeforeRoute.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501951.js",
+    "file": "assets/chunk-29f2501954.js",
     "src": "pages/onBeforeRoute.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -961,7 +994,7 @@
     ]
   },
   "pages/page-redirection.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501952.js",
+    "file": "assets/chunk-29f2501955.js",
     "src": "pages/page-redirection.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -970,7 +1003,7 @@
     ]
   },
   "pages/pageContext-anywhere.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501953.js",
+    "file": "assets/chunk-29f2501956.js",
     "src": "pages/pageContext-anywhere.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -984,7 +1017,7 @@
     "isDynamicEntry": true
   },
   "pages/pageContext.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501954.js",
+    "file": "assets/chunk-29f2501957.js",
     "src": "pages/pageContext.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -998,7 +1031,7 @@
     "isDynamicEntry": true
   },
   "pages/path-aliases.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501955.js",
+    "file": "assets/chunk-29f2501958.js",
     "src": "pages/path-aliases.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1007,7 +1040,7 @@
     ]
   },
   "pages/pinia.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501956.js",
+    "file": "assets/chunk-29f2501959.js",
     "src": "pages/pinia.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1016,7 +1049,7 @@
     ]
   },
   "pages/pre-rendering.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501957.js",
+    "file": "assets/chunk-29f2501960.js",
     "src": "pages/pre-rendering.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1025,7 +1058,7 @@
     ]
   },
   "pages/preact.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501958.js",
+    "file": "assets/chunk-29f2501961.js",
     "src": "pages/preact.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1034,7 +1067,7 @@
     ]
   },
   "pages/prerender-config.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501959.js",
+    "file": "assets/chunk-29f2501962.js",
     "src": "pages/prerender-config.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1043,7 +1076,7 @@
     ]
   },
   "pages/prerender-programmatic.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501960.js",
+    "file": "assets/chunk-29f2501963.js",
     "src": "pages/prerender-programmatic.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1052,7 +1085,7 @@
     ]
   },
   "pages/prerender.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501961.js",
+    "file": "assets/chunk-29f2501964.js",
     "src": "pages/prerender.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1061,7 +1094,7 @@
     ]
   },
   "pages/pullstate.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501962.js",
+    "file": "assets/chunk-29f2501965.js",
     "src": "pages/pullstate.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1075,7 +1108,7 @@
     "isDynamicEntry": true
   },
   "pages/redux.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501963.js",
+    "file": "assets/chunk-29f2501966.js",
     "src": "pages/redux.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1084,7 +1117,7 @@
     ]
   },
   "pages/relay.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501964.js",
+    "file": "assets/chunk-29f2501967.js",
     "src": "pages/relay.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1093,7 +1126,7 @@
     ]
   },
   "pages/render-as-you-fetch.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501965.js",
+    "file": "assets/chunk-29f2501968.js",
     "src": "pages/render-as-you-fetch.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1102,7 +1135,7 @@
     ]
   },
   "pages/render-client.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501966.js",
+    "file": "assets/chunk-29f2501969.js",
     "src": "pages/render-client.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1111,7 +1144,7 @@
     ]
   },
   "pages/render-modes.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501967.js",
+    "file": "assets/chunk-29f2501970.js",
     "src": "pages/render-modes.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1125,7 +1158,7 @@
     "isDynamicEntry": true
   },
   "pages/renderPage.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501968.js",
+    "file": "assets/chunk-29f2501971.js",
     "src": "pages/renderPage.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1134,7 +1167,7 @@
     ]
   },
   "pages/route-function.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501969.js",
+    "file": "assets/chunk-29f2501972.js",
     "src": "pages/route-function.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1143,7 +1176,7 @@
     ]
   },
   "pages/route-string.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501970.js",
+    "file": "assets/chunk-29f2501973.js",
     "src": "pages/route-string.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1157,7 +1190,7 @@
     "isDynamicEntry": true
   },
   "pages/routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501971.js",
+    "file": "assets/chunk-29f2501974.js",
     "src": "pages/routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1176,7 +1209,7 @@
     "isDynamicEntry": true
   },
   "pages/server-routing-vs-client-routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501972.js",
+    "file": "assets/chunk-29f2501975.js",
     "src": "pages/server-routing-vs-client-routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1185,7 +1218,7 @@
     ]
   },
   "pages/server-routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501973.js",
+    "file": "assets/chunk-29f2501976.js",
     "src": "pages/server-routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1194,7 +1227,7 @@
     ]
   },
   "pages/solid.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501974.js",
+    "file": "assets/chunk-29f2501977.js",
     "src": "pages/solid.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1218,7 +1251,7 @@
     "isDynamicEntry": true
   },
   "pages/store.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501975.js",
+    "file": "assets/chunk-29f2501978.js",
     "src": "pages/store.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1227,7 +1260,7 @@
     ]
   },
   "pages/stream.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501976.js",
+    "file": "assets/chunk-29f2501979.js",
     "src": "pages/stream.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1236,7 +1269,7 @@
     ]
   },
   "pages/styled-components.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501977.js",
+    "file": "assets/chunk-29f2501980.js",
     "src": "pages/styled-components.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1250,7 +1283,7 @@
     "isDynamicEntry": true
   },
   "pages/tailwind-css.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501978.js",
+    "file": "assets/chunk-29f2501981.js",
     "src": "pages/tailwind-css.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1264,7 +1297,7 @@
     "isDynamicEntry": true
   },
   "pages/ui-framework.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501979.js",
+    "file": "assets/chunk-29f2501982.js",
     "src": "pages/ui-framework.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1273,7 +1306,7 @@
     ]
   },
   "pages/urql.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501980.js",
+    "file": "assets/chunk-29f2501983.js",
     "src": "pages/urql.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1282,7 +1315,7 @@
     ]
   },
   "pages/vercel.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501981.js",
+    "file": "assets/chunk-29f2501984.js",
     "src": "pages/vercel.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1301,7 +1334,7 @@
     "isDynamicEntry": true
   },
   "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501982.js",
+    "file": "assets/chunk-29f2501985.js",
     "src": "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1320,7 +1353,7 @@
     "isDynamicEntry": true
   },
   "pages/vuex.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501983.js",
+    "file": "assets/chunk-29f2501986.js",
     "src": "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1329,7 +1362,7 @@
     ]
   },
   "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501984.js",
+    "file": "assets/chunk-29f2501987.js",
     "src": "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1338,7 +1371,7 @@
     ]
   },
   "pages/windi-css.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501985.js",
+    "file": "assets/chunk-29f2501988.js",
     "src": "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [

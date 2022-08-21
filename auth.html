@@ -23,12 +23,12 @@
 <span class="line"><span style="color:#6E7781">  const user = await authProviderApi.getUser(req.headers)</span></span>
 <span class="line"><span style="color:#6E7781">  */</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContextInit</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    url: req.url,</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We make logged-in user information available to pages as `pageContext.user`</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We make logged-in user information available to pages as `pageContextInit.user`</span></span>
 <span class="line"><span style="color:#24292F">    user</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">result</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">(pageContext)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">result</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">(pageContextInit)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">/* ... */</span></span>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
