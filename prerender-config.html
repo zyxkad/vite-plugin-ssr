@@ -40,6 +40,9 @@
 <p>Allow only some of our pages to be pre-rendered.</p>
 <p>This setting doesn&#x27;t affect the pre-rendering process: it merely suppresses the warnings when some of our pages cannot be pre-rendered.</p>
 <blockquote>
+<p>As explained in <a href="/pre-rendering">Guides<!-- --> &gt; <!-- -->Pre-rendering (SSG)</a>, if we don&#x27;t pre-render all pages, then we need a production server. By using, <a href="https://github.com/magne4000/vite-plugin-vercel#usage-with-vite-plugin-ssr"><code>vite-plugin-vercel</code></a>, we can still statically deploy our pre-rendered pages while using a production server for non-pre-rendered pages.</p>
+</blockquote>
+<blockquote>
 <p><code>vite-plugin-ssr</code> shows a warning that a page cannot be pre-rendered when:</p>
 <ul>
 <li>The page has a parameterized route

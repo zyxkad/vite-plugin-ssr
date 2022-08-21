@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html>
-      <head><link rel="stylesheet" type="text/css" href="/assets/_default.page.client.fbb7e3d8.css"><link rel="stylesheet" type="text/css" href="/assets/index.85730f7b.css"><link rel="stylesheet" type="text/css" href="/assets/P.8c851859.css"><link rel="stylesheet" type="text/css" href="/assets/_default.page.server.f871bfbc.css">
+      <head><link rel="stylesheet" type="text/css" href="/assets/_default.page.client.fbb7e3d8.css"><link rel="stylesheet" type="text/css" href="/assets/index.85730f7b.css"><link rel="stylesheet" type="text/css" href="/assets/P.8c851859.css"><link rel="stylesheet" type="text/css" href="/assets/FeatureList.c62da281.css"><link rel="stylesheet" type="text/css" href="/assets/_default.page.server.f871bfbc.css">
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/vite-plugin-ssr.5177312a.svg" />
         <title>Vercel | vite-plugin-ssr</title>
@@ -24,9 +24,7 @@ See <a href="https://vercel.com/docs/concepts/functions/serverless-functions#dep
 <p>Using such API Route is the recommended way. API Routes is a core Vercel feature: it&#x27;s here to stay and, most importantly, stable. (Whereas Vercel&#x27;s Build Output API is a fast moving target with frequent breaking changes.) Once we setup our server-side rendering API Route, we can safely expect it to work for the foreseeable future.</p>
 <h2 id="vite-plugin-vercel">vite-plugin-vercel</h2>
 <p>For a zero-config integration with <a href="https://vercel.com/docs/concepts/next.js/incremental-static-regeneration">ISR</a> support, we can use <a href="https://github.com/magne4000/vite-plugin-vercel"><code>vite-plugin-vercel</code></a>.</p>
-<blockquote>
-<p><code>vite-plugin-vercel</code> is in beta.</p>
-</blockquote>
+<p>If we use <a href="/prerender-config#partial">partial pre-rendering</a>, we can use <code>vite-plugin-vercel</code> to statically deploy our pre-rendered pages while dynamically serving our non-pre-rendered pages.</p>
 <h2 id="build-output-api">Build Output API</h2>
 <p>For more flexibility and configuration options, we can use the <a href="https://vercel.com/docs/build-output-api/v3">Build Output API</a>.</p>
 <p>Example: <a href="https://github.com/brillout/vite-plugin-ssr_vercel_build-output-api">github.com/brillout/vite-plugin-ssr_vercel_build-output-api</a>.</p>

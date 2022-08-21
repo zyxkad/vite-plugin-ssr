@@ -1282,22 +1282,26 @@
     ]
   },
   "pages/vercel.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab939.js",
+    "file": "assets/chunk-29f2501981.js",
     "src": "pages/vercel.page.server.mdx?extractStyles&lang.mdx",
-    "isDynamicEntry": true
+    "isDynamicEntry": true,
+    "css": [
+      "assets/P.8c851859.css",
+      "assets/FeatureList.c62da281.css"
+    ]
   },
   "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab940.js",
+    "file": "assets/chunk-87797ab939.js",
     "src": "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vue-query.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab941.js",
+    "file": "assets/chunk-87797ab940.js",
     "src": "pages/vue-query.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501981.js",
+    "file": "assets/chunk-29f2501982.js",
     "src": "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1306,17 +1310,17 @@
     ]
   },
   "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab942.js",
+    "file": "assets/chunk-87797ab941.js",
     "src": "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vuetify.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-87797ab943.js",
+    "file": "assets/chunk-87797ab942.js",
     "src": "pages/vuetify.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true
   },
   "pages/vuex.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501982.js",
+    "file": "assets/chunk-29f2501983.js",
     "src": "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1325,7 +1329,7 @@
     ]
   },
   "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501983.js",
+    "file": "assets/chunk-29f2501984.js",
     "src": "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
@@ -1334,7 +1338,7 @@
     ]
   },
   "pages/windi-css.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501984.js",
+    "file": "assets/chunk-29f2501985.js",
     "src": "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
