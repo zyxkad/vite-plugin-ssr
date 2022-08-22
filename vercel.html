@@ -24,7 +24,7 @@ See <a href="https://vercel.com/docs/concepts/functions/serverless-functions#dep
 <p>Using such API Route is the recommended way. API Routes is a core Vercel feature: it&#x27;s here to stay and, most importantly, stable. (Whereas Vercel&#x27;s Build Output API is a fast moving target with frequent breaking changes.) Once we setup our server-side rendering API Route, we can safely expect it to work for the foreseeable future.</p>
 <h2 id="vite-plugin-vercel">vite-plugin-vercel</h2>
 <p>For a zero-config integration with <a href="https://vercel.com/docs/concepts/next.js/incremental-static-regeneration">ISR</a> support, we can use <a href="https://github.com/magne4000/vite-plugin-vercel"><code>vite-plugin-vercel</code></a>.</p>
-<p>If we use <a href="/prerender-config#partial">partial pre-rendering</a>, we can use <code>vite-plugin-vercel</code> to statically deploy our pre-rendered pages while dynamically serving our non-pre-rendered pages.</p>
+<p>If we <a href="/prerender-config#partial">pre-render our pages only partially</a>, we can also use <code>vite-plugin-vercel</code> to statically deploy our pre-rendered pages while dynamically serving our non-pre-rendered pages.</p>
 <blockquote>
 <p>See <code>vite-plugin-ssr</code> + <code>vite-plugin-vercel</code> installation instructions at <a href="https://github.com/magne4000/vite-plugin-vercel#usage-with-vite-plugin-ssr"><code>vite-plugin-vercel</code> &gt; Usage with vite-plugin-ssr</a>.</p>
 </blockquote>
