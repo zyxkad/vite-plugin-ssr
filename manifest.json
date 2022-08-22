@@ -37,7 +37,7 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.8cb2dbc6.js",
+    "file": "assets/entry-client-routing.4a7b9aa3.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
