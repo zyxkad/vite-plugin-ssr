@@ -59,7 +59,7 @@
 <li>
 <p><code>Accept-Language: fr-FR</code> headers</p>
 <blockquote>
-<p>The <code>Accept-Language</code> can be used for redirecting the user to the right localized URL (e.g. URL <code>/about</code> + Header <code>Accept-Language: de-DE</code> =&gt; redirect to <code>/de-DE/about</code>). Once the user is redirected to a localized URL, we can use the technique described in this page. We can perform the redirection by using our server (e.g. Express.js) independently of vite-plugin-ssr.</p>
+<p>The <code>Accept-Language</code> header can be used for redirecting the user to the right localized URL (e.g. URL <code>/about</code> + Header <code>Accept-Language: de-DE</code> =&gt; redirect to <code>/de-DE/about</code>). Once the user is redirected to a localized URL, we can use the technique described above. We can perform the redirection by using our server (e.g. Express.js) independently of vite-plugin-ssr.</p>
 </blockquote>
 <blockquote>
 <p>Using the <code>Accept-Language</code> header to show different languages for the same URL is considered bad practice for both SEO and UX reasons. It&#x27;s recommended to use <code>Accept-Language</code> only to redirect the user.</p>
