@@ -20,20 +20,31 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <p>It has built-in properties and we can extend it with custom properties.</p>
 <h2 id="built-in">Built-in</h2>
 <ul>
-<li><strong><code>pageContext.Page</code></strong>: the <code>export { Page }</code> or <code>export default</code> of the page&#x27;s <code>.page.js</code> file.</li>
-<li><strong><code>pageContext.routeParams</code></strong>: the route parameters. (E.g. <code>pageContext.routeParams.movieId</code> for a page with a Route String <code>/movie/@movieId</code>.)</li>
-<li><strong><code>pageContext.url</code></strong>: The <code>url</code> we passed at the server middleware.<!-- -->
+<li>
+<p><strong><code>pageContext.Page</code></strong>: the <code>export { Page }</code> or <code>export default</code> of the page&#x27;s <code>.page.js</code> file.</p>
+</li>
+<li>
+<p><strong><code>pageContext.routeParams</code></strong>: the route parameters. (E.g. <code>pageContext.routeParams.movieId</code> for a page with a Route String <code>/movie/@movieId</code>.)</p>
+</li>
+<li>
+<p><strong><code>pageContext.urlOriginal</code></strong>: the current URL.</p>
+<p>On the server-side, <code>pageContext.urlOriginal</code> is the value we passed at the server middleware:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Server middleware</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">, </span><span style="color:#953800">next</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContextInit</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> {}</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `pageContext.url` is defined here</span></span>
-<span class="line"><span style="color:#24292F">  pageContextInit.url </span><span style="color:#CF222E">=</span><span style="color:#24292F"> req.url</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `pageContext.urlOriginal` is defined here</span></span>
+<span class="line"><span style="color:#24292F">  pageContextInit.urlOriginal </span><span style="color:#CF222E">=</span><span style="color:#24292F"> req.url</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">result</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">(pageContextInit)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">/* ... */</span></span>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
-<!-- -->When using <a href="/clientRouting">Client Routing</a>, the value of <code>pageContext.url</code> in the browser is the current URL. (Either <code>window.location.href</code>, or the <code>href</code> value of the <code>&lt;a href=&quot;/some/url&quot;&gt;</code> link the user clicked on, or the value passed to <code>navigate(&#x27;/some/url&#x27;)</code>, or the URL of the browser&#x27;s back/forward history navigation.)</li>
-<li><strong><code>pageContext.urlPathname</code></strong>: alias of <code>pageContext.urlParsed.pathname</code>.</li>
-<li><strong><code>pageContext.urlParsed</code></strong>: URL information:<!-- -->
+<p>On the client-side, when using <a href="/server-routing-vs-client-routing">Server Routing</a>, the <code>pageContext.urlOriginal</code> value is <code>undefined</code> (unless we use <a href="/passToClient"><code>passToClient</code></a>).</p>
+<p>On the client-side, when using <a href="/clientRouting">Client Routing</a>, the value of <code>pageContext.urlOriginal</code> is the browser&#x27;s current URL (<code>window.location.href</code>).</p>
+</li>
+<li>
+<p><strong><code>pageContext.urlPathname</code></strong>: alias of <code>pageContext.urlParsed.pathname</code>.</p>
+</li>
+<li>
+<p><strong><code>pageContext.urlParsed</code></strong>: URL information:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#24292F">{</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#953800">origin</span><span style="color:#24292F">: </span><span style="color:#0550AE">null</span><span style="color:#24292F"> </span><span style="color:#CF222E">|</span><span style="color:#24292F"> string</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#953800">pathname</span><span style="color:#24292F">: string</span></span>
@@ -44,7 +55,7 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <span class="line"><span style="color:#24292F">  </span><span style="color:#953800">hash</span><span style="color:#24292F">: string</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#953800">hashOriginal</span><span style="color:#24292F">: </span><span style="color:#0550AE">null</span><span style="color:#24292F"> </span><span style="color:#CF222E">|</span><span style="color:#24292F"> string</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<!-- -->For example:<!-- -->
+<p>For example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// https://example.com/some-base-url/hello/s%C3%A9bastien?fruit=%C3%A2pple&amp;fruit=orânge#%C3%A2ge</span></span>
 <span class="line"><span style="color:#24292F">{</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#953800">origin</span><span style="color:#24292F">: </span><span style="color:#0A3069">&#x27;https://example.com&#x27;</span><span style="color:#24292F">,</span></span>
@@ -57,16 +68,26 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <span class="line"><span style="color:#24292F">  </span><span style="color:#953800">hashOriginal</span><span style="color:#24292F">: </span><span style="color:#0A3069">&#x27;#%C3%A2ge&#x27;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 </li>
-<li><strong><code>pageContext.exports</code></strong>: See <a href="/exports">Guides<!-- --> &gt; <!-- -->Custom Exports/Hooks</a>.</li>
-<li><strong><code>pageContext.exportsAll</code></strong>: Same as <code>pageContext.exports</code> but cumulative.</li>
-<li><strong><code>pageContext.isHydration</code></strong>: Whether the current page is already rendered to HTML. (Usually <code>true</code> for the first page the user navigates to, and <code>false</code> if the user navigates to a new page when using Client Routing.)</li>
-<li><strong><code>pageContext.isBackwardNavigation</code></strong>: Whether the user is navigating back in history. The value is <code>true</code> when the user clicks on his browser&#x27;s backward navigation button, or when invoking <code>history.back()</code>. The <code>isBackwardNavigation</code> property only works with Client Routing. (The value is always <code>null</code> when using Server Routing.)</li>
-<li><strong><code>pageContext.is404</code></strong>: If an error occurs, whether the error is a <code>404 Page Not Found</code> or a <code>500 Internal Server Error</code>, see <a href="/error-page">API<!-- --> &gt; <code>_error.page.js</code></a>.</li>
+<li>
+<p><strong><code>pageContext.exports</code></strong>: See <a href="/exports">Guides<!-- --> &gt; <!-- -->Custom Exports/Hooks</a>.</p>
+</li>
+<li>
+<p><strong><code>pageContext.exportsAll</code></strong>: Same as <code>pageContext.exports</code> but cumulative.</p>
+</li>
+<li>
+<p><strong><code>pageContext.isHydration</code></strong>: Whether the current page is already rendered to HTML. (Usually <code>true</code> for the first page the user navigates to, and <code>false</code> if the user navigates to a new page when using Client Routing.)</p>
+</li>
+<li>
+<p><strong><code>pageContext.isBackwardNavigation</code></strong>: Whether the user is navigating back in history. The value is <code>true</code> when the user clicks on his browser&#x27;s backward navigation button, or when invoking <code>history.back()</code>. The <code>isBackwardNavigation</code> property only works with Client Routing. (The value is always <code>null</code> when using Server Routing.)</p>
+</li>
+<li>
+<p><strong><code>pageContext.is404</code></strong>: If an error occurs, whether the error is a <code>404 Page Not Found</code> or a <code>500 Internal Server Error</code>, see <a href="/error-page">API<!-- --> &gt; <code>_error.page.js</code></a>.</p>
+</li>
 </ul>
 <h2 id="custom">Custom</h2>
 <p>In addition to the built-in <code>pageContext</code> values set by <code>vite-plugin-ssr</code>, we can define custom <code>pageContext</code> values at:</p>
 <ul>
-<li>Hooks: <a href="/onBeforeRender"><code>onBeforeRender()</code></a> and <a href="/render"><code>render()</code></a>.<!-- -->
+<li>Hooks <a href="/onBeforeRender"><code>onBeforeRender()</code></a> and <a href="/render"><code>render()</code></a>.<!-- -->
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforeRender</span><span style="color:#24292F">() {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    pageContext: {</span></span>
@@ -87,7 +108,7 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Server middleware</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">, </span><span style="color:#953800">next</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContextInit</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    url: req.url,</span></span>
+<span class="line"><span style="color:#24292F">    urlOriginal: req.url,</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We can define some custom `pageContext` here</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">(pageContextInit)</span></span>
@@ -96,24 +117,23 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 </li>
 </ul>
 <h2 id="browser">Browser</h2>
-<p>When using <a href="/server-routing">Server Routing</a>, the following is available in the browser:</p>
+<p>While some <code>pageContext</code> values are also available on the client-side, most values are only available in Node.js and we have to use <a href="/passToClient"><code>passToClient</code></a> to make them available in the browser.</p>
+<p>When using <a href="/server-routing">Server Routing</a>, the following are also available in the browser by default:</p>
 <ul>
 <li><code>pageContext.Page</code></li>
 <li><code>pageContext.exports</code></li>
 </ul>
-<p>When using <a href="/client-routing">Client Routing</a>, the following is available in the browser:</p>
+<p>When using <a href="/client-routing">Client Routing</a>, the following are also available in the browser by default:</p>
 <ul>
 <li><code>pageContext.Page</code></li>
 <li><code>pageContext.exports</code></li>
 <li><code>pageContext.isHydration</code></li>
 <li><code>pageContext.isBackwardNavigation</code></li>
 <li><code>pageContext.routeParams</code></li>
-<li><code>pageContext.url</code></li>
+<li><code>pageContext.urlOriginal</code></li>
 <li><code>pageContext.urlPathname</code></li>
 <li><code>pageContext.urlParsed</code></li>
 </ul>
-<p>All other <code>pageContext</code> are only available in Node.js by default:
-we use <a href="/passToClient"><code>passToClient</code></a> to make more <code>pageContext</code> available in the browser.</p>
 <h2 id="typescript">TypeScript</h2>
 <p>TypeScript utility types:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// Server-side `pageContext` built-in values</span></span>

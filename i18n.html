@@ -18,13 +18,13 @@
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforeRoute }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforeRoute</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">urlWithoutLocale</span><span style="color:#24292F">, </span><span style="color:#0550AE">locale</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">extractLocale</span><span style="color:#24292F">(pageContext.url)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">urlWithoutLocale</span><span style="color:#24292F">, </span><span style="color:#0550AE">locale</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">extractLocale</span><span style="color:#24292F">(pageContext.urlOriginal)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    pageContext: {</span></span>
 <span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We make `locale` available as `pageContext.locale`</span></span>
 <span class="line"><span style="color:#24292F">      locale,</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We overwrite `pageContext.url`</span></span>
-<span class="line"><span style="color:#24292F">      url: urlWithoutLocale</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We overwrite `pageContext.urlOriginal`</span></span>
+<span class="line"><span style="color:#24292F">      urlOriginal: urlWithoutLocale</span></span>
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span>
@@ -77,7 +77,7 @@
 <span class="line"><span style="color:#24292F">      .</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">locale</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">        prerenderPageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
 <span class="line"><span style="color:#24292F">          </span><span style="color:#CF222E">...</span><span style="color:#24292F">pageContext,</span></span>
-<span class="line"><span style="color:#24292F">          url: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">url</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
+<span class="line"><span style="color:#24292F">          urlOriginal: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">urlOriginal</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
 <span class="line"><span style="color:#24292F">          locale</span></span>
 <span class="line"><span style="color:#24292F">        })</span></span>
 <span class="line"><span style="color:#24292F">      })</span></span>

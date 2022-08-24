@@ -41,7 +41,7 @@ we define a new page by creating a new <code>.page.jsx</code> file.</p>
 <span class="line"><span style="color:#6E7781">// knows that `/pages/index.page.route.js` defines the route of `/pages/index.page.jsx`.</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Route Function</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">pageContext</span><span style="color:#953800">.</span><span style="color:#24292F">url</span><span style="color:#953800"> </span><span style="color:#CF222E">===</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/&#x27;</span><span style="color:#24292F">;</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">pageContext</span><span style="color:#953800">.</span><span style="color:#24292F">urlPathname</span><span style="color:#953800"> </span><span style="color:#CF222E">===</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/&#x27;</span><span style="color:#24292F">;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// If we don&#x27;t create a `.page.route.js` file then vite-plugin-ssr does Filesystem Routing</span></span></code></pre></div>
 <h2 id="render-control">Render Control</h2>
