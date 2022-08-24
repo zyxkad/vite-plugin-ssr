@@ -50,9 +50,21 @@
 </blockquote>
 <p>This technique also works with:</p>
 <ul>
-<li><code>Accept-Language: fr</code> headers</li>
-<li><code>?lang=fr</code> query parameters</li>
-<li><code>domain.fr</code> domain TLDs</li>
+<li>
+<p><code>?lang=fr</code> query parameters</p>
+</li>
+<li>
+<p><code>domain.fr</code> domain TLDs</p>
+</li>
+<li>
+<p><code>Accept-Language: fr-FR</code> headers</p>
+<blockquote>
+<p>The <code>Accept-Language</code> can be used for redirecting the user to the right localized URL (e.g. URL <code>/about</code> + Header <code>Accept-Language: de-DE</code> =&gt; redirect to <code>/de-DE/about</code>). Once the user is redirected to a localized URL, we can use the technique described in this page. We can perform the redirection by using our server (e.g. Express.js), independently of vite-plugin-ssr.</p>
+</blockquote>
+<blockquote>
+<p>Note that using the <code>Accept-Language</code> header to show different languages for the same URL is considered bad practice for both SEO and UX reasons. It&#x27;s recommended to use <code>Accept-Language</code> only to redirect the user.</p>
+</blockquote>
+</li>
 </ul>
 <h2 id="example">Example</h2>
 <p>See <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples/i18n/">/examples/i18n/</a>.</p>
