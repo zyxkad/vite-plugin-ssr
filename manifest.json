@@ -1,54 +1,126 @@
 {
+  "images/icons/vite-plugin-ssr.svg": {
+    "file": "assets/vite-plugin-ssr.5177312a.svg",
+    "src": "images/icons/vite-plugin-ssr.svg"
+  },
+  "images/icons/react.svg": {
+    "file": "assets/react.274eee9a.svg",
+    "src": "images/icons/react.svg"
+  },
+  "images/icons/vue.svg": {
+    "file": "assets/vue.606c4449.svg",
+    "src": "images/icons/vue.svg"
+  },
+  "pages/index/features/vite.svg": {
+    "file": "assets/vite.17e50649.svg",
+    "src": "pages/index/features/vite.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/mechanical-arm.svg": {
+    "file": "assets/mechanical-arm.041bd0e5.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/mechanical-arm.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/compass.svg": {
+    "file": "assets/compass.023c5145.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/compass.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/road-fork.svg": {
+    "file": "assets/road-fork.72b895c9.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/road-fork.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/shield.svg": {
+    "file": "assets/shield.67066f51.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/shield.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/typescript.svg": {
+    "file": "assets/typescript.139ae451.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/typescript.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png": {
+    "file": "assets/engine.c6c4f987.png",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png"
+  },
+  "pages/index/features/vike.png": {
+    "file": "assets/vike.1d5ea9e7.png",
+    "src": "pages/index/features/vike.png"
+  },
+  "pages/index/features/rollup.svg": {
+    "file": "assets/rollup.6cba4343.svg",
+    "src": "pages/index/features/rollup.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg": {
+    "file": "assets/github.86a91340.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/twitter.svg": {
+    "file": "assets/twitter.c1bd51e1.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/twitter.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/discord.svg": {
+    "file": "assets/discord.c14881e9.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/discord.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/changelog.svg": {
+    "file": "assets/changelog.062bdc49.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/changelog.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg": {
+    "file": "assets/chevron.52d9d856.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf": {
+    "file": "assets/Inter-Var.2bc54814.ttf",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf"
+  },
   "pages/banner.page.client.ts": {
-    "file": "assets/pages/banner.page.client.d8aeec5f.js",
+    "file": "assets/pages/banner.page.client.353748ed.js",
     "src": "pages/banner.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "css": [
-      "assets/index.85730f7b.css"
+      "assets/index.dc0df247.css"
     ]
   },
   "pages/react-tour.page.client.ts": {
-    "file": "assets/pages/react-tour.page.client.9ec2af1f.js",
+    "file": "assets/pages/react-tour.page.client.f7ac8008.js",
     "src": "pages/react-tour.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-2eb5984d.js"
+      "_chunk-c65d3268.js"
     ]
   },
   "pages/vue-tour.page.client.ts": {
-    "file": "assets/pages/vue-tour.page.client.70864755.js",
+    "file": "assets/pages/vue-tour.page.client.6b688d01.js",
     "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-2eb5984d.js"
+      "_chunk-c65d3268.js"
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.f2950cf7.js",
+    "file": "assets/pages/index/index.page.client.26d2c5db.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-fa95d9a3.js",
-      "_chunk-2eb5984d.js"
+      "_chunk-8501fdf2.js",
+      "_chunk-c65d3268.js"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.66395723.js",
+    "file": "assets/entry-client-routing.2ff657d1.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-6b05fc82.js"
+      "_chunk-6addcd79.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
       "pages/index/index.page.client.ts",
       "pages/react-tour.page.client.ts",
       "pages/vue-tour.page.client.ts",
-      "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
       "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-client.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-server.page.server.mdx?extractStyles&lang.mdx",
@@ -181,22 +253,22 @@
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
       "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
-      "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.bce3c6ab.js",
+    "file": "assets/entry-server-routing.afac671f.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-6b05fc82.js"
+      "_chunk-6addcd79.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
       "pages/index/index.page.client.ts",
       "pages/react-tour.page.client.ts",
       "pages/vue-tour.page.client.ts",
-      "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
       "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-client.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-server.page.server.mdx?extractStyles&lang.mdx",
@@ -329,59 +401,59 @@
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
       "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
-      "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
-  "_chunk-2eb5984d.js": {
-    "file": "assets/chunk-2eb5984d.js",
+  "_chunk-c65d3268.js": {
+    "file": "assets/chunk-c65d3268.js",
     "css": [
-      "assets/ScaffoldCallToAction.client.ff807686.css"
+      "assets/ScaffoldCallToAction.55cd0d7b.css"
     ]
   },
-  "_chunk-fa95d9a3.js": {
-    "file": "assets/chunk-fa95d9a3.js"
+  "_chunk-8501fdf2.js": {
+    "file": "assets/chunk-8501fdf2.js"
   },
-  "_chunk-6b05fc82.js": {
-    "file": "assets/chunk-6b05fc82.js"
+  "_chunk-6addcd79.js": {
+    "file": "assets/chunk-6addcd79.js"
   },
-  "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
-    "file": "assets/chunk-66727b0f.js",
-    "src": "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
+    "file": "assets/chunk-813921df.js",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-fa95d9a3.js"
+      "_chunk-8501fdf2.js"
     ],
     "css": [
-      "assets/_default.page.client.fbb7e3d8.css",
-      "assets/index.85730f7b.css",
-      "assets/P.8c851859.css"
+      "assets/_default.page.client.b7295acf.css",
+      "assets/index.dc0df247.css",
+      "assets/P.59ef0673.css"
     ]
   },
   "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f25019.js",
+    "file": "assets/chunk-337d730d.js",
     "src": "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/Page-client.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250192.js",
+    "file": "assets/chunk-337d730d2.js",
     "src": "pages/Page-client.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/Page-server.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250193.js",
+    "file": "assets/chunk-337d730d3.js",
     "src": "pages/Page-server.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/Page.page.server.mdx?extractStyles&lang.mdx": {
@@ -395,12 +467,12 @@
     "isDynamicEntry": true
   },
   "pages/SPA-vs-SSR.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250194.js",
+    "file": "assets/chunk-337d730d4.js",
     "src": "pages/SPA-vs-SSR.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/SR-vs-CR.page.server.mdx?extractStyles&lang.mdx": {
@@ -409,21 +481,21 @@
     "isDynamicEntry": true
   },
   "pages/active-links.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250195.js",
+    "file": "assets/chunk-337d730d5.js",
     "src": "pages/active-links.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/add.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250196.js",
+    "file": "assets/chunk-337d730d6.js",
     "src": "pages/add.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/api-routes.page.server.mdx?extractStyles&lang.mdx": {
@@ -432,21 +504,21 @@
     "isDynamicEntry": true
   },
   "pages/apollo-graphql.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250197.js",
+    "file": "assets/chunk-337d730d7.js",
     "src": "pages/apollo-graphql.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/auth.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250198.js",
+    "file": "assets/chunk-337d730d8.js",
     "src": "pages/auth.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/aws-lambda.page.server.mdx?extractStyles&lang.mdx": {
@@ -455,22 +527,22 @@
     "isDynamicEntry": true
   },
   "pages/banner.page.server.tsx?extractStyles&lang.tsx": {
-    "file": "assets/chunk-addb8dc6.js",
+    "file": "assets/chunk-db41a531.js",
     "src": "pages/banner.page.server.tsx?extractStyles&lang.tsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/Header.7f6c9d90.css",
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/Header.917ab578.css",
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/base-url.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f250199.js",
+    "file": "assets/chunk-337d730d9.js",
     "src": "pages/base-url.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/bootstrap.page.server.mdx?extractStyles&lang.mdx": {
@@ -479,129 +551,129 @@
     "isDynamicEntry": true
   },
   "pages/build-your-own-framework.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501910.js",
+    "file": "assets/chunk-337d730d10.js",
     "src": "pages/build-your-own-framework.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/catch-all.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501911.js",
+    "file": "assets/chunk-337d730d11.js",
     "src": "pages/catch-all.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/client-only-components.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501912.js",
+    "file": "assets/chunk-337d730d12.js",
     "src": "pages/client-only-components.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/client-routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501913.js",
+    "file": "assets/chunk-337d730d13.js",
     "src": "pages/client-routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/clientRouting.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501914.js",
+    "file": "assets/chunk-337d730d14.js",
     "src": "pages/clientRouting.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/cloudflare-pages.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501915.js",
+    "file": "assets/chunk-337d730d15.js",
     "src": "pages/cloudflare-pages.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/cloudflare-workers.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501916.js",
+    "file": "assets/chunk-337d730d16.js",
     "src": "pages/cloudflare-workers.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/command-prerender.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501917.js",
+    "file": "assets/chunk-337d730d17.js",
     "src": "pages/command-prerender.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/content-vs-interactive.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501918.js",
+    "file": "assets/chunk-337d730d18.js",
     "src": "pages/content-vs-interactive.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/createPageRenderer.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501919.js",
+    "file": "assets/chunk-337d730d19.js",
     "src": "pages/createPageRenderer.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/css-frameworks.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501920.js",
+    "file": "assets/chunk-337d730d20.js",
     "src": "pages/css-frameworks.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/css-in-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501921.js",
+    "file": "assets/chunk-337d730d21.js",
     "src": "pages/css-in-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/data-fetching-tools.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501922.js",
+    "file": "assets/chunk-337d730d22.js",
     "src": "pages/data-fetching-tools.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/data-fetching.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501923.js",
+    "file": "assets/chunk-337d730d23.js",
     "src": "pages/data-fetching.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/debug.page.server.mdx?extractStyles&lang.mdx": {
@@ -615,12 +687,12 @@
     "isDynamicEntry": true
   },
   "pages/default-page.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501924.js",
+    "file": "assets/chunk-337d730d24.js",
     "src": "pages/default-page.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/deploy.page.server.mdx?extractStyles&lang.mdx": {
@@ -629,39 +701,39 @@
     "isDynamicEntry": true
   },
   "pages/disableAutoFullBuild.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501925.js",
+    "file": "assets/chunk-337d730d25.js",
     "src": "pages/disableAutoFullBuild.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/doNotPrerender.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501926.js",
+    "file": "assets/chunk-337d730d26.js",
     "src": "pages/doNotPrerender.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/docker.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501927.js",
+    "file": "assets/chunk-337d730d27.js",
     "src": "pages/docker.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/dot-env-files.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501928.js",
+    "file": "assets/chunk-337d730d28.js",
     "src": "pages/dot-env-files.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/dot-page-dot-client-dot-js.page.server.mdx?extractStyles&lang.mdx": {
@@ -670,30 +742,30 @@
     "isDynamicEntry": true
   },
   "pages/dot-page-dot-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501929.js",
+    "file": "assets/chunk-337d730d29.js",
     "src": "pages/dot-page-dot-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/dot-page-dot-route-dot-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501930.js",
+    "file": "assets/chunk-337d730d30.js",
     "src": "pages/dot-page-dot-route-dot-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/dot-page-dot-server-dot-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501931.js",
+    "file": "assets/chunk-337d730d31.js",
     "src": "pages/dot-page-dot-server-dot-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/dynamic-import.page.server.mdx?extractStyles&lang.mdx": {
@@ -702,12 +774,12 @@
     "isDynamicEntry": true
   },
   "pages/error-page.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501932.js",
+    "file": "assets/chunk-337d730d32.js",
     "src": "pages/error-page.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/error-tracking.page.server.mdx?extractStyles&lang.mdx": {
@@ -716,12 +788,12 @@
     "isDynamicEntry": true
   },
   "pages/escapeInject.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501933.js",
+    "file": "assets/chunk-337d730d33.js",
     "src": "pages/escapeInject.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/exports.page.server.mdx?extractStyles&lang.mdx": {
@@ -730,12 +802,12 @@
     "isDynamicEntry": true
   },
   "pages/file-structure.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501934.js",
+    "file": "assets/chunk-337d730d34.js",
     "src": "pages/file-structure.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/filesystem-routing.page.server.mdx?extractStyles&lang.mdx": {
@@ -744,12 +816,12 @@
     "isDynamicEntry": true
   },
   "pages/filesystemRoutingRoot.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501935.js",
+    "file": "assets/chunk-337d730d35.js",
     "src": "pages/filesystemRoutingRoot.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/firebase.page.server.mdx?extractStyles&lang.mdx": {
@@ -758,39 +830,39 @@
     "isDynamicEntry": true
   },
   "pages/github-pages.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501936.js",
+    "file": "assets/chunk-337d730d36.js",
     "src": "pages/github-pages.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/grpc.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501937.js",
+    "file": "assets/chunk-337d730d37.js",
     "src": "pages/grpc.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/hapi.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501938.js",
+    "file": "assets/chunk-337d730d38.js",
     "src": "pages/hapi.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/head.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501939.js",
+    "file": "assets/chunk-337d730d39.js",
     "src": "pages/head.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/html-head.page.server.mdx?extractStyles&lang.mdx": {
@@ -819,12 +891,12 @@
     "isDynamicEntry": true
   },
   "pages/i18n.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501940.js",
+    "file": "assets/chunk-337d730d40.js",
     "src": "pages/i18n.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/importBuild-dot-cjs.page.server.mdx?extractStyles&lang.mdx": {
@@ -833,31 +905,31 @@
     "isDynamicEntry": true
   },
   "pages/importBuild-dot-js.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501941.js",
+    "file": "assets/chunk-337d730d41.js",
     "src": "pages/importBuild-dot-js.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/includeAssetsImportedByServer.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501942.js",
+    "file": "assets/chunk-337d730d42.js",
     "src": "pages/includeAssetsImportedByServer.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/index/index.page.server.tsx?extractStyles&lang.tsx": {
-    "file": "assets/chunk-addb8dc62.js",
+    "file": "assets/chunk-db41a5312.js",
     "src": "pages/index/index.page.server.tsx?extractStyles&lang.tsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/Header.7f6c9d90.css",
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/Header.917ab578.css",
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/injectAssets.page.server.mdx?extractStyles&lang.mdx": {
@@ -871,93 +943,93 @@
     "isDynamicEntry": true
   },
   "pages/layouts.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501943.js",
+    "file": "assets/chunk-337d730d43.js",
     "src": "pages/layouts.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/markdown.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501944.js",
+    "file": "assets/chunk-337d730d44.js",
     "src": "pages/markdown.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/migration-0.4.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501945.js",
+    "file": "assets/chunk-337d730d45.js",
     "src": "pages/migration-0.4.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/migration.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501946.js",
+    "file": "assets/chunk-337d730d46.js",
     "src": "pages/migration.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/migration/0.4.23.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501947.js",
+    "file": "assets/chunk-337d730d47.js",
     "src": "pages/migration/0.4.23.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/migration/0.4.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501948.js",
+    "file": "assets/chunk-337d730d48.js",
     "src": "pages/migration/0.4.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501949.js",
+    "file": "assets/chunk-337d730d49.js",
     "src": "pages/multiple-renderer.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/navigate.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501950.js",
+    "file": "assets/chunk-337d730d50.js",
     "src": "pages/navigate.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501951.js",
+    "file": "assets/chunk-337d730d51.js",
     "src": "pages/netlify-functions.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/netlify.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501952.js",
+    "file": "assets/chunk-337d730d52.js",
     "src": "pages/netlify.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/nextauth-old.page.server.mdx?extractStyles&lang.mdx": {
@@ -966,57 +1038,57 @@
     "isDynamicEntry": true
   },
   "pages/onBeforeRender-isomorphic.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501953.js",
+    "file": "assets/chunk-337d730d53.js",
     "src": "pages/onBeforeRender-isomorphic.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/onBeforeRender-multiple.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501954.js",
+    "file": "assets/chunk-337d730d54.js",
     "src": "pages/onBeforeRender-multiple.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/onBeforeRender.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501955.js",
+    "file": "assets/chunk-337d730d55.js",
     "src": "pages/onBeforeRender.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/onBeforeRoute.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501956.js",
+    "file": "assets/chunk-337d730d56.js",
     "src": "pages/onBeforeRoute.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/page-redirection.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501957.js",
+    "file": "assets/chunk-337d730d57.js",
     "src": "pages/page-redirection.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/pageContext-anywhere.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501958.js",
+    "file": "assets/chunk-337d730d58.js",
     "src": "pages/pageContext-anywhere.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/pageContext-manipulation.page.server.mdx?extractStyles&lang.mdx": {
@@ -1025,12 +1097,12 @@
     "isDynamicEntry": true
   },
   "pages/pageContext.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501959.js",
+    "file": "assets/chunk-337d730d59.js",
     "src": "pages/pageContext.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/passToClient.page.server.mdx?extractStyles&lang.mdx": {
@@ -1039,75 +1111,75 @@
     "isDynamicEntry": true
   },
   "pages/path-aliases.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501960.js",
+    "file": "assets/chunk-337d730d60.js",
     "src": "pages/path-aliases.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/pinia.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501961.js",
+    "file": "assets/chunk-337d730d61.js",
     "src": "pages/pinia.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/pre-rendering.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501962.js",
+    "file": "assets/chunk-337d730d62.js",
     "src": "pages/pre-rendering.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/preact.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501963.js",
+    "file": "assets/chunk-337d730d63.js",
     "src": "pages/preact.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/prerender-config.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501964.js",
+    "file": "assets/chunk-337d730d64.js",
     "src": "pages/prerender-config.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/prerender-programmatic.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501965.js",
+    "file": "assets/chunk-337d730d65.js",
     "src": "pages/prerender-programmatic.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/prerender.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501966.js",
+    "file": "assets/chunk-337d730d66.js",
     "src": "pages/prerender.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/pullstate.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501967.js",
+    "file": "assets/chunk-337d730d67.js",
     "src": "pages/pullstate.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/react-tour.page.server.mdx?extractStyles&lang.mdx": {
@@ -1116,48 +1188,48 @@
     "isDynamicEntry": true
   },
   "pages/redux.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501968.js",
+    "file": "assets/chunk-337d730d68.js",
     "src": "pages/redux.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/relay.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501969.js",
+    "file": "assets/chunk-337d730d69.js",
     "src": "pages/relay.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/render-as-you-fetch.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501970.js",
+    "file": "assets/chunk-337d730d70.js",
     "src": "pages/render-as-you-fetch.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/render-client.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501971.js",
+    "file": "assets/chunk-337d730d71.js",
     "src": "pages/render-client.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/render-modes.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501972.js",
+    "file": "assets/chunk-337d730d72.js",
     "src": "pages/render-modes.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/render.page.server.mdx?extractStyles&lang.mdx": {
@@ -1166,30 +1238,30 @@
     "isDynamicEntry": true
   },
   "pages/renderPage.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501973.js",
+    "file": "assets/chunk-337d730d73.js",
     "src": "pages/renderPage.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/route-function.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501974.js",
+    "file": "assets/chunk-337d730d74.js",
     "src": "pages/route-function.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/route-string.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501975.js",
+    "file": "assets/chunk-337d730d75.js",
     "src": "pages/route-string.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/routing-precedence.page.server.mdx?extractStyles&lang.mdx": {
@@ -1198,12 +1270,12 @@
     "isDynamicEntry": true
   },
   "pages/routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501976.js",
+    "file": "assets/chunk-337d730d76.js",
     "src": "pages/routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/sass.page.server.mdx?extractStyles&lang.mdx": {
@@ -1217,30 +1289,30 @@
     "isDynamicEntry": true
   },
   "pages/server-routing-vs-client-routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501977.js",
+    "file": "assets/chunk-337d730d77.js",
     "src": "pages/server-routing-vs-client-routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/server-routing.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501978.js",
+    "file": "assets/chunk-337d730d78.js",
     "src": "pages/server-routing.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/solid.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501979.js",
+    "file": "assets/chunk-337d730d79.js",
     "src": "pages/solid.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/ssr.page.server.mdx?extractStyles&lang.mdx": {
@@ -1259,30 +1331,30 @@
     "isDynamicEntry": true
   },
   "pages/store.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501980.js",
+    "file": "assets/chunk-337d730d80.js",
     "src": "pages/store.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/stream.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501981.js",
+    "file": "assets/chunk-337d730d81.js",
     "src": "pages/stream.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/styled-components.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501982.js",
+    "file": "assets/chunk-337d730d82.js",
     "src": "pages/styled-components.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/svelte.page.server.mdx?extractStyles&lang.mdx": {
@@ -1291,12 +1363,12 @@
     "isDynamicEntry": true
   },
   "pages/tailwind-css.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501983.js",
+    "file": "assets/chunk-337d730d83.js",
     "src": "pages/tailwind-css.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/typescript.page.server.mdx?extractStyles&lang.mdx": {
@@ -1305,30 +1377,30 @@
     "isDynamicEntry": true
   },
   "pages/ui-framework.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501984.js",
+    "file": "assets/chunk-337d730d84.js",
     "src": "pages/ui-framework.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/urql.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501985.js",
+    "file": "assets/chunk-337d730d85.js",
     "src": "pages/urql.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/vercel.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501986.js",
+    "file": "assets/chunk-337d730d86.js",
     "src": "pages/vercel.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/vite-plugin.page.server.mdx?extractStyles&lang.mdx": {
@@ -1342,12 +1414,12 @@
     "isDynamicEntry": true
   },
   "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501987.js",
+    "file": "assets/chunk-337d730d87.js",
     "src": "pages/vue-router-and-react-router.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/vue-tour.page.server.mdx?extractStyles&lang.mdx": {
@@ -1361,38 +1433,66 @@
     "isDynamicEntry": true
   },
   "pages/vuex.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501988.js",
+    "file": "assets/chunk-337d730d88.js",
     "src": "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501989.js",
+    "file": "assets/chunk-337d730d89.js",
     "src": "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
   "pages/windi-css.page.server.mdx?extractStyles&lang.mdx": {
-    "file": "assets/chunk-29f2501990.js",
+    "file": "assets/chunk-337d730d90.js",
     "src": "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
     "isDynamicEntry": true,
     "css": [
-      "assets/P.8c851859.css",
-      "assets/FeatureList.c62da281.css"
+      "assets/P.59ef0673.css",
+      "assets/FeatureList.5a4df244.css"
     ]
   },
-  "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
-    "file": "assets/chunk-1ad2bff5.js",
-    "src": "../node_modules/.pnpm/vikepress@0.0.36_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
+    "file": "assets/chunk-02d9ddd3.js",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/_default.page.server.f871bfbc.css"
+      "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css"
     ]
+  },
+  "index.css": {
+    "file": "assets/index.dc0df247.css",
+    "src": "index.css"
+  },
+  "Header.css": {
+    "file": "assets/Header.917ab578.css",
+    "src": "Header.css"
+  },
+  "ScaffoldCallToAction.css": {
+    "file": "assets/ScaffoldCallToAction.55cd0d7b.css",
+    "src": "ScaffoldCallToAction.css"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.b7295acf.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
+  },
+  "P.css": {
+    "file": "assets/P.59ef0673.css",
+    "src": "P.css"
+  },
+  "FeatureList.css": {
+    "file": "assets/FeatureList.5a4df244.css",
+    "src": "FeatureList.css"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   }
 }
