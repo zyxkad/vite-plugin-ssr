@@ -105,7 +105,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <p>Note that <code>vite-plugin-ssr</code> doesn&#x27;t know anything about <code>pageProps</code>: it&#x27;s just an object we create in order to conveniently pass all the page&#x27;s props at once.</p>
 </blockquote>
 <h2 id="custom-exports">Custom Exports</h2>
-<p>For more convenience, instead of creating a new <code>onBeforeRender()</code> hook for each page, we can define <code>onBeforeRender()</code> once in <code>/renderer/_default.page.server.js</code> while using a <a href="/exports">Custom Export/Hook</a>.</p>
+<p>For more convenience, instead of creating a new <code>onBeforeRender()</code> hook for each page, we can define <code>onBeforeRender()</code> only once in <code>/renderer/_default.page.server.js</code> while using a <a href="/exports">Custom Export/Hook</a>.</p>
 <p>For example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/user.page.js</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">query</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { modelName: </span><span style="color:#0A3069">&#x27;User&#x27;</span><span style="color:#24292F">, select: [</span><span style="color:#0A3069">&#x27;firstName&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;lastName&#x27;</span><span style="color:#24292F">] }</span></span></code></pre></div>
@@ -114,6 +114,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// We use a single global `onBeforeRender()` hook</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforeRender }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { runQuery } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-sql-engine&#x27;</span></span>
@@ -135,7 +136,7 @@ then we have the option to define <a href="/onBeforeRender-isomorphic"><code>onB
 if we want to minimize requests made to our Node.js server,
 then we can define <code>onBeforeRender()</code> in <code>.page.js</code> instead.</p>
 <h2 id="graphql">GraphQL</h2>
-<p>When using GraphQL, we define GraphQL queries/fragments on a component-level, while we fetch the GraphQL data in <code>onBeforeRender()</code>.</p>
+<p>When using GraphQL, we define GraphQL queries/fragments on a component-level, while we fetch the GraphQL data in a single global <code>onBeforeRender()</code> hook.</p>
 <p>In general, with <code>vite-plugin-ssr</code>, we have full control over rendering which means that integrating GraphQL is mostly only a matter of following the official SSR guide of the tool we want to use.</p>
 <ul>
 <li>
