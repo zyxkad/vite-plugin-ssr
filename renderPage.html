@@ -35,7 +35,7 @@
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">vite</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#CF222E">import</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;vite&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">    viteDevMiddleware </span><span style="color:#CF222E">=</span><span style="color:#24292F"> (</span><span style="color:#CF222E">await</span><span style="color:#24292F"> vite.</span><span style="color:#8250DF">createServer</span><span style="color:#24292F">({</span></span>
 <span class="line"><span style="color:#24292F">      root,</span></span>
-<span class="line"><span style="color:#24292F">      server: { middlewareMode: </span><span style="color:#0A3069">&#x27;ssr&#x27;</span><span style="color:#24292F"> }</span></span>
+<span class="line"><span style="color:#24292F">      server: { middlewareMode: </span><span style="color:#0550AE">true</span><span style="color:#24292F"> }</span></span>
 <span class="line"><span style="color:#24292F">    })).middlewares</span></span>
 <span class="line"><span style="color:#24292F">    app.</span><span style="color:#8250DF">use</span><span style="color:#24292F">(viteDevMiddleware)</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
