@@ -43,7 +43,7 @@
 <span class="line"><span style="color:#24292F">  app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">, </span><span style="color:#953800">next</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContextInit</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { urlOriginal: req.originalUrl }</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">(pageContextInit)</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#CF222E">!</span><span style="color:#24292F">pageContext.httpResponse) </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">next</span><span style="color:#24292F">()</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (pageContext.httpResponse </span><span style="color:#CF222E">===</span><span style="color:#24292F"> </span><span style="color:#0550AE">null</span><span style="color:#24292F">) </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">next</span><span style="color:#24292F">()</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">body</span><span style="color:#24292F">, </span><span style="color:#0550AE">statusCode</span><span style="color:#24292F">, </span><span style="color:#0550AE">contentType</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext.httpResponse</span></span>
 <span class="line"><span style="color:#24292F">    res.</span><span style="color:#8250DF">status</span><span style="color:#24292F">(statusCode).</span><span style="color:#8250DF">type</span><span style="color:#24292F">(contentType).</span><span style="color:#8250DF">send</span><span style="color:#24292F">(body)</span></span>
 <span class="line"><span style="color:#24292F">  })</span></span>
@@ -53,10 +53,16 @@
 <span class="line"><span style="color:#24292F">  console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">`Server running at http://localhost:${</span><span style="color:#24292F">port</span><span style="color:#0A3069">}`</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <ul>
-<li><code>pageContext.httpResponse</code> is <code>null</code> when a) an error occurred while rendering <code>_error.page.js</code>, or b) we didn&#x27;t define the page <code>_error.page.js</code> and and an error occured.</li>
 <li><code>pageContext.httpResponse.statusCode</code> is either <code>200</code>, <code>404</code>, or <code>500</code>.</li>
 <li><code>pageContext.httpResponse.contentType</code> is either <code>text/html</code> or <code>application/json</code>. (The <code>Content-Type</code> is <code>application/json</code> when <a href="/client-routing">Client Routing</a> fetches the <code>pageContext</code> of the newly navigated page.)</li>
 <li><code>pageContext.httpResponse.body</code> is the HTML string returned by the <a href="/render"><code>render()</code> hook</a> with additional <code>&lt;script&gt;</code> and <code>&lt;style&gt;</code> tags automatically injected by <code>vite-plugin-ssr</code>.</li>
+<li><code>pageContext.httpResponse</code> is <code>null</code> if:<!-- -->
+<ul>
+<li>An error occurs while rendering the page and you didn&#x27;t create an <code>_error.page.js</code> file.</li>
+<li>An error occurs while rendering <code>_error.page.js</code>.</li>
+<li>The URL is skipped: <code>vite-plugin-ssr</code> doesn&#x27;t render certain URLs. (E.g. <code>pageContext.urlOriginal === &#x27;/favicon.ico&#x27;</code> because browsers automatically make favicon requests).</li>
+</ul>
+</li>
 </ul>
 <p><code>renderPage()</code> is framework agnostic: we can use <code>vite-plugin-ssr</code> with any server framework (Koa, Hapi, Fastify, vanilla Node.js, ...) and any deploy environment (AWS, Cloudflare Workers, Vercel, ...).</p>
 <p>Examples:</p>
