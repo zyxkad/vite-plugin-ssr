@@ -54,7 +54,7 @@
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <ul>
 <li><code>pageContext.httpResponse.statusCode</code> is either <code>200</code>, <code>404</code>, or <code>500</code>.</li>
-<li><code>pageContext.httpResponse.contentType</code> is either <code>text/html</code> or <code>application/json</code>. (The <code>Content-Type</code> is <code>application/json</code> when <a href="/client-routing">Client Routing</a> fetches the <code>pageContext</code> of the newly navigated page.)</li>
+<li><code>pageContext.httpResponse.contentType</code> is either <code>text/html;charset=utf-8</code> or <code>application/json</code>. (The <code>Content-Type</code> is <code>application/json</code> when <a href="/client-routing">Client Routing</a> fetches the <code>pageContext</code> of the newly navigated page.)</li>
 <li><code>pageContext.httpResponse.body</code> is the HTML string returned by the <a href="/render"><code>render()</code> hook</a> with additional <code>&lt;script&gt;</code> and <code>&lt;style&gt;</code> tags automatically injected by <code>vite-plugin-ssr</code>.</li>
 <li><code>pageContext.httpResponse</code> is <code>null</code> if:<!-- -->
 <ul>
