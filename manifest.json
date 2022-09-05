@@ -1467,9 +1467,9 @@
       "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css"
     ]
   },
-  "index.css": {
-    "file": "assets/index.dc0df247.css",
-    "src": "index.css"
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   },
   "ScaffoldCallToAction.css": {
     "file": "assets/ScaffoldCallToAction.55cd0d7b.css",
@@ -1491,8 +1491,8 @@
     "file": "assets/Header.917ab578.css",
     "src": "Header.css"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
-    "file": "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
+  "index.css": {
+    "file": "assets/index.dc0df247.css",
+    "src": "index.css"
   }
 }
