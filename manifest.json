@@ -39,13 +39,13 @@
     "file": "assets/vite.17e50649.svg",
     "src": "pages/index/features/vite.svg"
   },
-  "pages/index/features/rollup.svg": {
-    "file": "assets/rollup.6cba4343.svg",
-    "src": "pages/index/features/rollup.svg"
-  },
   "pages/index/features/vike.png": {
     "file": "assets/vike.1d5ea9e7.png",
     "src": "pages/index/features/vike.png"
+  },
+  "pages/index/features/rollup.svg": {
+    "file": "assets/rollup.6cba4343.svg",
+    "src": "pages/index/features/rollup.svg"
   },
   "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg": {
     "file": "assets/chevron.52d9d856.svg",
@@ -109,11 +109,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.36d610de.js",
+    "file": "assets/entry-client-routing.70f17b1e.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-fd2e6c6e.js"
+      "_chunk-77424f25.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -258,11 +258,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.7cba277d.js",
+    "file": "assets/entry-server-routing.67215e92.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-fd2e6c6e.js"
+      "_chunk-77424f25.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -415,8 +415,8 @@
   "_chunk-8501fdf2.js": {
     "file": "assets/chunk-8501fdf2.js"
   },
-  "_chunk-fd2e6c6e.js": {
-    "file": "assets/chunk-fd2e6c6e.js"
+  "_chunk-77424f25.js": {
+    "file": "assets/chunk-77424f25.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-813921df.js",
@@ -1482,24 +1482,24 @@
     "file": "assets/Header.917ab578.css",
     "src": "Header.css"
   },
-  "ScaffoldCallToAction.css": {
-    "file": "assets/ScaffoldCallToAction.55cd0d7b.css",
-    "src": "ScaffoldCallToAction.css"
-  },
   "FeatureList.css": {
     "file": "assets/FeatureList.5a4df244.css",
     "src": "FeatureList.css"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.b7295acf.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
   },
   "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
     "file": "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
     "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   },
+  "ScaffoldCallToAction.css": {
+    "file": "assets/ScaffoldCallToAction.55cd0d7b.css",
+    "src": "ScaffoldCallToAction.css"
+  },
   "P.css": {
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.b7295acf.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
   }
 }
