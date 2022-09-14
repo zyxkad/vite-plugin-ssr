@@ -11,30 +11,6 @@
     "file": "assets/vue.606c4449.svg",
     "src": "images/icons/vue.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/mechanical-arm.svg": {
-    "file": "assets/mechanical-arm.041bd0e5.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/mechanical-arm.svg"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/compass.svg": {
-    "file": "assets/compass.023c5145.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/compass.svg"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/road-fork.svg": {
-    "file": "assets/road-fork.72b895c9.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/road-fork.svg"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/shield.svg": {
-    "file": "assets/shield.67066f51.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/shield.svg"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/typescript.svg": {
-    "file": "assets/typescript.139ae451.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/typescript.svg"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png": {
-    "file": "assets/engine.c6c4f987.png",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png"
-  },
   "pages/index/features/vite.svg": {
     "file": "assets/vite.17e50649.svg",
     "src": "pages/index/features/vite.svg"
@@ -47,29 +23,69 @@
     "file": "assets/rollup.6cba4343.svg",
     "src": "pages/index/features/rollup.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg": {
-    "file": "assets/chevron.52d9d856.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg"
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/mechanical-arm.svg": {
+    "file": "assets/mechanical-arm.041bd0e5.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/mechanical-arm.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/compass.svg": {
+    "file": "assets/compass.023c5145.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/compass.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/road-fork.svg": {
+    "file": "assets/road-fork.72b895c9.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/road-fork.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/shield.svg": {
+    "file": "assets/shield.67066f51.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/shield.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/typescript.svg": {
+    "file": "assets/typescript.139ae451.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/typescript.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png": {
+    "file": "assets/engine.c6c4f987.png",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg": {
     "file": "assets/github.86a91340.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg"
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/twitter.svg": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/twitter.svg": {
     "file": "assets/twitter.c1bd51e1.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/twitter.svg"
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/twitter.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/discord.svg": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/discord.svg": {
     "file": "assets/discord.c14881e9.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/discord.svg"
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/discord.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/changelog.svg": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/changelog.svg": {
     "file": "assets/changelog.062bdc49.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/changelog.svg"
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/changelog.svg"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/heart.svg": {
+    "file": "assets/heart.5f8efb01.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/heart.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/companyLogos/ccoli.svg": {
+    "file": "assets/ccoli.ebd2d007.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/companyLogos/ccoli.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/companyLogos/contra.svg": {
+    "file": "assets/contra.a29b6dec.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/companyLogos/contra.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/companyLogos/mfqs.svg": {
+    "file": "assets/mfqs.12266105.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/companyLogos/mfqs.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg": {
+    "file": "assets/chevron.52d9d856.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf": {
     "file": "assets/Inter-Var.2bc54814.ttf",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf"
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf"
   },
   "pages/banner.page.client.ts": {
     "file": "assets/pages/banner.page.client.353748ed.js",
@@ -99,28 +115,28 @@
     ]
   },
   "pages/index/index.page.client.ts": {
-    "file": "assets/pages/index/index.page.client.26d2c5db.js",
+    "file": "assets/pages/index/index.page.client.8a45b9b1.js",
     "src": "pages/index/index.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-8501fdf2.js",
+      "_chunk-7e5b8224.js",
       "_chunk-c65d3268.js"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.70f17b1e.js",
+    "file": "assets/entry-client-routing.dd420d5e.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-77424f25.js"
+      "_chunk-cf26e5dd.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
       "pages/index/index.page.client.ts",
       "pages/react-tour.page.client.ts",
       "pages/vue-tour.page.client.ts",
-      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
       "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-client.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-server.page.server.mdx?extractStyles&lang.mdx",
@@ -254,22 +270,22 @@
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
       "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
-      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+      "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.67215e92.js",
+    "file": "assets/entry-server-routing.7da9a36f.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-77424f25.js"
+      "_chunk-cf26e5dd.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
       "pages/index/index.page.client.ts",
       "pages/react-tour.page.client.ts",
       "pages/vue-tour.page.client.ts",
-      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+      "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
       "pages/NextAuth.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-client.page.server.mdx?extractStyles&lang.mdx",
       "pages/Page-server.page.server.mdx?extractStyles&lang.mdx",
@@ -403,7 +419,7 @@
       "pages/vuex.page.server.mdx?extractStyles&lang.mdx",
       "pages/wildcard-api.page.server.mdx?extractStyles&lang.mdx",
       "pages/windi-css.page.server.mdx?extractStyles&lang.mdx",
-      "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
+      "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx"
     ]
   },
   "_chunk-c65d3268.js": {
@@ -412,18 +428,18 @@
       "assets/ScaffoldCallToAction.55cd0d7b.css"
     ]
   },
-  "_chunk-8501fdf2.js": {
-    "file": "assets/chunk-8501fdf2.js"
+  "_chunk-7e5b8224.js": {
+    "file": "assets/chunk-7e5b8224.js"
   },
-  "_chunk-77424f25.js": {
-    "file": "assets/chunk-77424f25.js"
+  "_chunk-cf26e5dd.js": {
+    "file": "assets/chunk-cf26e5dd.js"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
-    "file": "assets/chunk-813921df.js",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
+    "file": "assets/chunk-64eeb1c0.js",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-8501fdf2.js"
+      "_chunk-7e5b8224.js"
     ],
     "css": [
       "assets/_default.page.client.b7295acf.css",
@@ -1466,40 +1482,40 @@
       "assets/FeatureList.5a4df244.css"
     ]
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx": {
     "file": "assets/chunk-02d9ddd3.js",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.tsx",
     "isDynamicEntry": true,
     "css": [
-      "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css"
+      "assets/../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css"
     ]
   },
   "index.css": {
     "file": "assets/index.dc0df247.css",
     "src": "index.css"
   },
-  "Header.css": {
-    "file": "assets/Header.917ab578.css",
-    "src": "Header.css"
-  },
   "ScaffoldCallToAction.css": {
     "file": "assets/ScaffoldCallToAction.55cd0d7b.css",
     "src": "ScaffoldCallToAction.css"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
     "file": "assets/_default.page.client.b7295acf.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
   },
   "P.css": {
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
   },
+  "Header.css": {
+    "file": "assets/Header.917ab578.css",
+    "src": "Header.css"
+  },
   "FeatureList.css": {
     "file": "assets/FeatureList.5a4df244.css",
     "src": "FeatureList.css"
   },
-  "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
-    "file": "assets/../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.37_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
+  "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.38_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   }
 }
