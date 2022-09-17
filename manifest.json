@@ -11,13 +11,13 @@
     "file": "assets/vue.606c4449.svg",
     "src": "images/icons/vue.svg"
   },
-  "pages/index/features/vike.png": {
-    "file": "assets/vike.1d5ea9e7.png",
-    "src": "pages/index/features/vike.png"
-  },
   "pages/index/features/vite.svg": {
     "file": "assets/vite.17e50649.svg",
     "src": "pages/index/features/vite.svg"
+  },
+  "pages/index/features/vike.png": {
+    "file": "assets/vike.1d5ea9e7.png",
+    "src": "pages/index/features/vike.png"
   },
   "pages/index/features/rollup.svg": {
     "file": "assets/rollup.6cba4343.svg",
@@ -46,10 +46,6 @@
   "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png": {
     "file": "assets/engine.c6c4f987.png",
     "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/utils/Emoji/engine.png"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg": {
-    "file": "assets/chevron.52d9d856.svg",
-    "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg"
   },
   "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/icons/github.svg": {
     "file": "assets/github.86a91340.svg",
@@ -99,6 +95,10 @@
     "file": "assets/label.524acbe5.svg",
     "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/Sponsors/label.svg"
   },
+  "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg": {
+    "file": "assets/chevron.52d9d856.svg",
+    "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/components/features/chevron.svg"
+  },
   "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf": {
     "file": "assets/Inter-Var.2bc54814.ttf",
     "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/css/Inter-Var.ttf"
@@ -141,11 +141,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.2d232497.js",
+    "file": "assets/entry-client-routing.8cf39606.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-725159d3.js"
+      "_chunk-162b12ab.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -291,11 +291,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.d2933c99.js",
+    "file": "assets/entry-server-routing.be731a77.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-725159d3.js"
+      "_chunk-162b12ab.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -449,8 +449,8 @@
   "_chunk-cd1549fb.js": {
     "file": "assets/chunk-cd1549fb.js"
   },
-  "_chunk-725159d3.js": {
-    "file": "assets/chunk-725159d3.js"
+  "_chunk-162b12ab.js": {
+    "file": "assets/chunk-162b12ab.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-950eea1d.js",
@@ -1517,6 +1517,14 @@
     "file": "assets/index.dc0df247.css",
     "src": "index.css"
   },
+  "Header.css": {
+    "file": "assets/Header.917ab578.css",
+    "src": "Header.css"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
+  },
   "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
     "file": "assets/_default.page.client.b7295acf.css",
     "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
@@ -1529,16 +1537,8 @@
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
   },
-  "Header.css": {
-    "file": "assets/Header.917ab578.css",
-    "src": "Header.css"
-  },
   "FeatureList.css": {
     "file": "assets/FeatureList.5a4df244.css",
     "src": "FeatureList.css"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
-    "file": "assets/../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.b3c24a85.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.39_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   }
 }
