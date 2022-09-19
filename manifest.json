@@ -59,13 +59,13 @@
     "file": "assets/vite.17e50649.svg",
     "src": "pages/index/features/vite.svg"
   },
-  "pages/index/features/vike.png": {
-    "file": "assets/vike.1d5ea9e7.png",
-    "src": "pages/index/features/vike.png"
-  },
   "pages/index/features/rollup.svg": {
     "file": "assets/rollup.6cba4343.svg",
     "src": "pages/index/features/rollup.svg"
+  },
+  "pages/index/features/vike.png": {
+    "file": "assets/vike.1d5ea9e7.png",
+    "src": "pages/index/features/vike.png"
   },
   "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/navigation/navigation-fullscreen/chevron.svg": {
     "file": "assets/chevron.38e8d76a.svg",
@@ -149,11 +149,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.4ab1d058.js",
+    "file": "assets/entry-client-routing.91eb6582.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-8eee9177.js"
+      "_chunk-3a38796e.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -299,11 +299,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.fb98420c.js",
+    "file": "assets/entry-server-routing.e06f0c51.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-8eee9177.js"
+      "_chunk-3a38796e.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -457,8 +457,8 @@
   "_chunk-13545818.js": {
     "file": "assets/chunk-13545818.js"
   },
-  "_chunk-8eee9177.js": {
-    "file": "assets/chunk-8eee9177.js"
+  "_chunk-3a38796e.js": {
+    "file": "assets/chunk-3a38796e.js"
   },
   "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-34014727.js",
@@ -1524,25 +1524,21 @@
       "assets/chevron.38e8d76a.svg"
     ]
   },
-  "index.css": {
-    "file": "assets/index.5fa91303.css",
-    "src": "index.css"
+  "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
+    "file": "assets/../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.cfa0eddc.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
   },
   "ScaffoldCallToAction.css": {
     "file": "assets/ScaffoldCallToAction.d2502774.css",
     "src": "ScaffoldCallToAction.css"
   },
+  "index.css": {
+    "file": "assets/index.5fa91303.css",
+    "src": "index.css"
+  },
   "P.css": {
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css": {
-    "file": "assets/../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.cfa0eddc.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.server.tsx?extractStyles&lang.css"
-  },
-  "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.b7295acf.css",
-    "src": "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
   },
   "FeatureList.css": {
     "file": "assets/FeatureList.a95a6883.css",
@@ -1551,5 +1547,9 @@
   "Header.css": {
     "file": "assets/Header.0bf08b19.css",
     "src": "Header.css"
+  },
+  "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.b7295acf.css",
+    "src": "../node_modules/.pnpm/vikepress@0.0.42_biqbaboplfbrettd7655fr4n2y/node_modules/vikepress/src/renderer/_default.page.client.css"
   }
 }
