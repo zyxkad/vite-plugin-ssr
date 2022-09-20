@@ -28,9 +28,9 @@
 <li>Route Function, returned high positive <code>precedence</code> number (e.g. <code>99</code>)</li>
 <li>Route Function, returned low positive <code>precedence</code> number (e.g. <code>1</code>)</li>
 <li>Filesystem Routing</li>
-<li>Route String, static (i.e. without <code>:param</code> segment, e.g. <code>/about/company</code>)</li>
+<li>Route String, static (i.e. without <code>@param</code> segment, e.g. <code>/about/company</code>)</li>
 <li>Route Function, returned no <code>precedence</code> number (or <code>0</code>)</li>
-<li>Route String, parameterized (i.e. with <code>:param</code> segement, e.g. <code>/product/@productId</code> or <code>/product/*</code>)</li>
+<li>Route String, parameterized (i.e. with <code>@param</code> segement, e.g. <code>/product/@productId</code> or <code>/product/*</code>)</li>
 <li>Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)</li>
 <li>Route Function, returned high negative <code>precedence</code> number (e.g. <code>-99</code>)</li>
 </ol>
@@ -64,8 +64,8 @@
 ==================            ===================================        ======
 /product/wrong/url            product/catch-all.page.route.js (7)        ⬅️
 </code></pre>
-<p>4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)<br/>
-<!-- -->6: Route String, parameterized (with <code>:param</code> segements, e.g. <code>/product/@productId</code> or <code>/product/*</code>)<br/>
+<p>4: Route String, static (without <code>@param</code> segment, e.g. <code>/about/company</code>)<br/>
+<!-- -->6: Route String, parameterized (with <code>@param</code> segements, e.g. <code>/product/@productId</code> or <code>/product/*</code>)<br/>
 <!-- -->7: Route Function, returned low negative <code>precedence</code> number (e.g. <code>-1</code>)</p>
 <p><strong>Example (1) + (4)</strong>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// admin.page.route.js</span></span>
@@ -90,7 +90,7 @@
 /admin                &#x27;brillout&#x27;             admin.page.route.js (4)       ⬅️
 </code></pre>
 <p>1: Route Function, returned high positive <code>precedence</code> number<br/>
-<!-- -->4: Route String, static (without <code>:param</code> segment, e.g. <code>/about/company</code>)</p>
+<!-- -->4: Route String, static (without <code>@param</code> segment, e.g. <code>/about/company</code>)</p>
 <blockquote>
 <p>More examples at <a href="https://github.com/brillout/vite-plugin-ssr/blob/main/vite-plugin-ssr/shared/route/resolvePrecedence/overall.spec.ts"><code>resolvePrecedence/overall.spec.ts</code></a>.</p>
 </blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/routing-precedence.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
