@@ -19,11 +19,11 @@ when the user navigates to a new page,
 the old page is completely discarded and the HTML of the new page is loaded.</p>
 <p>Server Routing usually leads to a simpler app architecture and, consequently, to a higher development speed.</p>
 <h2 id="client-routing">Client Routing</h2>
-<p>By default <code>vite-plugin-ssr</code> does Server Routing, but we can opt in to Client Routing by setting <a href="/clientRouting"><code>clientRouting</code></a> to <code>true</code>.</p>
-<p>Client(-side) Routing denotes the practice of implementing page navigation on the client-side:
+<p>By default <code>vite-plugin-ssr</code> does Server Routing. We can opt into Client Routing by setting the <a href="/clientRouting"><code>clientRouting</code> option</a> option to <code>true</code>.</p>
+<p><em>Client(-side) Routing</em> denotes the practice of implementing page navigation on the client-side:
 when the user navigates to a new page,
-instead of discarding the current page and requesting the HTML of the new page,
-the client preserves the current page and renders the new page by manipulating the DOM of the page.</p>
+instead of completely discarding the current page and requesting the HTML of the new page,
+the current page is preserved and the new page is rendered by manipulating the DOM of the page.</p>
 <p>Client Routing enables:</p>
 <ul>
 <li>Faster page navigation.</li>
