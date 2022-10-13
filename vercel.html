@@ -17,7 +17,7 @@
 <h2 id="api-route">API Route</h2>
 <p>We can deploy our <code>vite-plugin-ssr</code> app to Vercel simply by creating a Vercel API Route <code>api/ssr.js</code> that server-side renders our app.</p>
 <p>Example: <a href="https://github.com/brillout/vite-plugin-ssr_vercel">github.com/brillout/vite-plugin-ssr_vercel</a>.</p>
-<blockquote class="warning"><div style="margin-bottom:20px"></div><img style="height: 1.275em; width: 1.275em; vertical-align: -20%" draggable="false" alt="⚠" src="https://twemoji.maxcdn.com/v/13.1.1/svg/26a0.svg"/><!-- --> <!-- -->Make sure to properly set <code>FRAMEWORK PRESET</code> and <code>OUTPUT DIRECTORY</code> in your Vercel dashboard, see the example&#x27;s <code>readme.md</code>.<div style="margin-top:20px"></div></blockquote>
+<blockquote class="warning"><div style="margin-bottom:20px"></div><img style="height: 1.275em; width: 1.275em; vertical-align: -20%" draggable="false" alt="⚠" src="https://twemoji.maxcdn.com/v/13.1.1/svg/26a0.svg"/><!-- --> <!-- -->Make sure to properly set <code>OUTPUT DIRECTORY</code> in your Vercel dashboard, see the example&#x27;s <code>readme.md</code>.<div style="margin-top:20px"></div></blockquote>
 <blockquote>
 <p>Using such API Route is the recommended way because API Routes is a core Vercel feature: it&#x27;s here to stay and, most importantly, stable. (Whereas Vercel&#x27;s Build Output API is a fast moving target with frequent breaking changes.) Once we setup our server-side rendering API Route, we can expect it to work for the foreseeable future.</p>
 </blockquote>
