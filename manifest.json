@@ -39,10 +39,6 @@
     "file": "assets/engine.c6c4f987.png",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/engine.png"
   },
-  "pages/index/features/vite.svg": {
-    "file": "assets/vite.17e50649.svg",
-    "src": "pages/index/features/vite.svg"
-  },
   "pages/index/features/vike.png": {
     "file": "assets/vike.1d5ea9e7.png",
     "src": "pages/index/features/vike.png"
@@ -50,6 +46,10 @@
   "pages/index/features/rollup.svg": {
     "file": "assets/rollup.6cba4343.svg",
     "src": "pages/index/features/rollup.svg"
+  },
+  "pages/index/features/vite.svg": {
+    "file": "assets/vite.17e50649.svg",
+    "src": "pages/index/features/vite.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
     "file": "assets/chevron.38e8d76a.svg",
@@ -1528,9 +1528,9 @@
     "file": "assets/index.5fa91303.css",
     "src": "index.css"
   },
-  "Header.css": {
-    "file": "assets/Header.0bf08b19.css",
-    "src": "Header.css"
+  "../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
+    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
   },
   "ScaffoldCallToAction.css": {
     "file": "assets/ScaffoldCallToAction.d2502774.css",
@@ -1548,8 +1548,8 @@
     "file": "assets/FeatureList.a95a6883.css",
     "src": "FeatureList.css"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
-    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.3_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
+  "Header.css": {
+    "file": "assets/Header.0bf08b19.css",
+    "src": "Header.css"
   }
 }
