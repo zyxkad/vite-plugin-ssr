@@ -35,7 +35,7 @@
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">escapeInject</span><span style="color:#0A3069">`&lt;!DOCTYPE html&gt;</span></span>
 <span class="line"><span style="color:#0A3069">    &lt;html&gt;</span></span>
 <span class="line"><span style="color:#0A3069">      &lt;head&gt;</span></span>
-<span class="line"><span style="color:#0A3069">        &lt;style&gt;{dangerouslySkipEscape(collect.getCSS())}&lt;/style&gt;</span></span>
+<span class="line"><span style="color:#0A3069">        &lt;style&gt;${</span><span style="color:#8250DF">dangerouslySkipEscape</span><span style="color:#0A3069">(</span><span style="color:#24292F">collect</span><span style="color:#0A3069">.</span><span style="color:#8250DF">getCSS</span><span style="color:#0A3069">())</span><span style="color:#0A3069">}&lt;/style&gt;</span></span>
 <span class="line"><span style="color:#0A3069">      &lt;/head&gt;</span></span>
 <span class="line"><span style="color:#0A3069">      &lt;body&gt;</span></span>
 <span class="line"><span style="color:#0A3069">        &lt;div id=&quot;page-view&quot;&gt;${</span><span style="color:#8250DF">dangerouslySkipEscape</span><span style="color:#0A3069">(</span><span style="color:#24292F">pageHtml</span><span style="color:#0A3069">)</span><span style="color:#0A3069">}&lt;/div&gt;</span></span>
