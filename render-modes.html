@@ -180,10 +180,11 @@
 <p>To render a page to HTML-only:</p>
 <ol>
 <li>We define <code>.page.server.js</code> instead of <code>.page.js</code>.</li>
+<li>(Optional) We define <code>.page.client.js</code> (e.g. to add minimal amount of JavaScript surgically injecting bits of interactivity).</li>
 <li>We set <a href="/includeAssetsImportedByServer"><code>includeAssetsImportedByServer</code></a> to <code>true</code>.</li>
 </ol>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/about.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Usually `Page` is defined in `*.page.js` but for HTML-only we</span></span>
 <span class="line"><span style="color:#6E7781">// define `Page` in `*.page.server.js` instead.</span></span>
@@ -197,6 +198,13 @@
 <span class="line"><span style="color:#24292F">    &lt;/</span><span style="color:#116329">p</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;/&gt;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/about.page.client.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// This file represents the entire browser-side JavaScript.</span></span>
+<span class="line"><span style="color:#6E7781">// We can omit defining `.page.client.js` in which case the page has zero browser-side JavaScript.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292F">console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&quot;I&#x27;m the page&#x27;s only browser-side JavaScript line.&quot;</span><span style="color:#24292F">)</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// vite.config.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { ssr } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/plugin&#x27;</span></span>
@@ -207,7 +215,14 @@
 <span class="line"><span style="color:#24292F">      includeAssetsImportedByServer: </span><span style="color:#0550AE">true</span></span>
 <span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  ]</span></span>
-<span class="line"><span style="color:#953800">}</span></span></code></pre></div><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/render-modes.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<span class="line"><span style="color:#953800">}</span></span></code></pre></div>
+<p>Examples:</p>
+<ul>
+<li>React Example (zero JavaScript): <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples/render-modes/pages/html-only/">/examples/render-modes/pages/html-only/</a></li>
+<li>React Example (minimal JavaScript): <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples/render-modes/pages/html-js/">/examples/render-modes/pages/html-js/</a></li>
+<li>Vue Example: <a href="https://github.com/AaronBeaudoin/vite-plugin-ssr-example/blob/main/pages/html.page.server.vue">GitHub &gt; <code>AaronBeaudoin/vite-plugin-ssr-example</code> &gt; <code>/pages/html.page.server.vue</code></a></li>
+<li><a href="https://github.com/brillout/docpress">@brillout/docpress</a> which powers this website <code>https://vite-plugin-ssr.com</code> (this website uses the HTML-only technique).</li>
+</ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/render-modes.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">

@@ -23,6 +23,10 @@
     "file": "assets/compass.023c5145.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/compass.svg"
   },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/road-fork.svg": {
+    "file": "assets/road-fork.72b895c9.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/road-fork.svg"
+  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/shield.svg": {
     "file": "assets/shield.67066f51.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/shield.svg"
@@ -38,10 +42,6 @@
   "pages/index/features/vite.svg": {
     "file": "assets/vite.17e50649.svg",
     "src": "pages/index/features/vite.svg"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/road-fork.svg": {
-    "file": "assets/road-fork.72b895c9.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/road-fork.svg"
   },
   "pages/index/features/rollup.svg": {
     "file": "assets/rollup.6cba4343.svg",
@@ -1524,25 +1524,9 @@
       "assets/chevron.38e8d76a.svg"
     ]
   },
-  "index.css": {
-    "file": "assets/index.5fa91303.css",
-    "src": "index.css"
-  },
-  "Header.css": {
-    "file": "assets/Header.0bf08b19.css",
-    "src": "Header.css"
-  },
-  "P.css": {
-    "file": "assets/P.59ef0673.css",
-    "src": "P.css"
-  },
   "FeatureList.css": {
     "file": "assets/FeatureList.a95a6883.css",
     "src": "FeatureList.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
-    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
   },
   "ScaffoldCallToAction.css": {
     "file": "assets/ScaffoldCallToAction.d2502774.css",
@@ -1551,5 +1535,21 @@
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css": {
     "file": "assets/_default.page.client.b7295acf.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
+  },
+  "index.css": {
+    "file": "assets/index.5fa91303.css",
+    "src": "index.css"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
+    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
+  },
+  "P.css": {
+    "file": "assets/P.59ef0673.css",
+    "src": "P.css"
+  },
+  "Header.css": {
+    "file": "assets/Header.0bf08b19.css",
+    "src": "Header.css"
   }
 }
