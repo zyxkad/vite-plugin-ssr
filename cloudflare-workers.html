@@ -23,8 +23,7 @@
 <pre><code>[WARNING] Enabling node.js compatibility mode for built-ins and globals. This
 is experimental and has serious tradeoffs.
 </code></pre>
-<p>But we can safely ignore it (the only Node.js shims used are all robust).</p>
-<p>The Node.js shims add around <code>200KB</code>-<code>300KB</code> to your worker code, which is significant considering the <code>1MB</code> limit. There is work-in-progress to remove the need for Node.js shims, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/445">#445</a>.</p>
+<p>But we can safely ignore the warning (the only Node.js shims used are all robust). However, the Node.js shims add around <code>200KB</code>-<code>300KB</code> to your worker code, which is significant considering the <code>1MB</code> limit. There is work-in-progress to remove the need for Node.js shims, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/445">#445</a>.</p>
 </blockquote>
 <h2 id="wrangler">Wrangler</h2>
 <p>Cloudflare Workers requires our entire worker code to be bundled into a single file.</p>
