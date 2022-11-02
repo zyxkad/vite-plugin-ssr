@@ -11,9 +11,9 @@
     "file": "assets/vue.606c4449.svg",
     "src": "images/icons/vue.svg"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/close.svg": {
-    "file": "assets/close.c1f95f98.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/close.svg"
+  "pages/index/features/vite.svg": {
+    "file": "assets/vite.17e50649.svg",
+    "src": "pages/index/features/vite.svg"
   },
   "pages/index/features/vike.png": {
     "file": "assets/vike.1d5ea9e7.png",
@@ -22,10 +22,6 @@
   "pages/index/features/rollup.svg": {
     "file": "assets/rollup.6cba4343.svg",
     "src": "pages/index/features/rollup.svg"
-  },
-  "pages/index/features/vite.svg": {
-    "file": "assets/vite.17e50649.svg",
-    "src": "pages/index/features/vite.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/mechanical-arm.svg": {
     "file": "assets/mechanical-arm.041bd0e5.svg",
@@ -51,25 +47,9 @@
     "file": "assets/engine.c6c4f987.png",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/engine.png"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
-    "file": "assets/chevron.38e8d76a.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/github.svg": {
-    "file": "assets/github.86a91340.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/github.svg"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/discord.svg": {
-    "file": "assets/discord.c14881e9.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/discord.svg"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/twitter.svg": {
-    "file": "assets/twitter.c1bd51e1.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/twitter.svg"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/changelog.svg": {
-    "file": "assets/changelog.062bdc49.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/changelog.svg"
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/close.svg": {
+    "file": "assets/close.c1f95f98.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/close.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/heart.svg": {
     "file": "assets/heart.5f8efb01.svg",
@@ -106,6 +86,26 @@
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg": {
     "file": "assets/chevron.52d9d856.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
+    "file": "assets/chevron.38e8d76a.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/github.svg": {
+    "file": "assets/github.86a91340.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/github.svg"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/twitter.svg": {
+    "file": "assets/twitter.c1bd51e1.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/twitter.svg"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/discord.svg": {
+    "file": "assets/discord.c14881e9.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/discord.svg"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/changelog.svg": {
+    "file": "assets/changelog.062bdc49.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/changelog.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/css/Inter-Var.ttf": {
     "file": "assets/Inter-Var.2bc54814.ttf",
@@ -1528,6 +1528,10 @@
     "file": "assets/index.5fa91303.css",
     "src": "index.css"
   },
+  "FeatureList.css": {
+    "file": "assets/FeatureList.a95a6883.css",
+    "src": "FeatureList.css"
+  },
   "ScaffoldCallToAction.css": {
     "file": "assets/ScaffoldCallToAction.d2502774.css",
     "src": "ScaffoldCallToAction.css"
@@ -1539,10 +1543,6 @@
   "P.css": {
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
-  },
-  "FeatureList.css": {
-    "file": "assets/FeatureList.a95a6883.css",
-    "src": "FeatureList.css"
   },
   "Header.css": {
     "file": "assets/Header.0bf08b19.css",
