@@ -63,7 +63,7 @@
 <span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">hydrate</span><span style="color:#24292F">(pageContext.Page)</span></span>
 <span class="line"><span style="color:#24292F">    } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We render a new page. (When the user navigates to a new page.)</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">render</span><span style="color:#24292F">(pageContext.Page)</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderToDom</span><span style="color:#24292F">(pageContext.Page)</span></span>
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span>
