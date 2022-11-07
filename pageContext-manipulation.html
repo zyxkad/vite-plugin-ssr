@@ -31,7 +31,7 @@
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">starWarsMovies</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">fetch</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;https://star-wars.brillout.com/api/films.json&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> starWarsMovies</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<h2 id="do-not-mutate-pagecontext">Do not mutate <code>pageContext</code></h2>
+<h2 id="don-t-mutate-pagecontext">Don&#x27;t mutate <code>pageContext</code></h2>
 <p>In general, we should try to avoid mutating <code>pageContext</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#24292F">  // .page.server.js</span></span>
 <span class="line"></span>
@@ -53,7 +53,7 @@
 <blockquote>
 <p>While nothing stops us from mutating <code>pageContext</code> today, future <code>vite-plugin-ssr</code> versions will print a warning discouraging us from mutations (although we will be able to escape hatch and suppress the warning as some rare use cases warrant mutations).</p>
 </blockquote>
-<h2 id="do-not-return-entire-pagecontext">Do not return entire <code>pageContext</code></h2>
+<h2 id="don-t-return-entire-pagecontext">Don&#x27;t return entire <code>pageContext</code></h2>
 <p>We also shouldn&#x27;t do this:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#24292F">  // .page.server.js</span></span>
 <span class="line"></span>
