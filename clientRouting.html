@@ -48,6 +48,12 @@
 <span class="line"><span style="color:#6E7781">// See `Link prefetching` section below. Default value: `{ when: &#x27;HOVER&#x27; }`.</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">prefetchStaticAssets</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { when: </span><span style="color:#0A3069">&#x27;VIEWPORT&#x27;</span><span style="color:#24292F"> }</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Whether your UI framework allows the hydration to be aborted. (Allowing vite-plugin-ssr</span></span>
+<span class="line"><span style="color:#6E7781">// to abort the hydration if the user clicks on a link before the hydration finished.)</span></span>
+<span class="line"><span style="color:#6E7781">// Only React users should set `hydrationCanBeAborted` to `true`. (Other frameworks,</span></span>
+<span class="line"><span style="color:#6E7781">// such as Vue, fail if the hydration is aborted.)</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">hydrationCanBeAborted</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span>
+<span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Create custom page transition animations</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onPageTransitionStart }</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onPageTransitionEnd }</span></span>
