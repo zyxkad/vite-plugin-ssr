@@ -15,18 +15,6 @@
     "file": "assets/close.c1f95f98.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/close.svg"
   },
-  "pages/index/features/vite.svg": {
-    "file": "assets/vite.17e50649.svg",
-    "src": "pages/index/features/vite.svg"
-  },
-  "pages/index/features/rollup.svg": {
-    "file": "assets/rollup.6cba4343.svg",
-    "src": "pages/index/features/rollup.svg"
-  },
-  "pages/index/features/vike.png": {
-    "file": "assets/vike.1d5ea9e7.png",
-    "src": "pages/index/features/vike.png"
-  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/mechanical-arm.svg": {
     "file": "assets/mechanical-arm.041bd0e5.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/mechanical-arm.svg"
@@ -51,9 +39,17 @@
     "file": "assets/engine.c6c4f987.png",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/engine.png"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg": {
-    "file": "assets/chevron.52d9d856.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg"
+  "pages/index/features/vite.svg": {
+    "file": "assets/vite.17e50649.svg",
+    "src": "pages/index/features/vite.svg"
+  },
+  "pages/index/features/rollup.svg": {
+    "file": "assets/rollup.6cba4343.svg",
+    "src": "pages/index/features/rollup.svg"
+  },
+  "pages/index/features/vike.png": {
+    "file": "assets/vike.1d5ea9e7.png",
+    "src": "pages/index/features/vike.png"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
     "file": "assets/chevron.38e8d76a.svg",
@@ -107,6 +103,10 @@
     "file": "assets/label.524acbe5.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/Sponsors/label.svg"
   },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg": {
+    "file": "assets/chevron.52d9d856.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg"
+  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/css/Inter-Var.ttf": {
     "file": "assets/Inter-Var.2bc54814.ttf",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/css/Inter-Var.ttf"
@@ -149,11 +149,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.69f3ed2a.js",
+    "file": "assets/entry-client-routing.e1f58f96.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-948ec0ab.js"
+      "_chunk-c2f4c411.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -300,11 +300,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.276ab146.js",
+    "file": "assets/entry-server-routing.69dc542b.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-948ec0ab.js"
+      "_chunk-c2f4c411.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -459,8 +459,8 @@
   "_chunk-95679a3d.js": {
     "file": "assets/chunk-95679a3d.js"
   },
-  "_chunk-948ec0ab.js": {
-    "file": "assets/chunk-948ec0ab.js"
+  "_chunk-c2f4c411.js": {
+    "file": "assets/chunk-c2f4c411.js"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-11886172.js",
@@ -1531,32 +1531,32 @@
       "assets/chevron.38e8d76a.svg"
     ]
   },
-  "ScaffoldCallToAction.css": {
-    "file": "assets/ScaffoldCallToAction.d2502774.css",
-    "src": "ScaffoldCallToAction.css"
-  },
   "index.css": {
     "file": "assets/index.5fa91303.css",
     "src": "index.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.b7295acf.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
   },
   "P.css": {
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
   },
-  "FeatureList.css": {
-    "file": "assets/FeatureList.a95a6883.css",
-    "src": "FeatureList.css"
+  "ScaffoldCallToAction.css": {
+    "file": "assets/ScaffoldCallToAction.d2502774.css",
+    "src": "ScaffoldCallToAction.css"
   },
   "Header.css": {
     "file": "assets/Header.0bf08b19.css",
     "src": "Header.css"
   },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.b7295acf.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
+  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
     "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
+  },
+  "FeatureList.css": {
+    "file": "assets/FeatureList.a95a6883.css",
+    "src": "FeatureList.css"
   }
 }
