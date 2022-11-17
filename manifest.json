@@ -15,6 +15,18 @@
     "file": "assets/close.c1f95f98.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/close.svg"
   },
+  "pages/index/features/vike.png": {
+    "file": "assets/vike.1d5ea9e7.png",
+    "src": "pages/index/features/vike.png"
+  },
+  "pages/index/features/vite.svg": {
+    "file": "assets/vite.17e50649.svg",
+    "src": "pages/index/features/vite.svg"
+  },
+  "pages/index/features/rollup.svg": {
+    "file": "assets/rollup.6cba4343.svg",
+    "src": "pages/index/features/rollup.svg"
+  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/mechanical-arm.svg": {
     "file": "assets/mechanical-arm.041bd0e5.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/mechanical-arm.svg"
@@ -39,17 +51,9 @@
     "file": "assets/engine.c6c4f987.png",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/utils/Emoji/engine.png"
   },
-  "pages/index/features/rollup.svg": {
-    "file": "assets/rollup.6cba4343.svg",
-    "src": "pages/index/features/rollup.svg"
-  },
-  "pages/index/features/vike.png": {
-    "file": "assets/vike.1d5ea9e7.png",
-    "src": "pages/index/features/vike.png"
-  },
-  "pages/index/features/vite.svg": {
-    "file": "assets/vite.17e50649.svg",
-    "src": "pages/index/features/vite.svg"
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
+    "file": "assets/chevron.38e8d76a.svg",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/features/chevron.svg": {
     "file": "assets/chevron.52d9d856.svg",
@@ -86,10 +90,6 @@
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/Sponsors/label.svg": {
     "file": "assets/label.524acbe5.svg",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/components/Sponsors/label.svg"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg": {
-    "file": "assets/chevron.38e8d76a.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/navigation/navigation-fullscreen/chevron.svg"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/icons/github.svg": {
     "file": "assets/github.86a91340.svg",
@@ -149,11 +149,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.51e0f598.js",
+    "file": "assets/entry-client-routing.aba15815.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-7b48b5b6.js"
+      "_chunk-8d1d41cf.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -300,11 +300,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.8dc86743.js",
+    "file": "assets/entry-server-routing.2424b72f.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-7b48b5b6.js"
+      "_chunk-8d1d41cf.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -459,8 +459,8 @@
   "_chunk-95679a3d.js": {
     "file": "assets/chunk-95679a3d.js"
   },
-  "_chunk-7b48b5b6.js": {
-    "file": "assets/chunk-7b48b5b6.js"
+  "_chunk-8d1d41cf.js": {
+    "file": "assets/chunk-8d1d41cf.js"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.ts": {
     "file": "assets/chunk-11886172.js",
@@ -1531,18 +1531,6 @@
       "assets/chevron.38e8d76a.svg"
     ]
   },
-  "index.css": {
-    "file": "assets/index.5fa91303.css",
-    "src": "index.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
-    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
-  },
-  "ScaffoldCallToAction.css": {
-    "file": "assets/ScaffoldCallToAction.d2502774.css",
-    "src": "ScaffoldCallToAction.css"
-  },
   "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css": {
     "file": "assets/_default.page.client.b7295acf.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.client.css"
@@ -1551,12 +1539,24 @@
     "file": "assets/P.59ef0673.css",
     "src": "P.css"
   },
-  "FeatureList.css": {
-    "file": "assets/FeatureList.a95a6883.css",
-    "src": "FeatureList.css"
+  "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css": {
+    "file": "assets/../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.0739016e.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/@brillout/docpress/src/renderer/_default.page.server.tsx?extractAssets&lang.css"
   },
   "Header.css": {
     "file": "assets/Header.0bf08b19.css",
     "src": "Header.css"
+  },
+  "index.css": {
+    "file": "assets/index.5fa91303.css",
+    "src": "index.css"
+  },
+  "FeatureList.css": {
+    "file": "assets/FeatureList.a95a6883.css",
+    "src": "FeatureList.css"
+  },
+  "ScaffoldCallToAction.css": {
+    "file": "assets/ScaffoldCallToAction.d2502774.css",
+    "src": "ScaffoldCallToAction.css"
   }
 }
