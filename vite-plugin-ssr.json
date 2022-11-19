@@ -1,6 +1,7 @@
 {
-  "version": "0.4.50",
+  "version": "0.4.51",
   "usesClientRouter": false,
+  "manifestKeyMap": {},
   "baseUrl": "/",
   "baseAssets": null,
   "includeAssetsImportedByServer": true
