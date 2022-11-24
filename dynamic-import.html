@@ -27,11 +27,7 @@ the code is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> 
 <p>Common use cases:</p>
 <ul>
 <li><strong>Performance</strong>: we can use <code>import()</code> to defer loading a heavy component (e.g. an interactive map), so that the user can already interact with our page before even the browser started loading that heavy component.</li>
-<li><strong>Client-side only components</strong>: we can use <code>import()</code> to load &amp; render a component only on the client-side. (Some omponent libraries cannot be server-side rendered, see <a href="/client-only-components">Guides<!-- --> &gt; <!-- -->Client-only Components</a>.)<!-- -->
-<blockquote>
-<p>The UI frameworks&#x27;s built-in support for such lazy-loaded component usually execute the dynamic <code>import()</code> only on the browser-side (e.g. React and Vue), i.e. the lazy compoment is never loaded on the server-side.</p>
-</blockquote>
-</li>
+<li><strong>Client-side only components</strong>: we can use <code>import()</code> to avoid loading/rendering a component on the server-side. (Some component libraries cannot be server-side rendered, see <a href="/client-only-components">Guides<!-- --> &gt; <!-- -->Client-only Components</a>.)</li>
 </ul>
 <p>UI frameworks support for lazy components using <code>import()</code>:</p>
 <ul>
@@ -39,6 +35,9 @@ the code is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> 
 <li><a href="https://v3.vuejs.org/guide/component-dynamic-async.html#async-components">Vue 3 Docs &gt; Async Components</a></li>
 <li><a href="https://vuejs.org/v2/guide/components-dynamic-async.html">Vue 2 Docs &gt; Async Components</a></li>
 </ul>
+<blockquote>
+<p>UI frameworks, such as React and Vue, execute the dynamic <code>import()</code> of lazy components only on the browser-side, i.e. the lazy compoment is never loaded on the server-side.</p>
+</blockquote>
 <h2 id="react-example">React Example</h2>
 <p>See: <a href="https://github.com/arthurgailes/vite-plugin-ssr_dynamic-import-example">Github &gt; <code>arthurgailes/vite-plugin-ssr_dynamic-import-example</code></a>.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// pages/pick-location.page.jsx</span></span>
