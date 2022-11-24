@@ -24,16 +24,16 @@
 <p>Vite automatically code-splits at <code>import()</code> and the code of <code>some-component</code> is not included in the initial JavaScript browser-side bundle:
 the code is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is executed.</p>
 </blockquote>
-<p>The most common use cases are:</p>
+<p>Common use cases:</p>
 <ul>
-<li><strong>Performance</strong>: we can use a dynamic <code>import()</code> to defer loading heavy components (e.g. a heavy interactive map), so that the user can already interact with our page before even the browser has started loading that heavy component.</li>
-<li><strong>Client-side only components</strong>: we can use a dynamic <code>import()</code> to load &amp; render a component only on the client-side. (Some components don&#x27;t work in Node.js, see <a href="/client-only-components">Guides<!-- --> &gt; <!-- -->Client-only Components</a>.)<!-- -->
+<li><strong>Performance</strong>: we can use a <code>import()</code> to defer loading a heavy component (e.g. a heavy interactive map), so that the user can already interact with our page before even the browser has started loading that heavy component.</li>
+<li><strong>Client-side only components</strong>: we can use a <code>import()</code> to load &amp; render a component only on the client-side. (Some components don&#x27;t work in Node.js, see <a href="/client-only-components">Guides<!-- --> &gt; <!-- -->Client-only Components</a>.)<!-- -->
 <blockquote>
-<p>Most UI Frameworks&#x27;s (e.g. React and Vue) built-in support for dynamically loading a component execute the dynamic <code>import()</code> only on the browser-side. In other words, compoments loaded that way are never loaded on the server-side.</p>
+<p>Most UI Frameworks&#x27;s built-in support for dynamically loading a component execute the dynamic <code>import()</code> only on the browser-side (e.g. React and Vue). In other words, compoments loaded that way are never loaded on the server-side.</p>
 </blockquote>
 </li>
 </ul>
-<p>UI frameworks usually have built-in support for dynamically loading a component with <code>import()</code>:</p>
+<p>UI frameworks built-in support for dynamically loading a component with <code>import()</code>:</p>
 <ul>
 <li><a href="https://reactjs.org/docs/code-splitting.html#reactlazy">React Docs &gt; Code-Splitting &gt; <code>React.lazy</code></a></li>
 <li><a href="https://v3.vuejs.org/guide/component-dynamic-async.html#async-components">Vue 3 Docs &gt; Async Components</a></li>
