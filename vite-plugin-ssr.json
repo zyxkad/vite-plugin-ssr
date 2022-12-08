@@ -7,7 +7,7 @@
     "@brillout/docpress/renderer/_default.page.client.js": "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
     "@brillout/docpress/renderer/_default.page.client.css": "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   },
-  "baseUrl": "/",
-  "baseAssets": null,
+  "baseServer": "/",
+  "baseAssets": "/",
   "includeAssetsImportedByServer": true
 }

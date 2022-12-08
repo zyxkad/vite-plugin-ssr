@@ -61,11 +61,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.c8086cd8.js",
+    "file": "assets/entry-client-routing.7254d28c.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-bff6a673.js"
+      "_chunk-a8c0f640.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -213,11 +213,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.1cd010bb.js",
+    "file": "assets/entry-server-routing.39381afd.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-bff6a673.js"
+      "_chunk-a8c0f640.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -373,8 +373,8 @@
   "_chunk-2246d738.js": {
     "file": "assets/chunk-2246d738.js"
   },
-  "_chunk-bff6a673.js": {
-    "file": "assets/chunk-bff6a673.js"
+  "_chunk-a8c0f640.js": {
+    "file": "assets/chunk-a8c0f640.js"
   },
   "pages/NextAuth.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/chunk-87797ab9.js",
