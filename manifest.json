@@ -61,11 +61,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7254d28c.js",
+    "file": "assets/entry-client-routing.84ddf0fe.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-a8c0f640.js"
+      "_chunk-978f4958.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -213,11 +213,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.39381afd.js",
+    "file": "assets/entry-server-routing.38aa95f3.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-a8c0f640.js"
+      "_chunk-978f4958.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -373,8 +373,8 @@
   "_chunk-2246d738.js": {
     "file": "assets/chunk-2246d738.js"
   },
-  "_chunk-a8c0f640.js": {
-    "file": "assets/chunk-a8c0f640.js"
+  "_chunk-978f4958.js": {
+    "file": "assets/chunk-978f4958.js"
   },
   "pages/NextAuth.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/chunk-87797ab9.js",
@@ -1083,10 +1083,6 @@
     "file": "assets/index.page.client.a95a6883.css",
     "src": "pages/index/index.page.client.css"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.986aef50.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
-  },
   "Header.css": {
     "file": "assets/Header.0bf08b19.css",
     "src": "Header.css"
@@ -1094,5 +1090,9 @@
   "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
     "file": "assets/_default.page.server.59906532.css",
     "src": "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.986aef50.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   }
 }
