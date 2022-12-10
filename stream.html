@@ -225,14 +225,13 @@
 <span class="line"><span style="color:#0A3069">      &lt;/body&gt;</span></span>
 <span class="line"><span style="color:#0A3069">    &lt;/html&gt;`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// pageContextPromise can be a promise, or a function that</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// will be called after the stream has ended.</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContextPromise</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> (</span><span style="color:#CF222E">async</span><span style="color:#24292F"> () </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// pageContextPromise can be a promise, or a function that VPS calls after the stream ends</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#8250DF">pageContextPromise</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">async</span><span style="color:#24292F"> () </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">     </span><span style="color:#6E7781">// I&#x27;m called after the stream has ended</span></span>
 <span class="line"><span style="color:#24292F">     </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">       initialData,</span></span>
 <span class="line"><span style="color:#24292F">     }</span></span>
-<span class="line"><span style="color:#24292F">  })</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    documentHtml,</span></span>
