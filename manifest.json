@@ -61,11 +61,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.f305caa2.js",
+    "file": "assets/entry-client-routing.ba6bc85e.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-93cae0d3.js"
+      "_chunk-f6b36da3.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -213,11 +213,11 @@
     ]
   },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.c2f845d6.js",
+    "file": "assets/entry-server-routing.9562290b.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-93cae0d3.js"
+      "_chunk-f6b36da3.js"
     ],
     "dynamicImports": [
       "pages/banner.page.client.ts",
@@ -373,8 +373,8 @@
   "_chunk-2246d738.js": {
     "file": "assets/chunk-2246d738.js"
   },
-  "_chunk-93cae0d3.js": {
-    "file": "assets/chunk-93cae0d3.js"
+  "_chunk-f6b36da3.js": {
+    "file": "assets/chunk-f6b36da3.js"
   },
   "pages/NextAuth.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/chunk-87797ab9.js",
@@ -1079,13 +1079,13 @@
     "file": "assets/ScaffoldCallToAction.d2502774.css",
     "src": "ScaffoldCallToAction.css"
   },
-  "pages/index/index.page.client.css": {
-    "file": "assets/index.page.client.a95a6883.css",
-    "src": "pages/index/index.page.client.css"
-  },
   "Header.css": {
     "file": "assets/Header.0bf08b19.css",
     "src": "Header.css"
+  },
+  "pages/index/index.page.client.css": {
+    "file": "assets/index.page.client.a95a6883.css",
+    "src": "pages/index/index.page.client.css"
   },
   "../node_modules/.pnpm/@brillout+docpress@0.1.14_6bdbsu2yzpeczxw5qylih75b3i/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
     "file": "assets/_default.page.server.59906532.css",
