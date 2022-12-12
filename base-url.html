@@ -57,7 +57,7 @@ For example, instead of deploying our app to <code>https://example.org/*</code> 
 <h2 id="baseassets"><code>baseAssets</code></h2>
 <p>We can change the Base URL <em>only</em> of our assets by using the <code>baseAssets</code> configuration.</p>
 <blockquote>
-<p>The most common use case for this is when deploying assets to a CDN.</p>
+<p>The most common use case for using <code>baseAssets</code> is when deploying assets to a CDN.</p>
 </blockquote>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// vite.config.js</span></span>
 <span class="line"></span>
@@ -70,7 +70,7 @@ For example, instead of deploying our app to <code>https://example.org/*</code> 
 <span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  ]</span></span>
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
-<p>Note how the Base URL of our server isn&#x27;t changed: our app is still served at <code>https://my-website.com/*</code>, i.e. the Base URL is still <code>/</code>.</p>
+<p>Note how the Base URL of our server isn&#x27;t changed: our app is still served at <code>https://my-website.com/*</code> (i.e. the Base URL is still <code>/</code>).</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="html" data-theme="default"><code data-language="html" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- view-source:https://my-website.com/ --&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">&lt;</span><span style="color:#116329">html</span><span style="color:#24292F">&gt;</span></span>
