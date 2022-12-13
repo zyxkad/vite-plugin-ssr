@@ -30,21 +30,21 @@ For example, instead of deploying our app to <code>https://example.org/*</code> 
 <li>Use <a href="https://vitejs.dev/guide/build.html#public-base-path"><code>import.meta.env.BASE_URL</code></a> to construct a <code>&lt;Link&gt;</code> component that prepends the Base URL. Example: <a href="https://github.com/brillout/vite-plugin-ssr/blob/main/examples/base-url/components/Link.jsx">/examples/base-url/components/Link.jsx</a>.</li>
 <li>Use <code>import.meta.env.BASE_URL</code> for referencing static assets living in <a href="/static-directory#public"><code>public/</code></a>. Example: <a href="https://github.com/brillout/vite-plugin-ssr/blob/main/examples/base-url/renderer/_default.page.server.jsx">/examples/base-url/renderer/_default.page.server.jsx</a>.</li>
 </ol>
-<div data-rehype-pretty-code-fragment=""><pre data-language="html" data-theme="default"><code data-language="html" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- view-source:https://my-website.com/ --&gt;</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="html" data-theme="default"><code data-language="html" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- view-source:https://my-website.com/some-base/ --&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">&lt;!-- Note how our website is served at https://my-website.com/some-base/ and</span></span>
+<span class="line"><span style="color:#6E7781">     how the asset URLs are prepended with the Base URL /some-base/ --&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">&lt;</span><span style="color:#116329">html</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;</span><span style="color:#116329">head</span><span style="color:#24292F">&gt;</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">&lt;!-- Note how the Base URL is &#x27;/some-base/&#x27; --&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">link</span><span style="color:#24292F"> </span><span style="color:#0550AE">href</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;/some-base/logo.svg&quot;</span><span style="color:#24292F"> </span><span style="color:#0550AE">rel</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;icon&quot;</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">link</span><span style="color:#24292F"> </span><span style="color:#0550AE">href</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;/some-base/style.css&quot;</span><span style="color:#24292F"> </span><span style="color:#0550AE">rel</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;stylesheet&quot;</span><span style="color:#24292F"> </span><span style="color:#0550AE">type</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;text/css&quot;</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;/</span><span style="color:#116329">head</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;</span><span style="color:#116329">body</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">nav</span><span style="color:#24292F">&gt;</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">&lt;!-- Note how the Base URL is &#x27;/some-base/&#x27; --&gt;</span></span>
 <span class="line"><span style="color:#24292F">      &lt;</span><span style="color:#116329">a</span><span style="color:#24292F"> </span><span style="color:#0550AE">href</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;/some-base/&quot;</span><span style="color:#24292F">&gt;Landing Page&lt;/</span><span style="color:#116329">a</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">      &lt;</span><span style="color:#116329">a</span><span style="color:#24292F"> </span><span style="color:#0550AE">href</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;/some-base/about&quot;</span><span style="color:#24292F">&gt;About Page&lt;/</span><span style="color:#116329">a</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;/</span><span style="color:#116329">nav</span><span style="color:#24292F">&gt;</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">&lt;!-- Note how the Base URL is &#x27;/some-base/&#x27; --&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">script</span><span style="color:#24292F"> </span><span style="color:#0550AE">src</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;/some-base/script.js&quot;</span><span style="color:#24292F"> </span><span style="color:#0550AE">type</span><span style="color:#24292F">=</span><span style="color:#0A3069">&quot;module&quot;</span><span style="color:#24292F"> </span><span style="color:#0550AE">async</span><span style="color:#24292F">&gt;&lt;/</span><span style="color:#116329">script</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;/</span><span style="color:#116329">body</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">&lt;/</span><span style="color:#116329">html</span><span style="color:#24292F">&gt;</span></span></code></pre></div>
@@ -55,7 +55,7 @@ For example, instead of deploying our app to <code>https://example.org/*</code> 
 </li>
 </ul>
 <h2 id="baseassets"><code>baseAssets</code></h2>
-<p>We can change the Base URL <em>only</em> of our assets by using the <code>baseAssets</code> configuration.</p>
+<p>We can change the Base URL <em>only</em> of our assets by using the <code>baseAssets</code> configuration. The Base URL of our page URLs is left unchanged.</p>
 <blockquote>
 <p>The most common use case for using <code>baseAssets</code> is when deploying assets to a CDN.</p>
 </blockquote>
@@ -70,7 +70,7 @@ For example, instead of deploying our app to <code>https://example.org/*</code> 
 <span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  ]</span></span>
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
-<p>Note how the Base URL of our server isn&#x27;t changed: our app is still served at <code>https://my-website.com/*</code> (i.e. the Base URL is still <code>/</code>).</p>
+<p>Note how the Base URL of our page URLs isn&#x27;t changed: our app is still served at <code>https://my-website.com/*</code> (the Base URL is still <code>/</code>).</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="html" data-theme="default"><code data-language="html" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- view-source:https://my-website.com/ --&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">&lt;</span><span style="color:#116329">html</span><span style="color:#24292F">&gt;</span></span>
