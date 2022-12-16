@@ -18,43 +18,43 @@
 <ol>
 <li>VPS is UI Framework agnostic.<!-- -->
 <blockquote>
-<p>VPS is completely agnostic to React and its source code has zero dependency on React. You can actually use VPS with any other UI Framework (Vue, Preact, Solid, ...).</p>
+<p>VPS is completely agnostic to React and its source code has zero dependency on React. You can actually use VPS with any other UI Framework (Vue, Preact, Solid, etc.).</p>
 <p>With VPS, you implement and fully control the React integration, which has many benefits. For example, you can use Relay in the same way that Facebook does (with a render-as-you-fetch stream) which isn&#x27;t possible with Next.js (currently and in the foreseeable future).</p>
 </blockquote>
 </li>
 <li>VPS is server and deployment agnostic.<!-- -->
 <blockquote>
-<p>With VPS, you keep full control over your server and can use any deployment strategy.</p>
+<p>With VPS, you keep full control over your server and you can use any deployment strategy.</p>
 </blockquote>
 </li>
 </ol>
 <p>Beyond these structural differences,
-VPS also introduces features such as blazing fast HMR (powered by Vite), first-class SPA support (especially with the upcoming new VPS design), Domain-driven File Structue, state-of-the-art Code Splitting (powered by Vite/Rollup), Automatic Deployment Synchronization, Build Your Own Framework, etc.</p>
+VPS introduces features such as blazing fast HMR (powered by Vite), first-class SPA support (especially with the upcoming new VPS design), Domain-driven File Structue, state-of-the-art Code Splitting (powered by Vite/Rollup), Automatic Deployment Synchronization, <a href="https://vike.land">Build Your Own Framework</a>, etc.</p>
 <blockquote>
-<p>Turbopack replicates some of Vite&#x27;s blazing fast DX techniques, but it&#x27;s still in its infancy and it&#x27;ll take a while until Turbopack is stable and supported by the ecosystem. In contrast, you can use Vite&#x27;s lightning fast DX today.</p>
+<p>Turbopack replicates some of Vite&#x27;s blazing fast DX techniques, but it&#x27;s still in its infancy and it&#x27;ll take a while until Turbopack is production-ready. With Vite, you can use lightning fast DX today.</p>
 </blockquote>
 <p>Finally, VPS is a community project: instead of leaning on a framework with business interests that are fundamentally at odds with yours, use a community-driven project that is sponsored by and made for the community.</p>
 <h2 id="ui-framework-agnostic">UI Framework agnostic</h2>
 <p>With VPS, you integrate React yourself. This means you need to write a little bit more boilerplate but, in exchange, you get a lot more flexibility. This is why you can use tools like Relay or Apollo in ways that aren&#x27;t possible with Next.js.</p>
 <blockquote>
 <p>Relay is a state-of-the-art GraphQL client developed and used at scale by Facebook (which invented GraphQL). The <a href="https://www.youtube.com/watch?v=lhVGdErZuN4">YouTube video &quot;Re-introducing Relay&quot;</a> explains in details the benefits of Relay.</p>
-<p>Many users, including sponsors, leverage VPS&#x27;s flexibility to deeply integrate Relay with SSR Streaming (which isn&#x27;t possible with Next.js).</p>
+<p>Many users and sponsors leverage VPS&#x27;s flexibility to integrate Relay with SSR Streaming (which isn&#x27;t possible with Next.js).</p>
 </blockquote>
-<p>Because you integrate React yourself, you have full control over the frontend integration of your favorite tools for data fetching, state management, authentication, etc.</p>
-<p>Except of React and server integration, VPS includes everything you&#x27;d expect from a frontend framework: blazing fast Client-side Routing, HMR (powered by Vite), Filesystem Routing, state-of-the-art Code Splitting (powered by Rollup), etc.</p>
+<p>Because you integrate React yourself, you have full control over the frontend integration of your favorite tools (data fetching, state management, authentication, etc.).</p>
+<p>Except of React and a server, VPS includes everything you&#x27;d expect from a frontend framework: blazing fast Client-side Routing, HMR (powered by Vite), Filesystem Routing, state-of-the-art Code Splitting (powered by Rollup), etc.</p>
 <h2 id="server-deployment-agnostic">Server/deployment agnostic</h2>
-<p>From a server persepctive, <a href="/deploy">VPS is just a middleware</a> that runs anywhere (AWS, Vercel, Cloudflare, Deno Deploy, ...).</p>
-<p>To integrate VPS, you just add VPS&#x27;s middleware to your server (Express.js, Fastify, Edge Worker, Serverless Function,  ...).</p>
+<p>From a server persepctive, <a href="/deploy">VPS is just a middleware</a> that runs anywhere (AWS, Vercel, Cloudflare, Deno Deploy, etc.).</p>
+<p>To integrate VPS, you just add VPS&#x27;s middleware to your server (Express.js, Fastify, Edge Worker, Serverless Function,  etc.).</p>
 <p>With VPS, you have full control over your server/deployment, one of the most critical aspect of your architecture.</p>
 <h2 id="manual-integrations">Manual integrations</h2>
 <p>As depicted above, VPS&#x27;s philosophy is that you integrate tools manually instead of being locked into decisions made by your framework. Use any tool you want, however you want.</p>
 <p>All-in-all, VPS is less easy but simpler. For large scale projects, simplicity is <em>fundamentally</em> more important than ease of use.</p>
-<p>Last but not least, manual integration is fun, provides freedom, and is insightful. (Whereas fighting a framework is pesky.)</p>
+<p>Last but not least, manual integration is fun and insightful. (Whereas fighting a framework is pesky.)</p>
 <h2 id="build-your-own-framework">Build your own framework</h2>
 <p>VPS is designed from the ground up to enable users to build frameworks on top of VPS.</p>
 <p>You can build your own Next.js with only hundreds of lines of code.</p>
 <blockquote>
-<p>While there are many <a href="https://vike.land/">uses cases for building your own framework</a>, the most prominent one is <a href="https://vike.land/#scale">building company internal frameworks</a>.</p>
+<p>While there are many <a href="https://vike.land">uses cases for building your own framework</a>, the most prominent one is <a href="https://vike.land#scale">building company internal frameworks</a>.</p>
 </blockquote>
 <p>VPS&#x27;s vision is to foster a proliferation of React frameworks highly-tailored to specific use cases.</p>
 <h2 id="user-feedback">User feedback</h2>
@@ -71,7 +71,7 @@ VPS also introduces features such as blazing fast HMR (powered by Vite), first-c
 </ol>
 <h2 id="detailed-comparison-table">Detailed comparison table</h2>
 <p><a href="https://github.com/brillout/vite-plugin-ssr/issues/158#issuecomment-1250068578">From @patryk-smc and @redbar0n</a>:</p>
-<table><thead><tr><th></th><th>VPS</th><th>Next.js</th></tr></thead><tbody><tr><td>UI Framework</td><td>Any (React, Preact, Solid, ...)</td><td>React only</td></tr><tr><td>Code-splitting and bundling</td><td>Yes</td><td>Yes</td></tr><tr><td>HMR</td><td>Yes, fast</td><td>Yes, slow</td></tr><tr><td>SPA</td><td>Yes</td><td>Limited</td></tr><tr><td><p align="center"><strong>SSR</strong></p></td><td></td><td></td></tr><tr><td>Control</td><td>Full control</td><td>Limited / Black box</td></tr><tr><td>Renderers</td><td>Yes, create as many you need</td><td>Just one (<code>_app.ts</code> file)</td></tr><tr><td>RSC (React Server Components)</td><td><a href="https://github.com/Shopify/hydrogen/discussions/2225#discussioncomment-3854516">Work in progress</a></td><td>Yes, experimental</td></tr><tr><td><p align="center"><strong>Routing</strong></p></td><td></td><td></td></tr><tr><td>Filesystem Routing</td><td>Yes</td><td>Yes</td></tr><tr><td>Domain-driven Filesystem Routing</td><td>Yes</td><td>No</td></tr><tr><td>Client Routing</td><td>Yes</td><td>Yes</td></tr><tr><td>Server Routing</td><td>Yes</td><td>No</td></tr><tr><td>Base URL</td><td>Yes</td><td>Limited</td></tr><tr><td><p align="center"><strong>Integrations</strong></p></td><td></td><td></td></tr><tr><td>HTTP server</td><td>Not included*</td><td>Baked-in, but custom server partially supported, with <a href="https://stackoverflow.com/a/70945468/380607">caveats</a></td></tr><tr><td>Apollo Client with SSR</td><td>Fully supported</td><td>Partially supported</td></tr><tr><td>Relay with SSR</td><td>Fully supported</td><td>Partially supported</td></tr><tr><td><p align="center"><strong>Extras</strong></p></td><td></td><td></td></tr><tr><td>Head component</td><td>No*, use react-helmet</td><td>Yes, next/head</td></tr><tr><td>Image component</td><td>No*</td><td>Yes, next/image</td></tr><tr><td>API routes</td><td>No*, use your server or RPC tool</td><td>Yes</td></tr><tr><td>Internationalization (i18n)</td><td>Yes</td><td>Yes</td></tr><tr><td>Deployment synchronization</td><td>Yes</td><td>No</td></tr><tr><td>Build your own framework</td><td>Yes</td><td>No</td></tr><tr><td><p align="center"><strong>Deployment options</strong></p></td><td></td><td></td></tr><tr><td>Vercel</td><td>Yes, minimal config</td><td>Yes, zero config</td></tr><tr><td>Cloudflare Workers</td><td>Yes, minimal config</td><td>No, <a href="https://github.com/vercel/next.js/discussions/34179#discussioncomment-3578259">work in progress</a></td></tr><tr><td>Node server (Docker, Heroku, Digital Ocean etc.)</td><td>Yes, minimal config</td><td>Yes, but limited</td></tr></tbody></table>
+<table><thead><tr><th></th><th>VPS</th><th>Next.js</th></tr></thead><tbody><tr><td>UI Framework</td><td>Any (React, Preact, Solid, etc.)</td><td>React only</td></tr><tr><td>Code-splitting and bundling</td><td>Yes</td><td>Yes</td></tr><tr><td>HMR</td><td>Yes, fast</td><td>Yes, slow</td></tr><tr><td>SPA</td><td>Yes</td><td>Limited</td></tr><tr><td><p align="center"><strong>SSR</strong></p></td><td></td><td></td></tr><tr><td>Control</td><td>Full control</td><td>Limited / Black box</td></tr><tr><td>Renderers</td><td>Yes, create as many you need</td><td>Just one (<code>_app.ts</code> file)</td></tr><tr><td>RSC (React Server Components)</td><td><a href="https://github.com/Shopify/hydrogen/discussions/2225#discussioncomment-3854516">Work in progress</a></td><td>Yes, experimental</td></tr><tr><td><p align="center"><strong>Routing</strong></p></td><td></td><td></td></tr><tr><td>Filesystem Routing</td><td>Yes</td><td>Yes</td></tr><tr><td>Domain-driven Filesystem Routing</td><td>Yes</td><td>No</td></tr><tr><td>Client Routing</td><td>Yes</td><td>Yes</td></tr><tr><td>Server Routing</td><td>Yes</td><td>No</td></tr><tr><td>Base URL</td><td>Yes</td><td>Limited</td></tr><tr><td><p align="center"><strong>Integrations</strong></p></td><td></td><td></td></tr><tr><td>HTTP server</td><td>Not included*</td><td>Baked-in, but custom server partially supported, with <a href="https://stackoverflow.com/a/70945468/380607">caveats</a></td></tr><tr><td>Apollo Client with SSR</td><td>Fully supported</td><td>Partially supported</td></tr><tr><td>Relay with SSR</td><td>Fully supported</td><td>Partially supported</td></tr><tr><td><p align="center"><strong>Extras</strong></p></td><td></td><td></td></tr><tr><td>Head component</td><td>No*, use react-helmet</td><td>Yes, next/head</td></tr><tr><td>Image component</td><td>No*</td><td>Yes, next/image</td></tr><tr><td>API routes</td><td>No*, use your server or RPC tool</td><td>Yes</td></tr><tr><td>Internationalization (i18n)</td><td>Yes</td><td>Yes</td></tr><tr><td>Deployment synchronization</td><td>Yes</td><td>No</td></tr><tr><td>Build your own framework</td><td>Yes</td><td>No</td></tr><tr><td><p align="center"><strong>Deployment options</strong></p></td><td></td><td></td></tr><tr><td>Vercel</td><td>Yes, minimal config</td><td>Yes, zero config</td></tr><tr><td>Cloudflare Workers</td><td>Yes, minimal config</td><td>No, <a href="https://github.com/vercel/next.js/discussions/34179#discussioncomment-3578259">work in progress</a></td></tr><tr><td>Node server (Docker, Heroku, Digital Ocean etc.)</td><td>Yes, minimal config</td><td>Yes, but limited</td></tr></tbody></table>
 <p>(*) VPS doesn&#x27;t ship those extras by design.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/nextjs-comparison.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
