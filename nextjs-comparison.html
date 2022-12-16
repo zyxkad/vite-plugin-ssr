@@ -35,17 +35,18 @@ VPS introduces features such as blazing fast HMR (powered by Vite), first-class 
 </blockquote>
 <p>Finally, VPS is a community project: instead of leaning on a framework with business interests that are fundamentally at odds with yours, use a community-driven project that is sponsored by and made for the community.</p>
 <h2 id="ui-framework-agnostic">UI Framework agnostic</h2>
-<p>With VPS, you integrate React yourself. This means you need to write a little bit more boilerplate but, in exchange, you get a lot more flexibility. This is why you can use tools like Relay or Apollo in ways that aren&#x27;t possible with Next.js.</p>
+<p>With VPS, you integrate React yourself. This means you need to write a little bit more boilerplate but, in exchange, you get a lot more flexibility.</p>
+<p>Because you integrate React yourself, you have full control over the frontend integration of your favorite tools (data fetching, state management, authentication, etc.).</p>
+<p>For example, you can use tools like Relay or Apollo in ways that aren&#x27;t possible with Next.js.</p>
 <blockquote>
 <p>Relay is a state-of-the-art GraphQL client developed and used at scale by Facebook (which invented GraphQL). The <a href="https://www.youtube.com/watch?v=lhVGdErZuN4">YouTube video &quot;Re-introducing Relay&quot;</a> explains in details the benefits of Relay.</p>
 <p>Many users and sponsors leverage VPS&#x27;s flexibility to integrate Relay with SSR Streaming (which isn&#x27;t possible with Next.js).</p>
 </blockquote>
-<p>Because you integrate React yourself, you have full control over the frontend integration of your favorite tools (data fetching, state management, authentication, etc.).</p>
 <p>Except of React and a server, VPS includes everything you&#x27;d expect from a frontend framework: blazing fast Client-side Routing, HMR (powered by Vite), Filesystem Routing, state-of-the-art Code Splitting (powered by Rollup), etc.</p>
 <h2 id="server-deployment-agnostic">Server/deployment agnostic</h2>
-<p>From a server persepctive, <a href="/deploy">VPS is just a middleware</a> that runs anywhere (AWS, Vercel, Cloudflare, Deno Deploy, etc.).</p>
+<p>From a server persepctive, <a href="/deploy">VPS is just a middleware</a> that can run anywhere (AWS, Vercel, Cloudflare, Deno Deploy, etc.).</p>
 <p>To integrate VPS, you just add VPS&#x27;s middleware to your server (Express.js, Fastify, Edge Worker, Serverless Function,  etc.).</p>
-<p>With VPS, you have full control over your server/deployment, one of the most critical aspect of your architecture.</p>
+<p>With VPS, you have full control over your server and deployment, one of the most critical aspect of your architecture.</p>
 <h2 id="manual-integrations">Manual integrations</h2>
 <p>As depicted above, VPS&#x27;s philosophy is that you integrate tools manually instead of being locked into decisions made by your framework. Use any tool you want, however you want.</p>
 <p>All-in-all, VPS is less easy but simpler. For large scale projects, simplicity is <em>fundamentally</em> more important than ease of use.</p>
