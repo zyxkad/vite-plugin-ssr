@@ -23,7 +23,7 @@ is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is execut
 </blockquote>
 <p>Common use cases:</p>
 <ul>
-<li><strong>Performance</strong>: we can use <code>import()</code> to defer loading a heavy component (e.g. an interactive map), so that the user can already interact with our page before even the browser started loading that heavy component.</li>
+<li><strong>Performance</strong>: we can use <code>import()</code> to defer loading a heavy component (e.g. an interactive map), so that the user can already interact with our page before even the browser starts loading that heavy component.</li>
 <li><strong>Client-side only components</strong>: we can use <code>import()</code> to avoid loading/rendering a component on the server-side. (Some component libraries cannot be server-side rendered, see <a href="/client-only-components">Guides<!-- --> &gt; <!-- -->Client-only Components</a>.)</li>
 </ul>
 <p>UI framework support for lazy-loading components using <code>import()</code>:</p>
@@ -32,33 +32,72 @@ is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is execut
 <li><a href="https://v3.vuejs.org/guide/component-dynamic-async.html#async-components">Vue 3 Docs &gt; Async Components</a></li>
 <li><a href="https://vuejs.org/v2/guide/components-dynamic-async.html">Vue 2 Docs &gt; Async Components</a></li>
 </ul>
-<blockquote>
-<p>Most UI frameworks, such as React and Vue, load lazy components only in the browser, i.e. lazy components are never loaded on the server.</p>
-</blockquote>
 <h2 id="react-example">React Example</h2>
-<p>See: <a href="https://github.com/arthurgailes/vite-plugin-ssr_dynamic-import-example">Github &gt; <code>arthurgailes/vite-plugin-ssr_dynamic-import-example</code></a>.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// pages/pick-location.page.jsx</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// pages/location/pick.page.jsx</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;react&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Page</span><span style="color:#24292F">() {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Users can see and interact with the &quot;Please pick a location&quot; button</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// before the browser loads the code of &lt;SomeHeavyMapComponent&gt;.</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Users can see and interact with the button &quot;Please pick a location&quot;</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// before the browser starts loading the code of &lt;Map&gt;.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">button</span><span style="color:#24292F">&gt;Please pick a location&lt;/</span><span style="color:#116329">button</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">Map</span><span style="color:#24292F"> /&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;/&gt;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// &lt;Map&gt; is:</span></span>
+<span class="line"><span style="color:#6E7781">//  - Lazy-loaded</span></span>
+<span class="line"><span style="color:#6E7781">//  - Loaded and rendererd only in the browser</span></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Map</span><span style="color:#24292F">() {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// We lazy-load the code of `&lt;SomeHeavyMapComponent&gt;`</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">SomeHeavyMapComponent</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">lazy</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">import</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;some-heavy-map-component&#x27;</span><span style="color:#24292F">))</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> [</span><span style="color:#0550AE">Component</span><span style="color:#24292F">, </span><span style="color:#0550AE">setComponent</span><span style="color:#24292F">] </span><span style="color:#CF222E">=</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">useState</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> Loading)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// The useEffect() callback is run only in the browser, consequently the map component</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// is loaded and rendererd only in the browser.</span></span>
+<span class="line"><span style="color:#24292F">  React.</span><span style="color:#8250DF">useEffect</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">setComponent</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">lazy</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">import</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;some-heavy-map-component&#x27;</span><span style="color:#24292F">)))</span></span>
+<span class="line"><span style="color:#24292F">  }, [])</span></span>
+<span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> (</span></span>
-<span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">React.Suspense</span><span style="color:#24292F"> </span><span style="color:#0550AE">fallback</span><span style="color:#CF222E">=</span><span style="color:#24292F">{</span><span style="color:#0A3069">&#x27;Loading Map...&#x27;</span><span style="color:#24292F">}&gt;</span></span>
-<span class="line"><span style="color:#24292F">      &lt;</span><span style="color:#116329">SomeHeavyMapComponent</span><span style="color:#24292F"> /&gt;</span></span>
+<span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">React.Suspense</span><span style="color:#24292F"> </span><span style="color:#0550AE">fallback</span><span style="color:#CF222E">=</span><span style="color:#24292F">{&lt;</span><span style="color:#116329">Loading</span><span style="color:#24292F"> /&gt;}&gt;</span></span>
+<span class="line"><span style="color:#24292F">      &lt;</span><span style="color:#116329">Component</span><span style="color:#24292F"> /&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;/</span><span style="color:#116329">React.Suspense</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  )</span></span>
-<span class="line"><span style="color:#24292F">}</span></span></code></pre></div><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/dynamic-import.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<span class="line"><span style="color:#24292F">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Loading</span><span style="color:#24292F">() {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;</span><span style="color:#116329">div</span><span style="color:#24292F">&gt;Loading map...&lt;/</span><span style="color:#116329">div</span><span style="color:#24292F">&gt;</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>We can also extract the logic into a generic <code>&lt;ClientOnly&gt;</code> component:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;react&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Map</span><span style="color:#24292F">() {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> (</span></span>
+<span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">ClientOnly</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#0550AE">load</span><span style="color:#CF222E">=</span><span style="color:#24292F">{() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">import</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;some-heavy-map-component&#x27;</span><span style="color:#24292F">)}</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#0550AE">fallback</span><span style="color:#CF222E">=</span><span style="color:#24292F">{&lt;</span><span style="color:#116329">Loading</span><span style="color:#24292F"> /&gt;}</span></span>
+<span class="line"><span style="color:#24292F">    /&gt;</span></span>
+<span class="line"><span style="color:#24292F">  )</span></span>
+<span class="line"><span style="color:#24292F">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">ClientOnly</span><span style="color:#24292F">({ </span><span style="color:#953800">load</span><span style="color:#24292F">, </span><span style="color:#953800">fallback</span><span style="color:#24292F"> }) {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> [</span><span style="color:#0550AE">Component</span><span style="color:#24292F">, </span><span style="color:#0550AE">setComponent</span><span style="color:#24292F">] </span><span style="color:#CF222E">=</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">useState</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> fallback)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292F">  React.</span><span style="color:#8250DF">useEffect</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">setComponent</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">lazy</span><span style="color:#24292F">(load))</span></span>
+<span class="line"><span style="color:#24292F">  }, [])</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> (</span></span>
+<span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">React.Suspense</span><span style="color:#24292F"> </span><span style="color:#0550AE">fallback</span><span style="color:#CF222E">=</span><span style="color:#24292F">{fallback}&gt;</span></span>
+<span class="line"><span style="color:#24292F">      &lt;</span><span style="color:#116329">Component</span><span style="color:#24292F"> /&gt;</span></span>
+<span class="line"><span style="color:#24292F">    &lt;/</span><span style="color:#116329">React.Suspense</span><span style="color:#24292F">&gt;</span></span>
+<span class="line"><span style="color:#24292F">  )</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>See also:</p>
+<ul>
+<li><a href="https://github.com/arthurgailes/vite-plugin-ssr_dynamic-import-example">Github &gt; <code>arthurgailes/vite-plugin-ssr_dynamic-import-example</code></a></li>
+<li><a href="https://github.com/arthurgailes/vite-plugin-ssr_dynamic-import-example/blob/ecf7cda9beac5cae7b0eb642bd77d25f71e0f2e5/pages/index/index.page.jsx#L20-L35">Github &gt; <code>arthurgailes/vite-plugin-ssr_dynamic-import-example</code> &gt; <code>/pages/index/index.page.jsx</code></a></li>
+</ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/dynamic-import.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
