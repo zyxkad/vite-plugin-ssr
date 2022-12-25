@@ -39,7 +39,7 @@ is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is execut
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Page</span><span style="color:#24292F">() {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Users can see and interact with the button &quot;Please pick a location&quot;</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// before the browser starts loading the code of &lt;Map&gt;.</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// before the browser starts loading the code for &lt;Map&gt;.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">button</span><span style="color:#24292F">&gt;Please pick a location&lt;/</span><span style="color:#116329">button</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">    &lt;</span><span style="color:#116329">Map</span><span style="color:#24292F"> /&gt;</span></span>
@@ -48,11 +48,11 @@ is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is execut
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// &lt;Map&gt; is:</span></span>
 <span class="line"><span style="color:#6E7781">//  - Lazy-loaded</span></span>
-<span class="line"><span style="color:#6E7781">//  - Loaded and rendererd only in the browser</span></span>
+<span class="line"><span style="color:#6E7781">//  - Loaded and rendered only in the browser</span></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Map</span><span style="color:#24292F">() {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> [</span><span style="color:#0550AE">Component</span><span style="color:#24292F">, </span><span style="color:#0550AE">setComponent</span><span style="color:#24292F">] </span><span style="color:#CF222E">=</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">useState</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> Loading)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// The useEffect() callback is run only in the browser, consequently the map component</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// useEffect() callbacks are only run in the browser, consequently the map component</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// is loaded and rendererd only in the browser.</span></span>
 <span class="line"><span style="color:#24292F">  React.</span><span style="color:#8250DF">useEffect</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">setComponent</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">lazy</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">import</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;some-heavy-map-component&#x27;</span><span style="color:#24292F">)))</span></span>
@@ -68,7 +68,7 @@ is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is execut
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Loading</span><span style="color:#24292F">() {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> &lt;</span><span style="color:#116329">div</span><span style="color:#24292F">&gt;Loading map...&lt;/</span><span style="color:#116329">div</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>We can also extract the logic into a generic <code>&lt;ClientOnly&gt;</code> component:</p>
+<p>We can extract the logic into a generic <code>&lt;ClientOnly&gt;</code> component:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;react&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">Map</span><span style="color:#24292F">() {</span></span>
