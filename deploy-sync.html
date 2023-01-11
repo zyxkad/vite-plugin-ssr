@@ -21,7 +21,7 @@
 <p>A problem with <a href="/client-routing">Client Routing</a> is that users can have long-lived outdated clients.</p>
 <p>To mitigate the problem, vite-plugin-ssr falls back temporarily to <a href="/server-routing">Server Routing</a> whenever retrieving a static asset returns a <code>404</code>: all static asset URLs contain a unique hash and, consequently, when the user natvigates to a new page then the old client requests asset URLs that don&#x27;t exist anymore. This means that the new page is loaded with Server Routing and the entire client-side is reloaded. After the reload Client Routing is resumed.</p>
 <p>Note that, since the client-side is reloaded, any potential client-only state is lost if not persisted (to local storage, for instance).</p>
-<p>So far, this technique has shown to be reliable, but if it doesn&#x27;t work out for you, then open a new GitHub issue.</p>
+<p>So far, this technique has shown to be reliable, but if it doesn&#x27;t work for you, then open a new GitHub issue.</p>
 </blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/deploy-sync.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
