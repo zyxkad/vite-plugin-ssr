@@ -29,18 +29,29 @@ such as <a href="https://github.com/PaulLeCam/react-leaflet">react-leaflet</a> o
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
+      const transformData = function(hits) {
+    hits.map(hit =&gt; {
+      if (hit.anchor === &#039;page-content&#039;) {
+        hit.url = hit.url.replace(&#039;#&#039;+ hit.anchor, &#039;&#039;);
+        hit.anchor = null;
+       }
+    });
+    return hits;
+  };
       docsearch({
         appId: 'MUXG1ZE9F6',
         apiKey: '8d5986fca9ba9110bcbbfc51263de88b',
         indexName: 'vite-pluginssr',
         container: '#docsearch-desktop',
-      })
+        transformData
+      });
       docsearch({
         appId: 'MUXG1ZE9F6',
         apiKey: '8d5986fca9ba9110bcbbfc51263de88b',
         indexName: 'vite-pluginssr',
         container: '#docsearch-mobile',
-      })
+        transformData
+      });
     </script>
   
         <script type="module" src="/assets/chunk-6e7dec1c.js" defer></script>
