@@ -25,7 +25,7 @@ the server-side (see <a href="#server-side">Server-side</a>) as well as on
 the client-side (see <a href="#client-side">Client-side</a>).</p>
 <p>A frequent problem with client-side redirections are hydration mismatches, see <a href="#hydration-mismatch">Hydration Mismatch</a>.</p>
 <h2 id="authentication">Authentication</h2>
-<p>Instead of using URL redirections to protecting private pages from unauthenticated users, we can use a Route Function to show a different page depending on whether the user is logged-in or not:</p>
+<p>Instead of using URL redirections to protect private pages from unauthenticated users, we can use a Route Function to show a different page depending on whether the user is logged-in or not:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/login.page.route.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Route Function to render the login page to non-authenticated users, regardless of the URL.</span></span>
