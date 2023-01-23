@@ -29,14 +29,14 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
       const transformData = function(hits) {
-    hits.map(hit =&gt; {
-      if (hit.anchor === &#039;page-content&#039;) {
-        hit.url = hit.url.replace(&#039;#&#039;+ hit.anchor, &#039;&#039;);
-        hit.anchor = null;
-       }
-    });
-    return hits;
-  };
+        hits.map(hit => {
+          if (hit.anchor === 'page-content') {
+            hit.url = hit.url.replace('#'+ hit.anchor, '');
+            hit.anchor = null;
+           }
+        });
+        return hits;
+      };
       docsearch({
         appId: 'MUXG1ZE9F6',
         apiKey: '8d5986fca9ba9110bcbbfc51263de88b',
