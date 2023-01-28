@@ -153,9 +153,9 @@
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pipe</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderToStreamPipe</span><span style="color:#24292F">(Page)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// If `pipe(writable)` expects `writable` to be a Writable Node.js Stream</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#8250DF">stampPipe</span><span style="color:#24292F">(pipe, </span><span style="color:#0A3069">&#x27;web-stream&#x27;</span><span style="color:#24292F">)</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// If `pipe(writable)` expects `writable` to be a Writable Web Stream</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#8250DF">stampPipe</span><span style="color:#24292F">(pipe, </span><span style="color:#0A3069">&#x27;node-stream&#x27;</span><span style="color:#24292F">)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// If `pipe(writable)` expects `writable` to be a Writable Web Stream</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#8250DF">stampPipe</span><span style="color:#24292F">(pipe, </span><span style="color:#0A3069">&#x27;web-stream&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">escapeInject</span><span style="color:#0A3069">`&lt;!DOCTYPE html&gt;</span></span>
 <span class="line"><span style="color:#0A3069">    &lt;html&gt;</span></span>
