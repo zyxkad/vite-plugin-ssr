@@ -165,7 +165,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { RenderErrorPage } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforeRender</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforeRender</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">userId</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext.routeParams</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">user</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> db.</span><span style="color:#8250DF">fetchUser</span><span style="color:#24292F">(userId)</span></span>
