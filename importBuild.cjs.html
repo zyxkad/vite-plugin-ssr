@@ -18,12 +18,13 @@
 <p>But, in some (rare) situations, the trick used by <code>vite-plugin-ssr</code> doesn&#x27;t work. In that case, we have to manually load the files living at <code>dist/server/</code>. We do this by importing <code>dist/server/importBuild.cjs</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// We load the server build living at `dist/server/`</span></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./path/to/dist/server/importBuild.cjs&#x27;</span></span></code></pre></div>
-<p>If you use <a href="https://vitejs.dev/config/build-options.html#build-outdir"><code>vite.config.js &gt; build.outDir</code></a>, then replace the path <code>dist/server/</code> with the path to your custom build directory <code>${build.outDir}/server</code>.</p>
-<blockquote>
-<p><code>dist/server/importBuild.cjs</code> needs to be imported before running <code>vite-plugin-ssr</code>&#x27;s server middleware <a href="/renderPage"><code>renderPage()</code></a>. That&#x27;s why we recommend to insert <code>import &#x27;.../importBuild.cjs</code> at the beginning of your server entry (e.g. the first <code>.js</code> file of your Express.js server, Vercel serverless function, worker (Cloudflare Workers), ...) or at the beginning of your server SSR middleware JavaScript file.</p>
-</blockquote>
+<span class="line"><span style="color:#6E7781">// We load the server build living at dist/server/</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./path/to/dist/server/importBuild.cjs&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// Your server code, e.g. Express.js code, Vercel serverless function, Cloudflare Worker, ...</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderPage } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr&#x27;</span></span>
+<span class="line"><span style="color:#6E7781">// ...</span></span></code></pre></div>
+<p>If you use <a href="https://vitejs.dev/config/build-options.html#build-outdir"><code>vite.config.js &gt; build.outDir</code></a>, then replace the path <code>./path/to/dist/server/importBuild.cjs</code> with the path to your custom build directory <code>./path/to/${build.outDir}/server/importBuild.cjs</code>.</p>
 <blockquote>
 <p>See <a href="https://github.com/brillout/vite-plugin-ssr/issues/403">#403</a> if you&#x27;re curious about the trick used by vite-plugin-ssr to automagically import <code>dist/server/</code> files.</p>
 </blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/importBuild.cjs.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
