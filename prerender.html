@@ -22,7 +22,7 @@
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.route.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId</span><span style="color:#82071E;font-style:italic">`</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId&#x27;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.server.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
@@ -47,7 +47,7 @@ then we can pre-render our app without defining any <code>prerender()</code> hoo
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.route.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId</span><span style="color:#82071E;font-style:italic">`</span></span></code></pre></div>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/movie/@movieId&#x27;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movie.page.server.js</span></span>
 <span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
 <span class="line"></span>
@@ -64,7 +64,7 @@ then we can pre-render our app without defining any <code>prerender()</code> hoo
 <span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { pageProps }</span></span>
 <span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">        url,</span></span>
-<span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// Beacuse we already provide the `pageContext`, vite-plugin-ssr will *not* call</span></span>
+<span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// Because we already provide the `pageContext`, vite-plugin-ssr will *not* call</span></span>
 <span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// the `onBeforeRender()` hook for `url`.</span></span>
 <span class="line"><span style="color:#24292F">        pageContext</span></span>
 <span class="line"><span style="color:#24292F">      }</span></span>
