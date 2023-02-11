@@ -72,6 +72,9 @@ The trick is to add a different <code>fetch()</code> implementation to <code>pag
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
+      const appId = 'MUXG1ZE9F6';
+      const apiKey = '8d5986fca9ba9110bcbbfc51263de88b';
+      const indexName = 'vite-pluginssr';
       const transformData = function(hits) {
         hits.map(hit => {
           if (hit.anchor === 'page-content') {
@@ -82,18 +85,12 @@ The trick is to add a different <code>fetch()</code> implementation to <code>pag
         return hits;
       };
       docsearch({
-        appId: 'MUXG1ZE9F6',
-        apiKey: '8d5986fca9ba9110bcbbfc51263de88b',
-        indexName: 'vite-pluginssr',
         container: '#docsearch-desktop',
-        transformData
+        appId, apiKey, indexName, transformData
       });
       docsearch({
-        appId: 'MUXG1ZE9F6',
-        apiKey: '8d5986fca9ba9110bcbbfc51263de88b',
-        indexName: 'vite-pluginssr',
         container: '#docsearch-mobile',
-        transformData
+        appId, apiKey, indexName, transformData
       });
     </script>
   
