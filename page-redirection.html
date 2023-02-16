@@ -28,17 +28,17 @@ the client-side (see <a href="#client-side">Client-side</a>).</p>
 <p>Instead of using URL redirections to protect private pages from unauthenticated users, we can use a Route Function to show a different page depending on whether the user is logged-in or not:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/login.page.route.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// Route Function to render the login page to non-authenticated users, regardless of the URL.</span></span>
+<span class="line"><span style="color:#6E7781">// Route Function to render the login page to unauthenticated users, regardless of the URL.</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> pageContext </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only render the login page to non-authenticated users</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Only render the login page to unauthenticated users</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (</span><span style="color:#8250DF">userIsLoggedIn</span><span style="color:#24292F">(pageContext)) {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We use a high precedence number of `99` to override all other routes.</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// This means that non-authenticated users always see the login page,</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// This means that unauthenticated users always see the login page,</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// regardless of the URL.</span></span>
 <span class="line"><span style="color:#24292F">    precedence: </span><span style="color:#0550AE">99</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
