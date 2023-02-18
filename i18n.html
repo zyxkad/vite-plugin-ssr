@@ -71,7 +71,7 @@
 <h2 id="example">Example</h2>
 <p>See <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples/i18n/">/examples/i18n/</a>.</p>
 <h2 id="pre-rendering">Pre-rendering</h2>
-<p>For <a href="/pre-rendering">pre-rendering</a> we can use <code>onBeforePrerender()</code>.</p>
+<p>If we use <a href="/pre-rendering">pre-rendering</a> then, in addition to defining <code>onBeforeRoute()</code>, we also define a second hook <code>onBeforePrerender()</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// _default.page.server.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforePrerender }</span></span>
@@ -102,7 +102,18 @@
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
-<p>See <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples/i18n/">/examples/i18n/</a> for an example of using <code>onBeforePrerender()</code>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/i18n.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<p>See <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples/i18n/">/examples/i18n/</a> for an example using <code>onBeforePrerender()</code>.</p>
+<p>Our <a href="/prerender"><code>prerender()</code> hooks</a> (if we use any) should return URLs without any locale (e.g. <code>prerender()</code> returning <code>/product/42</code>). Instead, it&#x27;s our <code>onBeforePrerender()</code> hook that duplicates and modifies URLs for each locale (e.g. duplicating <code>/product/42</code> into <code>/en-US/product/42</code>, <code>/de-DE/product/42</code>, <code>/fr-FR/product/42</code>).</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.server.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { prerender }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">prerender</span><span style="color:#24292F">() {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">products</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> Product.</span><span style="color:#8250DF">findAll</span><span style="color:#24292F">()</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">URLs</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> products.</span><span style="color:#8250DF">map</span><span style="color:#24292F">(({ </span><span style="color:#953800">id</span><span style="color:#24292F"> }) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;/product/&#x27;</span><span style="color:#24292F"> </span><span style="color:#CF222E">+</span><span style="color:#24292F"> id)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// We don&#x27;t add the locale here, instead we let onBeforePrerender() add the locales</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> URLs</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/i18n.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
