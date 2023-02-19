@@ -126,16 +126,20 @@
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Set pageContext + localize</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">urlsWithPageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> []</span></span>
-<span class="line"><span style="color:#24292F">  [</span><span style="color:#0A3069">&#x27;en-US&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;de-DE&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;fr-FR&#x27;</span><span style="color:#24292F">].</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">(</span><span style="color:#953800">locale</span><span style="color:#24292F"> </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    products.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">(</span><span style="color:#953800">product</span><span style="color:#24292F"> </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">  products.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">(</span><span style="color:#953800">product</span><span style="color:#24292F"> </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    [</span><span style="color:#0A3069">&#x27;en-US&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;de-DE&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;fr-FR&#x27;</span><span style="color:#24292F">].</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">(</span><span style="color:#953800">locale</span><span style="color:#24292F"> </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">      urlsWithPageContext.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
 <span class="line"><span style="color:#24292F">        url: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}/product/${</span><span style="color:#24292F">product</span><span style="color:#0A3069">.</span><span style="color:#24292F">id</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
 <span class="line"><span style="color:#24292F">        pageContext: {</span></span>
 <span class="line"><span style="color:#24292F">          locale,</span></span>
-<span class="line"><span style="color:#24292F">          product: {</span></span>
-<span class="line"><span style="color:#24292F">            price: product.price,</span></span>
-<span class="line"><span style="color:#24292F">            description: product.description,</span></span>
-<span class="line"><span style="color:#24292F">            </span><span style="color:#6E7781">// ...</span></span>
+<span class="line"><span style="color:#24292F">          product,</span></span>
+<span class="line"><span style="color:#24292F">          pageProps: {</span></span>
+<span class="line"><span style="color:#24292F">            product: {</span></span>
+<span class="line"><span style="color:#24292F">              name: product.name,</span></span>
+<span class="line"><span style="color:#24292F">              description: product.description,</span></span>
+<span class="line"><span style="color:#24292F">              price: product.price,</span></span>
+<span class="line"><span style="color:#24292F">              </span><span style="color:#6E7781">// ...</span></span>
+<span class="line"><span style="color:#24292F">            }</span></span>
 <span class="line"><span style="color:#24292F">          }</span></span>
 <span class="line"><span style="color:#24292F">        }</span></span>
 <span class="line"><span style="color:#24292F">      })</span></span>
