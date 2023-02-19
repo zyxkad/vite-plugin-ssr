@@ -77,16 +77,22 @@
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforePrerender }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">locales</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> [</span><span style="color:#0A3069">&#x27;en-US&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;de-DE&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;fr-FR&#x27;</span><span style="color:#24292F">]</span></span>
+<span class="line"><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">localeDefault</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;en-US&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforePrerender</span><span style="color:#24292F">(</span><span style="color:#953800">prerenderContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContexts</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> []</span></span>
 <span class="line"><span style="color:#24292F">  prerenderContext.pageContexts.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Duplicate pageContext for each locale</span></span>
 <span class="line"><span style="color:#24292F">    locales.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">locale</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Localize URL and pageContext</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Localize URL</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">let</span><span style="color:#24292F"> { urlOriginal } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (locale </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> localeDefault) {</span></span>
+<span class="line"><span style="color:#24292F">        urlOriginal </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">urlOriginal</span><span style="color:#0A3069">}`</span></span>
+<span class="line"><span style="color:#24292F">      }</span></span>
 <span class="line"><span style="color:#24292F">      pageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
 <span class="line"><span style="color:#24292F">        </span><span style="color:#CF222E">...</span><span style="color:#24292F">pageContext,</span></span>
-<span class="line"><span style="color:#24292F">        urlOriginal: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">urlOriginal</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
+<span class="line"><span style="color:#24292F">        urlOriginal,</span></span>
+<span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// Set pageContext.locale</span></span>
 <span class="line"><span style="color:#24292F">        locale</span></span>
 <span class="line"><span style="color:#24292F">      })</span></span>
 <span class="line"><span style="color:#24292F">    })</span></span>
