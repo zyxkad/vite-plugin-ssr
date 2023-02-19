@@ -81,20 +81,15 @@
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforePrerender</span><span style="color:#24292F">(</span><span style="color:#953800">prerenderContext</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContexts</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> []</span></span>
 <span class="line"><span style="color:#24292F">  prerenderContext.pageContexts.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">    pageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#CF222E">...</span><span style="color:#24292F">pageContext,</span></span>
-<span class="line"><span style="color:#24292F">      locale: localeDefault</span></span>
-<span class="line"><span style="color:#24292F">    })</span></span>
-<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// We add the localized pages to the list of pages that are going to be pre-rendered</span></span>
-<span class="line"><span style="color:#24292F">    locales</span></span>
-<span class="line"><span style="color:#24292F">      .</span><span style="color:#8250DF">filter</span><span style="color:#24292F">((</span><span style="color:#953800">locale</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> locale </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> localeDefault)</span></span>
-<span class="line"><span style="color:#24292F">      .</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">locale</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">        pageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
-<span class="line"><span style="color:#24292F">          </span><span style="color:#CF222E">...</span><span style="color:#24292F">pageContext,</span></span>
-<span class="line"><span style="color:#24292F">          urlOriginal: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">urlOriginal</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
-<span class="line"><span style="color:#24292F">          locale</span></span>
-<span class="line"><span style="color:#24292F">        })</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Duplicate pageContext for each locale</span></span>
+<span class="line"><span style="color:#24292F">    locales.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">locale</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Localize URL and pageContext</span></span>
+<span class="line"><span style="color:#24292F">      pageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
+<span class="line"><span style="color:#24292F">        </span><span style="color:#CF222E">...</span><span style="color:#24292F">pageContext,</span></span>
+<span class="line"><span style="color:#24292F">        urlOriginal: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">urlOriginal</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
+<span class="line"><span style="color:#24292F">        locale</span></span>
 <span class="line"><span style="color:#24292F">      })</span></span>
+<span class="line"><span style="color:#24292F">    })</span></span>
 <span class="line"><span style="color:#24292F">  })</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    prerenderContext: {</span></span>
@@ -116,13 +111,13 @@
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>We basically use <code>prerender()</code> to determine URLs and/or load data, and use <code>onBeforePrerender()</code> merely to manipulate the URLs and set <code>pageContext.locale</code>.</p>
 <blockquote>
-<p>Despite what the naming suggests, note that vite-plugin-ssr calls our <code>onBeforePrerender()</code> hook <em>after</em> our <code>prerender()</code> hooks.</p>
+<p>Despite what the naming suggests, note that vite-plugin-ssr calls our <code>onBeforePrerender()</code> hook <em>after</em> our <code>prerender()</code> hooks. Also note that <code>onBeforePrerender(prerenderContext)</code> is a global hook we can define only once, while <code>prerender()</code> (it doesn&#x27;t have any argument) is a per-page hook we can define multiple times.</p>
 </blockquote>
-<p>Alternatively, if we need to load data that depends on localization, we don&#x27;t define any <code>onBeforePrerender()</code> and instead only use <code>prerender()</code> to generate localized URLs as well as fetch data:</p>
+<p>Alternatively, if we need to load data that depends on localization, instead of <code>onBeforePrerender()</code> we can use <code>prerender()</code> to localize <code>pageContext</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.server.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// In this example, we don&#x27;t define any onBeforePrerender() and instead</span></span>
-<span class="line"><span style="color:#6E7781">// only use prerender() to duplicate/localize all URLs and their pageContext</span></span>
+<span class="line"><span style="color:#6E7781">// In this example, we don&#x27;t use onBeforePrerender() but, instead,</span></span>
+<span class="line"><span style="color:#6E7781">// we use prerender() to duplicate and localize URLs and their pageContext</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { prerender }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">prerender</span><span style="color:#24292F">() {</span></span>
@@ -148,6 +143,40 @@
 <span class="line"><span style="color:#24292F">  })</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> urlsWithPageContext</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>We may still need to use <code>onBeforePrerender()</code> for localizing static pages that don&#x27;t load data.</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// _default.page.server.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforePrerender }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> assert </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;assert&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">locales</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> [</span><span style="color:#0A3069">&#x27;en-US&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;de-DE&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;fr-FR&#x27;</span><span style="color:#24292F">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onBeforePrerender</span><span style="color:#24292F">(</span><span style="color:#953800">prerenderContext</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContexts</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> []</span></span>
+<span class="line"><span style="color:#24292F">  prerenderContext.pageContexts.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">if</span><span style="color:#24292F">(pageContext.locale) {</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Already localized by one of our prerender() hooks</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#8250DF">assert</span><span style="color:#24292F">(pageContext.urlOriginal.</span><span style="color:#8250DF">startsWith</span><span style="color:#24292F">(</span><span style="color:#0A3069">`/${</span><span style="color:#24292F">pagecontext</span><span style="color:#0A3069">.</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}/`</span><span style="color:#24292F">))</span></span>
+<span class="line"><span style="color:#24292F">      pageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">(pageContext)</span></span>
+<span class="line"><span style="color:#24292F">    } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Duplicate pageContext for each locale</span></span>
+<span class="line"><span style="color:#24292F">      locales.</span><span style="color:#8250DF">forEach</span><span style="color:#24292F">((</span><span style="color:#953800">locale</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// Localize URL and pageContext</span></span>
+<span class="line"><span style="color:#24292F">        pageContexts.</span><span style="color:#8250DF">push</span><span style="color:#24292F">({</span></span>
+<span class="line"><span style="color:#24292F">          </span><span style="color:#CF222E">...</span><span style="color:#24292F">pageContext,</span></span>
+<span class="line"><span style="color:#24292F">          urlOriginal: </span><span style="color:#0A3069">`/${</span><span style="color:#24292F">locale</span><span style="color:#0A3069">}${</span><span style="color:#24292F">pageContext</span><span style="color:#0A3069">.</span><span style="color:#24292F">urlOriginal</span><span style="color:#0A3069">}`</span><span style="color:#24292F">,</span></span>
+<span class="line"><span style="color:#24292F">          locale</span></span>
+<span class="line"><span style="color:#24292F">        })</span></span>
+<span class="line"><span style="color:#24292F">      })</span></span>
+<span class="line"><span style="color:#24292F">    }</span></span>
+<span class="line"><span style="color:#24292F">  })</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    prerenderContext: {</span></span>
+<span class="line"><span style="color:#24292F">      pageContexts</span></span>
+<span class="line"><span style="color:#24292F">    }</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/i18n.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
