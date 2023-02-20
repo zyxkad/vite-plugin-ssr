@@ -104,23 +104,23 @@
 </ul>
 <p>Integrating a browser tool is only a matter of following its official installation guide.</p>
 <h2 id="server-tools">Server tools</h2>
-<p>From a server architecture perspective, <code>vite-plugin-ssr</code> is just a server middleware.</p>
+<p>From the perspective of our server architecture, <code>vite-plugin-ssr</code> is just a server middleware.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// `app` can be any server framework such as Express.js/Fastify/Koa/Hapi/...</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// The `renderPage()` function, for a given URL, returns the result of our</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `render()` hook (usually an HTML string). It doesn&#x27;t know anything about Express.js and</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// can be used in any server environment, including serverless such as Cloudflare Workers</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// or Vercel.</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// renderPage() is just a function that, for a given URL, returns the result of</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// of our render() hook (usually an HTML string). The renderPage() function</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// can be used within any server environment, including serverless and edge</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// environments such as AWS Lambda, Cloudflare Workers, and Vercel.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">({ urlOriginal: req.url })</span></span>
 <span class="line"><span style="color:#24292F">  res.</span><span style="color:#8250DF">send</span><span style="color:#24292F">(pageContext.httpResponse.body)</span></span>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
-<p>By <a href="/pre-rendering">pre-rendering</a> we can remove the need for a Node.js production server and deploy to any static host instead.</p>
+<p>By <a href="/pre-rendering">pre-rendering</a> our pages we can remove the need for a production server and, instead, deploy to a static host.</p>
 <p>We can use:</p>
 <ul>
 <li>Any server framework (Express, Koa, Fastify, Hapi, ...)</li>
-<li>Any authentication strategy &amp; tool (email/password, OAuth, NextAuth.js, Passport.js, Grant, Auth0, ...).</li>
-<li>Any serverless environment (Cloudflare Workers, Vercel, Firebase, AWS Lambda, Google Cloud Functions, ...)</li>
-<li>Any server environment (AWS EC2, Google Cloud, ...)</li>
+<li>Any authentication strategy/tool (email/password, OAuth, Auth.js, Passport.js, Grant, Keycloak, Auth0, ...).</li>
+<li>Any serverless/edge environment (Cloudflare Workers, Vercel, Firebase, AWS Lambda, Google Cloud Functions, ...)</li>
+<li>Any virtual private server (AWS EC2, Google Cloud, ...)</li>
 <li>Any static host (Cloudflare Pages, GitHub Pages, Netlify, ...)</li>
 </ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/integration.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
