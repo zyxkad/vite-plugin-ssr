@@ -104,7 +104,7 @@
 </ul>
 <p>Integrating a browser tool is only a matter of following its official installation guide.</p>
 <h2 id="server-tools">Server tools</h2>
-<p>From the perspective of our server architecture, <code>vite-plugin-ssr</code> is just a server middleware.</p>
+<p>From the perspective of our server architecture, <code>vite-plugin-ssr</code> is just a middleware.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// `app` can be any server framework such as Express.js/Fastify/Koa/Hapi/...</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// renderPage() is just a function that, for a given URL, returns the result of</span></span>
