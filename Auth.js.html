@@ -36,7 +36,7 @@ or
 <h2 id="fetch-polyfill-for-getsession">Fetch polyfill for <code>getSession()</code></h2>
 <p>In order to use Auth.js&#x27;s <a href="https://authjs.dev/reference/utilities/#getsession"><code>getSession()</code></a> on the server-side, we need to globally install a fetch polyfill.</p>
 <blockquote>
-<p>A polyfill is not needed if we use <code>getSession()</code> only on the client-side, or if we use Node.js 18 which <a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">natively supports <code>fetch()</code></a>.</p>
+<p>A polyfill isn&#x27;t needed if we use <code>getSession()</code> only on the client-side, or if we use Node.js 18 which <a href="https://nodejs.org/en/blog/announcements/v18-release-announce/#fetch-experimental">natively supports <code>fetch()</code></a>.</p>
 </blockquote>
 <p>We can use <a href="https://github.com/node-fetch/node-fetch#providing-global-access"><code>node-fetch</code> to patch the global object</a>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// server.js</span></span>
@@ -44,7 +44,7 @@ or
 <span class="line"><span style="color:#6E7781">// Only install the polyfill on the server (e.g. Express.js). Browsers already implement</span></span>
 <span class="line"><span style="color:#6E7781">// `fetch()` natively and it would be wasteful to load the polyfill on the browser-side.</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// Use node-fetch@2 instead of node-fetch@3 if your `package.json#type` is not `&quot;module&quot;`.</span></span>
+<span class="line"><span style="color:#6E7781">// Use node-fetch@2 instead of node-fetch@3 if your `package.json#type` isn&#x27;t `&quot;module&quot;`.</span></span>
 <span class="line"><span style="color:#6E7781">// Or some other `fetch()` polyfill, e.g. `cross-fetch`.</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> fetch, { Headers, Request, Response } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;node-fetch&#x27;</span></span>
 <span class="line"></span>

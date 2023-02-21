@@ -62,7 +62,7 @@ see the <a href="#node-js">Node.js section</a> below.</p>
 <p>Vite&#x27;s <code>vite.config.js#resolve.alias</code> only applies to files that are processed by Vite.
 (All following files and their imports: <code>*.page.js</code>, <code>*.page.server.js</code>,<code>*.page.client.js</code>, <code>*.page.route.js</code>.)</p>
 <p>Browser files are always processed by Vite,
-but this is not always the case for Node.js server files,
+but this isn&#x27;t always the case for Node.js server files,
 for example <a href="https://github.com/brillout/vite-plugin-ssr/blob/main/boilerplates/boilerplate-react/server/index.js">Express.js server code</a>.</p>
 <p>For these files we can use Node.js&#x27;s built-in support <code>package.json#imports</code> or, alternatively, we can use one of many npm packages such as <a href="https://github.com/ilearnio/module-alias"><code>module-alias</code></a>. (Example of using <code>module-alias</code>: <a href="https://github.com/brillout/vite-plugin-ssr/tree/c914dade5f0809ff330478c3531928055abdadef/examples/path-aliases">/examples/path-aliases (@c914dad)</a>.)</p>
 <h2 id="typescript">TypeScript</h2>
