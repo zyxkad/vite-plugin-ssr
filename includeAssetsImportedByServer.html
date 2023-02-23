@@ -76,22 +76,21 @@
       const appId = 'MUXG1ZE9F6';
       const apiKey = '8d5986fca9ba9110bcbbfc51263de88b';
       const indexName = 'vite-pluginssr';
-      const transformData = function(hits) {
+      const transformItems = function(hits) {
         hits.map(hit => {
-          if (hit.anchor === 'page-content') {
-            hit.url = hit.url.replace('#'+ hit.anchor, '');
-            hit.anchor = null;
-           }
+          if (hit.url.indexOf('#page-content') > 0) {
+            hit.url = hit.url.replace('#page-content', '');
+          }
         });
         return hits;
       };
       docsearch({
         container: '#docsearch-desktop',
-        appId, apiKey, indexName, transformData
+        appId, apiKey, indexName, transformItems
       });
       docsearch({
         container: '#docsearch-mobile',
-        appId, apiKey, indexName, transformData
+        appId, apiKey, indexName, transformItems
       });
     </script>
   
