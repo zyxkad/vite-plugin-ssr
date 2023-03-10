@@ -55,6 +55,7 @@ is loaded only if/when <code>import(&#x27;some-component&#x27;)</code> is execut
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// useEffect() callbacks are only run in the browser, consequently the map component</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// is loaded and rendererd only in the browser.</span></span>
 <span class="line"><span style="color:#24292F">  React.</span><span style="color:#8250DF">useEffect</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// @ts-ignore React.lazy&#x27;s type is wrong</span></span>
 <span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">setComponent</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> React.</span><span style="color:#8250DF">lazy</span><span style="color:#24292F">(() </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> </span><span style="color:#CF222E">import</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;some-heavy-map-component&#x27;</span><span style="color:#24292F">)))</span></span>
 <span class="line"><span style="color:#24292F">  }, [])</span></span>
 <span class="line"></span>
