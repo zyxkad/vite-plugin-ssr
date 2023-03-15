@@ -34,7 +34,14 @@
 <div data-rehype-pretty-code-fragment=""><pre data-language="shell" data-theme="default"><code data-language="shell" data-theme="default"><span class="line"><span style="color:#24292F">$ DEBUG=vite:</span><span style="color:#CF222E">*</span><span style="color:#24292F"> npm run dev</span></span></code></pre></div>
 <p>If you have a problem with Vite, we recommend to consider injecting a bunch of <code>console.log()</code> inside <code>node_modules/vite/dist/**/*.js</code> to inspect what&#x27;s going on.</p>
 <blockquote>
-<p>Instead of <code>$ git clone git@github.com:vitejs/vite &amp;&amp; cd vite/ &amp;&amp; npm install &amp;&amp; npm run buid &amp;&amp; cd ../path/to/my-app/ &amp;&amp; npm link ../vite/packages/vite/</code>, we recommend to:</p>
+<p>Instead of:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">$ git clone git@github.com:vitejs/vite</span></span>
+<span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> vite/</span></span>
+<span class="line"><span style="color:#24292F">$ pnpm install</span></span>
+<span class="line"><span style="color:#24292F">$ pnpm run buid</span></span>
+<span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> ../path/to/my-app</span></span>
+<span class="line"><span style="color:#24292F">$ npm link ../vite/packages/vite/</span></span></code></pre></div>
+<p>We recommend to:</p>
 <ul>
 <li>Browse the source code of <code>$ git clone git@github.com:vitejs/vite</code>.</li>
 <li>But: for an increased feedback loop, instead of building Vite, consider injecting <code>console.log()</code> directly inside <code>my-app/node_modules/vite/dist/**/*.js</code>.</li>
