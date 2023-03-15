@@ -32,7 +32,7 @@
 <h2 id="vite">Vite</h2>
 <p>To enable Vite&#x27;s debug logs, set the environment variable <code>DEBUG</code> to <code>vite:*</code>.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="shell" data-theme="default"><code data-language="shell" data-theme="default"><span class="line"><span style="color:#24292F">$ DEBUG=vite:</span><span style="color:#CF222E">*</span><span style="color:#24292F"> npm run dev</span></span></code></pre></div>
-<p>If you have a problem with Vite, we recommend to consider injecting a bunch of <code>console.log()</code> inside <code>node_modules/vite/dist/**/*.js</code> to inspect what&#x27;s going on.</p>
+<p>If you have a problem with Vite, we recommend to consider injecting a bunch of <code>console.log()</code> inside <code>node_modules/vite/dist/**/*.js</code> in order to inspect what&#x27;s going on.</p>
 <blockquote>
 <p>It may sound scary to dig into Vite&#x27;s source code, but it&#x27;s sometimes quicker to find the root cause of your problem than treating Vite as a black box. Also:</p>
 <ul>
@@ -45,8 +45,8 @@
 <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">$ git clone git@github.com:vitejs/vite</span></span>
 <span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> vite/</span></span>
 <span class="line"><span style="color:#24292F">$ pnpm install</span></span>
-<span class="line"><span style="color:#24292F">$ pnpm run buid</span></span>
-<span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> ../path/to/my-app/</span></span>
+<span class="line"><span style="color:#24292F">$ pnpm run build</span></span>
+<span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> ../my-app/</span></span>
 <span class="line"><span style="color:#24292F">$ npm link ../vite/packages/vite/</span></span></code></pre></div>
 <p>We recommend to:</p>
 <ul>
