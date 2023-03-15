@@ -23,9 +23,9 @@
 <span class="line"><span style="color:#6E7781"># Inspect HTTP Streaming</span></span>
 <span class="line"><span style="color:#24292F">DEBUG=vps:stream npm run dev</span></span></code></pre></div>
 <blockquote>
-<p>These debug logs allow you to understand how <code>vite-plugin-ssr</code> thinks of your app. For example, to figure out why your app is <code>404</code>&#x27;ing, you can use <code>vps:routing</code> and <code>vps:pageFiles</code>.</p>
+<p>These debug logs allow you to understand how <code>vite-plugin-ssr</code> thinks of your app. For example, to figure out why your app returns a <code>404</code>, use <code>vps:routing</code> and <code>vps:pageFiles</code>.</p>
 </blockquote>
-<p>There are also <code>vps:glob</code> / <code>vps:extractAssets</code> / <code>vps:extractExportNames</code> but these are meant for vite-plugin-ssr maintainers.</p>
+<p>There are more debug logs (<code>vps:glob</code>, <code>vps:extractAssets</code>, ...) but these aren&#x27;t user friendly as they are meant for the vite-plugin-ssr maintainers.</p>
 <blockquote>
 <p>If you want more debug logs, add a comment at <a href="https://github.com/brillout/vite-plugin-ssr/issues/249">#249</a>.</p>
 </blockquote>
