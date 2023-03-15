@@ -34,24 +34,24 @@
 <div data-rehype-pretty-code-fragment=""><pre data-language="shell" data-theme="default"><code data-language="shell" data-theme="default"><span class="line"><span style="color:#24292F">$ DEBUG=vite:</span><span style="color:#CF222E">*</span><span style="color:#24292F"> npm run dev</span></span></code></pre></div>
 <p>If you have a problem with Vite, we recommend to consider injecting a bunch of <code>console.log()</code> inside <code>node_modules/vite/dist/**/*.js</code> to inspect what&#x27;s going on.</p>
 <blockquote>
+<p>It may sound scary to dig into Vite&#x27;s source code, but it&#x27;s sometimes quicker to find the root cause of your problem than treating Vite as a black box. Also:</p>
+<ul>
+<li>It&#x27;s more interesting and more fun. (Vite&#x27;s source code is well written and pleasurable to read.)</li>
+<li>You may end up being able to do a Vite PR solving your problem (and helping the whole community!). (If you open a Vite PR, feel free to reach out to the <code>vite-plugin-ssr</code> maintainers to get your PR merged quicker.)</li>
+</ul>
+</blockquote>
+<blockquote>
 <p>Instead of:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">$ git clone git@github.com:vitejs/vite</span></span>
 <span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> vite/</span></span>
 <span class="line"><span style="color:#24292F">$ pnpm install</span></span>
 <span class="line"><span style="color:#24292F">$ pnpm run buid</span></span>
-<span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> ../path/to/my-app</span></span>
+<span class="line"><span style="color:#24292F">$ </span><span style="color:#0550AE">cd</span><span style="color:#24292F"> ../path/to/my-app/</span></span>
 <span class="line"><span style="color:#24292F">$ npm link ../vite/packages/vite/</span></span></code></pre></div>
 <p>We recommend to:</p>
 <ul>
 <li>Browse the source code of <code>$ git clone git@github.com:vitejs/vite</code>.</li>
-<li>But: for an increased feedback loop, instead of building Vite, consider injecting <code>console.log()</code> directly inside <code>my-app/node_modules/vite/dist/**/*.js</code>.</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>It may sound scary to dig into Vite&#x27;s source code, but it&#x27;s sometimes quicker to find the root cause of your problem than treating Vite as a black box. Also:</p>
-<ul>
-<li>It&#x27;s more interesting and more fun. (Vite&#x27;s source code is well written and pleasurable to read.)</li>
-<li>You may end up being able to do a Vite PR solving your problem. (If you open a Vite PR, feel free to reach out to the <code>vite-plugin-ssr</code> maintainers to get your PR merged quicker.)</li>
+<li>But, for an increased feedback loop, instead of building Vite consider injecting <code>console.log()</code> directly inside <code>my-app/node_modules/vite/dist/**/*.js</code>.</li>
 </ul>
 </blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/debug.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
