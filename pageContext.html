@@ -40,7 +40,7 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">/* ... */</span></span>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
 <p>On the client-side, when using <a href="/server-routing-vs-client-routing">Server Routing</a>, the <code>pageContext.urlOriginal</code> value is <code>undefined</code> (unless we use <a href="/passToClient"><code>passToClient</code></a>).</p>
-<p>On the client-side, when using <a href="/clientRouting">Client Routing</a>, the value of <code>pageContext.urlOriginal</code> is the browser&#x27;s current URL (<code>window.location.href</code>).</p>
+<p>On the client-side, when using <a href="/client-routing">Client Routing</a>, the value of <code>pageContext.urlOriginal</code> is the browser&#x27;s current URL (<code>window.location.href</code>).</p>
 </li>
 <li>
 <p><strong><code>pageContext.urlPathname</code></strong>: alias of <code>pageContext.urlParsed.pathname</code>.</p>
@@ -77,13 +77,16 @@ That&#x27;s why it&#x27;s called <em>page</em>Context (and not <em>app</em>Conte
 <p><strong><code>pageContext.exportsAll</code></strong>: Same as <code>pageContext.exports</code> but cumulative.</p>
 </li>
 <li>
-<p><strong><code>pageContext.isHydration</code></strong>: Whether the current page is already rendered to HTML. (Usually <code>true</code> for the first page the user navigates to, and <code>false</code> if the user navigates to a new page when using Client Routing.)</p>
+<p><strong><code>pageContext.isHydration</code></strong>: Whether the current page is already rendered to HTML. In other words, when using <a href="/client-routing">Client Routing</a>, the value is usually <code>true</code> for the first page the user navigates to, and <code>false</code> for any subsequent navigation. (When using <a href="/server-routing">Server Routing</a>, the value is always <code>true</code>.)</p>
 </li>
 <li>
 <p><strong><code>pageContext.isBackwardNavigation</code></strong>: Whether the user is navigating back in history. The value is <code>true</code> when the user clicks on his browser&#x27;s backward navigation button, or when invoking <code>history.back()</code>. The <code>isBackwardNavigation</code> property only works with Client Routing. (The value is always <code>null</code> when using Server Routing.)</p>
 </li>
 <li>
 <p><strong><code>pageContext.is404</code></strong>: If an error occurs, whether the error is a <code>404 Page Not Found</code> or a <code>500 Internal Server Error</code>, see <a href="/error-page">API<!-- --> &gt; <code>_error.page.js</code></a>.</p>
+</li>
+<li>
+<p><strong><code>pageContext.isClientSideNavigation</code></strong>: Whether the page was navigated by the the client-side router. In other words, when using <a href="/client-routing">Client Routing</a>, the value is <code>false</code> for the first page the user visits, and <code>true</code> for any subsequent navigation. (When using <a href="/server-routing">Server Routing</a>, the value is always <code>false</code>.)</p>
 </li>
 </ul>
 <h2 id="custom">Custom</h2>
