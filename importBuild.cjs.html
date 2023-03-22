@@ -22,7 +22,7 @@
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./path/to/dist/server/importBuild.cjs&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Your server code, e.g. Express.js code, Vercel serverless function, Cloudflare Worker, ...</span></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderPage } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderPage } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/server&#x27;</span></span>
 <span class="line"><span style="color:#6E7781">// ...</span></span></code></pre></div>
 <p>If you use <a href="https://vitejs.dev/config/build-options.html#build-outdir"><code>vite.config.js &gt; build.outDir</code></a>, then replace the path <code>./path/to/dist/server/importBuild.cjs</code> with the path to your custom build directory <code>./path/to/${build.outDir}/server/importBuild.cjs</code>.</p>
 <blockquote>

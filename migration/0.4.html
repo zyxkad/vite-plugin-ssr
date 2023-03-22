@@ -111,7 +111,7 @@
 <span class="line"><span style="color:#82071E">- import { createPageRenderer } from &#x27;vite-plugin-ssr&#x27;</span></span>
 <span class="line"><span style="color:#82071E">- const renderPage = createPageRenderer({ base })</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#116329">+ import { renderPage } from &#x27;vite-plugin-ssr&#x27;</span></span>
+<span class="line"><span style="color:#116329">+ import { renderPage } from &#x27;vite-plugin-ssr/server&#x27;</span></span>
 <span class="line"><span style="color:#116329">+ // We don&#x27;t need to set `base` here anymore.</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  const pageContext = await renderPage({ url })</span></span></code></pre></div>
