@@ -137,12 +137,11 @@
 <p>VPS throws an error <code>[Wrong Usage] Hooks cannot be defined inside +config.js</code>. Do this instead:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> Page </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./path/to/Page&#x27;</span></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> onBeforeRender </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./path/to/onBeforeRender&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> Page </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-file&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> onBeforeRender </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-other-file&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> { </span><span style="color:#24292F">Page</span><span style="color:#953800">, </span><span style="color:#24292F">onBeforeRender </span><span style="color:#953800">}</span></span></code></pre></div>
-<p>This works because VPS parses import statements such as <code>import Page</code> and <code>import onBeforeRender</code>: the imports are extracted outside of <code>+config.js</code> into separate internal virtual files. In case you&#x27;re curious, see <a href="/config-code-splitting"><code>+config.js</code> code splitting</a>.</p>
-<blockquote class="warning"><div style="margin-bottom:20px"></div><img style="height: 1.275em; width: 1.275em; vertical-align: -20%" draggable="false" alt="⚠" src="https://twemoji.maxcdn.com/v/13.1.1/svg/26a0.svg"/><!-- --> <!-- -->The imports code splitting isn&#x27;t implemented yet. Instead, in the meantime, use <code>+Page.js</code>, <code>+onBeforeRender.js</code>, ...<div style="margin-top:20px"></div></blockquote>
+<p>VPS removes all imports from <code>+config.js</code> and loads them separately, in order to ensure that files are loaded in the right environment. See <a href="/config-code-splitting"><code>+config.js</code> code splitting</a> for more informaton.</p>
 <blockquote>
 <p>The <code>+</code> convention is <a href="https://github.com/brillout/vite-plugin-ssr/issues/578#issuecomment-1472005734">controversial</a>. While we agree that <code>+</code> files are &quot;ugly&quot; at first, we ask you to trust us: we believe you&#x27;ll eventually end up liking the <code>+</code> convention as much as we do.</p>
 </blockquote>
@@ -194,8 +193,8 @@
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
 <p>Examples:</p>
 <ul>
-<li><a href="https://github.com/brillout/vite-plugin-ssr/blob/c379ceab2b31fdf23f40f3887840691cb53638fc/examples/react-full-v1/renderer/%2Bconfig.ts#L8">/examples/react-full-v1/ &gt; <code>/renderer/config.ts</code> &gt; <code>meta</code></a></li>
-<li><a href="https://github.com/brillout/vite-plugin-ssr/blob/c379ceab2b31fdf23f40f3887840691cb53638fc/examples/render-modes-v1/renderer/%2Bconfig.ts#L9">/examples/render-modes-v1/ &gt; <code>/renderer/config.ts</code> &gt; <code>meta</code></a></li>
+<li><a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/renderer/%2Bconfig.ts#L8">/examples/react-full-v1/ &gt; <code>/renderer/config.ts</code> &gt; <code>meta</code></a></li>
+<li><a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/render-modes-v1/renderer/%2Bconfig.ts#L9">/examples/render-modes-v1/ &gt; <code>/renderer/config.ts</code> &gt; <code>meta</code></a></li>
 </ul>
 <h2 id="onbeforerender-in-page-js"><code>onBeforeRender</code> in <code>.page.js</code></h2>
 <p>If you have <code>onBeforeRender()</code> hooks defined in <code>.page.js</code> instead of <code>.page.server.js</code>:</p>
@@ -212,7 +211,7 @@
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#953800">} </span><span style="color:#24292F">satisfies</span><span style="color:#953800"> </span><span style="color:#24292F">Config</span></span></code></pre></div>
-<p>For convenience, you can also define a <a href="https://github.com/brillout/vite-plugin-ssr/blob/c379ceab2b31fdf23f40f3887840691cb53638fc/examples/react-full-v1/renderer/+config.ts#L12-L31">custom config <code>onBeforeRenderIsomorph: boolean</code></a> for a toggle <a href="https://github.com/brillout/vite-plugin-ssr/blob/c379ceab2b31fdf23f40f3887840691cb53638fc/examples/react-full-v1/pages/star-wars/%40id/%2BonBeforeRenderIsomorph.ts">on a page-per-page basis</a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/v1-design.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<p>For convenience, you can also define a <a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/renderer/+config.ts#L12-L31">custom config <code>onBeforeRenderIsomorph: boolean</code></a> for a toggle <a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/pages/star-wars/%40id/%2BonBeforeRenderIsomorph.ts">on a page-per-page basis</a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/v1-design.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
