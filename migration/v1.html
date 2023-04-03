@@ -19,17 +19,17 @@
 <li>All types have been moved to <code>&#x27;vite-plugin-ssr/types&#x27;</code>:<!-- -->
 <div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#82071E">- import type { SomeType } from &#x27;vite-plugin-ssr/any-path&#x27;</span></span>
 <span class="line"><span style="color:#116329">+ import type { SomeType } from &#x27;vite-plugin-ssr/types&#x27;</span></span></code></pre></div>
-<!-- -->And <code>PageContextBuiltIntClient</code> has been renamed to <code>PageContextBuiltIntClientWithClientRouting</code> and <code>PageContextBuiltIntClientWithServerRouting</code>:<!-- -->
-<div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#82071E">- import type { PageContextBuiltIntClient } from &#x27;vite-plugin/client/router&#x27;</span></span>
+<!-- -->And <code>PageContextBuiltInClient</code> has been renamed to <code>PageContextBuiltInClientWithClientRouting</code> and <code>PageContextBuiltInClientWithServerRouting</code>:<!-- -->
+<div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#82071E">- import type { PageContextBuiltInClient } from &#x27;vite-plugin/client/router&#x27;</span></span>
 <span class="line"><span style="color:#116329">+ import type {</span></span>
-<span class="line"><span style="color:#116329">+   PageContextBuiltIntClientWithClientRouting as</span></span>
-<span class="line"><span style="color:#116329">+   PageContextBuiltIntClient</span></span>
+<span class="line"><span style="color:#116329">+   PageContextBuiltInClientWithClientRouting as</span></span>
+<span class="line"><span style="color:#116329">+   PageContextBuiltInClient</span></span>
 <span class="line"><span style="color:#116329">+ } from &#x27;vite-plugin-ssr/types&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#82071E">- import type { PageContextBuiltIntClient } from &#x27;vite-plugin/client&#x27;</span></span>
+<span class="line"><span style="color:#82071E">- import type { PageContextBuiltInClient } from &#x27;vite-plugin/client&#x27;</span></span>
 <span class="line"><span style="color:#116329">+ import type {</span></span>
-<span class="line"><span style="color:#116329">+   PageContextBuiltIntClientWithServerRouting as</span></span>
-<span class="line"><span style="color:#116329">+   PageContextBuiltIntClient</span></span>
+<span class="line"><span style="color:#116329">+   PageContextBuiltInClientWithServerRouting as</span></span>
+<span class="line"><span style="color:#116329">+   PageContextBuiltInClient</span></span>
 <span class="line"><span style="color:#116329">+ } from &#x27;vite-plugin-ssr/types&#x27;</span></span></code></pre></div>
 </li>
 </ol>
