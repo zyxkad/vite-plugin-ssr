@@ -20,7 +20,7 @@
 <blockquote>
 <p><strong>What is the deployment synchronization problem?</strong></p>
 <p>The problem is this: when you deploy a new frontend, what should happen to your users that are currently browsing your frontend?</p>
-<p>If you do nothing, and if your app uses Client Routing, then your users may end up a very long time on your outdated frontend with outdated client-side JavaScript. This may lead to many problems such as out-of-sync data requests and mutations.</p>
+<p>If you do nothing, and if your app uses <a href="/client-routing">Client Routing</a>, then your users may end up staying a very long time on your outdated frontend with outdated client-side JavaScript. This may lead to many problems such as out-of-sync data requests and mutations.</p>
 <p>Reloading the page of your users as soon as a new frontend deployment is detected is a no-go: it disrupts your user&#x27;s activity on your website and your user may lose ephemeral client-side state such as the text he entered in a form or in a comment textarea.</p>
 <p>What many websites do is to show a little popup to users saying &quot;a new version is available, click here to reload&quot;. But this solution is far from ideal.</p>
 <p>What vite-plugin-ssr does instead is that it falls back to Server Routing: the next time the user navigates to a new page, the page does a full reload so that the user loads the new frontend.</p>
@@ -29,7 +29,7 @@
 <p><strong>How does vite-plugin-ssr&#x27;s solution work?</strong></p>
 <p>Vite-plugin-ssr temporarily falls back to <a href="/server-routing">Server Routing</a> whenever retrieving a static asset returns a <code>404</code>: the URL of all static assets contain a unique hash and, consequently, when the user natvigates to a new page then the old frontend requests static asset URLs that don&#x27;t exist anymore.</p>
 <p>With Server Rotuing, when the user natvigates to a new page, the entire client-side is reloaded (i.e. the new frontend is loaded). After the reload, Client Routing is used again.</p>
-<p>Note that, since the client-side is fully reloaded, all client state is lost if not persisted (to local storage, for instance).</p>
+<p>Note that, since the client-side is fully reloaded, all client state is lost if not persisted (to <code>window.localStorage</code>, for instance).</p>
 <p>So far, this technique has shown to work out for all users, but if it doesn&#x27;t work out for you then open a new GitHub issue.</p>
 </blockquote><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/deploy-sync.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
