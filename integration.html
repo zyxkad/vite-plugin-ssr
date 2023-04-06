@@ -104,7 +104,7 @@
 </ul>
 <p>Integrating a browser tool is only a matter of following its official installation guide.</p>
 <h2 id="server-tools">Server tools</h2>
-<p>From the perspective of our server architecture, <code>vite-plugin-ssr</code> is just a middleware:</p>
+<p>From the perspective of your server architecture, vite-plugin-ssr is just a middleware:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// `app` can be any server framework such as Express.js/Fastify/Koa/Hapi/...</span></span>
 <span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// renderPage() is just a function that, for a given URL, returns the result of</span></span>
@@ -114,8 +114,8 @@
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">({ urlOriginal: req.url })</span></span>
 <span class="line"><span style="color:#24292F">  res.</span><span style="color:#8250DF">send</span><span style="color:#24292F">(pageContext.httpResponse.body)</span></span>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
-<p>By <a href="/pre-rendering">pre-rendering</a> our pages we can remove the need for a production server and, instead, deploy to a static host.</p>
-<p>We can use:</p>
+<p>By <a href="/pre-rendering">pre-rendering</a> your pages you can remove the need for a production server and, instead, deploy to a static host.</p>
+<p>You can use:</p>
 <ul>
 <li>Any server framework (Express, Koa, Fastify, Hapi, ...)</li>
 <li>Any authentication strategy/tool (email/password, OAuth, Auth.js, Passport.js, Grant, Keycloak, Auth0, ...).</li>

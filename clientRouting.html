@@ -60,6 +60,13 @@
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onPageTransitionStart }</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onPageTransitionEnd }</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// The onHydrationEnd() hook is called after the render() hook finishes for the</span></span>
+<span class="line"><span style="color:#6E7781">// first page the user navigates to (the onHydrationEnd() hook isn&#x27;t called for</span></span>
+<span class="line"><span style="color:#6E7781">// subsequent page navigation).</span></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onHydrationEnd }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292F">the user navigates to the </span><span style="color:#8250DF">render</span><span style="color:#24292F">() hook the first page finishes rendering </span><span style="color:#8250DF">render</span><span style="color:#24292F">())</span></span>
+<span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderToDom, hydrateDom } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-ui-framework&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">async</span><span style="color:#24292F"> </span><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">render</span><span style="color:#24292F">(</span><span style="color:#953800">pageContext</span><span style="color:#24292F">) {</span></span>
@@ -88,6 +95,10 @@
 <span class="line"><span style="color:#24292F">  console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;Page transition end&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// For example:</span></span>
 <span class="line"><span style="color:#24292F">  document.body.classList.</span><span style="color:#8250DF">remove</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;page-transition&#x27;</span><span style="color:#24292F">)</span></span>
+<span class="line"><span style="color:#24292F">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">onHydrationEnd</span><span style="color:#24292F">() {</span></span>
+<span class="line"><span style="color:#24292F">  console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;The page is now interactive&#x27;</span><span style="color:#24292F">)</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <blockquote>
 <p>Note that <code>pageContext</code> is completely discarded and created anew upon page navigation.
