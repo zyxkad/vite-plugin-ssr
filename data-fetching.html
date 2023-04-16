@@ -21,7 +21,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <h2 id="onbeforerender"><code>onBeforeRender()</code></h2>
 <p>The usual way to fetch data is to use a <code>onBeforeRender()</code> hook.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movies.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> fetch </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;node-fetch&#x27;</span></span>
 <span class="line"></span>
@@ -45,7 +45,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { escapeInject, dangerouslySkipEscape } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/server&#x27;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderToHtml, createElement } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;some-ui-framework&#x27;</span></span>
@@ -72,7 +72,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <span class="line"><span style="color:#0A3069">  &lt;/html&gt;`</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { render }</span></span>
 <span class="line"></span>
@@ -94,7 +94,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <span class="line"><span style="color:#6E7781">  */</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/movies.page.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser, Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser and server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { Page }</span></span>
 <span class="line"></span>
@@ -114,7 +114,7 @@ The tour explains what the files <code>/renderer/_default.page.*</code> are abou
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product.page.js</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">query</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { modelName: </span><span style="color:#0A3069">&#x27;Product&#x27;</span><span style="color:#24292F">, select: [</span><span style="color:#0A3069">&#x27;name&#x27;</span><span style="color:#24292F">, </span><span style="color:#0A3069">&#x27;price&#x27;</span><span style="color:#24292F">] }</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// We use a single global `onBeforeRender()` hook</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { onBeforeRender }</span></span>

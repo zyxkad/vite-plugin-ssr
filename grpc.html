@@ -24,7 +24,7 @@ since <code>onBeforeRender()</code> hooks are called in Node.js.</p>
 <p>For mutating data:</p>
 <ol>
 <li>We create a new HTTP endpoint. For example, if we use <a href="https://github.com/expressjs/express">Express.js</a>:<!-- -->
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> express </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;express&#x27;</span></span>
 <span class="line"></span>
@@ -37,7 +37,7 @@ since <code>onBeforeRender()</code> hooks are called in Node.js.</p>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
 </li>
 <li>We then call our HTTP endpoint from the browser.<!-- -->
-<div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">body</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">JSON</span><span style="color:#24292F">.</span><span style="color:#0550AE">stringify</span><span style="color:#24292F">({ text: </span><span style="color:#0A3069">&#x27;Some new text&#x27;</span><span style="color:#24292F"> })</span></span>
 <span class="line"><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">fetch</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/mutations/updateText&#x27;</span><span style="color:#24292F">, { body })</span></span></code></pre></div>

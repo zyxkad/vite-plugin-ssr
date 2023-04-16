@@ -18,7 +18,7 @@
 <p>By default, static assets (CSS, images, ...) imported <em>only</em> by server code are missing in the client production bundle (i.e. <code>/dist/client/assets/</code>).</p>
 <p>A workaround is to make sure that all assets are imported at least once from client code. For example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// If we were to import logo.svg only in this file, then `logoUrl` would be</span></span>
 <span class="line"><span style="color:#6E7781">// `undefined` in production.</span></span>
@@ -34,7 +34,7 @@
 <span class="line"><span style="color:#0A3069">  &lt;/html&gt;`</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Workaround: we import logo.svg here as well, even though we don&#x27;t use it in this file,</span></span>
 <span class="line"><span style="color:#6E7781">// to make Vite include logo.svg in the client bundle.</span></span>
@@ -46,9 +46,9 @@
 </blockquote>
 <p>For example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /**/*.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// This file is loaded *only* in Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// This file is loaded *only* on the server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// We need to set `includeAssetsImportedByServer` to `true` if we want</span></span>
 <span class="line"><span style="color:#6E7781">// `some-style.css` to be included, otherwise it will be ignored.</span></span>

@@ -22,7 +22,7 @@
 <li><code>&lt;script&gt;window.__vite_plugin_ssr__pageContext = {_pageId:&quot;/pages/injectAssets&quot;}&lt;/script&gt;</code> (serialized initial <code>pageContext</code> value)</li></ul>
 <p><code>vite-plugin-ssr</code> automatically inserts these assets to the HTML returned in the <code>render()</code> hook.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// _default.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { escapeInject, dangerouslySkipEscape } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/server&#x27;</span></span>
 <span class="line"></span>

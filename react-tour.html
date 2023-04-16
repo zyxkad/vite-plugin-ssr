@@ -19,7 +19,7 @@
 <p>Similarly to Next.js,
 we define a new page by creating a new <code>.page.jsx</code> file.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/index.page.jsx</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser, Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser and server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React, { useState } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;react&quot;</span><span style="color:#24292F">;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { Counter } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;../components/Counter&quot;</span><span style="color:#24292F">;</span></span>
@@ -38,7 +38,6 @@ we define a new page by creating a new <code>.page.jsx</code> file.</p>
 </code></pre>
 <p>We can also define a page&#x27;s route with a <em>Route String</em> (for parameterized routes such as <code>/movies/@id</code>) or a <em>Route Function</em> (for full programmatic flexibility).</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/index.page.route.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js (and Browser if we choose Client Routing)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Note how the two files share the same base `/pages/index.page.`; this is how `vite-plugin-ssr`</span></span>
 <span class="line"><span style="color:#6E7781">// knows that `/pages/index.page.route.js` defines the route of `/pages/index.page.jsx`.</span></span>
@@ -50,7 +49,7 @@ we define a new page by creating a new <code>.page.jsx</code> file.</p>
 <h2 id="render-control">Render Control</h2>
 <p>Unlike Next.js, we control how our pages are rendered.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.jsx</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> ReactDOMServer </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;react-dom/server&quot;</span><span style="color:#24292F">;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;react&quot;</span><span style="color:#24292F">;</span></span>
@@ -77,7 +76,7 @@ we define a new page by creating a new <code>.page.jsx</code> file.</p>
 <span class="line"><span style="color:#0A3069">    &lt;/html&gt;`</span><span style="color:#24292F">;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.jsx</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> ReactDOM </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;react-dom&quot;</span><span style="color:#24292F">;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;react&quot;</span><span style="color:#24292F">;</span></span>
@@ -107,7 +106,7 @@ which means that we can now create a new page just by defining a new <code>.page
 <h2 id="data-fetching">Data Fetching</h2>
 <p>Let&#x27;s now have a look at how to fetch data.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="jsx" data-theme="default"><code data-language="jsx" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/star-wars/movie.page.jsx</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser, Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser and server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> React </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;react&quot;</span><span style="color:#24292F">;</span></span>
 <span class="line"></span>
@@ -122,12 +121,12 @@ which means that we can now create a new page just by defining a new <code>.page
 <span class="line"><span style="color:#24292F">  &lt;/&gt;;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/star-wars/movie.page.route.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Route String</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&quot;/star-wars/@movieId&quot;</span><span style="color:#24292F">;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/star-wars/movie.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> fetch </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&quot;node-fetch&quot;</span><span style="color:#24292F">;</span></span>
 <span class="line"></span>

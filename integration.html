@@ -22,7 +22,7 @@
 <p>In practice, this means that we can use VPS with whatever tool we want. In fact, VPS is being used with all kinds of tools within all kinds of environments.</p>
 <h2 id="view-tools">View tools</h2>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { escapeInject, dangerouslySkipEscape } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/server&#x27;</span></span>
 <span class="line"><span style="color:#6E7781">// This can be any UI framework (React, Vue, Svelte, ...)</span></span>
@@ -53,7 +53,7 @@
 <span class="line"><span style="color:#0A3069">  &lt;/html&gt;`</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { render }</span></span>
 <span class="line"></span>
@@ -72,7 +72,7 @@
 <p>And, more importantly, integrating a view tool is simply a matter of following its official installation guide.</p>
 <h2 id="browser-tools">Browser tools</h2>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { render }</span></span>
 <span class="line"></span>
@@ -104,29 +104,47 @@
 </ul>
 <p>Integrating a browser tool is only a matter of following its official installation guide.</p>
 <h2 id="server-tools">Server tools</h2>
-<p>From the perspective of your server architecture, vite-plugin-ssr is just a middleware:</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// `app` can be any server framework such as Express.js/Fastify/Koa/Hapi/...</span></span>
-<span class="line"><span style="color:#24292F">app.</span><span style="color:#8250DF">get</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F">, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">req</span><span style="color:#24292F">, </span><span style="color:#953800">res</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// renderPage() is just a function that, for a given URL, returns the result of</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// of our render() hook (usually an HTML string). The renderPage() function</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// can be used within any server environment, including serverless and edge</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// environments such as AWS Lambda, Cloudflare Workers, Vercel, ...</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">({ urlOriginal: req.url })</span></span>
-<span class="line"><span style="color:#24292F">  res.</span><span style="color:#8250DF">send</span><span style="color:#24292F">(pageContext.httpResponse.body)</span></span>
+<p>From the perspective of the server, vite-plugin-ssr is just a middleware:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// renderPage() doesn&#x27;t depend on Node.js and can be used anywhere such as</span></span>
+<span class="line"><span style="color:#6E7781">// Cloudflare Workers, AWS EC2, AWS Lambda, Vercel, Deno Deploy, Lagon, ...</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderPage } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/server&#x27;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6E7781">// someServer can be any server framework (Express.js/Deno/Fastify/HatTip/...)</span></span>
+<span class="line"><span style="color:#24292F">someServer.</span><span style="color:#8250DF">addRoute</span><span style="color:#24292F">({ method: </span><span style="color:#0A3069">&#x27;GET&#x27;</span><span style="color:#24292F">, route: </span><span style="color:#0A3069">&#x27;*&#x27;</span><span style="color:#24292F"> }, </span><span style="color:#CF222E">async</span><span style="color:#24292F"> (</span><span style="color:#953800">request</span><span style="color:#24292F">) </span><span style="color:#CF222E">=&gt;</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContextInit</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { urlOriginal: request.url }</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">pageContext</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#CF222E">await</span><span style="color:#24292F"> </span><span style="color:#8250DF">renderPage</span><span style="color:#24292F">(pageContextInit)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">body</span><span style="color:#24292F">, </span><span style="color:#0550AE">contentType</span><span style="color:#24292F">, </span><span style="color:#0550AE">statusCode</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext.httpResponse</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">response</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> { body, contentType, statusCode }</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> response</span></span>
 <span class="line"><span style="color:#24292F">})</span></span></code></pre></div>
 <p>By <a href="/pre-rendering">pre-rendering</a> your pages you can remove the need for a production server and, instead, deploy to a static host.</p>
 <p>You can use:</p>
 <ul>
 <li>Any server framework (Express, Koa, Fastify, Hapi, ...)</li>
 <li>Any authentication strategy/tool (email/password, OAuth, Auth.js, Passport.js, Grant, Keycloak, Auth0, ...).</li>
-<li>Any serverless/edge environment (Cloudflare Workers, Vercel, Firebase, AWS Lambda, Google Cloud Functions, ...)</li>
+<li>Any serverless/edge environment (Cloudflare Workers, Vercel, Firebase, AWS Lambda, Google Cloud Functions, Deno Deploy, ...)</li>
 <li>Any virtual private server (AWS EC2, Google Cloud, ...)</li>
 <li>Any static host (Cloudflare Pages, GitHub Pages, Netlify, ...)</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li>
+<a href="/express">Integration<!-- --> &gt; <!-- -->Express.js</a>
+</li>
+<li>
+<a href="/deno">Integration<!-- --> &gt; <!-- -->Deno</a>
+</li>
+<li>
+<a href="/fastify">Integration<!-- --> &gt; <!-- -->Fastify</a>
+</li>
+<li>
+<a href="/hapi">Integration<!-- --> &gt; <!-- -->hapi</a>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <p>Official examples: <a href="https://github.com/brillout/vite-plugin-ssr/tree/main/examples">GitHub &gt; <code>brillout/vite-plugin-ssr</code> &gt; <code>examples/</code></a>.</p>
 <p>Beyond the offical examples, many tools have community examples of being used with <code>vite-plugin-ssr</code> – search this website (<code>CTRL+K</code>) for the tool you want an example of.</p>
-<p>If an example is missing/outdated, PR welcome to add yours.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/integration.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<p>If an example is missing/outdated, PR welcome to add one.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/integration.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">

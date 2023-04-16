@@ -19,7 +19,7 @@
 <p>Similarly to Nuxt,
 we define a new page by creating a new <code>.page.vue</code> file.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="vue" data-theme="default"><code data-language="vue" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- /pages/index.page.vue --&gt;</span></span>
-<span class="line"><span style="color:#6E7781">&lt;!-- Environment: Browser, Node.js --&gt;</span></span>
+<span class="line"><span style="color:#6E7781">&lt;!-- Environment: browser and server --&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">&lt;</span><span style="color:#116329">template</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  This page is rendered to HTML and interactive: &lt;</span><span style="color:#116329">Counter</span><span style="color:#24292F"> /&gt;</span></span>
@@ -35,7 +35,6 @@ we define a new page by creating a new <code>.page.vue</code> file.</p>
 </code></pre>
 <p>We can also define a page&#x27;s route with a <em>Route String</em> (for parameterized routes such as <code>/movies/@id</code>) or a <em>Route Function</em> (for full programmatic flexibility).</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/index.page.route.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js (and Browser if we choose Client Routing)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Note how the two files share the same base `/pages/index.page.`; this is how `vite-plugin-ssr`</span></span>
 <span class="line"><span style="color:#6E7781">// knows that `/pages/index.page.route.js` defines the route of `/pages/index.page.vue`.</span></span>
@@ -47,7 +46,7 @@ we define a new page by creating a new <code>.page.vue</code> file.</p>
 <h2 id="render-control">Render Control</h2>
 <p>Unlike Nuxt, we control how our pages are rendered.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { createSSRApp, h } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vue&#x27;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { renderToString } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;@vue/server-renderer&#x27;</span></span>
@@ -76,7 +75,7 @@ we define a new page by creating a new <code>.page.vue</code> file.</p>
 <span class="line"><span style="color:#0A3069">    &lt;/html&gt;`</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /renderer/_default.page.client.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Browser</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: browser</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { createSSRApp, h } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vue&#x27;</span></span>
 <span class="line"></span>
@@ -112,7 +111,7 @@ which means that we can now create a new page just by defining a new <code>.page
 <h2 id="data-fetching">Data Fetching</h2>
 <p>Let&#x27;s now have a look at how to fetch data.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="vue" data-theme="default"><code data-language="vue" data-theme="default"><span class="line"><span style="color:#6E7781">&lt;!-- /pages/star-wars/movie.page.vue --&gt;</span></span>
-<span class="line"><span style="color:#6E7781">&lt;!-- Environment: Browser, Node.js --&gt;</span></span>
+<span class="line"><span style="color:#6E7781">&lt;!-- Environment: browser and server --&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">&lt;</span><span style="color:#116329">template</span><span style="color:#24292F">&gt;</span></span>
 <span class="line"><span style="color:#24292F">  &lt;</span><span style="color:#116329">h1</span><span style="color:#24292F">&gt;{{movie.title}}&lt;/</span><span style="color:#116329">h1</span><span style="color:#24292F">&gt;</span></span>
@@ -125,12 +124,12 @@ which means that we can now create a new page just by defining a new <code>.page
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> { </span><span style="color:#24292F">props: pageProps </span><span style="color:#953800">}</span></span>
 <span class="line"><span style="color:#24292F">&lt;/</span><span style="color:#116329">script</span><span style="color:#24292F">&gt;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/star-wars/movie.page.route.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// Route String</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/star-wars/@movieId&#x27;</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/star-wars/movie.page.server.js</span></span>
-<span class="line"><span style="color:#6E7781">// Environment: Node.js</span></span>
+<span class="line"><span style="color:#6E7781">// Environment: server</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> fetch </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;node-fetch&#x27;</span></span>
 <span class="line"></span>
