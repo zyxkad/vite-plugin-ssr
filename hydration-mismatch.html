@@ -24,15 +24,15 @@
 <p><strong>Vue</strong></p>
 <p>Upon a hydration mismatch, Vue throws following errors in the browser:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#24292F">[Vue warn]: Hydration text </span><span style="color:#953800">mismatch</span><span style="color:#24292F">:</span></span>
-<span class="line"><span style="color:#24292F"> </span><span style="color:#CF222E">-</span><span style="color:#24292F"> </span><span style="color:#953800">Client</span><span style="color:#24292F">: </span><span style="color:#0A3069">&quot;foo&quot;</span></span>
-<span class="line"><span style="color:#24292F"> </span><span style="color:#CF222E">-</span><span style="color:#24292F"> </span><span style="color:#953800">Server</span><span style="color:#24292F">: </span><span style="color:#0A3069">&quot;bar&quot;</span></span>
+<span class="line"><span style="color:#24292F"> </span><span style="color:#CF222E">-</span><span style="color:#24292F"> </span><span style="color:#953800">Client</span><span style="color:#24292F">: </span><span style="color:#0A3069">&quot;some content&quot;</span></span>
+<span class="line"><span style="color:#24292F"> </span><span style="color:#CF222E">-</span><span style="color:#24292F"> </span><span style="color:#953800">Server</span><span style="color:#24292F">: </span><span style="color:#0A3069">&quot;some other content&quot;</span></span>
 <span class="line"><span style="color:#24292F">   at </span><span style="color:#CF222E">&lt;</span><span style="color:#24292F">SomeComponent</span><span style="color:#CF222E">&gt;</span></span>
 <span class="line"><span style="color:#24292F">   at </span><span style="color:#CF222E">&lt;</span><span style="color:#24292F">App</span><span style="color:#CF222E">&gt;</span></span></code></pre></div>
 <pre><code>Hydration completed but contains mismatches.
 </code></pre>
 <p><strong>React</strong></p>
 <p>Upon a hydration mismatch, React throws following errors in the browser:</p>
-<pre><code>Warning: Text content did not match. Server: &quot;foo&quot; Client: &quot;bar&quot;
+<pre><code>Warning: Text content did not match. Server: &quot;some content&quot; Client: &quot;some other content&quot;
 </code></pre>
 <pre><code>An error occurred during hydration. The server HTML was replaced with client content in &lt;SomeComponent&gt;.
 </code></pre>
