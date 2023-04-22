@@ -98,21 +98,21 @@
 <li>Don&#x27;t instantiate the Vite dev server: it isn&#x27;t needed in production and would unnecessarily bloat your server in production.</li>
 </ul>
 <blockquote>
-<p><code>process.env.NODE_ENV</code> is a convention to tell libraries whether your app is running in production or development. See:</p>
+<p><code>process.env.NODE_ENV</code> is a convention to tell libraries whether your app is running in production or development:</p>
 <ul>
 <li><a href="https://nodejs.dev/en/learn/nodejs-the-difference-between-development-and-production/#:~:text=You%20can%20signal%20Node.js%20that%20you%20are%20running%20in%20production%20by%20setting%20the%20NODE_ENV%3Dproduction%20environment%20variable.">Node.js Docs - The difference between development and production</a></li>
-<li><a href="https://stackoverflow.com/questions/16978256/what-is-node-env-and-how-to-use-it-in-express/16979503#16979503:~:text=NODE_ENV%20specifically%20is%20used%20(by%20convention)%20to%20state%20whether%20a%20particular%20environment%20is%20a%20production%20or%20a%20development%20environment.">Stack Overflow - What is NODE_ENV and how to use it in Express?</a>
-While the convention was introduced by Node.js, it&#x27;s used by libraries regardless whether you use Node.js or not. That&#x27;s why we recommend to set <code>process.env.NODE_ENV</code> in Edge environments as well.</li>
+<li><a href="https://stackoverflow.com/questions/16978256/what-is-node-env-and-how-to-use-it-in-express/16979503#16979503:~:text=NODE_ENV%20specifically%20is%20used%20(by%20convention)%20to%20state%20whether%20a%20particular%20environment%20is%20a%20production%20or%20a%20development%20environment.">Stack Overflow - What is NODE_ENV and how to use it in Express?</a></li>
 </ul>
+<p>While the convention was introduced by Node.js, it&#x27;s used by libraries regardless whether you use Node.js or not. That&#x27;s why we recommend to set <code>process.env.NODE_ENV</code> in Edge environments as well.</p>
 </blockquote>
 <p>Vite-plugin-ssr shows a warning if you don&#x27;t respect the recommendation:</p>
-<pre><code>[vite-plugin-ssr][Warning] Vite&#x27;s development server was instantiated
-while the environment is set to be a production environment
-by `process.env.NODE_ENV === &#x27;production&#x27;` which is contradictory.
+<pre><code>[vite-plugin-ssr][Warning] Vite&#x27;s development server was instantiated while the environment
+is set to be a production environment by `process.env.NODE_ENV === &#x27;production&#x27;` which is
+contradictory.
 </code></pre>
-<pre><code>[vite-plugin-ssr][Warning] Vite&#x27;s development server wasn&#x27;t instantiated
-while the environment is set to be a production environment
-by `process.env.NODE_ENV === undefined&#x27;` which is contradictory.
+<pre><code>[vite-plugin-ssr][Warning] Vite&#x27;s development server wasn&#x27;t instantiated while the environment
+is set to be a production environment by `process.env.NODE_ENV === undefined&#x27;` which is
+contradictory.
 </code></pre><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/renderPage.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
