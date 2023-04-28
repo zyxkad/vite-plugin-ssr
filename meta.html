@@ -35,11 +35,11 @@
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">meta: {</span></span>
 <span class="line"><span style="color:#24292F">    title: {</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We make the config value available on both the server and client</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Make `title` value available on both the server and client</span></span>
 <span class="line"><span style="color:#24292F">      env: </span><span style="color:#0A3069">&#x27;server-and-client&#x27;</span></span>
 <span class="line"><span style="color:#24292F">    },</span></span>
 <span class="line"><span style="color:#24292F">    description: {</span></span>
-<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// We make the config value available only on the server</span></span>
+<span class="line"><span style="color:#24292F">      </span><span style="color:#6E7781">// Make `description` value available only on the server-side</span></span>
 <span class="line"><span style="color:#24292F">      env: </span><span style="color:#0A3069">&#x27;server-only&#x27;</span></span>
 <span class="line"><span style="color:#24292F">    }</span></span>
 <span class="line"><span style="color:#24292F">  }</span></span>
@@ -98,9 +98,9 @@
 <span class="line"><span style="color:#24292F">  }</span></span>
 <span class="line"><span style="color:#953800">} </span><span style="color:#24292F">satisfies</span><span style="color:#953800"> </span><span style="color:#24292F">Config</span></span></code></pre></div>
 <blockquote>
-<p>Making <code>onBeforeRender()</code> isomorphic allows us to fetch data directly between the user&#x27;s browser and the data source (without involving our SSR server), see <a href="/onBeforeRender#client-routing">API<!-- --> &gt; <code>.page.server.js</code> &gt; <code>onBeforeRender()</code> hook (<code>.page.server.js</code>)<!-- --> &gt; <!-- -->Client Routing</a>.</p>
+<p>Making <code>onBeforeRender()</code> isomorphic allows us to fetch data directly between the user&#x27;s browser and the data source (without involving our SSR server). See <a href="/onBeforeRender#client-routing">API<!-- --> &gt; <code>.page.server.js</code> &gt; <code>onBeforeRender()</code> hook (<code>.page.server.js</code>)<!-- --> &gt; <!-- -->Client Routing</a>.</p>
 </blockquote>
-<p>For more convenience, we can create a new config <code>onBeforeRenderIsomorph</code>:</p>
+<p>For extra convenience, we can create a <code>onBeforeRenderIsomorph</code> toggle:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.ts</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#CF222E">type</span><span style="color:#24292F"> { Config, Effect } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/types&#x27;</span></span>
@@ -132,8 +132,8 @@
 <ul>
 <li><a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/">/examples/react-full-v1/</a>
 <ul>
-<li>Config defintion: <a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/renderer/+config.ts#L12-L31">/examples/react-full-v1/renderer/+config.ts</a></li>
-<li>Config usage: <a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/pages/star-wars/%40id/%2BonBeforeRenderIsomorph.ts">/examples/react-full-v1/pages/star-wars/@id/+onBeforeRenderIsomorph.ts</a>.</li>
+<li>Config defintion: <a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/renderer/+config.ts#L12-L31">/renderer/+config.ts &gt; <code>meta.onBeforeRenderIsomorph</code></a></li>
+<li>Config usage: <a href="https://github.com/brillout/vite-plugin-ssr/blob/79c2d9d614240160fa9f60f08dfd2b33cc5b3a27/examples/react-full-v1/pages/star-wars/%40id/%2BonBeforeRenderIsomorph.ts">/pages/star-wars/@id/+onBeforeRenderIsomorph.ts</a></li>
 </ul>
 </li>
 </ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/meta.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
