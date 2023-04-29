@@ -105,10 +105,10 @@
 <span class="line"><span style="color:#24292F">console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&quot;I will never be shown in production&quot;</span><span style="color:#24292F">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
-<span class="line"><span style="color:#953800">  </span><span style="color:#6E7781">// However, the code of ./Page.js *is* included in production runtimes</span></span>
+<span class="line"><span style="color:#953800">  </span><span style="color:#6E7781">// However, the code of ./Page.js is included in production runtimes</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">Page</span></span>
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
-<p>While the code of <code>+config.js</code> code itself isn&#x27;t included in the server runtime nor client runtime, most config values set by <code>+config.js</code> are included in one or both runtimes. See <a href="/config-code-splitting"><code>+config.js</code> code splitting</a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/config.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
+<p>The server and client runtimes don&#x27;t include the code of <code>+config.js</code> files but do include the code of config values. To understand why see <a href="/config-code-splitting"><code>+config.js</code> code splitting</a>.</p><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/config.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
     <script type="text/javascript">
