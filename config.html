@@ -42,7 +42,7 @@
 <span class="line"><span style="color:#6E7781">// Define a new page with URL &#x27;/product/@id&#x27;</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
 <span class="line"><span style="color:#953800">   </span><span style="color:#24292F">Page</span><span style="color:#953800">,</span></span>
-<span class="line"><span style="color:#953800">   </span><span style="color:#6E7781">// Parameterized route matching URLs such as &#x27;/product/1337&#x27; and `/product/macbook&#x27;</span></span>
+<span class="line"><span style="color:#953800">   </span><span style="color:#6E7781">// Parameterized route for URLs such as /product/1337 and /product/macbook</span></span>
 <span class="line"><span style="color:#953800">   </span><span style="color:#24292F">route: </span><span style="color:#0A3069">&#x27;/product/@id&#x27;</span></span>
 <span class="line"><span style="color:#953800">} </span><span style="color:#24292F">satisfies</span><span style="color:#953800"> </span><span style="color:#24292F">Config</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/Page.jsx</span></span>
@@ -80,7 +80,7 @@
 <blockquote>
 <p><code>config.title</code> is a custom config, see <a href="/meta"><code>meta</code></a>.</p>
 </blockquote>
-<p>The <code>+config.js</code> file of pages (<code>/pages/some-page/+config.js</code>) can override the default values defined by <code>/pages/+config.js</code>.</p>
+<p>The <code>+config.js</code> file of pages (<code>/pages/some-page/+config.js</code>) can override default values defined by <code>/pages/+config.js</code>.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/about/+config.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
@@ -89,7 +89,7 @@
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
 <p>You can also define default values only for a group of pages. As shown, for example, at <a href="/file-structure#domain-driven">Guides<!-- --> &gt; <!-- -->File Structure<!-- --> &gt; <!-- -->Domain Driven</a>. You can even use different renderers: some pages can use Vue as SPA, while other pages can use React with SSR.</p>
 <h2 id="renderer"><code>renderer/</code></h2>
-<p><code>/renderer/+config.js</code> is equivalent to <code>/pages/+config.js</code>: the <code>renderer/</code> directory is just an (optional) convenience for having renderer logic/files live outside of <code>/pages/</code> (instead of cluttering the <code>/pages/</code> directory).</p>
+<p><code>/renderer/+config.js</code> is equivalent to <code>/pages/+config.js</code>: the <code>renderer/</code> directory is just an (optional) convenience for having renderer files live outside of <code>pages/</code> (instead of cluttering the <code>pages/</code> directory).</p>
 <blockquote>
 <p>The <code>renderer/</code> directory is usually used by users who don&#x27;t use any <a href="/renderers">built-in renderer</a>.</p>
 </blockquote>
@@ -100,8 +100,8 @@
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> Page </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./Page.js&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// This log will only be shown:</span></span>
-<span class="line"><span style="color:#6E7781">//  - At development start</span></span>
-<span class="line"><span style="color:#6E7781">//  - At build start</span></span>
+<span class="line"><span style="color:#6E7781">//  - At development</span></span>
+<span class="line"><span style="color:#6E7781">//  - When building your app</span></span>
 <span class="line"><span style="color:#24292F">console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(</span><span style="color:#0A3069">&quot;I will never be shown in production&quot;</span><span style="color:#24292F">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
