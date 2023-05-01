@@ -147,7 +147,9 @@
 <span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">throw</span><span style="color:#24292F"> </span><span style="color:#8250DF">RenderErrorPage</span><span style="color:#24292F">({</span></span>
 <span class="line"><span style="color:#24292F">      pageContext: {</span></span>
 <span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">// We can provide additional pageContext values to use in _error.page.js</span></span>
-<span class="line"><span style="color:#24292F">        errorInfo: </span><span style="color:#0A3069">`Product with ID ${</span><span style="color:#24292F">productId</span><span style="color:#0A3069">} doesn&#x27;t exist`</span></span>
+<span class="line"><span style="color:#24292F">        pageProps: {</span></span>
+<span class="line"><span style="color:#24292F">          errorInfo: </span><span style="color:#0A3069">`Product with ID ${</span><span style="color:#24292F">productId</span><span style="color:#0A3069">} doesn&#x27;t exist`</span></span>
+<span class="line"><span style="color:#24292F">        },</span></span>
 <span class="line"><span style="color:#24292F">        </span><span style="color:#6E7781">/* We could also redirect the user, similar to the authentication redirection above</span></span>
 <span class="line"><span style="color:#6E7781">        redirectTo: &#x27;/product/new&#x27;</span></span>
 <span class="line"><span style="color:#6E7781">        */</span></span>
