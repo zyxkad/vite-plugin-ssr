@@ -18,9 +18,13 @@
 <p>This page is part of the <a href="/migration/v1-design">V1 design</a>.</p>
 </blockquote>
 <p>The <code>route</code> config determines the page&#x27;s <a href="/routing">routing</a>.</p>
-<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/+route.js</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#0A3069">&#x27;/product/@id&#x27;</span></span></code></pre></div>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/+config.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
+<span class="line"><span style="color:#953800">  </span><span style="color:#24292F">route: </span><span style="color:#0A3069">&#x27;/product/@id&#x27;</span></span>
+<span class="line"><span style="color:#953800">}</span></span></code></pre></div>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/+Page.jsx</span></span>
+<span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#24292F">Page</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">/* This page can have URLs such as:</span></span>
@@ -35,16 +39,34 @@
 <span class="line"><span style="color:#24292F">    {</span><span style="color:#6E7781">/* ... */</span><span style="color:#24292F">}</span></span>
 <span class="line"><span style="color:#24292F">  &lt;/&gt;</span></span>
 <span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
+<p>Instead of a Route String, you can also define a Route Function:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/product/+route.js</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> (pageContext) </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">parts</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext.urlPathname.</span><span style="color:#8250DF">split</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;/&#x27;</span><span style="color:#24292F">)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">if</span><span style="color:#24292F"> (parts[</span><span style="color:#0550AE">1</span><span style="color:#24292F">] </span><span style="color:#CF222E">!==</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;product&#x27;</span><span style="color:#24292F">) {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#0550AE">false</span></span>
+<span class="line"><span style="color:#24292F">  } </span><span style="color:#CF222E">else</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
+<span class="line"><span style="color:#24292F">      routeParams: {</span></span>
+<span class="line"><span style="color:#24292F">        id: parts[</span><span style="color:#0550AE">2</span><span style="color:#24292F">]</span></span>
+<span class="line"><span style="color:#24292F">      }</span></span>
+<span class="line"><span style="color:#24292F">    }</span></span>
+<span class="line"><span style="color:#24292F">  }</span></span>
+<span class="line"><span style="color:#24292F">}</span></span></code></pre></div>
 <p>See also:</p>
 <ul>
 <li>
-<a href="/filesystem-routing">Routing<!-- --> &gt; <!-- -->Filesystem Routing</a>
+<a href="/routing">Guides<!-- --> &gt; <!-- -->Routing</a>
 </li>
 <li>
 <a href="/route-string">Routing<!-- --> &gt; <!-- -->Route String</a>
 </li>
 <li>
 <a href="/route-function">Routing<!-- --> &gt; <!-- -->Route Function</a>
+</li>
+<li>
+<a href="/filesystem-routing">Routing<!-- --> &gt; <!-- -->Filesystem Routing</a>
 </li>
 </ul><div style="margin-top:50px"><a href="https://github.com/brillout/vite-plugin-ssr/edit/main/docs/pages/route.page.server.mdx">✍<!-- --> Edit this page</a></div></div></div><div id="navigation-mask"></div></div></div></div>
         
