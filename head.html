@@ -88,6 +88,7 @@ we can also use a <a href="/exports">Custom Export</a>.</p>
 <span class="line"><span style="color:#6E7781">// Custom Export</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> { getDocumentProps }</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#6E7781">// getDocumentProps() can use fetched data to provide &lt;title&gt; and &lt;meta name=&quot;description&quot;&gt;</span></span>
 <span class="line"><span style="color:#CF222E">function</span><span style="color:#24292F"> </span><span style="color:#8250DF">getDocumentProps</span><span style="color:#24292F">(</span><span style="color:#953800">pageProps</span><span style="color:#24292F">) {</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> {</span></span>
 <span class="line"><span style="color:#24292F">    title: pageProps.product.name,</span></span>
@@ -106,11 +107,21 @@ we can also use a <a href="/exports">Custom Export</a>.</p>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `pageProps` is provided by our data fetching mechanism, see the &quot;Data Fetching&quot; Guide.</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">Page</span><span style="color:#24292F">, </span><span style="color:#0550AE">pageProps</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Our custom export is available as `pageContext.exports.getDocumentProps`</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// Custom exports are available at pageContext.exports</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">getDocumentProps</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> pageContext.exports</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#6E7781">// `getDocumentProps()` can use the fetched data to provide the page&#x27;s meta data</span></span>
-<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> { </span><span style="color:#0550AE">title</span><span style="color:#24292F">, </span><span style="color:#0550AE">description</span><span style="color:#24292F"> } </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#8250DF">getDocumentProps</span><span style="color:#24292F">(pageProps)</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#8250DF">title</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> (</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Conditional call in case a page doesn&#x27;t define getDocumentProps()</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">getDocumentProps</span><span style="color:#24292F">?.(pageProps).title </span><span style="color:#CF222E">||</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Default for pages that don&#x27;t define getDocumentProps()</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#0A3069">&#x27;SpaceX&#x27;</span></span>
+<span class="line"><span style="color:#24292F">  )</span></span>
+<span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#8250DF">description</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> (</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Conditional call in case a page doesn&#x27;t define getDocumentProps()</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#8250DF">getDocumentProps</span><span style="color:#24292F">?.(pageProps).description </span><span style="color:#CF222E">||</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#6E7781">// Default for pages that don&#x27;t define getDocumentProps()</span></span>
+<span class="line"><span style="color:#24292F">    </span><span style="color:#0A3069">&#x27;We deliver payload to space.&#x27;</span></span>
+<span class="line"><span style="color:#24292F">  )</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">return</span><span style="color:#24292F"> </span><span style="color:#8250DF">escapeInject</span><span style="color:#0A3069">`&lt;html&gt;</span></span>
 <span class="line"><span style="color:#0A3069">    &lt;head&gt;</span></span>
