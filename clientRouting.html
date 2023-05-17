@@ -227,11 +227,12 @@ This means that static assets are often already loaded before even the user clic
 <blockquote>
 <p>Viewport prefetching is disabled in development. (Because it would make Vite transpile all preloaded pages and thus siginficantly slow down development.)</p>
 </blockquote>
-<p>We can override the link prefetching behavior for individual links by setting <code>&lt;a data-prefetch=&quot;true&quot; href=&quot;/some-url&quot; /&gt;</code>, and we can programmatically <a href="/prefetch"><code>prefetch(&#x27;/some/url&#x27;)</code></a>.</p>
+<p>To override the setting for individual links: <code>&lt;a data-prefetch-static-assets=&quot;hover&quot; href=&quot;/some-url&quot; /&gt;</code> (or <code>data-prefetch-static-assets=&quot;false&quot;</code> and <code>data-prefetch-static-assets=&quot;viewport&quot;</code>).</p>
+<p>We can programmatically <a href="/prefetch"><code>prefetch(&#x27;/some/url&#x27;)</code></a>.</p>
 <blockquote>
 <p>Only static assets are prefetched: the <code>pageContext</code> of pages isn&#x27;t prefetched, see <a href="https://github.com/brillout/vite-plugin-ssr/issues/246">#246</a>.</p>
 </blockquote>
-<p>We can also have viewport prefetching for mobile users while only doing hover prefetching for desktop users:</p>
+<p>We can viewport prefetch for mobile users while only hover prefetch for desktop users:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// For small screens, such as mobile, viewport prefetching can be a sensible strategy</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">prefetchStaticAssets</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> window.</span><span style="color:#8250DF">matchMedia</span><span style="color:#24292F">(</span><span style="color:#0A3069">&#x27;(max-width: 600px)&#x27;</span><span style="color:#24292F">).matches</span></span>
 <span class="line"><span style="color:#24292F">  </span><span style="color:#CF222E">?</span><span style="color:#24292F"> { when: </span><span style="color:#0A3069">&quot;VIEWPORT&quot;</span><span style="color:#24292F"> }</span></span>
