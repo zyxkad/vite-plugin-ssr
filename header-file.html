@@ -43,14 +43,14 @@
 </blockquote>
 <h2 id="why">Why</h2>
 <p>The <code>.h.js</code> files improves IntelliSense (auto-import, refactoring, type-safety, go-to-definition, ...).</p>
-<p>Instead of defining <code>+config.h.js</code> we could define <code>+config.js</code>:</p>
+<p>Instead of defining <code>+config.h.js</code> we can define <code>+config.js</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">Page: </span><span style="color:#0A3069">&#x27;import:./some-file&#x27;</span><span style="color:#953800">,</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">onBeforeRender: </span><span style="color:#0A3069">&#x27;import:./some-other-file&#x27;</span></span>
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
-<p>But then we loose all the IntelliSense niceties. That&#x27;s why we recommend to use <code>+config.h.js</code> instead of <code>+config.js</code>.</p>
+<p>But then we loose IntelliSense niceties. That&#x27;s why we recommend to use <code>+config.h.js</code> instead of <code>+config.js</code>.</p>
 <blockquote>
 <p>Note that real imports cannot be used. Consider this example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// +config.h.js</span></span>
@@ -118,16 +118,16 @@
 This means that importing <code>Page</code> and <code>onBeforeRender</code> from the same file is allowed only if <a href="/meta"><code>meta</code></a> is used in order to modify and align their environment.</p>
 </blockquote>
 <h2 id="not-re-exported-imports">Not re-exported imports</h2>
-<p>If an imported value isn&#x27;t exposed over <code>export default { ... }</code> then it isn&#x27;t included in any runtime.</p>
+<p>If an imported value isn&#x27;t exposed over <code>export default { ... }</code> then it won&#x27;t be included in any runtime.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// +config.h.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// These imports aren&#x27;t included in runtimes.</span></span>
+<span class="line"><span style="color:#6E7781">// These imports aren&#x27;t included in any runtime.</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { something } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-file&#x27;</span></span>
 <span class="line"><span style="color:#6E7781">// This import has no effect. (CSS should be imported in runtime code such as +Page.js instead.)</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some.css&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// This log is printed only when vite-plugin-ssr loads the +config.h.js file.</span></span>
-<span class="line"><span style="color:#6E7781">// This log isn&#x27;t included in neither the client runtime nor the server runtime.</span></span>
+<span class="line"><span style="color:#6E7781">// This log is printed when vite-plugin-ssr loads +config.h.js files.</span></span>
+<span class="line"><span style="color:#6E7781">// This log isn&#x27;t included in the client runtime nor in the server runtime.</span></span>
 <span class="line"><span style="color:#24292F">console.</span><span style="color:#8250DF">log</span><span style="color:#24292F">(something) </span><span style="color:#6E7781">// Prints: &#x27;import:./some-file:something&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
