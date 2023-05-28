@@ -158,9 +158,9 @@
 <span class="line"><span style="color:#24292F">  PageContextBuiltInClientWithClientRouting </span><span style="color:#CF222E">as</span><span style="color:#24292F"> PageContextBuiltInClient</span></span>
 <span class="line"><span style="color:#24292F">} </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/types&#x27;</span></span></code></pre></div>
 <h2 id="correct-usage">Correct Usage</h2>
-<p>Vite-plugin-ssr adds information to <code>pageContext</code> only while rendering the page.
-In other words: you can think of <code>pageContext</code> as read-only after the rendering of the page is finished.</p>
+<p>The main purpose of <code>pageContext</code> is to hold information needed to render the page.</p>
 <p>Upon page navigation, the <code>pageContext</code> object of the previous page is removed and a new <code>pageContext</code> object is created.</p>
+<p>Vite-plugin-ssr adds information to <code>pageContext</code> only while rendering the page. We recommend to treat <code>pageContext</code> as read-only after the rendering of the page is finished.</p>
 <p>Consequently:</p>
 <ul>
 <li>We recommend against using <code>pageContext</code> to store UI state. (Use a proper <a href="/store">state management tool</a> instead.)</li>
