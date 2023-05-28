@@ -159,9 +159,9 @@
 <span class="line"><span style="color:#24292F">} </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/types&#x27;</span></span></code></pre></div>
 <h2 id="correct-usage">Correct Usage</h2>
 <p>The main purpose of <code>pageContext</code> is to hold information needed to render the page.</p>
-<p>Upon page navigation, the <code>pageContext</code> object of the previous page is removed and a new <code>pageContext</code> object is created.</p>
-<p>Vite-plugin-ssr adds information to <code>pageContext</code> only while rendering the page. We recommend to treat <code>pageContext</code> as read-only after the rendering of the page is finished.</p>
-<p>Consequently:</p>
+<p>On the server-side, upon server-side rendering, a new <code>pageContext</code> object is created and used only for/during the creation of the HTTP response.</p>
+<p>On the client-side, upon client-side page navigation, the <code>pageContext</code> object of the previous page is discarded and a new <code>pageContext</code> object is created.</p>
+<p>Vite-plugin-ssr adds information to <code>pageContext</code> only while rendering the page, and we recommend to treat <code>pageContext</code> as read-only after the rendering of the page is finished. Consequently:</p>
 <ul>
 <li>We recommend against using <code>pageContext</code> to store UI state. (Use a proper <a href="/store">state management tool</a> instead.)</li>
 <li>If you use <a href="/pre-rendering">pre-rendering</a>, then the <code>pageContext</code> object of each of your pre-rendered page is set in stone already at build-time.</li>
