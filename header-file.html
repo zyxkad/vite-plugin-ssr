@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.e5e85681.css">
+        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.d7c7cf76.css">
         <link rel="stylesheet" type="text/css" href="/assets/static/default.page.server.8705f044.css">
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/static/vite-plugin-ssr.5177312a.svg" />
@@ -18,7 +18,7 @@
 <p><code>+config.h.js</code> files are part of the <a href="/migration/v1-design">V1 design</a>.</p>
 </blockquote>
 <h2 id="transformation">Transformation</h2>
-<p>Vite-plugin-ssr transforms <code>.h.js</code> files such as this:</p>
+<p>Vite-plugin-ssr transforms <code>.h.js</code> files, such as this:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.h.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> Page </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-file&#x27;</span></span>
@@ -42,17 +42,16 @@
 <p><code>.h.js</code> files are only meant for config files (i.e. any <code>.h.js</code> file should be a <code>+config.h.js</code> file).</p>
 </blockquote>
 <h2 id="why">Why</h2>
-<p>The <code>.h.js</code> files improves IntelliSense (auto-import, refactoring, type-safety, go-to-definition, ...).</p>
-<p>Instead of defining <code>+config.h.js</code> we can define <code>+config.js</code>:</p>
+<p>Instead of <code>+config.h.js</code> we can define <code>+config.js</code>:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">Page: </span><span style="color:#0A3069">&#x27;import:./some-file&#x27;</span><span style="color:#953800">,</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">onBeforeRender: </span><span style="color:#0A3069">&#x27;import:./some-other-file&#x27;</span></span>
 <span class="line"><span style="color:#953800">}</span></span></code></pre></div>
-<p>But then we loose IntelliSense niceties. That&#x27;s why we recommend to use <code>+config.h.js</code> instead of <code>+config.js</code>.</p>
+<p>But then we loose IntelliSense such as auto-import, refactoring, type safety, and go-to-definition. That&#x27;s why we recommend to define <code>+config.h.js</code> instead of <code>+config.js</code>.</p>
 <blockquote>
-<p>Note that real imports cannot be used. Consider this example:</p>
+<p>Real imports cannot be used. Consider this example:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// +config.h.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// onRenderClient() should be loaded only on the client-side</span></span>
@@ -61,22 +60,25 @@
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> onRenderHtml </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-other-file&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> { </span><span style="color:#24292F">onRenderHtml</span><span style="color:#953800">, </span><span style="color:#24292F">onRenderClient </span><span style="color:#953800">}</span></span></code></pre></div>
-<p>Using <code>&#x27;import:./some-file&#x27;</code> instead of a real import <code>import onRenderClient from &#x27;./some-file&#x27;</code> enables vite-plugin-ssr to load the <code>onRenderClient()</code> hook only when needed and only in the right environment.</p>
+<p>Using <code>&#x27;import:./some-file&#x27;</code> instead of a real import <code>import onRenderClient from &#x27;./some-file&#x27;</code> enables vite-plugin-ssr to load the <code>onRenderClient()</code> hook only when needed and in the right environment.</p>
 </blockquote>
 <h2 id="optional">Optional</h2>
-<p>As explained in the previous section <code>.h.js</code> files are optional.</p>
-<p>Instead of defining a <code>+config.h.ts</code> file like this:</p>
+<p>As mentioned in the previous section, <code>.h.js</code> files are optional.</p>
+<p>Instead of defining a <code>+config.h.ts</code> file:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.h.ts</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#CF222E">type</span><span style="color:#24292F"> { Config } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/types&#x27;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> Page </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-file&#x27;</span></span>
 <span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { onBeforeRender } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;./some-other-file&#x27;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> { </span><span style="color:#24292F">Page</span><span style="color:#953800">, </span><span style="color:#24292F">onBeforeRender </span><span style="color:#953800">} </span><span style="color:#24292F">satisfies</span><span style="color:#953800"> </span><span style="color:#24292F">Config</span></span></code></pre></div>
-<p>We can define a <code>+config.ts</code> file (without <code>.h</code>) like this:</p>
+<span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
+<span class="line"><span style="color:#953800">  </span><span style="color:#24292F">Page</span><span style="color:#953800">,</span></span>
+<span class="line"><span style="color:#953800">  </span><span style="color:#24292F">onBeforeRender</span></span>
+<span class="line"><span style="color:#953800">} </span><span style="color:#24292F">satisfies</span><span style="color:#953800"> </span><span style="color:#24292F">Config</span></span></code></pre></div>
+<p>We can define a <code>+config.ts</code> file (without <code>.h</code>):</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="ts" data-theme="default"><code data-language="ts" data-theme="default"><span class="line"><span style="color:#6E7781">// /pages/some-page/+config.ts</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> { ConfigNonHeaderFile } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/types&#x27;</span></span>
+<span class="line"><span style="color:#CF222E">import</span><span style="color:#24292F"> </span><span style="color:#CF222E">type</span><span style="color:#24292F"> { ConfigNonHeaderFile } </span><span style="color:#CF222E">from</span><span style="color:#24292F"> </span><span style="color:#0A3069">&#x27;vite-plugin-ssr/types&#x27;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> {</span></span>
 <span class="line"><span style="color:#953800">  </span><span style="color:#24292F">Page: </span><span style="color:#0A3069">&#x27;import:./some-file&#x27;</span><span style="color:#953800">,</span></span>
@@ -118,7 +120,7 @@
 This means that importing <code>Page</code> and <code>onBeforeRender</code> from the same file is allowed only if <a href="/meta"><code>meta</code></a> is used in order to modify and align their environment.</p>
 </blockquote>
 <h2 id="not-re-exported-imports">Not re-exported imports</h2>
-<p>If an imported value isn&#x27;t exposed over <code>export default { ... }</code> then it won&#x27;t be included in any runtime.</p>
+<p>Note that if an imported value isn&#x27;t included in <code>export default { ... }</code>, then it won&#x27;t be included in any runtime.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// +config.h.js</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6E7781">// These imports aren&#x27;t included in any runtime.</span></span>
