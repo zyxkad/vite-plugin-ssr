@@ -104,17 +104,15 @@
 <p>If we use <a href="/client-routing">Client Routing</a>, then <em>all</em> our Route Functions are loaded in the browser. This means that if a Route Function imports a lot of code, then all the code is loaded in the browser and therefore slows down the page load of each page.</p>
 <p>Thus, we should keep Route Functions both fast and lightweight.</p>
 <h2 id="async">Async</h2>
-<p>Route Functions should be fast and that&#x27;s why, by default, vite-plugin-ssr forbids Route Functions to be an async function. However, we can enable async route functions:</p>
+<p>Async Route Functions are forbidden.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// *.page.route.js</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#6E7781">// We need to opt-in to be able to use async route functions</span></span>
-<span class="line"><span style="color:#CF222E">export</span><span style="color:#24292F"> </span><span style="color:#CF222E">const</span><span style="color:#24292F"> </span><span style="color:#0550AE">iKnowThePerformanceRisksOfAsyncRouteFunctions</span><span style="color:#24292F"> </span><span style="color:#CF222E">=</span><span style="color:#24292F"> </span><span style="color:#0550AE">true</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#6E7781">// We can now use an async route function</span></span>
+<span class="line"><span style="color:#6E7781">// ❌ This is forbidden</span></span>
 <span class="line"><span style="color:#CF222E">export</span><span style="color:#953800"> </span><span style="color:#CF222E">default</span><span style="color:#953800"> </span><span style="color:#CF222E">async</span><span style="color:#953800"> () </span><span style="color:#CF222E">=&gt;</span><span style="color:#953800"> </span><span style="color:#24292F">{ </span><span style="color:#6E7781">/* ... */</span><span style="color:#24292F"> }</span></span></code></pre></div>
-<p>Async route functions may significantly slow down our app: as we have seen in <a href="#lightweight-fast">Lightweight &amp; fast</a>, every time the user navigates to a new page <em>all</em> Route Functions are called and awaited for. This means that a slow Route Function will slow down all our pages.</p>
-<p>Async route functions are therefore discouraged and should be considered as last resort.</p>
-<p>The motivation for async route functions are often redirections, but using <a href="/RenderErrorPage"><code>throw RenderErrorPage()</code></a> is usually a better approach.</p>
+<p>The motivation for asynchronous Route Functions is often redirections, but using <a href="/RenderErrorPage"><code>throw RenderErrorPage()</code></a> is usually a better approach.</p>
+<blockquote>
+<p>An async Route Function would slow down our entire app: as we have seen in <a href="#lightweight-fast">Lightweight &amp; fast</a>, every time the user navigates to a new page <em>all</em> Route Functions are called. This means that a slow Route Function would slow down <em>all</em> our pages.</p>
+</blockquote>
 <h2 id="redirection-404">Redirection &amp; <code>404</code></h2>
 <p>See <a href="/RenderErrorPage"><code>throw RenderErrorPage()</code></a>.</p>
 <h2 id="cannot-provide-pagecontext">Cannot provide <code>pageContext</code></h2>
