@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.80da3c1b.css">
+        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.af8f5e5a.css">
         <link rel="stylesheet" type="text/css" href="/assets/static/default.page.server.8705f044.css">
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/static/vite-plugin-ssr.5177312a.svg" />
@@ -23,7 +23,7 @@
 <h3 id="cannot-use-import-statement-outside-a-module">Cannot use import statement outside a module</h3>
 <pre><code>SyntaxError: Cannot use import statement outside a module
 </code></pre>
-<pre><code>(node:30335) Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.
+<div class="with-line-break_white-space"><pre><code>(node:30335) Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.
 node_modules/some-library/dist/esm/index.js:1
 SyntaxError: Cannot use import statement outside a module
     at Object.compileFunction (node:vm:352:18)
@@ -38,12 +38,12 @@ SyntaxError: Cannot use import statement outside a module
     at async ESMLoader.import (node:internal/modules/esm/loader:409:24)
 
 Node.js v18.0.0
-</code></pre>
+</code></pre></div>
 <blockquote>
 <p>Node.js&#x27;s message <code>set &quot;type&quot;: &quot;module&quot; in package.json or use the .mjs extension</code> is misleading because it means the library&#x27;s <code>node_modules/some-library/package.json</code>, not our <code>package.json</code>. It&#x27;s not really actionable (unless we patch the library, e.g. with <a href="https://pnpm.io/package_json#pnpmpackageextensions">pnpm.packageExtensions</a> or <a href="https://pnpm.io/cli/patch">pnpm patch</a>).</p>
 </blockquote>
 <h3 id="named-export-not-found">Named export not found</h3>
-<pre><code>import { SomeImport } from &quot;some-library&quot;;
+<div class="with-line-break_white-space"><pre><code>import { SomeImport } from &quot;some-library&quot;;
          ^^^^^^^^^^
 SyntaxError: Named export &#x27;SomeImport&#x27; not found. The requested module &#x27;some-library&#x27; is a CommonJS module, which may not support all module.exports as named exports.
 CommonJS modules can always be imported via the default export, for example using:
@@ -55,7 +55,7 @@ const { SomeImport } = pkg;
     at async ModuleJob.run (node:internal/modules/esm/module_job:190:5)
 
 Node.js v18.0.0
-</code></pre>
+</code></pre></div>
 <p>The workaround proposed by Node.js often doesn&#x27;t work for default exports. If it doesn&#x27;t, try this instead:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#82071E">- import theDefaultExport from &#x27;some-library&#x27;</span></span>
 <span class="line"><span style="color:#116329">+ import lib from &#x27;some-library&#x27;;</span></span>
@@ -66,7 +66,7 @@ Node.js v18.0.0
 <li>The <a href="#solution"><code>ssr.noExternal</code> solution</a>. (Although, for increased development speed, we recommend trying the other workarounds first.)</li>
 </ul>
 <h3 id="err-module-not-found">ERR_MODULE_NOT_FOUND</h3>
-<pre><code>node:internal/process/esm_loader:91
+<div class="with-line-break_white-space"><pre><code>node:internal/process/esm_loader:91
     internalBinding(&#x27;errors&#x27;).triggerUncaughtException(
                               ^
 
@@ -84,25 +84,25 @@ Did you mean to import some-file.js?
 }
 
 Node.js v18.0.0
-</code></pre>
+</code></pre></div>
 <blockquote>
 <p>The error is usually thrown when the library&#x27;s ESM code contains <code>import &#x27;./some-file&#x27;</code>. (It should be <code>import &#x27;./some-file.js&#x27;</code> instead, as imports in ESM code are required to include the file extension.)</p>
 </blockquote>
 <h3 id="err-unsupported-dir-import">ERR_UNSUPPORTED_DIR_IMPORT</h3>
-<pre><code>Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import &#x27;node_modules/some-library/dist/some-dir/&#x27; is not supported resolving ES modules imported from node_modules/some-library/dist/index.js
+<div class="with-line-break_white-space"><pre><code>Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import &#x27;node_modules/some-library/dist/some-dir/&#x27; is not supported resolving ES modules imported from node_modules/some-library/dist/index.js
 Did you mean to import ./some-dir/index.js?
     at finalizeResolution (node:internal/modules/esm/resolve:412:17)
-</code></pre>
+</code></pre></div>
 <blockquote>
 <p>ESM doesn&#x27;t allow directory imports: all import paths need to point to a filename instead.</p>
 </blockquote>
 <h3 id="err-unknown-file-extension-css">ERR_UNKNOWN_FILE_EXTENSION .css</h3>
 <p>Another common problem is code importing CSS which makes Node.js crash:</p>
-<pre><code>Error: ERR_UNKNOWN_FILE_EXTENSION .css node_modules/some-library/dist/main.css
+<div class="with-line-break_white-space"><pre><code>Error: ERR_UNKNOWN_FILE_EXTENSION .css node_modules/some-library/dist/main.css
     at someFunction (node_modules/some-library/dist/main.js)
     at nextLoad (node:internal/modules/esm/loader:163:28)
     at ESMLoader.load (node:internal/modules/esm/loader:605:26)
-</code></pre>
+</code></pre></div>
 <h2 id="solution">Solution</h2>
 <p>The workaround is to add npm packages containing invalid code to <a href="https://vitejs.dev/config/ssr-options.html#ssr-noexternal"><code>vite.config.js &gt; ssr.noExternal</code></a>.</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="js" data-theme="default"><code data-language="js" data-theme="default"><span class="line"><span style="color:#6E7781">// vite.config.js</span></span>
