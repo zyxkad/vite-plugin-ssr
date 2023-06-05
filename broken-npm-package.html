@@ -56,9 +56,15 @@ const { SomeImport } = pkg;
 
 Node.js v18.0.0
 </code></pre>
-<blockquote>
-<p>The workaround proposed by Node.js often doesn&#x27;t work. (Because, while the server-side imports CJS which always includes a default export, the browser-side imports ESM which usually doesn&#x27;t have a default export.)</p>
-</blockquote>
+<p>The workaround proposed by Node.js often doesn&#x27;t work for default exports. If it doesn&#x27;t, try this instead:</p>
+<div data-rehype-pretty-code-fragment=""><pre data-language="diff" data-theme="default"><code data-language="diff" data-theme="default"><span class="line"><span style="color:#82071E">- import theDefaultExport from &#x27;some-library&#x27;</span></span>
+<span class="line"><span style="color:#116329">+ import lib from &#x27;some-library&#x27;;</span></span>
+<span class="line"><span style="color:#116329">+ const theDefaultExport = lib.default ?? lib</span></span></code></pre></div>
+<p>Alternatives:</p>
+<ul>
+<li><a href="https://github.com/cyco130/vite-plugin-cjs-interop">vite-plugin-cjs-interop</a></li>
+<li>The <a href="#solution"><code>ssr.noExternal</code> solution</a>. (Although, for increased development speed, we recommend trying the other workarounds first.)</li>
+</ul>
 <h3 id="err-module-not-found">ERR_MODULE_NOT_FOUND</h3>
 <pre><code>node:internal/process/esm_loader:91
     internalBinding(&#x27;errors&#x27;).triggerUncaughtException(
