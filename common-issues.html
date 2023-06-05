@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.d7c7cf76.css">
+        <link rel="stylesheet" type="text/css" href="/assets/static/default.page.client.80da3c1b.css">
         <link rel="stylesheet" type="text/css" href="/assets/static/default.page.server.8705f044.css">
         <meta charset="UTF-8" />
         <link rel="icon" href="/assets/static/vite-plugin-ssr.5177312a.svg" />
@@ -18,7 +18,7 @@
 <p>Vite purposely doesn&#x27;t transpile server-side code but lets your Node.js server directly execute npm packages (in order to greatly improve dev performance).</p>
 <p>But some npm packages contain invalid Node.js code and we need to add them to <code>vite.config.js &gt; ssr.noExternal</code>, see <a href="/broken-npm-package#solution">Broken npm package<!-- --> &gt; <!-- -->Solution</a>.</p>
 <blockquote>
-<p>The most notable issues are invalid <a href="https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/">ESM</a> and invalid CSS imports, see <a href="/broken-npm-package#errors">Broken npm package<!-- --> &gt; <!-- -->Errors</a>.</p>
+<p>The most notable issues are invalid ESM and invalid CSS imports, see <a href="/broken-npm-package#errors">Broken npm package<!-- --> &gt; <!-- -->Errors</a>.</p>
 </blockquote>
 <h2 id="hydration-mismatch">Hydration mismatch</h2>
 <p>A recurring problem when doing SSR are so-called <em>hydration mismatches</em>: a hydration mismatch is when the content rendered to HTML on the server isn&#x27;t the same than the content rendered in the browser.</p>
@@ -47,6 +47,6 @@
       });
     </script>
   
-        <script type="module" src="/assets/chunks/chunk-f26f2105.js" defer></script>
+        <script type="module" src="/assets/chunks/chunk-d08a8f25.js" defer></script>
       </body>
     </html>

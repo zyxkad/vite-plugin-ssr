@@ -23,53 +23,41 @@
     "file": "assets/static/rollup.6cba4343.svg",
     "src": "pages/index/features/rollup.svg"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg": {
+  "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg": {
     "file": "assets/static/chevron-K3WPYLOP.38e8d76a.svg",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg"
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/chevron-K3WPYLOP.svg"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf": {
+  "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf": {
     "file": "assets/static/Inter-Var-IOAEQULN.2bc54814.ttf",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf"
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/Inter-Var-IOAEQULN.ttf"
   },
   "pages/banner.page.server.tsx?extractAssets&lang.css": {
-    "file": "assets/static/banner.page.server.e93cfe4e.css",
+    "file": "assets/static/banner.page.server.56efc2f5.css",
     "src": "pages/banner.page.server.tsx?extractAssets&lang.css"
   },
   "Header.css": {
     "file": "assets/static/Header.0bf08b19.css",
     "src": "Header.css"
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
-    "file": "assets/static/default.page.client.d7c7cf76.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
-  },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
-    "file": "assets/static/default.page.server.8705f044.css",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
+  "ScaffoldCallToAction.css": {
+    "file": "assets/static/ScaffoldCallToAction.d2502774.css",
+    "src": "ScaffoldCallToAction.css"
   },
   "pages/index/index.page.client.css": {
     "file": "assets/static/index.page.client.a95a6883.css",
     "src": "pages/index/index.page.client.css"
   },
-  "ScaffoldCallToAction.css": {
-    "file": "assets/static/ScaffoldCallToAction.d2502774.css",
-    "src": "ScaffoldCallToAction.css"
+  "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css": {
+    "file": "assets/static/default.page.server.8705f044.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css"
   },
-  "pages/Config_.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_Config_.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/Config_.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
+  "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css": {
+    "file": "assets/static/default.page.client.80da3c1b.css",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   },
   "pages/AuthJS-old-2.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_AuthJS-old-2.page.server.extractAssets.4ed993c7.js",
     "src": "pages/AuthJS-old-2.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/AuthJS.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_AuthJS.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/AuthJS.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -79,27 +67,33 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/SR-vs-CR.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_SR-vs-CR.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/SR-vs-CR.page.server.mdx?extractAssets&lang.mdx",
+  "pages/Page-server.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_Page-server.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/Page-server.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/active-links.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_active-links.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/active-links.page.server.mdx?extractAssets&lang.mdx",
+  "pages/AuthJS.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_AuthJS.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/AuthJS.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/angular.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_angular.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/angular.page.server.mdx?extractAssets&lang.mdx",
+  "pages/Config_.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_Config_.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/Config_.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/api-routes.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_api-routes.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/api-routes.page.server.mdx?extractAssets&lang.mdx",
+  "pages/PM2.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_PM2.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/PM2.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/RenderErrorPage.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_RenderErrorPage.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/RenderErrorPage.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -115,117 +109,87 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/SR-vs-CR.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_SR-vs-CR.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/SR-vs-CR.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/active-links.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_active-links.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/active-links.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/add.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_add.page.server.extractAssets.4ed993c7.js",
     "src": "pages/add.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/catch-all.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_catch-all.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/catch-all.page.server.mdx?extractAssets&lang.mdx",
+  "pages/angular.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_angular.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/angular.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/pre-rendering.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_pre-rendering.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/pre-rendering.page.server.mdx?extractAssets&lang.mdx",
+  "pages/api-routes.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_api-routes.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/api-routes.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/dot-page-dot-client-dot-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_dot-page-dot-client-dot-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/dot-page-dot-client-dot-js.page.server.mdx?extractAssets&lang.mdx",
+  "pages/auth.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_auth.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/auth.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/dot-page-dot-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_dot-page-dot-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/dot-page-dot-js.page.server.mdx?extractAssets&lang.mdx",
+  "pages/aws-lambda.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_aws-lambda.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/aws-lambda.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/dot-page-dot-route-dot-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_dot-page-dot-route-dot-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/dot-page-dot-route-dot-js.page.server.mdx?extractAssets&lang.mdx",
+  "pages/Page-client.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_Page-client.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/Page-client.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/dot-page-dot-server-dot-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_dot-page-dot-server-dot-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/dot-page-dot-server-dot-js.page.server.mdx?extractAssets&lang.mdx",
+  "pages/banner.page.client.ts": {
+    "file": "assets/entries/pages_banner.page.client.68c7153a.js",
+    "src": "pages/banner.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/dynamic-import.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_dynamic-import.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/dynamic-import.page.server.mdx?extractAssets&lang.mdx",
+  "pages/base-url.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_base-url.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/base-url.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/error-page.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_error-page.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/error-page.page.server.mdx?extractAssets&lang.mdx",
+  "pages/config-code-splitting.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_config-code-splitting.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/config-code-splitting.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/error-tracking.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_error-tracking.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/error-tracking.page.server.mdx?extractAssets&lang.mdx",
+  "pages/broken-npm-package.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_broken-npm-package.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/broken-npm-package.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/escapeInject.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_escapeInject.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/escapeInject.page.server.mdx?extractAssets&lang.mdx",
+  "pages/build-your-own-framework.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_build-your-own-framework.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/build-your-own-framework.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/exports.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_exports.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/exports.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/express.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_express.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/express.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/extends.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_extends.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/extends.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/fastify.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_fastify.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/fastify.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/file-structure.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_file-structure.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/file-structure.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/filesystem-routing.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_filesystem-routing.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/filesystem-routing.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/filesystemRoutingRoot.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_filesystemRoutingRoot.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/filesystemRoutingRoot.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/firebase.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_firebase.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/firebase.page.server.mdx?extractAssets&lang.mdx",
+  "pages/architecture.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_architecture.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/architecture.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -277,9 +241,69 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/hydration.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_hydration.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/hydration.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/i18n.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_i18n.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/i18n.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/importBuild-dot-cjs.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_importBuild-dot-cjs.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/importBuild-dot-cjs.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/hydration-mismatch.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_hydration-mismatch.page.server.extractAssets.4ed993c7.js",
     "src": "pages/hydration-mismatch.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/importBuild-dot-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_importBuild-dot-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/importBuild-dot-js.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/injectFilter.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_injectFilter.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/injectFilter.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/integration.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_integration.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/integration.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/languages.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_languages.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/languages.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/includeAssetsImportedByServer.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_includeAssetsImportedByServer.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/includeAssetsImportedByServer.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/markdown.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_markdown.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/markdown.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/migration-0.4.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_migration-0.4.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/migration-0.4.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -367,12 +391,6 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/client-only-components.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_client-only-components.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/client-only-components.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
   "pages/onRenderHtml.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_onRenderHtml.page.server.extractAssets.4ed993c7.js",
     "src": "pages/onRenderHtml.page.server.mdx?extractAssets&lang.mdx",
@@ -385,9 +403,39 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/meta.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_meta.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/meta.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/relay.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_relay.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/relay.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/dot-page-dot-server-dot-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_dot-page-dot-server-dot-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/dot-page-dot-server-dot-js.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/dot-page-dot-route-dot-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_dot-page-dot-route-dot-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/dot-page-dot-route-dot-js.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/pageContext-anywhere.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_pageContext-anywhere.page.server.extractAssets.4ed993c7.js",
     "src": "pages/pageContext-anywhere.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/dynamic-import.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_dynamic-import.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/dynamic-import.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -397,9 +445,21 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/error-page.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_error-page.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/error-page.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/pageContext.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_pageContext.page.server.extractAssets.4ed993c7.js",
     "src": "pages/pageContext.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/escapeInject.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_escapeInject.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/escapeInject.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -409,9 +469,27 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/exports.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_exports.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/exports.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/path-aliases.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_path-aliases.page.server.extractAssets.4ed993c7.js",
     "src": "pages/path-aliases.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/express.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_express.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/express.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/pre-rendering.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_pre-rendering.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/pre-rendering.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -421,360 +499,9 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/integration.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_integration.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/integration.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/hydration.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_hydration.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/hydration.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/importBuild-dot-cjs.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_importBuild-dot-cjs.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/importBuild-dot-cjs.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/importBuild-dot-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_importBuild-dot-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/importBuild-dot-js.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/route.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_route.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/route.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/route-function.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_route-function.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/route-function.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/prerender-programmatic.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_prerender-programmatic.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/prerender-programmatic.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/injectAssets.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_injectAssets.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/injectAssets.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/windi-css.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_windi-css.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/windi-css.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/index/index.page.server.tsx?extractAssets&lang.tsx": {
-    "file": "assets/entries/pages_index_index.page.server.extractAssets.829ddb18.js",
-    "src": "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "css": [
-      "assets/static/Header.0bf08b19.css"
-    ]
-  },
-  "pages/migration/0.4.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_migration_0.4.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/migration/0.4.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/migration/v1.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_migration_v1.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/migration/v1.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/injectFilter.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_injectFilter.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/injectFilter.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "_chunk-a33cf6d6.js": {
-    "file": "assets/chunks/chunk-a33cf6d6.js"
-  },
-  "pages/migration/0.4.23.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_migration_0.4.23.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/migration/0.4.23.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/languages.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_languages.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/languages.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/layouts.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_layouts.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/layouts.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/markdown.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_markdown.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/markdown.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/meta.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_meta.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/meta.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/migration-0.4.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_migration-0.4.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/migration-0.4.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/i18n.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_i18n.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/i18n.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/Page-server.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_Page-server.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/Page-server.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/PM2.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_PM2.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/PM2.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/Page-client.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_Page-client.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/Page-client.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/architecture.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_architecture.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/architecture.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/Page.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_Page.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/Page.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/apollo-graphql.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_apollo-graphql.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/apollo-graphql.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/auth.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_auth.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/auth.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/aws-lambda.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_aws-lambda.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/aws-lambda.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/route-string.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_route-string.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/route-string.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/routing-precedence.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_routing-precedence.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/routing-precedence.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/vue-tour.page.client.ts": {
-    "file": "assets/entries/pages_vue-tour.page.client.4a34176b.js",
-    "src": "pages/vue-tour.page.client.ts",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-4f63bb74.js"
-    ]
-  },
-  "pages/base-url.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_base-url.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/base-url.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/bootstrap.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_bootstrap.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/bootstrap.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/broken-npm-package.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_broken-npm-package.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/broken-npm-package.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/build-your-own-framework.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_build-your-own-framework.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/build-your-own-framework.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/client.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_client.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/client.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/clientRouting.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_clientRouting.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/clientRouting.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/cloudflare-pages.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_cloudflare-pages.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/cloudflare-pages.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/cloudflare-workers.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_cloudflare-workers.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/cloudflare-workers.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/command-prerender.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_command-prerender.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/command-prerender.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/common-issues.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_common-issues.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/common-issues.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/common-problems.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_common-problems.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/common-problems.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/config-code-splitting.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_config-code-splitting.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/config-code-splitting.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/config.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_config.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/config.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/content-vs-interactive.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_content-vs-interactive.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/content-vs-interactive.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/createPageRenderer.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_createPageRenderer.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/createPageRenderer.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/css-in-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_css-in-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/css-in-js.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/data-fetching-tools.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_data-fetching-tools.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/data-fetching-tools.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/data-fetching.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_data-fetching.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/data-fetching.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/debug.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_debug.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/debug.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/default-page.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_default-page.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/default-page.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/deno.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_deno.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/deno.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/deploy-sync.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_deploy-sync.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/deploy-sync.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/deploy.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_deploy.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/deploy.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/disableAutoFullBuild.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_disableAutoFullBuild.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/disableAutoFullBuild.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/doNotPrerender.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_doNotPrerender.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/doNotPrerender.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/RenderErrorPage.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_RenderErrorPage.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/RenderErrorPage.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/banner.page.client.ts": {
-    "file": "assets/entries/pages_banner.page.client.68c7153a.js",
-    "src": "pages/banner.page.client.ts",
+  "pages/extends.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_extends.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/extends.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -784,15 +511,15 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/prefetch.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_prefetch.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/prefetch.page.server.mdx?extractAssets&lang.mdx",
+  "pages/dot-page-dot-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_dot-page-dot-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/dot-page-dot-js.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/client-routing.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_client-routing.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/client-routing.page.server.mdx?extractAssets&lang.mdx",
+  "pages/prefetch.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_prefetch.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/prefetch.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -802,21 +529,15 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/content-vs-interactive.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_content-vs-interactive.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/content-vs-interactive.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/prerender-config.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_prerender-config.page.server.extractAssets.4ed993c7.js",
     "src": "pages/prerender-config.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/includeAssetsImportedByServer.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_includeAssetsImportedByServer.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/includeAssetsImportedByServer.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/default-page-route-js.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_default-page-route-js.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/default-page-route-js.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -826,21 +547,27 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/docker.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_docker.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/docker.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/dot-env-files.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_dot-env-files.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/dot-env-files.page.server.mdx?extractAssets&lang.mdx",
+  "pages/prerender-programmatic.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_prerender-programmatic.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/prerender-programmatic.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
   "pages/prerender.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_prerender.page.server.extractAssets.4ed993c7.js",
     "src": "pages/prerender.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/css-in-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_css-in-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/css-in-js.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/dot-env-files.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_dot-env-files.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/dot-env-files.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -856,6 +583,12 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/data-fetching-tools.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_data-fetching-tools.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/data-fetching-tools.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/react-tour.page.client.ts": {
     "file": "assets/entries/pages_react-tour.page.client.4a34176b.js",
     "src": "pages/react-tour.page.client.ts",
@@ -865,15 +598,15 @@
       "_chunk-4f63bb74.js"
     ]
   },
-  "pages/react-tour.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_react-tour.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/react-tour.page.server.mdx?extractAssets&lang.mdx",
+  "pages/route-function.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_route-function.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/route-function.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/react.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_react.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/react.page.server.mdx?extractAssets&lang.mdx",
+  "pages/react-tour.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_react-tour.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/react-tour.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -883,15 +616,159 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/relay.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_relay.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/relay.page.server.mdx?extractAssets&lang.mdx",
+  "pages/debug.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_debug.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/debug.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/render-as-you-fetch.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_render-as-you-fetch.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/render-as-you-fetch.page.server.mdx?extractAssets&lang.mdx",
+  "pages/data-fetching.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_data-fetching.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/data-fetching.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/default-page-route-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_default-page-route-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/default-page-route-js.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/deno.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_deno.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/deno.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/default-page.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_default-page.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/default-page.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/vue.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vue.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/vue.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/deploy-sync.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_deploy-sync.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/deploy-sync.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/catch-all.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_catch-all.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/catch-all.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/disableAutoFullBuild.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_disableAutoFullBuild.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/disableAutoFullBuild.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/docker.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_docker.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/docker.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/deploy.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_deploy.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/deploy.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/doNotPrerender.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_doNotPrerender.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/doNotPrerender.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/filesystemRoutingRoot.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_filesystemRoutingRoot.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/filesystemRoutingRoot.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/fastify.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_fastify.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/fastify.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/react.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_react.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/react.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/filesystem-routing.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_filesystem-routing.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/filesystem-routing.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/clientRouting.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_clientRouting.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/clientRouting.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/config.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_config.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/config.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/apollo-graphql.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_apollo-graphql.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/apollo-graphql.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/Page.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_Page.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/Page.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/command-prerender.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_command-prerender.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/command-prerender.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/bootstrap.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_bootstrap.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/bootstrap.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/cloudflare-pages.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_cloudflare-pages.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/cloudflare-pages.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/common-issues.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_common-issues.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/common-issues.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/createPageRenderer.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_createPageRenderer.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/createPageRenderer.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/client-routing.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_client-routing.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/client-routing.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -907,24 +784,155 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
+  "pages/render.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_render.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/render.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/renderPage.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_renderPage.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/renderPage.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/render-as-you-fetch.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_render-as-you-fetch.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/render-as-you-fetch.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "pages/renderers.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_renderers.page.server.extractAssets.4ed993c7.js",
     "src": "pages/renderers.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/index/index.page.client.ts": {
-    "file": "assets/entries/pages_index_index.page.client.06291b4d.js",
-    "src": "pages/index/index.page.client.ts",
+  "pages/error-tracking.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_error-tracking.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/error-tracking.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-a33cf6d6.js",
-      "_chunk-4f63bb74.js"
-    ],
-    "css": [
-      "assets/static/index.page.client.a95a6883.css"
-    ]
+    "isDynamicEntry": true
+  },
+  "pages/route-string.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_route-string.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/route-string.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/layouts.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_layouts.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/layouts.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/route.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_route.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/route.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/injectAssets.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_injectAssets.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/injectAssets.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/vike-packages.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vike-packages.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/vike-packages.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/file-structure.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_file-structure.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/file-structure.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/migration/v1.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_migration_v1.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/migration/v1.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/client.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_client.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/client.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/dot-page-dot-client-dot-js.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_dot-page-dot-client-dot-js.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/dot-page-dot-client-dot-js.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/common-problems.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_common-problems.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/common-problems.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/routing-precedence.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_routing-precedence.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/routing-precedence.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/routing.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_routing.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/routing.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/sass.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_sass.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/sass.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/firebase.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_firebase.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/firebase.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/scaffold.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_scaffold.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/scaffold.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/server-routing-vs-client-routing.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_server-routing-vs-client-routing.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/server-routing-vs-client-routing.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/server-routing.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_server-routing.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/server-routing.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/server.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_server.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/server.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/cloudflare-workers.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_cloudflare-workers.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/cloudflare-workers.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/solid.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_solid.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/solid.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
   },
   "pages/static-directory.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_static-directory.page.server.extractAssets.4ed993c7.js",
@@ -962,66 +970,6 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/renderPage.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_renderPage.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/renderPage.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/routing.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_routing.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/routing.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/sass.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_sass.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/sass.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/server-routing-vs-client-routing.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_server-routing-vs-client-routing.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/server-routing-vs-client-routing.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/tRPC.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_tRPC.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/tRPC.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "_chunk-4f63bb74.js": {
-    "file": "assets/chunks/chunk-4f63bb74.js",
-    "css": [
-      "assets/static/ScaffoldCallToAction.d2502774.css"
-    ]
-  },
-  "pages/server.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_server.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/server.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/socket-io.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_socket-io.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/socket-io.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/solid.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_solid.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/solid.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/ssr.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_ssr.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/ssr.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
   "pages/tailwind-css.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_tailwind-css.page.server.extractAssets.4ed993c7.js",
     "src": "pages/tailwind-css.page.server.mdx?extractAssets&lang.mdx",
@@ -1040,29 +988,9 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js": {
-    "file": "assets/chunks/chunk-f26f2105.js",
-    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-a33cf6d6.js"
-    ]
-  },
   "pages/typescript.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_typescript.page.server.extractAssets.4ed993c7.js",
     "src": "pages/typescript.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/ui-framework.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_ui-framework.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/ui-framework.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/urql.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_urql.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/urql.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
@@ -1084,30 +1012,6 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/vike-packages.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_vike-packages.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/vike-packages.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/render.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_render.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/render.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/scaffold.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_scaffold.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/scaffold.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/server-routing.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_server-routing.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/server-routing.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
   "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_vite-plugin.page.server.extractAssets.4ed993c7.js",
     "src": "pages/vite-plugin.page.server.mdx?extractAssets&lang.mdx",
@@ -1120,11 +1024,14 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/vue-router-and-react-router.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_vue-router-and-react-router.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/vue-router-and-react-router.page.server.mdx?extractAssets&lang.mdx",
+  "pages/vue-tour.page.client.ts": {
+    "file": "assets/entries/pages_vue-tour.page.client.4a34176b.js",
+    "src": "pages/vue-tour.page.client.ts",
     "isEntry": true,
-    "isDynamicEntry": true
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-4f63bb74.js"
+    ]
   },
   "pages/vue-tour.page.server.mdx?extractAssets&lang.mdx": {
     "file": "assets/entries/pages_vue-tour.page.server.extractAssets.4ed993c7.js",
@@ -1132,14 +1039,122 @@
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "pages/vue.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_vue.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/vue.page.server.mdx?extractAssets&lang.mdx",
+  "pages/vuetify.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vuetify.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/vuetify.page.server.mdx?extractAssets&lang.mdx",
     "isEntry": true,
     "isDynamicEntry": true
   },
-  "_chunk-078aa1fb.js": {
-    "file": "assets/chunks/chunk-078aa1fb.js"
+  "pages/vuex.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vuex.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/vuex.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/windi-css.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_windi-css.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/windi-css.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/index/index.page.server.tsx?extractAssets&lang.tsx": {
+    "file": "assets/entries/pages_index_index.page.server.extractAssets.829ddb18.js",
+    "src": "pages/index/index.page.server.tsx?extractAssets&lang.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "css": [
+      "assets/static/Header.0bf08b19.css"
+    ]
+  },
+  "pages/migration/v1-design.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_migration_v1-design.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/migration/v1-design.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js": {
+    "file": "assets/chunks/chunk-d08a8f25.js",
+    "src": "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-a33cf6d6.js"
+    ]
+  },
+  "pages/index/index.page.client.ts": {
+    "file": "assets/entries/pages_index_index.page.client.06291b4d.js",
+    "src": "pages/index/index.page.client.ts",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-a33cf6d6.js",
+      "_chunk-4f63bb74.js"
+    ],
+    "css": [
+      "assets/static/index.page.client.a95a6883.css"
+    ]
+  },
+  "pages/ssr.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_ssr.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/ssr.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/tRPC.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_tRPC.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/tRPC.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/urql.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_urql.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/urql.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/why-the-v1-design.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_why-the-v1-design.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/why-the-v1-design.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/migration/0.4.23.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_migration_0.4.23.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/migration/0.4.23.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "_chunk-4f63bb74.js": {
+    "file": "assets/chunks/chunk-4f63bb74.js",
+    "css": [
+      "assets/static/ScaffoldCallToAction.d2502774.css"
+    ]
+  },
+  "pages/vue-router-and-react-router.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_vue-router-and-react-router.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/vue-router-and-react-router.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/migration/0.4.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_migration_0.4.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/migration/0.4.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/socket-io.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_socket-io.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/socket-io.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "pages/ui-framework.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_ui-framework.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/ui-framework.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "_chunk-a33cf6d6.js": {
+    "file": "assets/chunks/chunk-a33cf6d6.js"
   },
   "pages/banner.page.server.tsx?extractAssets&lang.tsx": {
     "file": "assets/entries/pages_banner.page.server.extractAssets.829ddb18.js",
@@ -1147,7 +1162,7 @@
     "isEntry": true,
     "isDynamicEntry": true,
     "css": [
-      "assets/static/banner.page.server.e93cfe4e.css",
+      "assets/static/banner.page.server.56efc2f5.css",
       "assets/static/Header.0bf08b19.css"
     ],
     "assets": [
@@ -1155,8 +1170,14 @@
       "assets/static/chevron-K3WPYLOP.38e8d76a.svg"
     ]
   },
+  "pages/client-only-components.page.server.mdx?extractAssets&lang.mdx": {
+    "file": "assets/entries/pages_client-only-components.page.server.extractAssets.4ed993c7.js",
+    "src": "pages/client-only-components.page.server.mdx?extractAssets&lang.mdx",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
   "../vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entries/entry-server-routing.96c61f0c.js",
+    "file": "assets/entries/entry-server-routing.9f3d8428.js",
     "src": "../vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -1343,35 +1364,14 @@
       "pages/vuex.page.server.mdx?extractAssets&lang.mdx",
       "pages/why-the-v1-design.page.server.mdx?extractAssets&lang.mdx",
       "pages/windi-css.page.server.mdx?extractAssets&lang.mdx",
-      "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
+      "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
     ]
   },
-  "pages/vuex.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_vuex.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/vuex.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/why-the-v1-design.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_why-the-v1-design.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/why-the-v1-design.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/vuetify.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_vuetify.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/vuetify.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
-  },
-  "pages/migration/v1-design.page.server.mdx?extractAssets&lang.mdx": {
-    "file": "assets/entries/pages_migration_v1-design.page.server.extractAssets.4ed993c7.js",
-    "src": "pages/migration/v1-design.page.server.mdx?extractAssets&lang.mdx",
-    "isEntry": true,
-    "isDynamicEntry": true
+  "_chunk-078aa1fb.js": {
+    "file": "assets/chunks/chunk-078aa1fb.js"
   },
   "../vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entries/entry-client-routing.87c37900.js",
+    "file": "assets/entries/entry-client-routing.6310afa8.js",
     "src": "../vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -1558,7 +1558,7 @@
       "pages/vuex.page.server.mdx?extractAssets&lang.mdx",
       "pages/why-the-v1-design.page.server.mdx?extractAssets&lang.mdx",
       "pages/windi-css.page.server.mdx?extractAssets&lang.mdx",
-      "../node_modules/.pnpm/@brillout+docpress@0.4.13_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
+      "../node_modules/.pnpm/@brillout+docpress@0.4.14_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.21.5/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js"
     ]
   }
 }
